@@ -1,0 +1,683 @@
+Analysis & Synthesis report for aes
+Fri Sep 13 02:45:06 2019
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |aes
+ 10. Parameter Settings for User Entity Instance: addRoundKey:ARK
+ 11. Port Connectivity Checks: "addRoundKey:ARK"
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Sep 13 02:45:06 2019      ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; aes                                        ;
+; Top-level Entity Name              ; aes                                        ;
+; Family                             ; Cyclone III                                ;
+; Total logic elements               ; 0                                          ;
+;     Total combinational functions  ; 0                                          ;
+;     Dedicated logic registers      ; 0                                          ;
+; Total registers                    ; 0                                          ;
+; Total pins                         ; 385                                        ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP3C25F324C6       ;                    ;
+; Top-level entity name                                                      ; aes                ; aes                ;
+; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 12     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                    ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                             ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
+; aes.vhd                          ; yes             ; User VHDL File  ; C:/Users/Arthur/Documents/designs/tryAES/aes.vhd         ;         ;
+; addRoundKey.vhd                  ; yes             ; User VHDL File  ; C:/Users/Arthur/Documents/designs/tryAES/addRoundKey.vhd ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 385   ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; clock ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 385   ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |aes                       ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 385  ; 0            ; |aes                ;              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |aes ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; DATA_WIDTH_TOP ; 128   ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: addRoundKey:ARK ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; data_width     ; 128   ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "addRoundKey:ARK"                                                                              ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                             ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; outaddroundkey ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Fri Sep 13 02:45:05 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aes -c aes
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file aes.vhd
+    Info (12022): Found design unit 1: aes-rtl
+    Info (12023): Found entity 1: aes
+Info (12021): Found 2 design units, including 1 entities, in source file addroundkey.vhd
+    Info (12022): Found design unit 1: addRoundKey-rtl
+    Info (12023): Found entity 1: addRoundKey
+Info (12127): Elaborating entity "aes" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at aes.vhd(19): used implicit default value for signal "outAddRoundKey" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at aes.vhd(25): used implicit default value for signal "plaintText_sg" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at aes.vhd(25): used implicit default value for signal "keyIni_sg" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at aes.vhd(25): object "outAddRoundKey_sg" assigned a value but never read
+Info (12128): Elaborating entity "addRoundKey" for hierarchy "addRoundKey:ARK"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "outAddRoundKey[0]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[1]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[2]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[3]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[4]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[5]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[6]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[7]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[8]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[9]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[10]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[11]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[12]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[13]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[14]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[15]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[16]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[17]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[18]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[19]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[20]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[21]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[22]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[23]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[24]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[25]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[26]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[27]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[28]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[29]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[30]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[31]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[32]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[33]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[34]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[35]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[36]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[37]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[38]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[39]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[40]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[41]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[42]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[43]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[44]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[45]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[46]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[47]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[48]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[49]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[50]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[51]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[52]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[53]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[54]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[55]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[56]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[57]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[58]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[59]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[60]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[61]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[62]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[63]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[64]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[65]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[66]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[67]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[68]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[69]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[70]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[71]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[72]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[73]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[74]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[75]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[76]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[77]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[78]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[79]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[80]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[81]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[82]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[83]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[84]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[85]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[86]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[87]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[88]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[89]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[90]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[91]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[92]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[93]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[94]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[95]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[96]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[97]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[98]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[99]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[100]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[101]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[102]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[103]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[104]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[105]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[106]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[107]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[108]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[109]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[110]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[111]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[112]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[113]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[114]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[115]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[116]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[117]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[118]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[119]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[120]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[121]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[122]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[123]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[124]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[125]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[126]" is stuck at GND
+    Warning (13410): Pin "outAddRoundKey[127]" is stuck at GND
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 257 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clock"
+    Warning (15610): No output dependent on input pin "plainText[0]"
+    Warning (15610): No output dependent on input pin "plainText[1]"
+    Warning (15610): No output dependent on input pin "plainText[2]"
+    Warning (15610): No output dependent on input pin "plainText[3]"
+    Warning (15610): No output dependent on input pin "plainText[4]"
+    Warning (15610): No output dependent on input pin "plainText[5]"
+    Warning (15610): No output dependent on input pin "plainText[6]"
+    Warning (15610): No output dependent on input pin "plainText[7]"
+    Warning (15610): No output dependent on input pin "plainText[8]"
+    Warning (15610): No output dependent on input pin "plainText[9]"
+    Warning (15610): No output dependent on input pin "plainText[10]"
+    Warning (15610): No output dependent on input pin "plainText[11]"
+    Warning (15610): No output dependent on input pin "plainText[12]"
+    Warning (15610): No output dependent on input pin "plainText[13]"
+    Warning (15610): No output dependent on input pin "plainText[14]"
+    Warning (15610): No output dependent on input pin "plainText[15]"
+    Warning (15610): No output dependent on input pin "plainText[16]"
+    Warning (15610): No output dependent on input pin "plainText[17]"
+    Warning (15610): No output dependent on input pin "plainText[18]"
+    Warning (15610): No output dependent on input pin "plainText[19]"
+    Warning (15610): No output dependent on input pin "plainText[20]"
+    Warning (15610): No output dependent on input pin "plainText[21]"
+    Warning (15610): No output dependent on input pin "plainText[22]"
+    Warning (15610): No output dependent on input pin "plainText[23]"
+    Warning (15610): No output dependent on input pin "plainText[24]"
+    Warning (15610): No output dependent on input pin "plainText[25]"
+    Warning (15610): No output dependent on input pin "plainText[26]"
+    Warning (15610): No output dependent on input pin "plainText[27]"
+    Warning (15610): No output dependent on input pin "plainText[28]"
+    Warning (15610): No output dependent on input pin "plainText[29]"
+    Warning (15610): No output dependent on input pin "plainText[30]"
+    Warning (15610): No output dependent on input pin "plainText[31]"
+    Warning (15610): No output dependent on input pin "plainText[32]"
+    Warning (15610): No output dependent on input pin "plainText[33]"
+    Warning (15610): No output dependent on input pin "plainText[34]"
+    Warning (15610): No output dependent on input pin "plainText[35]"
+    Warning (15610): No output dependent on input pin "plainText[36]"
+    Warning (15610): No output dependent on input pin "plainText[37]"
+    Warning (15610): No output dependent on input pin "plainText[38]"
+    Warning (15610): No output dependent on input pin "plainText[39]"
+    Warning (15610): No output dependent on input pin "plainText[40]"
+    Warning (15610): No output dependent on input pin "plainText[41]"
+    Warning (15610): No output dependent on input pin "plainText[42]"
+    Warning (15610): No output dependent on input pin "plainText[43]"
+    Warning (15610): No output dependent on input pin "plainText[44]"
+    Warning (15610): No output dependent on input pin "plainText[45]"
+    Warning (15610): No output dependent on input pin "plainText[46]"
+    Warning (15610): No output dependent on input pin "plainText[47]"
+    Warning (15610): No output dependent on input pin "plainText[48]"
+    Warning (15610): No output dependent on input pin "plainText[49]"
+    Warning (15610): No output dependent on input pin "plainText[50]"
+    Warning (15610): No output dependent on input pin "plainText[51]"
+    Warning (15610): No output dependent on input pin "plainText[52]"
+    Warning (15610): No output dependent on input pin "plainText[53]"
+    Warning (15610): No output dependent on input pin "plainText[54]"
+    Warning (15610): No output dependent on input pin "plainText[55]"
+    Warning (15610): No output dependent on input pin "plainText[56]"
+    Warning (15610): No output dependent on input pin "plainText[57]"
+    Warning (15610): No output dependent on input pin "plainText[58]"
+    Warning (15610): No output dependent on input pin "plainText[59]"
+    Warning (15610): No output dependent on input pin "plainText[60]"
+    Warning (15610): No output dependent on input pin "plainText[61]"
+    Warning (15610): No output dependent on input pin "plainText[62]"
+    Warning (15610): No output dependent on input pin "plainText[63]"
+    Warning (15610): No output dependent on input pin "plainText[64]"
+    Warning (15610): No output dependent on input pin "plainText[65]"
+    Warning (15610): No output dependent on input pin "plainText[66]"
+    Warning (15610): No output dependent on input pin "plainText[67]"
+    Warning (15610): No output dependent on input pin "plainText[68]"
+    Warning (15610): No output dependent on input pin "plainText[69]"
+    Warning (15610): No output dependent on input pin "plainText[70]"
+    Warning (15610): No output dependent on input pin "plainText[71]"
+    Warning (15610): No output dependent on input pin "plainText[72]"
+    Warning (15610): No output dependent on input pin "plainText[73]"
+    Warning (15610): No output dependent on input pin "plainText[74]"
+    Warning (15610): No output dependent on input pin "plainText[75]"
+    Warning (15610): No output dependent on input pin "plainText[76]"
+    Warning (15610): No output dependent on input pin "plainText[77]"
+    Warning (15610): No output dependent on input pin "plainText[78]"
+    Warning (15610): No output dependent on input pin "plainText[79]"
+    Warning (15610): No output dependent on input pin "plainText[80]"
+    Warning (15610): No output dependent on input pin "plainText[81]"
+    Warning (15610): No output dependent on input pin "plainText[82]"
+    Warning (15610): No output dependent on input pin "plainText[83]"
+    Warning (15610): No output dependent on input pin "plainText[84]"
+    Warning (15610): No output dependent on input pin "plainText[85]"
+    Warning (15610): No output dependent on input pin "plainText[86]"
+    Warning (15610): No output dependent on input pin "plainText[87]"
+    Warning (15610): No output dependent on input pin "plainText[88]"
+    Warning (15610): No output dependent on input pin "plainText[89]"
+    Warning (15610): No output dependent on input pin "plainText[90]"
+    Warning (15610): No output dependent on input pin "plainText[91]"
+    Warning (15610): No output dependent on input pin "plainText[92]"
+    Warning (15610): No output dependent on input pin "plainText[93]"
+    Warning (15610): No output dependent on input pin "plainText[94]"
+    Warning (15610): No output dependent on input pin "plainText[95]"
+    Warning (15610): No output dependent on input pin "plainText[96]"
+    Warning (15610): No output dependent on input pin "plainText[97]"
+    Warning (15610): No output dependent on input pin "plainText[98]"
+    Warning (15610): No output dependent on input pin "plainText[99]"
+    Warning (15610): No output dependent on input pin "plainText[100]"
+    Warning (15610): No output dependent on input pin "plainText[101]"
+    Warning (15610): No output dependent on input pin "plainText[102]"
+    Warning (15610): No output dependent on input pin "plainText[103]"
+    Warning (15610): No output dependent on input pin "plainText[104]"
+    Warning (15610): No output dependent on input pin "plainText[105]"
+    Warning (15610): No output dependent on input pin "plainText[106]"
+    Warning (15610): No output dependent on input pin "plainText[107]"
+    Warning (15610): No output dependent on input pin "plainText[108]"
+    Warning (15610): No output dependent on input pin "plainText[109]"
+    Warning (15610): No output dependent on input pin "plainText[110]"
+    Warning (15610): No output dependent on input pin "plainText[111]"
+    Warning (15610): No output dependent on input pin "plainText[112]"
+    Warning (15610): No output dependent on input pin "plainText[113]"
+    Warning (15610): No output dependent on input pin "plainText[114]"
+    Warning (15610): No output dependent on input pin "plainText[115]"
+    Warning (15610): No output dependent on input pin "plainText[116]"
+    Warning (15610): No output dependent on input pin "plainText[117]"
+    Warning (15610): No output dependent on input pin "plainText[118]"
+    Warning (15610): No output dependent on input pin "plainText[119]"
+    Warning (15610): No output dependent on input pin "plainText[120]"
+    Warning (15610): No output dependent on input pin "plainText[121]"
+    Warning (15610): No output dependent on input pin "plainText[122]"
+    Warning (15610): No output dependent on input pin "plainText[123]"
+    Warning (15610): No output dependent on input pin "plainText[124]"
+    Warning (15610): No output dependent on input pin "plainText[125]"
+    Warning (15610): No output dependent on input pin "plainText[126]"
+    Warning (15610): No output dependent on input pin "plainText[127]"
+    Warning (15610): No output dependent on input pin "keyIni[0]"
+    Warning (15610): No output dependent on input pin "keyIni[1]"
+    Warning (15610): No output dependent on input pin "keyIni[2]"
+    Warning (15610): No output dependent on input pin "keyIni[3]"
+    Warning (15610): No output dependent on input pin "keyIni[4]"
+    Warning (15610): No output dependent on input pin "keyIni[5]"
+    Warning (15610): No output dependent on input pin "keyIni[6]"
+    Warning (15610): No output dependent on input pin "keyIni[7]"
+    Warning (15610): No output dependent on input pin "keyIni[8]"
+    Warning (15610): No output dependent on input pin "keyIni[9]"
+    Warning (15610): No output dependent on input pin "keyIni[10]"
+    Warning (15610): No output dependent on input pin "keyIni[11]"
+    Warning (15610): No output dependent on input pin "keyIni[12]"
+    Warning (15610): No output dependent on input pin "keyIni[13]"
+    Warning (15610): No output dependent on input pin "keyIni[14]"
+    Warning (15610): No output dependent on input pin "keyIni[15]"
+    Warning (15610): No output dependent on input pin "keyIni[16]"
+    Warning (15610): No output dependent on input pin "keyIni[17]"
+    Warning (15610): No output dependent on input pin "keyIni[18]"
+    Warning (15610): No output dependent on input pin "keyIni[19]"
+    Warning (15610): No output dependent on input pin "keyIni[20]"
+    Warning (15610): No output dependent on input pin "keyIni[21]"
+    Warning (15610): No output dependent on input pin "keyIni[22]"
+    Warning (15610): No output dependent on input pin "keyIni[23]"
+    Warning (15610): No output dependent on input pin "keyIni[24]"
+    Warning (15610): No output dependent on input pin "keyIni[25]"
+    Warning (15610): No output dependent on input pin "keyIni[26]"
+    Warning (15610): No output dependent on input pin "keyIni[27]"
+    Warning (15610): No output dependent on input pin "keyIni[28]"
+    Warning (15610): No output dependent on input pin "keyIni[29]"
+    Warning (15610): No output dependent on input pin "keyIni[30]"
+    Warning (15610): No output dependent on input pin "keyIni[31]"
+    Warning (15610): No output dependent on input pin "keyIni[32]"
+    Warning (15610): No output dependent on input pin "keyIni[33]"
+    Warning (15610): No output dependent on input pin "keyIni[34]"
+    Warning (15610): No output dependent on input pin "keyIni[35]"
+    Warning (15610): No output dependent on input pin "keyIni[36]"
+    Warning (15610): No output dependent on input pin "keyIni[37]"
+    Warning (15610): No output dependent on input pin "keyIni[38]"
+    Warning (15610): No output dependent on input pin "keyIni[39]"
+    Warning (15610): No output dependent on input pin "keyIni[40]"
+    Warning (15610): No output dependent on input pin "keyIni[41]"
+    Warning (15610): No output dependent on input pin "keyIni[42]"
+    Warning (15610): No output dependent on input pin "keyIni[43]"
+    Warning (15610): No output dependent on input pin "keyIni[44]"
+    Warning (15610): No output dependent on input pin "keyIni[45]"
+    Warning (15610): No output dependent on input pin "keyIni[46]"
+    Warning (15610): No output dependent on input pin "keyIni[47]"
+    Warning (15610): No output dependent on input pin "keyIni[48]"
+    Warning (15610): No output dependent on input pin "keyIni[49]"
+    Warning (15610): No output dependent on input pin "keyIni[50]"
+    Warning (15610): No output dependent on input pin "keyIni[51]"
+    Warning (15610): No output dependent on input pin "keyIni[52]"
+    Warning (15610): No output dependent on input pin "keyIni[53]"
+    Warning (15610): No output dependent on input pin "keyIni[54]"
+    Warning (15610): No output dependent on input pin "keyIni[55]"
+    Warning (15610): No output dependent on input pin "keyIni[56]"
+    Warning (15610): No output dependent on input pin "keyIni[57]"
+    Warning (15610): No output dependent on input pin "keyIni[58]"
+    Warning (15610): No output dependent on input pin "keyIni[59]"
+    Warning (15610): No output dependent on input pin "keyIni[60]"
+    Warning (15610): No output dependent on input pin "keyIni[61]"
+    Warning (15610): No output dependent on input pin "keyIni[62]"
+    Warning (15610): No output dependent on input pin "keyIni[63]"
+    Warning (15610): No output dependent on input pin "keyIni[64]"
+    Warning (15610): No output dependent on input pin "keyIni[65]"
+    Warning (15610): No output dependent on input pin "keyIni[66]"
+    Warning (15610): No output dependent on input pin "keyIni[67]"
+    Warning (15610): No output dependent on input pin "keyIni[68]"
+    Warning (15610): No output dependent on input pin "keyIni[69]"
+    Warning (15610): No output dependent on input pin "keyIni[70]"
+    Warning (15610): No output dependent on input pin "keyIni[71]"
+    Warning (15610): No output dependent on input pin "keyIni[72]"
+    Warning (15610): No output dependent on input pin "keyIni[73]"
+    Warning (15610): No output dependent on input pin "keyIni[74]"
+    Warning (15610): No output dependent on input pin "keyIni[75]"
+    Warning (15610): No output dependent on input pin "keyIni[76]"
+    Warning (15610): No output dependent on input pin "keyIni[77]"
+    Warning (15610): No output dependent on input pin "keyIni[78]"
+    Warning (15610): No output dependent on input pin "keyIni[79]"
+    Warning (15610): No output dependent on input pin "keyIni[80]"
+    Warning (15610): No output dependent on input pin "keyIni[81]"
+    Warning (15610): No output dependent on input pin "keyIni[82]"
+    Warning (15610): No output dependent on input pin "keyIni[83]"
+    Warning (15610): No output dependent on input pin "keyIni[84]"
+    Warning (15610): No output dependent on input pin "keyIni[85]"
+    Warning (15610): No output dependent on input pin "keyIni[86]"
+    Warning (15610): No output dependent on input pin "keyIni[87]"
+    Warning (15610): No output dependent on input pin "keyIni[88]"
+    Warning (15610): No output dependent on input pin "keyIni[89]"
+    Warning (15610): No output dependent on input pin "keyIni[90]"
+    Warning (15610): No output dependent on input pin "keyIni[91]"
+    Warning (15610): No output dependent on input pin "keyIni[92]"
+    Warning (15610): No output dependent on input pin "keyIni[93]"
+    Warning (15610): No output dependent on input pin "keyIni[94]"
+    Warning (15610): No output dependent on input pin "keyIni[95]"
+    Warning (15610): No output dependent on input pin "keyIni[96]"
+    Warning (15610): No output dependent on input pin "keyIni[97]"
+    Warning (15610): No output dependent on input pin "keyIni[98]"
+    Warning (15610): No output dependent on input pin "keyIni[99]"
+    Warning (15610): No output dependent on input pin "keyIni[100]"
+    Warning (15610): No output dependent on input pin "keyIni[101]"
+    Warning (15610): No output dependent on input pin "keyIni[102]"
+    Warning (15610): No output dependent on input pin "keyIni[103]"
+    Warning (15610): No output dependent on input pin "keyIni[104]"
+    Warning (15610): No output dependent on input pin "keyIni[105]"
+    Warning (15610): No output dependent on input pin "keyIni[106]"
+    Warning (15610): No output dependent on input pin "keyIni[107]"
+    Warning (15610): No output dependent on input pin "keyIni[108]"
+    Warning (15610): No output dependent on input pin "keyIni[109]"
+    Warning (15610): No output dependent on input pin "keyIni[110]"
+    Warning (15610): No output dependent on input pin "keyIni[111]"
+    Warning (15610): No output dependent on input pin "keyIni[112]"
+    Warning (15610): No output dependent on input pin "keyIni[113]"
+    Warning (15610): No output dependent on input pin "keyIni[114]"
+    Warning (15610): No output dependent on input pin "keyIni[115]"
+    Warning (15610): No output dependent on input pin "keyIni[116]"
+    Warning (15610): No output dependent on input pin "keyIni[117]"
+    Warning (15610): No output dependent on input pin "keyIni[118]"
+    Warning (15610): No output dependent on input pin "keyIni[119]"
+    Warning (15610): No output dependent on input pin "keyIni[120]"
+    Warning (15610): No output dependent on input pin "keyIni[121]"
+    Warning (15610): No output dependent on input pin "keyIni[122]"
+    Warning (15610): No output dependent on input pin "keyIni[123]"
+    Warning (15610): No output dependent on input pin "keyIni[124]"
+    Warning (15610): No output dependent on input pin "keyIni[125]"
+    Warning (15610): No output dependent on input pin "keyIni[126]"
+    Warning (15610): No output dependent on input pin "keyIni[127]"
+Info (21057): Implemented 385 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 257 input pins
+    Info (21059): Implemented 128 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 392 warnings
+    Info: Peak virtual memory: 4620 megabytes
+    Info: Processing ended: Fri Sep 13 02:45:06 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
+
+

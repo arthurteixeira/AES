@@ -1,0 +1,41 @@
+-- Quartus II VHDL Template
+-- Signed Adder
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity aes is
+
+	generic
+	(
+		DATA_WIDTH : natural := 128
+	);
+
+	port 
+	(
+		clk            : std_logic;
+		plainText	   : in std_logic_vector((DATA_WIDTH-1) downto 0);
+		keyIni     	   : in std_logic_vector((DATA_WIDTH-1) downto 0);
+		textoCifrado   : out std_logic_vector((DATA_WIDTH-1) downto 0)
+	);
+
+end entity;
+
+architecture rtl of aes is
+
+signal result, reg_plainText, reg_keyIni : std_logic_vector((DATA_WIDTH-1) downto 0);
+
+begin
+	
+	result <= reg_plainText xor reg_keyIni;
+
+	process(clk)
+	begin
+		if(rising_edge(clk))
+			reg_plainText <= plainText;
+			reg_keyIni <= keyIni;
+		end if
+	end process;
+ 
+end rtl;

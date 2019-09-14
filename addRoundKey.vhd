@@ -1,0 +1,39 @@
+-- Quartus II VHDL Template
+-- Signed Adder
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity addRoundKey is
+
+	generic
+	(
+		DATA_WIDTH : natural := 128
+	);
+
+	port 
+	(
+		clk                    : std_logic;
+		plainText	           : in std_logic_vector((DATA_WIDTH-1) downto 0);
+		keyIni            	  : in std_logic_vector((DATA_WIDTH-1) downto 0);
+		outAddRoundKey         : out std_logic_vector((DATA_WIDTH-1) downto 0)
+	);
+
+end entity;
+
+architecture rtl of addRoundKey is
+
+signal reg_f, reg_plainText, reg_keyIni : std_logic_vector((DATA_WIDTH-1) downto 0);
+
+begin
+	process(clk)
+	begin
+		if(rising_edge(clk)) then
+			reg_plainText <= plainText;
+			reg_keyIni <= keyIni;
+			outAddRoundKey <= reg_f;
+		end if;
+	end process;
+	reg_f <= reg_plainText xor reg_keyIni;
+end rtl;
