@@ -16,13 +16,15 @@ entity aes is
 		clock                  : std_logic;
 		plainText	           : in std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
 		keyIni     	           : in std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
-		outAddRoundKey         : out std_logic_vector((DATA_WIDTH_TOP-1) downto 0)
+		outAddRoundKey         : out std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
+		theText	    : in std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
+		outSubBytes  : out std_logic_vector((DATA_WIDTH_TOP-1) downto 0)
 	);
 end entity;
 
 architecture rtl of aes is
 
-signal plaintText_sg, keyIni_sg, outAddRoundKey_sg : std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
+signal plaintText_sg, keyIni_sg, outAddRoundKey_sg, outSubBytes_sg : std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
 
 component addRoundKey is
 	generic(
@@ -37,7 +39,22 @@ component addRoundKey is
 	);
 end component;
 
+component subbytes is
+	generic
+	(
+		DATA_WIDTH : natural := 128
+	);
+
+	port 
+	(
+		clk          : std_logic;
+		theText	    : in std_logic_vector((DATA_WIDTH-1) downto 0);
+		outSubBytes  : out std_logic_vector((DATA_WIDTH-1) downto 0)
+	);
+end component;
+
 begin
+
 
 ARK: addRoundKey
 		generic map (DATA_WIDTH => DATA_WIDTH_TOP)
@@ -48,4 +65,11 @@ ARK: addRoundKey
 			outAddRoundKey => outAddRoundKey_sg
 		);
 
+SB: subbytes
+		generic map (DATA_WIDTH => DATA_WIDTH_TOP)
+		port map (
+			clk => clock,
+			theText => outAddRoundKey_sg,
+			outSubBytes => outSubBytes_sg
+		);
 end rtl;

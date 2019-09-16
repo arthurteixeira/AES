@@ -1,5 +1,5 @@
 Analysis & Synthesis report for aes
-Fri Sep 13 02:45:06 2019
+Sun Sep 15 23:57:24 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -16,9 +16,10 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
   8. General Register Statistics
   9. Parameter Settings for User Entity Instance: Top-level Entity: |aes
  10. Parameter Settings for User Entity Instance: addRoundKey:ARK
- 11. Port Connectivity Checks: "addRoundKey:ARK"
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+ 11. Parameter Settings for User Entity Instance: subBytes:SB
+ 12. Port Connectivity Checks: "subBytes:SB"
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -44,7 +45,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Sep 13 02:45:06 2019      ;
+; Analysis & Synthesis Status        ; Successful - Sun Sep 15 23:57:24 2019      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; aes                                        ;
 ; Top-level Entity Name              ; aes                                        ;
@@ -53,7 +54,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 0                                          ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 385                                        ;
+; Total pins                         ; 641                                        ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -159,14 +160,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                    ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                             ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
-; aes.vhd                          ; yes             ; User VHDL File  ; C:/Users/Arthur/Documents/designs/tryAES/aes.vhd         ;         ;
-; addRoundKey.vhd                  ; yes             ; User VHDL File  ; C:/Users/Arthur/Documents/designs/tryAES/addRoundKey.vhd ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                 ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                          ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
+; aes.vhd                          ; yes             ; User VHDL File  ; C:/Users/Arthur/Documents/designs/AES/aes.vhd         ;         ;
+; addRoundKey.vhd                  ; yes             ; User VHDL File  ; C:/Users/Arthur/Documents/designs/AES/addRoundKey.vhd ;         ;
+; sbox.vhd                         ; yes             ; User VHDL File  ; C:/Users/Arthur/Documents/designs/AES/sbox.vhd        ;         ;
+; subbytes.vhd                     ; yes             ; User VHDL File  ; C:/Users/Arthur/Documents/designs/AES/subbytes.vhd    ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -189,11 +192,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 385   ;
+; I/O pins                                    ; 641   ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clock ;
 ; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 385   ;
+; Total fan-out                               ; 641   ;
 ; Average fan-out                             ; 0.50  ;
 +---------------------------------------------+-------+
 
@@ -203,7 +206,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |aes                       ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 385  ; 0            ; |aes                ;              ;
+; |aes                       ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 641  ; 0            ; |aes                ;              ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -243,13 +246,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "addRoundKey:ARK"                                                                              ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port           ; Type   ; Severity ; Details                                                                             ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; outaddroundkey ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: subBytes:SB ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; data_width     ; 128   ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "subBytes:SB"                                                                               ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; outsubbytes ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -267,7 +280,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Fri Sep 13 02:45:05 2019
+    Info: Processing started: Sun Sep 15 23:57:22 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aes -c aes
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file aes.vhd
@@ -276,12 +289,21 @@ Info (12021): Found 2 design units, including 1 entities, in source file aes.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file addroundkey.vhd
     Info (12022): Found design unit 1: addRoundKey-rtl
     Info (12023): Found entity 1: addRoundKey
+Info (12021): Found 2 design units, including 1 entities, in source file sbox.vhd
+    Info (12022): Found design unit 1: sbox-Behavioral
+    Info (12023): Found entity 1: sbox
+Info (12021): Found 2 design units, including 1 entities, in source file subbytes.vhd
+    Info (12022): Found design unit 1: subBytes-rtl
+    Info (12023): Found entity 1: subBytes
 Info (12127): Elaborating entity "aes" for the top level hierarchy
 Warning (10541): VHDL Signal Declaration warning at aes.vhd(19): used implicit default value for signal "outAddRoundKey" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at aes.vhd(25): used implicit default value for signal "plaintText_sg" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at aes.vhd(25): used implicit default value for signal "keyIni_sg" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10036): Verilog HDL or VHDL warning at aes.vhd(25): object "outAddRoundKey_sg" assigned a value but never read
+Warning (10541): VHDL Signal Declaration warning at aes.vhd(21): used implicit default value for signal "outSubBytes" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at aes.vhd(27): used implicit default value for signal "plaintText_sg" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at aes.vhd(27): used implicit default value for signal "keyIni_sg" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at aes.vhd(27): object "outSubBytes_sg" assigned a value but never read
 Info (12128): Elaborating entity "addRoundKey" for hierarchy "addRoundKey:ARK"
+Info (12128): Elaborating entity "subBytes" for hierarchy "subBytes:SB"
+Info (12128): Elaborating entity "sbox" for hierarchy "subBytes:SB|sbox:sub1"
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "outAddRoundKey[0]" is stuck at GND
     Warning (13410): Pin "outAddRoundKey[1]" is stuck at GND
@@ -411,9 +433,137 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "outAddRoundKey[125]" is stuck at GND
     Warning (13410): Pin "outAddRoundKey[126]" is stuck at GND
     Warning (13410): Pin "outAddRoundKey[127]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[0]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[1]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[2]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[3]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[4]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[5]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[6]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[7]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[8]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[9]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[10]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[11]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[12]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[13]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[14]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[15]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[16]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[17]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[18]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[19]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[20]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[21]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[22]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[23]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[24]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[25]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[26]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[27]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[28]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[29]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[30]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[31]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[32]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[33]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[34]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[35]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[36]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[37]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[38]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[39]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[40]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[41]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[42]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[43]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[44]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[45]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[46]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[47]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[48]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[49]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[50]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[51]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[52]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[53]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[54]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[55]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[56]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[57]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[58]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[59]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[60]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[61]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[62]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[63]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[64]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[65]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[66]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[67]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[68]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[69]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[70]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[71]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[72]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[73]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[74]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[75]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[76]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[77]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[78]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[79]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[80]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[81]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[82]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[83]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[84]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[85]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[86]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[87]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[88]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[89]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[90]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[91]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[92]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[93]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[94]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[95]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[96]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[97]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[98]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[99]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[100]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[101]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[102]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[103]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[104]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[105]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[106]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[107]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[108]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[109]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[110]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[111]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[112]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[113]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[114]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[115]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[116]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[117]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[118]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[119]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[120]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[121]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[122]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[123]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[124]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[125]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[126]" is stuck at GND
+    Warning (13410): Pin "outSubBytes[127]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 257 input pin(s) that do not drive logic
+Warning (21074): Design contains 385 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "clock"
     Warning (15610): No output dependent on input pin "plainText[0]"
     Warning (15610): No output dependent on input pin "plainText[1]"
@@ -671,13 +821,141 @@ Warning (21074): Design contains 257 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "keyIni[125]"
     Warning (15610): No output dependent on input pin "keyIni[126]"
     Warning (15610): No output dependent on input pin "keyIni[127]"
-Info (21057): Implemented 385 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 257 input pins
-    Info (21059): Implemented 128 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 392 warnings
-    Info: Peak virtual memory: 4620 megabytes
-    Info: Processing ended: Fri Sep 13 02:45:06 2019
-    Info: Elapsed time: 00:00:01
+    Warning (15610): No output dependent on input pin "theText[0]"
+    Warning (15610): No output dependent on input pin "theText[1]"
+    Warning (15610): No output dependent on input pin "theText[2]"
+    Warning (15610): No output dependent on input pin "theText[3]"
+    Warning (15610): No output dependent on input pin "theText[4]"
+    Warning (15610): No output dependent on input pin "theText[5]"
+    Warning (15610): No output dependent on input pin "theText[6]"
+    Warning (15610): No output dependent on input pin "theText[7]"
+    Warning (15610): No output dependent on input pin "theText[8]"
+    Warning (15610): No output dependent on input pin "theText[9]"
+    Warning (15610): No output dependent on input pin "theText[10]"
+    Warning (15610): No output dependent on input pin "theText[11]"
+    Warning (15610): No output dependent on input pin "theText[12]"
+    Warning (15610): No output dependent on input pin "theText[13]"
+    Warning (15610): No output dependent on input pin "theText[14]"
+    Warning (15610): No output dependent on input pin "theText[15]"
+    Warning (15610): No output dependent on input pin "theText[16]"
+    Warning (15610): No output dependent on input pin "theText[17]"
+    Warning (15610): No output dependent on input pin "theText[18]"
+    Warning (15610): No output dependent on input pin "theText[19]"
+    Warning (15610): No output dependent on input pin "theText[20]"
+    Warning (15610): No output dependent on input pin "theText[21]"
+    Warning (15610): No output dependent on input pin "theText[22]"
+    Warning (15610): No output dependent on input pin "theText[23]"
+    Warning (15610): No output dependent on input pin "theText[24]"
+    Warning (15610): No output dependent on input pin "theText[25]"
+    Warning (15610): No output dependent on input pin "theText[26]"
+    Warning (15610): No output dependent on input pin "theText[27]"
+    Warning (15610): No output dependent on input pin "theText[28]"
+    Warning (15610): No output dependent on input pin "theText[29]"
+    Warning (15610): No output dependent on input pin "theText[30]"
+    Warning (15610): No output dependent on input pin "theText[31]"
+    Warning (15610): No output dependent on input pin "theText[32]"
+    Warning (15610): No output dependent on input pin "theText[33]"
+    Warning (15610): No output dependent on input pin "theText[34]"
+    Warning (15610): No output dependent on input pin "theText[35]"
+    Warning (15610): No output dependent on input pin "theText[36]"
+    Warning (15610): No output dependent on input pin "theText[37]"
+    Warning (15610): No output dependent on input pin "theText[38]"
+    Warning (15610): No output dependent on input pin "theText[39]"
+    Warning (15610): No output dependent on input pin "theText[40]"
+    Warning (15610): No output dependent on input pin "theText[41]"
+    Warning (15610): No output dependent on input pin "theText[42]"
+    Warning (15610): No output dependent on input pin "theText[43]"
+    Warning (15610): No output dependent on input pin "theText[44]"
+    Warning (15610): No output dependent on input pin "theText[45]"
+    Warning (15610): No output dependent on input pin "theText[46]"
+    Warning (15610): No output dependent on input pin "theText[47]"
+    Warning (15610): No output dependent on input pin "theText[48]"
+    Warning (15610): No output dependent on input pin "theText[49]"
+    Warning (15610): No output dependent on input pin "theText[50]"
+    Warning (15610): No output dependent on input pin "theText[51]"
+    Warning (15610): No output dependent on input pin "theText[52]"
+    Warning (15610): No output dependent on input pin "theText[53]"
+    Warning (15610): No output dependent on input pin "theText[54]"
+    Warning (15610): No output dependent on input pin "theText[55]"
+    Warning (15610): No output dependent on input pin "theText[56]"
+    Warning (15610): No output dependent on input pin "theText[57]"
+    Warning (15610): No output dependent on input pin "theText[58]"
+    Warning (15610): No output dependent on input pin "theText[59]"
+    Warning (15610): No output dependent on input pin "theText[60]"
+    Warning (15610): No output dependent on input pin "theText[61]"
+    Warning (15610): No output dependent on input pin "theText[62]"
+    Warning (15610): No output dependent on input pin "theText[63]"
+    Warning (15610): No output dependent on input pin "theText[64]"
+    Warning (15610): No output dependent on input pin "theText[65]"
+    Warning (15610): No output dependent on input pin "theText[66]"
+    Warning (15610): No output dependent on input pin "theText[67]"
+    Warning (15610): No output dependent on input pin "theText[68]"
+    Warning (15610): No output dependent on input pin "theText[69]"
+    Warning (15610): No output dependent on input pin "theText[70]"
+    Warning (15610): No output dependent on input pin "theText[71]"
+    Warning (15610): No output dependent on input pin "theText[72]"
+    Warning (15610): No output dependent on input pin "theText[73]"
+    Warning (15610): No output dependent on input pin "theText[74]"
+    Warning (15610): No output dependent on input pin "theText[75]"
+    Warning (15610): No output dependent on input pin "theText[76]"
+    Warning (15610): No output dependent on input pin "theText[77]"
+    Warning (15610): No output dependent on input pin "theText[78]"
+    Warning (15610): No output dependent on input pin "theText[79]"
+    Warning (15610): No output dependent on input pin "theText[80]"
+    Warning (15610): No output dependent on input pin "theText[81]"
+    Warning (15610): No output dependent on input pin "theText[82]"
+    Warning (15610): No output dependent on input pin "theText[83]"
+    Warning (15610): No output dependent on input pin "theText[84]"
+    Warning (15610): No output dependent on input pin "theText[85]"
+    Warning (15610): No output dependent on input pin "theText[86]"
+    Warning (15610): No output dependent on input pin "theText[87]"
+    Warning (15610): No output dependent on input pin "theText[88]"
+    Warning (15610): No output dependent on input pin "theText[89]"
+    Warning (15610): No output dependent on input pin "theText[90]"
+    Warning (15610): No output dependent on input pin "theText[91]"
+    Warning (15610): No output dependent on input pin "theText[92]"
+    Warning (15610): No output dependent on input pin "theText[93]"
+    Warning (15610): No output dependent on input pin "theText[94]"
+    Warning (15610): No output dependent on input pin "theText[95]"
+    Warning (15610): No output dependent on input pin "theText[96]"
+    Warning (15610): No output dependent on input pin "theText[97]"
+    Warning (15610): No output dependent on input pin "theText[98]"
+    Warning (15610): No output dependent on input pin "theText[99]"
+    Warning (15610): No output dependent on input pin "theText[100]"
+    Warning (15610): No output dependent on input pin "theText[101]"
+    Warning (15610): No output dependent on input pin "theText[102]"
+    Warning (15610): No output dependent on input pin "theText[103]"
+    Warning (15610): No output dependent on input pin "theText[104]"
+    Warning (15610): No output dependent on input pin "theText[105]"
+    Warning (15610): No output dependent on input pin "theText[106]"
+    Warning (15610): No output dependent on input pin "theText[107]"
+    Warning (15610): No output dependent on input pin "theText[108]"
+    Warning (15610): No output dependent on input pin "theText[109]"
+    Warning (15610): No output dependent on input pin "theText[110]"
+    Warning (15610): No output dependent on input pin "theText[111]"
+    Warning (15610): No output dependent on input pin "theText[112]"
+    Warning (15610): No output dependent on input pin "theText[113]"
+    Warning (15610): No output dependent on input pin "theText[114]"
+    Warning (15610): No output dependent on input pin "theText[115]"
+    Warning (15610): No output dependent on input pin "theText[116]"
+    Warning (15610): No output dependent on input pin "theText[117]"
+    Warning (15610): No output dependent on input pin "theText[118]"
+    Warning (15610): No output dependent on input pin "theText[119]"
+    Warning (15610): No output dependent on input pin "theText[120]"
+    Warning (15610): No output dependent on input pin "theText[121]"
+    Warning (15610): No output dependent on input pin "theText[122]"
+    Warning (15610): No output dependent on input pin "theText[123]"
+    Warning (15610): No output dependent on input pin "theText[124]"
+    Warning (15610): No output dependent on input pin "theText[125]"
+    Warning (15610): No output dependent on input pin "theText[126]"
+    Warning (15610): No output dependent on input pin "theText[127]"
+Info (21057): Implemented 641 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 385 input pins
+    Info (21059): Implemented 256 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 649 warnings
+    Info: Peak virtual memory: 4636 megabytes
+    Info: Processing ended: Sun Sep 15 23:57:24 2019
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 
