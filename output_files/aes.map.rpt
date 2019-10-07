@@ -1,5 +1,5 @@
 Analysis & Synthesis report for aes
-Sun Sep 15 23:57:24 2019
+Mon Oct 07 16:42:01 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -45,7 +45,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Sep 15 23:57:24 2019      ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 07 16:42:01 2019      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; aes                                        ;
 ; Top-level Entity Name              ; aes                                        ;
@@ -54,7 +54,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 0                                          ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 641                                        ;
+; Total pins                         ; 97                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -192,11 +192,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 641   ;
+; I/O pins                                    ; 97    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clock ;
 ; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 641   ;
+; Total fan-out                               ; 97    ;
 ; Average fan-out                             ; 0.50  ;
 +---------------------------------------------+-------+
 
@@ -206,7 +206,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |aes                       ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 641  ; 0            ; |aes                ;              ;
+; |aes                       ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 97   ; 0            ; |aes                ;              ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -280,7 +280,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Sun Sep 15 23:57:22 2019
+    Info: Processing started: Mon Oct 07 16:41:59 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aes -c aes
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file aes.vhd
@@ -290,13 +290,12 @@ Info (12021): Found 2 design units, including 1 entities, in source file addroun
     Info (12022): Found design unit 1: addRoundKey-rtl
     Info (12023): Found entity 1: addRoundKey
 Info (12021): Found 2 design units, including 1 entities, in source file sbox.vhd
-    Info (12022): Found design unit 1: sbox-Behavioral
+    Info (12022): Found design unit 1: sbox-behaviour
     Info (12023): Found entity 1: sbox
 Info (12021): Found 2 design units, including 1 entities, in source file subbytes.vhd
     Info (12022): Found design unit 1: subBytes-rtl
     Info (12023): Found entity 1: subBytes
 Info (12127): Elaborating entity "aes" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at aes.vhd(19): used implicit default value for signal "outAddRoundKey" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10541): VHDL Signal Declaration warning at aes.vhd(21): used implicit default value for signal "outSubBytes" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10541): VHDL Signal Declaration warning at aes.vhd(27): used implicit default value for signal "plaintText_sg" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10541): VHDL Signal Declaration warning at aes.vhd(27): used implicit default value for signal "keyIni_sg" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
@@ -305,134 +304,6 @@ Info (12128): Elaborating entity "addRoundKey" for hierarchy "addRoundKey:ARK"
 Info (12128): Elaborating entity "subBytes" for hierarchy "subBytes:SB"
 Info (12128): Elaborating entity "sbox" for hierarchy "subBytes:SB|sbox:sub1"
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "outAddRoundKey[0]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[1]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[2]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[3]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[4]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[5]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[6]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[7]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[8]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[9]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[10]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[11]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[12]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[13]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[14]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[15]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[16]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[17]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[18]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[19]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[20]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[21]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[22]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[23]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[24]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[25]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[26]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[27]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[28]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[29]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[30]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[31]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[32]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[33]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[34]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[35]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[36]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[37]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[38]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[39]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[40]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[41]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[42]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[43]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[44]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[45]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[46]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[47]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[48]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[49]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[50]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[51]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[52]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[53]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[54]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[55]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[56]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[57]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[58]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[59]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[60]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[61]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[62]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[63]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[64]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[65]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[66]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[67]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[68]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[69]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[70]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[71]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[72]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[73]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[74]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[75]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[76]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[77]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[78]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[79]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[80]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[81]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[82]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[83]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[84]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[85]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[86]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[87]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[88]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[89]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[90]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[91]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[92]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[93]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[94]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[95]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[96]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[97]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[98]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[99]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[100]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[101]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[102]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[103]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[104]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[105]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[106]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[107]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[108]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[109]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[110]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[111]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[112]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[113]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[114]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[115]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[116]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[117]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[118]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[119]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[120]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[121]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[122]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[123]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[124]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[125]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[126]" is stuck at GND
-    Warning (13410): Pin "outAddRoundKey[127]" is stuck at GND
     Warning (13410): Pin "outSubBytes[0]" is stuck at GND
     Warning (13410): Pin "outSubBytes[1]" is stuck at GND
     Warning (13410): Pin "outSubBytes[2]" is stuck at GND
@@ -465,105 +336,9 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "outSubBytes[29]" is stuck at GND
     Warning (13410): Pin "outSubBytes[30]" is stuck at GND
     Warning (13410): Pin "outSubBytes[31]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[32]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[33]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[34]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[35]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[36]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[37]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[38]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[39]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[40]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[41]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[42]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[43]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[44]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[45]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[46]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[47]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[48]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[49]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[50]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[51]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[52]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[53]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[54]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[55]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[56]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[57]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[58]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[59]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[60]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[61]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[62]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[63]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[64]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[65]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[66]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[67]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[68]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[69]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[70]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[71]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[72]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[73]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[74]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[75]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[76]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[77]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[78]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[79]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[80]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[81]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[82]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[83]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[84]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[85]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[86]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[87]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[88]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[89]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[90]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[91]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[92]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[93]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[94]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[95]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[96]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[97]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[98]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[99]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[100]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[101]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[102]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[103]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[104]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[105]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[106]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[107]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[108]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[109]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[110]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[111]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[112]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[113]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[114]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[115]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[116]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[117]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[118]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[119]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[120]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[121]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[122]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[123]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[124]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[125]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[126]" is stuck at GND
-    Warning (13410): Pin "outSubBytes[127]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 385 input pin(s) that do not drive logic
+Warning (21074): Design contains 65 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "clock"
     Warning (15610): No output dependent on input pin "plainText[0]"
     Warning (15610): No output dependent on input pin "plainText[1]"
@@ -597,102 +372,6 @@ Warning (21074): Design contains 385 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "plainText[29]"
     Warning (15610): No output dependent on input pin "plainText[30]"
     Warning (15610): No output dependent on input pin "plainText[31]"
-    Warning (15610): No output dependent on input pin "plainText[32]"
-    Warning (15610): No output dependent on input pin "plainText[33]"
-    Warning (15610): No output dependent on input pin "plainText[34]"
-    Warning (15610): No output dependent on input pin "plainText[35]"
-    Warning (15610): No output dependent on input pin "plainText[36]"
-    Warning (15610): No output dependent on input pin "plainText[37]"
-    Warning (15610): No output dependent on input pin "plainText[38]"
-    Warning (15610): No output dependent on input pin "plainText[39]"
-    Warning (15610): No output dependent on input pin "plainText[40]"
-    Warning (15610): No output dependent on input pin "plainText[41]"
-    Warning (15610): No output dependent on input pin "plainText[42]"
-    Warning (15610): No output dependent on input pin "plainText[43]"
-    Warning (15610): No output dependent on input pin "plainText[44]"
-    Warning (15610): No output dependent on input pin "plainText[45]"
-    Warning (15610): No output dependent on input pin "plainText[46]"
-    Warning (15610): No output dependent on input pin "plainText[47]"
-    Warning (15610): No output dependent on input pin "plainText[48]"
-    Warning (15610): No output dependent on input pin "plainText[49]"
-    Warning (15610): No output dependent on input pin "plainText[50]"
-    Warning (15610): No output dependent on input pin "plainText[51]"
-    Warning (15610): No output dependent on input pin "plainText[52]"
-    Warning (15610): No output dependent on input pin "plainText[53]"
-    Warning (15610): No output dependent on input pin "plainText[54]"
-    Warning (15610): No output dependent on input pin "plainText[55]"
-    Warning (15610): No output dependent on input pin "plainText[56]"
-    Warning (15610): No output dependent on input pin "plainText[57]"
-    Warning (15610): No output dependent on input pin "plainText[58]"
-    Warning (15610): No output dependent on input pin "plainText[59]"
-    Warning (15610): No output dependent on input pin "plainText[60]"
-    Warning (15610): No output dependent on input pin "plainText[61]"
-    Warning (15610): No output dependent on input pin "plainText[62]"
-    Warning (15610): No output dependent on input pin "plainText[63]"
-    Warning (15610): No output dependent on input pin "plainText[64]"
-    Warning (15610): No output dependent on input pin "plainText[65]"
-    Warning (15610): No output dependent on input pin "plainText[66]"
-    Warning (15610): No output dependent on input pin "plainText[67]"
-    Warning (15610): No output dependent on input pin "plainText[68]"
-    Warning (15610): No output dependent on input pin "plainText[69]"
-    Warning (15610): No output dependent on input pin "plainText[70]"
-    Warning (15610): No output dependent on input pin "plainText[71]"
-    Warning (15610): No output dependent on input pin "plainText[72]"
-    Warning (15610): No output dependent on input pin "plainText[73]"
-    Warning (15610): No output dependent on input pin "plainText[74]"
-    Warning (15610): No output dependent on input pin "plainText[75]"
-    Warning (15610): No output dependent on input pin "plainText[76]"
-    Warning (15610): No output dependent on input pin "plainText[77]"
-    Warning (15610): No output dependent on input pin "plainText[78]"
-    Warning (15610): No output dependent on input pin "plainText[79]"
-    Warning (15610): No output dependent on input pin "plainText[80]"
-    Warning (15610): No output dependent on input pin "plainText[81]"
-    Warning (15610): No output dependent on input pin "plainText[82]"
-    Warning (15610): No output dependent on input pin "plainText[83]"
-    Warning (15610): No output dependent on input pin "plainText[84]"
-    Warning (15610): No output dependent on input pin "plainText[85]"
-    Warning (15610): No output dependent on input pin "plainText[86]"
-    Warning (15610): No output dependent on input pin "plainText[87]"
-    Warning (15610): No output dependent on input pin "plainText[88]"
-    Warning (15610): No output dependent on input pin "plainText[89]"
-    Warning (15610): No output dependent on input pin "plainText[90]"
-    Warning (15610): No output dependent on input pin "plainText[91]"
-    Warning (15610): No output dependent on input pin "plainText[92]"
-    Warning (15610): No output dependent on input pin "plainText[93]"
-    Warning (15610): No output dependent on input pin "plainText[94]"
-    Warning (15610): No output dependent on input pin "plainText[95]"
-    Warning (15610): No output dependent on input pin "plainText[96]"
-    Warning (15610): No output dependent on input pin "plainText[97]"
-    Warning (15610): No output dependent on input pin "plainText[98]"
-    Warning (15610): No output dependent on input pin "plainText[99]"
-    Warning (15610): No output dependent on input pin "plainText[100]"
-    Warning (15610): No output dependent on input pin "plainText[101]"
-    Warning (15610): No output dependent on input pin "plainText[102]"
-    Warning (15610): No output dependent on input pin "plainText[103]"
-    Warning (15610): No output dependent on input pin "plainText[104]"
-    Warning (15610): No output dependent on input pin "plainText[105]"
-    Warning (15610): No output dependent on input pin "plainText[106]"
-    Warning (15610): No output dependent on input pin "plainText[107]"
-    Warning (15610): No output dependent on input pin "plainText[108]"
-    Warning (15610): No output dependent on input pin "plainText[109]"
-    Warning (15610): No output dependent on input pin "plainText[110]"
-    Warning (15610): No output dependent on input pin "plainText[111]"
-    Warning (15610): No output dependent on input pin "plainText[112]"
-    Warning (15610): No output dependent on input pin "plainText[113]"
-    Warning (15610): No output dependent on input pin "plainText[114]"
-    Warning (15610): No output dependent on input pin "plainText[115]"
-    Warning (15610): No output dependent on input pin "plainText[116]"
-    Warning (15610): No output dependent on input pin "plainText[117]"
-    Warning (15610): No output dependent on input pin "plainText[118]"
-    Warning (15610): No output dependent on input pin "plainText[119]"
-    Warning (15610): No output dependent on input pin "plainText[120]"
-    Warning (15610): No output dependent on input pin "plainText[121]"
-    Warning (15610): No output dependent on input pin "plainText[122]"
-    Warning (15610): No output dependent on input pin "plainText[123]"
-    Warning (15610): No output dependent on input pin "plainText[124]"
-    Warning (15610): No output dependent on input pin "plainText[125]"
-    Warning (15610): No output dependent on input pin "plainText[126]"
-    Warning (15610): No output dependent on input pin "plainText[127]"
     Warning (15610): No output dependent on input pin "keyIni[0]"
     Warning (15610): No output dependent on input pin "keyIni[1]"
     Warning (15610): No output dependent on input pin "keyIni[2]"
@@ -725,236 +404,12 @@ Warning (21074): Design contains 385 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "keyIni[29]"
     Warning (15610): No output dependent on input pin "keyIni[30]"
     Warning (15610): No output dependent on input pin "keyIni[31]"
-    Warning (15610): No output dependent on input pin "keyIni[32]"
-    Warning (15610): No output dependent on input pin "keyIni[33]"
-    Warning (15610): No output dependent on input pin "keyIni[34]"
-    Warning (15610): No output dependent on input pin "keyIni[35]"
-    Warning (15610): No output dependent on input pin "keyIni[36]"
-    Warning (15610): No output dependent on input pin "keyIni[37]"
-    Warning (15610): No output dependent on input pin "keyIni[38]"
-    Warning (15610): No output dependent on input pin "keyIni[39]"
-    Warning (15610): No output dependent on input pin "keyIni[40]"
-    Warning (15610): No output dependent on input pin "keyIni[41]"
-    Warning (15610): No output dependent on input pin "keyIni[42]"
-    Warning (15610): No output dependent on input pin "keyIni[43]"
-    Warning (15610): No output dependent on input pin "keyIni[44]"
-    Warning (15610): No output dependent on input pin "keyIni[45]"
-    Warning (15610): No output dependent on input pin "keyIni[46]"
-    Warning (15610): No output dependent on input pin "keyIni[47]"
-    Warning (15610): No output dependent on input pin "keyIni[48]"
-    Warning (15610): No output dependent on input pin "keyIni[49]"
-    Warning (15610): No output dependent on input pin "keyIni[50]"
-    Warning (15610): No output dependent on input pin "keyIni[51]"
-    Warning (15610): No output dependent on input pin "keyIni[52]"
-    Warning (15610): No output dependent on input pin "keyIni[53]"
-    Warning (15610): No output dependent on input pin "keyIni[54]"
-    Warning (15610): No output dependent on input pin "keyIni[55]"
-    Warning (15610): No output dependent on input pin "keyIni[56]"
-    Warning (15610): No output dependent on input pin "keyIni[57]"
-    Warning (15610): No output dependent on input pin "keyIni[58]"
-    Warning (15610): No output dependent on input pin "keyIni[59]"
-    Warning (15610): No output dependent on input pin "keyIni[60]"
-    Warning (15610): No output dependent on input pin "keyIni[61]"
-    Warning (15610): No output dependent on input pin "keyIni[62]"
-    Warning (15610): No output dependent on input pin "keyIni[63]"
-    Warning (15610): No output dependent on input pin "keyIni[64]"
-    Warning (15610): No output dependent on input pin "keyIni[65]"
-    Warning (15610): No output dependent on input pin "keyIni[66]"
-    Warning (15610): No output dependent on input pin "keyIni[67]"
-    Warning (15610): No output dependent on input pin "keyIni[68]"
-    Warning (15610): No output dependent on input pin "keyIni[69]"
-    Warning (15610): No output dependent on input pin "keyIni[70]"
-    Warning (15610): No output dependent on input pin "keyIni[71]"
-    Warning (15610): No output dependent on input pin "keyIni[72]"
-    Warning (15610): No output dependent on input pin "keyIni[73]"
-    Warning (15610): No output dependent on input pin "keyIni[74]"
-    Warning (15610): No output dependent on input pin "keyIni[75]"
-    Warning (15610): No output dependent on input pin "keyIni[76]"
-    Warning (15610): No output dependent on input pin "keyIni[77]"
-    Warning (15610): No output dependent on input pin "keyIni[78]"
-    Warning (15610): No output dependent on input pin "keyIni[79]"
-    Warning (15610): No output dependent on input pin "keyIni[80]"
-    Warning (15610): No output dependent on input pin "keyIni[81]"
-    Warning (15610): No output dependent on input pin "keyIni[82]"
-    Warning (15610): No output dependent on input pin "keyIni[83]"
-    Warning (15610): No output dependent on input pin "keyIni[84]"
-    Warning (15610): No output dependent on input pin "keyIni[85]"
-    Warning (15610): No output dependent on input pin "keyIni[86]"
-    Warning (15610): No output dependent on input pin "keyIni[87]"
-    Warning (15610): No output dependent on input pin "keyIni[88]"
-    Warning (15610): No output dependent on input pin "keyIni[89]"
-    Warning (15610): No output dependent on input pin "keyIni[90]"
-    Warning (15610): No output dependent on input pin "keyIni[91]"
-    Warning (15610): No output dependent on input pin "keyIni[92]"
-    Warning (15610): No output dependent on input pin "keyIni[93]"
-    Warning (15610): No output dependent on input pin "keyIni[94]"
-    Warning (15610): No output dependent on input pin "keyIni[95]"
-    Warning (15610): No output dependent on input pin "keyIni[96]"
-    Warning (15610): No output dependent on input pin "keyIni[97]"
-    Warning (15610): No output dependent on input pin "keyIni[98]"
-    Warning (15610): No output dependent on input pin "keyIni[99]"
-    Warning (15610): No output dependent on input pin "keyIni[100]"
-    Warning (15610): No output dependent on input pin "keyIni[101]"
-    Warning (15610): No output dependent on input pin "keyIni[102]"
-    Warning (15610): No output dependent on input pin "keyIni[103]"
-    Warning (15610): No output dependent on input pin "keyIni[104]"
-    Warning (15610): No output dependent on input pin "keyIni[105]"
-    Warning (15610): No output dependent on input pin "keyIni[106]"
-    Warning (15610): No output dependent on input pin "keyIni[107]"
-    Warning (15610): No output dependent on input pin "keyIni[108]"
-    Warning (15610): No output dependent on input pin "keyIni[109]"
-    Warning (15610): No output dependent on input pin "keyIni[110]"
-    Warning (15610): No output dependent on input pin "keyIni[111]"
-    Warning (15610): No output dependent on input pin "keyIni[112]"
-    Warning (15610): No output dependent on input pin "keyIni[113]"
-    Warning (15610): No output dependent on input pin "keyIni[114]"
-    Warning (15610): No output dependent on input pin "keyIni[115]"
-    Warning (15610): No output dependent on input pin "keyIni[116]"
-    Warning (15610): No output dependent on input pin "keyIni[117]"
-    Warning (15610): No output dependent on input pin "keyIni[118]"
-    Warning (15610): No output dependent on input pin "keyIni[119]"
-    Warning (15610): No output dependent on input pin "keyIni[120]"
-    Warning (15610): No output dependent on input pin "keyIni[121]"
-    Warning (15610): No output dependent on input pin "keyIni[122]"
-    Warning (15610): No output dependent on input pin "keyIni[123]"
-    Warning (15610): No output dependent on input pin "keyIni[124]"
-    Warning (15610): No output dependent on input pin "keyIni[125]"
-    Warning (15610): No output dependent on input pin "keyIni[126]"
-    Warning (15610): No output dependent on input pin "keyIni[127]"
-    Warning (15610): No output dependent on input pin "theText[0]"
-    Warning (15610): No output dependent on input pin "theText[1]"
-    Warning (15610): No output dependent on input pin "theText[2]"
-    Warning (15610): No output dependent on input pin "theText[3]"
-    Warning (15610): No output dependent on input pin "theText[4]"
-    Warning (15610): No output dependent on input pin "theText[5]"
-    Warning (15610): No output dependent on input pin "theText[6]"
-    Warning (15610): No output dependent on input pin "theText[7]"
-    Warning (15610): No output dependent on input pin "theText[8]"
-    Warning (15610): No output dependent on input pin "theText[9]"
-    Warning (15610): No output dependent on input pin "theText[10]"
-    Warning (15610): No output dependent on input pin "theText[11]"
-    Warning (15610): No output dependent on input pin "theText[12]"
-    Warning (15610): No output dependent on input pin "theText[13]"
-    Warning (15610): No output dependent on input pin "theText[14]"
-    Warning (15610): No output dependent on input pin "theText[15]"
-    Warning (15610): No output dependent on input pin "theText[16]"
-    Warning (15610): No output dependent on input pin "theText[17]"
-    Warning (15610): No output dependent on input pin "theText[18]"
-    Warning (15610): No output dependent on input pin "theText[19]"
-    Warning (15610): No output dependent on input pin "theText[20]"
-    Warning (15610): No output dependent on input pin "theText[21]"
-    Warning (15610): No output dependent on input pin "theText[22]"
-    Warning (15610): No output dependent on input pin "theText[23]"
-    Warning (15610): No output dependent on input pin "theText[24]"
-    Warning (15610): No output dependent on input pin "theText[25]"
-    Warning (15610): No output dependent on input pin "theText[26]"
-    Warning (15610): No output dependent on input pin "theText[27]"
-    Warning (15610): No output dependent on input pin "theText[28]"
-    Warning (15610): No output dependent on input pin "theText[29]"
-    Warning (15610): No output dependent on input pin "theText[30]"
-    Warning (15610): No output dependent on input pin "theText[31]"
-    Warning (15610): No output dependent on input pin "theText[32]"
-    Warning (15610): No output dependent on input pin "theText[33]"
-    Warning (15610): No output dependent on input pin "theText[34]"
-    Warning (15610): No output dependent on input pin "theText[35]"
-    Warning (15610): No output dependent on input pin "theText[36]"
-    Warning (15610): No output dependent on input pin "theText[37]"
-    Warning (15610): No output dependent on input pin "theText[38]"
-    Warning (15610): No output dependent on input pin "theText[39]"
-    Warning (15610): No output dependent on input pin "theText[40]"
-    Warning (15610): No output dependent on input pin "theText[41]"
-    Warning (15610): No output dependent on input pin "theText[42]"
-    Warning (15610): No output dependent on input pin "theText[43]"
-    Warning (15610): No output dependent on input pin "theText[44]"
-    Warning (15610): No output dependent on input pin "theText[45]"
-    Warning (15610): No output dependent on input pin "theText[46]"
-    Warning (15610): No output dependent on input pin "theText[47]"
-    Warning (15610): No output dependent on input pin "theText[48]"
-    Warning (15610): No output dependent on input pin "theText[49]"
-    Warning (15610): No output dependent on input pin "theText[50]"
-    Warning (15610): No output dependent on input pin "theText[51]"
-    Warning (15610): No output dependent on input pin "theText[52]"
-    Warning (15610): No output dependent on input pin "theText[53]"
-    Warning (15610): No output dependent on input pin "theText[54]"
-    Warning (15610): No output dependent on input pin "theText[55]"
-    Warning (15610): No output dependent on input pin "theText[56]"
-    Warning (15610): No output dependent on input pin "theText[57]"
-    Warning (15610): No output dependent on input pin "theText[58]"
-    Warning (15610): No output dependent on input pin "theText[59]"
-    Warning (15610): No output dependent on input pin "theText[60]"
-    Warning (15610): No output dependent on input pin "theText[61]"
-    Warning (15610): No output dependent on input pin "theText[62]"
-    Warning (15610): No output dependent on input pin "theText[63]"
-    Warning (15610): No output dependent on input pin "theText[64]"
-    Warning (15610): No output dependent on input pin "theText[65]"
-    Warning (15610): No output dependent on input pin "theText[66]"
-    Warning (15610): No output dependent on input pin "theText[67]"
-    Warning (15610): No output dependent on input pin "theText[68]"
-    Warning (15610): No output dependent on input pin "theText[69]"
-    Warning (15610): No output dependent on input pin "theText[70]"
-    Warning (15610): No output dependent on input pin "theText[71]"
-    Warning (15610): No output dependent on input pin "theText[72]"
-    Warning (15610): No output dependent on input pin "theText[73]"
-    Warning (15610): No output dependent on input pin "theText[74]"
-    Warning (15610): No output dependent on input pin "theText[75]"
-    Warning (15610): No output dependent on input pin "theText[76]"
-    Warning (15610): No output dependent on input pin "theText[77]"
-    Warning (15610): No output dependent on input pin "theText[78]"
-    Warning (15610): No output dependent on input pin "theText[79]"
-    Warning (15610): No output dependent on input pin "theText[80]"
-    Warning (15610): No output dependent on input pin "theText[81]"
-    Warning (15610): No output dependent on input pin "theText[82]"
-    Warning (15610): No output dependent on input pin "theText[83]"
-    Warning (15610): No output dependent on input pin "theText[84]"
-    Warning (15610): No output dependent on input pin "theText[85]"
-    Warning (15610): No output dependent on input pin "theText[86]"
-    Warning (15610): No output dependent on input pin "theText[87]"
-    Warning (15610): No output dependent on input pin "theText[88]"
-    Warning (15610): No output dependent on input pin "theText[89]"
-    Warning (15610): No output dependent on input pin "theText[90]"
-    Warning (15610): No output dependent on input pin "theText[91]"
-    Warning (15610): No output dependent on input pin "theText[92]"
-    Warning (15610): No output dependent on input pin "theText[93]"
-    Warning (15610): No output dependent on input pin "theText[94]"
-    Warning (15610): No output dependent on input pin "theText[95]"
-    Warning (15610): No output dependent on input pin "theText[96]"
-    Warning (15610): No output dependent on input pin "theText[97]"
-    Warning (15610): No output dependent on input pin "theText[98]"
-    Warning (15610): No output dependent on input pin "theText[99]"
-    Warning (15610): No output dependent on input pin "theText[100]"
-    Warning (15610): No output dependent on input pin "theText[101]"
-    Warning (15610): No output dependent on input pin "theText[102]"
-    Warning (15610): No output dependent on input pin "theText[103]"
-    Warning (15610): No output dependent on input pin "theText[104]"
-    Warning (15610): No output dependent on input pin "theText[105]"
-    Warning (15610): No output dependent on input pin "theText[106]"
-    Warning (15610): No output dependent on input pin "theText[107]"
-    Warning (15610): No output dependent on input pin "theText[108]"
-    Warning (15610): No output dependent on input pin "theText[109]"
-    Warning (15610): No output dependent on input pin "theText[110]"
-    Warning (15610): No output dependent on input pin "theText[111]"
-    Warning (15610): No output dependent on input pin "theText[112]"
-    Warning (15610): No output dependent on input pin "theText[113]"
-    Warning (15610): No output dependent on input pin "theText[114]"
-    Warning (15610): No output dependent on input pin "theText[115]"
-    Warning (15610): No output dependent on input pin "theText[116]"
-    Warning (15610): No output dependent on input pin "theText[117]"
-    Warning (15610): No output dependent on input pin "theText[118]"
-    Warning (15610): No output dependent on input pin "theText[119]"
-    Warning (15610): No output dependent on input pin "theText[120]"
-    Warning (15610): No output dependent on input pin "theText[121]"
-    Warning (15610): No output dependent on input pin "theText[122]"
-    Warning (15610): No output dependent on input pin "theText[123]"
-    Warning (15610): No output dependent on input pin "theText[124]"
-    Warning (15610): No output dependent on input pin "theText[125]"
-    Warning (15610): No output dependent on input pin "theText[126]"
-    Warning (15610): No output dependent on input pin "theText[127]"
-Info (21057): Implemented 641 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 385 input pins
-    Info (21059): Implemented 256 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 649 warnings
-    Info: Peak virtual memory: 4636 megabytes
-    Info: Processing ended: Sun Sep 15 23:57:24 2019
+Info (21057): Implemented 97 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 65 input pins
+    Info (21059): Implemented 32 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 104 warnings
+    Info: Peak virtual memory: 4647 megabytes
+    Info: Processing ended: Mon Oct 07 16:42:01 2019
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

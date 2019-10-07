@@ -14,11 +14,11 @@ entity aes is
 
 	port(
 		clock                  : std_logic;
-		plainText	           : in std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
-		keyIni     	           : in std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
-		outAddRoundKey         : out std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
-		theText	    : in std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
-		outSubBytes  : out std_logic_vector((DATA_WIDTH_TOP-1) downto 0)
+		--RAM_ADDR               : in std_logic_vector(3 downto 0);
+		--RAM_DATA_OUT           : out std_logic_vector(7 downto 0);
+		plainText	           : in std_logic_vector(31 downto 0);
+		keyIni     	           : in std_logic_vector(31 downto 0);
+		outSubBytes  : out std_logic_vector(31 downto 0)
 	);
 end entity;
 
@@ -54,6 +54,15 @@ component subbytes is
 end component;
 
 begin
+
+--type ramPlainText is array (0 to 15) of std_logic_vector (7 downto 0);
+--signal ram_pt: ramPlainText :=(
+  -- x"32",x"88",x"31",x"e0",
+	--x"43",x"5a",x"31",x"37",
+	--x"f6",x"30",x"98",x"07",
+	--x"a8",x"8d",x"a2",x"34"
+   --); 
+--RAM_DATA_OUT <= RAM(to_integer(unsigned(RAM_ADDR)));
 
 
 ARK: addRoundKey
