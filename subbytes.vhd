@@ -30,8 +30,38 @@ signal outSubBytes_reg : std_logic_vector(DATA_WIDTH-1 downto 0);
 component sbox is
 
 	port(
-		byte : in std_logic_vector(7 downto 0);
-		y : out std_logic_vector(7 downto 0)
+		byte1		      : in 	std_logic_vector(7 downto 0);
+		byte2		      : in 	std_logic_vector(7 downto 0);
+		byte3		      : in 	std_logic_vector(7 downto 0);
+		byte4		      : in 	std_logic_vector(7 downto 0);
+		byte5		      : in 	std_logic_vector(7 downto 0);
+		byte6		      : in 	std_logic_vector(7 downto 0);
+		byte7		      : in 	std_logic_vector(7 downto 0);
+		byte8		      : in 	std_logic_vector(7 downto 0);
+		byte9		      : in 	std_logic_vector(7 downto 0);
+		byte10		   : in 	std_logic_vector(7 downto 0);
+		byte11		   : in 	std_logic_vector(7 downto 0);
+		byte12		   : in 	std_logic_vector(7 downto 0);
+		byte13		   : in 	std_logic_vector(7 downto 0);
+		byte14		   : in 	std_logic_vector(7 downto 0);
+		byte15		   : in 	std_logic_vector(7 downto 0);
+		byte16		   : in 	std_logic_vector(7 downto 0);
+		out1				: out 	std_logic_vector(7 downto 0);	
+		out2				: out 	std_logic_vector(7 downto 0);
+		out3				: out 	std_logic_vector(7 downto 0);
+		out4				: out 	std_logic_vector(7 downto 0);
+		out5				: out 	std_logic_vector(7 downto 0);
+		out6				: out 	std_logic_vector(7 downto 0);
+		out7				: out 	std_logic_vector(7 downto 0);
+		out8				: out 	std_logic_vector(7 downto 0);
+		out9				: out 	std_logic_vector(7 downto 0);
+		out10				: out 	std_logic_vector(7 downto 0);
+		out11				: out 	std_logic_vector(7 downto 0);
+		out12				: out 	std_logic_vector(7 downto 0);
+		out13				: out 	std_logic_vector(7 downto 0);
+		out14				: out 	std_logic_vector(7 downto 0);
+		out15				: out 	std_logic_vector(7 downto 0);
+		out16				: out 	std_logic_vector(7 downto 0)		
 	);
 	
 end component;
@@ -81,83 +111,38 @@ end process;
 
 sub1: sbox
 		port map (
-			byte => v1,
-			y => r1
-		);
-sub2: sbox
-		port map (
-			byte => v2,
-			y => r2
-		);
-sub3: sbox
-		port map (
-			byte => v3,
-			y => r3
-		);
-sub4: sbox
-		port map (
-			byte => v4,
-			y => r4
-		);
-sub5: sbox
-		port map (
-			byte => v5,
-			y => r5
-		);
-sub6: sbox
-		port map (
-			byte => v6,
-			y => r6
-		);
-sub7: sbox
-		port map (
-			byte => v7,
-			y => r7
-		);
-sub8: sbox
-		port map (
-			byte => v8,
-			y => r8
-		);
-sub9: sbox
-		port map (
-			byte => v9,
-			y => r9
-		);
-sub10: sbox
-		port map (
-			byte => v10,
-			y => r10
-		);
-sub11: sbox
-		port map (
-			byte => v11,
-			y => r11
-		);
-sub12: sbox
-		port map (
-			byte => v12,
-			y => r12
-		);
-sub13: sbox
-		port map (
-			byte => v13,
-			y => r13
-		);
-sub14: sbox
-		port map (
-			byte => v14,
-			y => r14
-		);
-sub15: sbox
-		port map (
-			byte => v15,
-			y => r15
-		);
-sub16: sbox
-		port map (
-			byte => v16,
-			y => r16
+			byte1 => v1,
+			byte2 => v2,
+			byte3 => v3,
+			byte4 => v4,
+			byte5 => v5,
+			byte6 => v6,
+			byte7 => v7,
+			byte8 => v8,
+			byte9 => v9,
+			byte10 => v10,
+			byte11 => v11,
+			byte12 => v12,
+			byte13 => v13,
+			byte14 => v14,
+			byte15 => v15,
+			byte16 => v16,
+			out1 => r1,
+			out2 => r2,
+			out3 => r3,
+			out4 => r4,
+			out5 => r5,
+			out6 => r6,
+			out7 => r7,
+			out8 => r8,
+			out9 => r9,
+			out10 => r10,
+			out11 => r11,
+			out12 => r12,
+			out13 => r13,
+			out14 => r14,
+			out15 => r15,
+			out16 => r16
 		);
 
 

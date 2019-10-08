@@ -12,8 +12,38 @@ entity sbox is
 	port(
 		--reset				: in 	std_logic;
 		--clock				: in 	std_logic;
-		byte		   : in 	std_logic_vector(7 downto 0);
-		y				: out 	std_logic_vector(7 downto 0)			
+		byte1		      : in 	std_logic_vector(7 downto 0);
+		byte2		      : in 	std_logic_vector(7 downto 0);
+		byte3		      : in 	std_logic_vector(7 downto 0);
+		byte4		      : in 	std_logic_vector(7 downto 0);
+		byte5		      : in 	std_logic_vector(7 downto 0);
+		byte6		      : in 	std_logic_vector(7 downto 0);
+		byte7		      : in 	std_logic_vector(7 downto 0);
+		byte8		      : in 	std_logic_vector(7 downto 0);
+		byte9		      : in 	std_logic_vector(7 downto 0);
+		byte10		   : in 	std_logic_vector(7 downto 0);
+		byte11		   : in 	std_logic_vector(7 downto 0);
+		byte12		   : in 	std_logic_vector(7 downto 0);
+		byte13		   : in 	std_logic_vector(7 downto 0);
+		byte14		   : in 	std_logic_vector(7 downto 0);
+		byte15		   : in 	std_logic_vector(7 downto 0);
+		byte16		   : in 	std_logic_vector(7 downto 0);
+		out1				: out 	std_logic_vector(7 downto 0);	
+		out2				: out 	std_logic_vector(7 downto 0);
+		out3				: out 	std_logic_vector(7 downto 0);
+		out4				: out 	std_logic_vector(7 downto 0);
+		out5				: out 	std_logic_vector(7 downto 0);
+		out6				: out 	std_logic_vector(7 downto 0);
+		out7				: out 	std_logic_vector(7 downto 0);
+		out8				: out 	std_logic_vector(7 downto 0);
+		out9				: out 	std_logic_vector(7 downto 0);
+		out10				: out 	std_logic_vector(7 downto 0);
+		out11				: out 	std_logic_vector(7 downto 0);
+		out12				: out 	std_logic_vector(7 downto 0);
+		out13				: out 	std_logic_vector(7 downto 0);
+		out14				: out 	std_logic_vector(7 downto 0);
+		out15				: out 	std_logic_vector(7 downto 0);
+		out16				: out 	std_logic_vector(7 downto 0)		
 		);
 end entity;
 			
@@ -291,8 +321,21 @@ begin
 --				lut_rlps_3;
 
 
-
-
-y <= lut_rlps_0 (conv_integer(byte));
+out1 <= lut_rlps_0 (conv_integer(byte1));
+out2 <= lut_rlps_0 (conv_integer(byte2));
+out3 <= lut_rlps_0 (conv_integer(byte3));
+out4 <= lut_rlps_0 (conv_integer(byte4));
+out5 <= lut_rlps_0 (conv_integer(byte5));
+out6 <= lut_rlps_0 (conv_integer(byte6));
+out7 <= lut_rlps_0 (conv_integer(byte7));
+out8 <= lut_rlps_0 (conv_integer(byte8));
+out9 <= lut_rlps_0 (conv_integer(byte9));
+out10 <= lut_rlps_0 (conv_integer(byte10));
+out11 <= lut_rlps_0 (conv_integer(byte11));
+out12 <= lut_rlps_0 (conv_integer(byte12));
+out13 <= lut_rlps_0 (conv_integer(byte13));
+out14 <= lut_rlps_0 (conv_integer(byte14));
+out15 <= lut_rlps_0 (conv_integer(byte15));
+out16 <= lut_rlps_0 (conv_integer(byte16));
 
 end behaviour;
