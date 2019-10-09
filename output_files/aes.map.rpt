@@ -1,5 +1,5 @@
 Analysis & Synthesis report for aes
-Tue Oct 08 15:32:02 2019
+Wed Oct 09 20:37:06 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -17,9 +17,10 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
   9. Parameter Settings for User Entity Instance: Top-level Entity: |aes
  10. Parameter Settings for User Entity Instance: addRoundKey:ARK
  11. Parameter Settings for User Entity Instance: subBytes:SB
- 12. Port Connectivity Checks: "subBytes:SB"
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+ 12. Port Connectivity Checks: "ramText:RT"
+ 13. Port Connectivity Checks: "subBytes:SB"
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -45,7 +46,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Oct 08 15:32:02 2019      ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 09 20:37:06 2019      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; aes                                        ;
 ; Top-level Entity Name              ; aes                                        ;
@@ -54,7 +55,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 0                                          ;
 ;     Dedicated logic registers      ; 0                                          ;
 ; Total registers                    ; 0                                          ;
-; Total pins                         ; 97                                         ;
+; Total pins                         ; 65                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -155,21 +156,22 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 12     ;
+; Number detected on machine ; 4      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                 ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                          ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
-; aes.vhd                          ; yes             ; User VHDL File  ; C:/Users/Arthur/Documents/designs/AES/aes.vhd         ;         ;
-; addRoundKey.vhd                  ; yes             ; User VHDL File  ; C:/Users/Arthur/Documents/designs/AES/addRoundKey.vhd ;         ;
-; sbox.vhd                         ; yes             ; User VHDL File  ; C:/Users/Arthur/Documents/designs/AES/sbox.vhd        ;         ;
-; subbytes.vhd                     ; yes             ; User VHDL File  ; C:/Users/Arthur/Documents/designs/AES/subbytes.vhd    ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                     ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                              ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
+; aes.vhd                          ; yes             ; User VHDL File  ; C:/Users/User/Desktop/quartus/designs/AES/aes.vhd         ;         ;
+; addRoundKey.vhd                  ; yes             ; User VHDL File  ; C:/Users/User/Desktop/quartus/designs/AES/addRoundKey.vhd ;         ;
+; sbox.vhd                         ; yes             ; User VHDL File  ; C:/Users/User/Desktop/quartus/designs/AES/sbox.vhd        ;         ;
+; subbytes.vhd                     ; yes             ; User VHDL File  ; C:/Users/User/Desktop/quartus/designs/AES/subbytes.vhd    ;         ;
+; ramText.vhd                      ; yes             ; User VHDL File  ; C:/Users/User/Desktop/quartus/designs/AES/ramText.vhd     ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -192,11 +194,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;     -- Dedicated logic registers            ; 0     ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 97    ;
+; I/O pins                                    ; 65    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clock ;
 ; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 97    ;
+; Total fan-out                               ; 65    ;
 ; Average fan-out                             ; 0.50  ;
 +---------------------------------------------+-------+
 
@@ -206,7 +208,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |aes                       ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 97   ; 0            ; |aes                ;              ;
+; |aes                       ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 65   ; 0            ; |aes                ;              ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -256,6 +258,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ramText:RT"                                                                                                                                     ;
++----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                                                                      ;
++----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; ram_addr ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "subBytes:SB"                                                                               ;
 +-------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -280,7 +291,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Tue Oct 08 15:32:00 2019
+    Info: Processing started: Wed Oct 09 20:37:03 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aes -c aes
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file aes.vhd
@@ -295,14 +306,35 @@ Info (12021): Found 2 design units, including 1 entities, in source file sbox.vh
 Info (12021): Found 2 design units, including 1 entities, in source file subbytes.vhd
     Info (12022): Found design unit 1: subBytes-rtl
     Info (12023): Found entity 1: subBytes
+Info (12021): Found 2 design units, including 1 entities, in source file ramtext.vhd
+    Info (12022): Found design unit 1: ramText-rtl
+    Info (12023): Found entity 1: ramText
+Warning (10645): VHDL type inferencing warning at ramText.vhd(30): two visible identifiers match "TO_INTEGER" because the actual at position 0 has an ambiguous type - it could be "UNSIGNED" or "SIGNED", assuming "UNSIGNED"
+Warning (10645): VHDL type inferencing warning at ramText.vhd(31): two visible identifiers match "TO_INTEGER" because the actual at position 0 has an ambiguous type - it could be "UNSIGNED" or "SIGNED", assuming "UNSIGNED"
+Warning (10645): VHDL type inferencing warning at ramText.vhd(32): two visible identifiers match "TO_INTEGER" because the actual at position 0 has an ambiguous type - it could be "UNSIGNED" or "SIGNED", assuming "UNSIGNED"
+Warning (10645): VHDL type inferencing warning at ramText.vhd(33): two visible identifiers match "TO_INTEGER" because the actual at position 0 has an ambiguous type - it could be "UNSIGNED" or "SIGNED", assuming "UNSIGNED"
+Warning (10645): VHDL type inferencing warning at ramText.vhd(34): two visible identifiers match "TO_INTEGER" because the actual at position 0 has an ambiguous type - it could be "UNSIGNED" or "SIGNED", assuming "UNSIGNED"
+Warning (10645): VHDL type inferencing warning at ramText.vhd(35): two visible identifiers match "TO_INTEGER" because the actual at position 0 has an ambiguous type - it could be "UNSIGNED" or "SIGNED", assuming "UNSIGNED"
+Warning (10645): VHDL type inferencing warning at ramText.vhd(36): two visible identifiers match "TO_INTEGER" because the actual at position 0 has an ambiguous type - it could be "UNSIGNED" or "SIGNED", assuming "UNSIGNED"
+Warning (10645): VHDL type inferencing warning at ramText.vhd(37): two visible identifiers match "TO_INTEGER" because the actual at position 0 has an ambiguous type - it could be "UNSIGNED" or "SIGNED", assuming "UNSIGNED"
+Warning (10645): VHDL type inferencing warning at ramText.vhd(38): two visible identifiers match "TO_INTEGER" because the actual at position 0 has an ambiguous type - it could be "UNSIGNED" or "SIGNED", assuming "UNSIGNED"
+Warning (10645): VHDL type inferencing warning at ramText.vhd(39): two visible identifiers match "TO_INTEGER" because the actual at position 0 has an ambiguous type - it could be "UNSIGNED" or "SIGNED", assuming "UNSIGNED"
+Warning (10645): VHDL type inferencing warning at ramText.vhd(40): two visible identifiers match "TO_INTEGER" because the actual at position 0 has an ambiguous type - it could be "UNSIGNED" or "SIGNED", assuming "UNSIGNED"
+Warning (10645): VHDL type inferencing warning at ramText.vhd(41): two visible identifiers match "TO_INTEGER" because the actual at position 0 has an ambiguous type - it could be "UNSIGNED" or "SIGNED", assuming "UNSIGNED"
+Warning (10645): VHDL type inferencing warning at ramText.vhd(42): two visible identifiers match "TO_INTEGER" because the actual at position 0 has an ambiguous type - it could be "UNSIGNED" or "SIGNED", assuming "UNSIGNED"
+Warning (10645): VHDL type inferencing warning at ramText.vhd(43): two visible identifiers match "TO_INTEGER" because the actual at position 0 has an ambiguous type - it could be "UNSIGNED" or "SIGNED", assuming "UNSIGNED"
+Warning (10645): VHDL type inferencing warning at ramText.vhd(44): two visible identifiers match "TO_INTEGER" because the actual at position 0 has an ambiguous type - it could be "UNSIGNED" or "SIGNED", assuming "UNSIGNED"
+Warning (10645): VHDL type inferencing warning at ramText.vhd(45): two visible identifiers match "TO_INTEGER" because the actual at position 0 has an ambiguous type - it could be "UNSIGNED" or "SIGNED", assuming "UNSIGNED"
 Info (12127): Elaborating entity "aes" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at aes.vhd(21): used implicit default value for signal "outSubBytes" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at aes.vhd(27): used implicit default value for signal "plaintText_sg" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10541): VHDL Signal Declaration warning at aes.vhd(27): used implicit default value for signal "keyIni_sg" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10036): Verilog HDL or VHDL warning at aes.vhd(27): object "outSubBytes_sg" assigned a value but never read
+Warning (10541): VHDL Signal Declaration warning at aes.vhd(18): used implicit default value for signal "outSubBytes" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10541): VHDL Signal Declaration warning at aes.vhd(24): used implicit default value for signal "keyIni_sg" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at aes.vhd(24): object "outSubBytes_sg" assigned a value but never read
 Info (12128): Elaborating entity "addRoundKey" for hierarchy "addRoundKey:ARK"
 Info (12128): Elaborating entity "subBytes" for hierarchy "subBytes:SB"
 Info (12128): Elaborating entity "sbox" for hierarchy "subBytes:SB|sbox:sub1"
+Info (12128): Elaborating entity "ramText" for hierarchy "ramText:RT"
+Warning (10540): VHDL Signal Declaration warning at ramText.vhd(21): used explicit default value for signal "RAM" because signal was never assigned a value
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "outSubBytes[0]" is stuck at GND
     Warning (13410): Pin "outSubBytes[1]" is stuck at GND
@@ -338,40 +370,8 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "outSubBytes[31]" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 65 input pin(s) that do not drive logic
+Warning (21074): Design contains 33 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "clock"
-    Warning (15610): No output dependent on input pin "plainText[0]"
-    Warning (15610): No output dependent on input pin "plainText[1]"
-    Warning (15610): No output dependent on input pin "plainText[2]"
-    Warning (15610): No output dependent on input pin "plainText[3]"
-    Warning (15610): No output dependent on input pin "plainText[4]"
-    Warning (15610): No output dependent on input pin "plainText[5]"
-    Warning (15610): No output dependent on input pin "plainText[6]"
-    Warning (15610): No output dependent on input pin "plainText[7]"
-    Warning (15610): No output dependent on input pin "plainText[8]"
-    Warning (15610): No output dependent on input pin "plainText[9]"
-    Warning (15610): No output dependent on input pin "plainText[10]"
-    Warning (15610): No output dependent on input pin "plainText[11]"
-    Warning (15610): No output dependent on input pin "plainText[12]"
-    Warning (15610): No output dependent on input pin "plainText[13]"
-    Warning (15610): No output dependent on input pin "plainText[14]"
-    Warning (15610): No output dependent on input pin "plainText[15]"
-    Warning (15610): No output dependent on input pin "plainText[16]"
-    Warning (15610): No output dependent on input pin "plainText[17]"
-    Warning (15610): No output dependent on input pin "plainText[18]"
-    Warning (15610): No output dependent on input pin "plainText[19]"
-    Warning (15610): No output dependent on input pin "plainText[20]"
-    Warning (15610): No output dependent on input pin "plainText[21]"
-    Warning (15610): No output dependent on input pin "plainText[22]"
-    Warning (15610): No output dependent on input pin "plainText[23]"
-    Warning (15610): No output dependent on input pin "plainText[24]"
-    Warning (15610): No output dependent on input pin "plainText[25]"
-    Warning (15610): No output dependent on input pin "plainText[26]"
-    Warning (15610): No output dependent on input pin "plainText[27]"
-    Warning (15610): No output dependent on input pin "plainText[28]"
-    Warning (15610): No output dependent on input pin "plainText[29]"
-    Warning (15610): No output dependent on input pin "plainText[30]"
-    Warning (15610): No output dependent on input pin "plainText[31]"
     Warning (15610): No output dependent on input pin "keyIni[0]"
     Warning (15610): No output dependent on input pin "keyIni[1]"
     Warning (15610): No output dependent on input pin "keyIni[2]"
@@ -404,13 +404,13 @@ Warning (21074): Design contains 65 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "keyIni[29]"
     Warning (15610): No output dependent on input pin "keyIni[30]"
     Warning (15610): No output dependent on input pin "keyIni[31]"
-Info (21057): Implemented 97 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 65 input pins
+Info (21057): Implemented 65 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 33 input pins
     Info (21059): Implemented 32 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 104 warnings
-    Info: Peak virtual memory: 4639 megabytes
-    Info: Processing ended: Tue Oct 08 15:32:02 2019
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 89 warnings
+    Info: Peak virtual memory: 4635 megabytes
+    Info: Processing ended: Wed Oct 09 20:37:06 2019
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
