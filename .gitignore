@@ -1,0 +1,17 @@
+.sconsign.dblite
+*.eps
+*.aux
+*.blg
+*.dvi
+*.log
+auto
+*.o
+*.a
+*.bc
+*.rpt
+*.smsg
+*.summary
+*.jdi
+*.pin
+*.qsf
+*.sof
