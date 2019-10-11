@@ -16,9 +16,9 @@ entity aes is
 		clock                  : std_logic;
 		--RAM_ADDR               : in std_logic_vector(3 downto 0);
 		--RAM_DATA_OUT           : out std_logic_vector(7 downto 0);
-		plainText	           : in std_logic_vector(31 downto 0);
-		keyIni     	           : in std_logic_vector(31 downto 0);
-		outSubBytes  : out std_logic_vector(31 downto 0)
+		plainText	           : in std_logic_vector(127 downto 0);
+		keyIni     	           : in std_logic_vector(127 downto 0);
+		outAes  : out std_logic_vector(127 downto 0)
 	);
 end entity;
 
@@ -64,13 +64,14 @@ begin
    --); 
 --RAM_DATA_OUT <= RAM(to_integer(unsigned(RAM_ADDR)));
 
+plaintText_sg <= plainText;
 
 ARK: addRoundKey
 		generic map (DATA_WIDTH => DATA_WIDTH_TOP)
 		port map (
 			clk => clock,
 			plainText => plaintText_sg,
-			keyIni => keyIni_sg,
+			keyIni => keyIni,
 			outAddRoundKey => outAddRoundKey_sg
 		);
 
@@ -79,6 +80,6 @@ SB: subbytes
 		port map (
 			clk => clock,
 			theText => outAddRoundKey_sg,
-			outSubBytes => outSubBytes_sg
+			outSubBytes => outAes
 		);
 end rtl;

@@ -1,5 +1,5 @@
 EDA Netlist Writer report for aes
-Tue Oct 08 15:32:15 2019
+Fri Oct 11 02:52:02 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Oct 08 15:32:15 2019 ;
+; EDA Netlist Writer Status ; Successful - Fri Oct 11 02:52:02 2019 ;
 ; Revision Name             ; aes                                   ;
 ; Top-level Entity Name     ; aes                                   ;
 ; Family                    ; Cyclone III                           ;
@@ -44,42 +44,34 @@ applicable agreement for further details.
 +---------------------------+---------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Simulation Settings                                                                                                        ;
-+---------------------------------------------------------------------------------------------------+------------------------+
-; Option                                                                                            ; Setting                ;
-+---------------------------------------------------------------------------------------------------+------------------------+
-; Tool Name                                                                                         ; ModelSim-Altera (VHDL) ;
-; Generate netlist for functional simulation only                                                   ; Off                    ;
-; Time scale                                                                                        ; 1 ps                   ;
-; Truncate long hierarchy paths                                                                     ; Off                    ;
-; Map illegal HDL characters                                                                        ; Off                    ;
-; Flatten buses into individual nodes                                                               ; Off                    ;
-; Maintain hierarchy                                                                                ; Off                    ;
-; Bring out device-wide set/reset signals as ports                                                  ; Off                    ;
-; Enable glitch filtering                                                                           ; Off                    ;
-; Do not write top level VHDL entity                                                                ; Off                    ;
-; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                    ;
-; Architecture name in VHDL output netlist                                                          ; structure              ;
-; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                    ;
-; Generate third-party EDA tool command script for gate-level simulation                            ; Off                    ;
-+---------------------------------------------------------------------------------------------------+------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Settings                                                                                                           ;
++---------------------------------------------------------------------------------------------------+---------------------------+
+; Option                                                                                            ; Setting                   ;
++---------------------------------------------------------------------------------------------------+---------------------------+
+; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
+; Generate netlist for functional simulation only                                                   ; On                        ;
+; Truncate long hierarchy paths                                                                     ; Off                       ;
+; Map illegal HDL characters                                                                        ; Off                       ;
+; Flatten buses into individual nodes                                                               ; Off                       ;
+; Maintain hierarchy                                                                                ; Off                       ;
+; Bring out device-wide set/reset signals as ports                                                  ; Off                       ;
+; Enable glitch filtering                                                                           ; Off                       ;
+; Do not write top level VHDL entity                                                                ; Off                       ;
+; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                       ;
+; Architecture name in VHDL output netlist                                                          ; structure                 ;
+; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                       ;
+; Generate third-party EDA tool command script for gate-level simulation                            ; Off                       ;
++---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                               ;
-+------------------------------------------------------------------------------------------+
-; Generated Files                                                                          ;
-+------------------------------------------------------------------------------------------+
-; C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/aes_6_1200mv_85c_slow.vho      ;
-; C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/aes_6_1200mv_0c_slow.vho       ;
-; C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/aes_min_1200mv_0c_fast.vho     ;
-; C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/aes.vho                        ;
-; C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/aes_6_1200mv_85c_vhd_slow.sdo  ;
-; C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/aes_6_1200mv_0c_vhd_slow.sdo   ;
-; C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/aes_min_1200mv_0c_vhd_fast.sdo ;
-; C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/aes_vhd.sdo                    ;
-+------------------------------------------------------------------------------------------+
++------------------------------------------------------------------+
+; Simulation Generated Files                                       ;
++------------------------------------------------------------------+
+; Generated Files                                                  ;
++------------------------------------------------------------------+
+; C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/aes.vo ;
++------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -88,20 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Tue Oct 08 15:32:14 2019
-Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off aes -c aes
-Info (204019): Generated file aes_6_1200mv_85c_slow.vho in folder "C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file aes_6_1200mv_0c_slow.vho in folder "C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file aes_min_1200mv_0c_fast.vho in folder "C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file aes.vho in folder "C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file aes_6_1200mv_85c_vhd_slow.sdo in folder "C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file aes_6_1200mv_0c_vhd_slow.sdo in folder "C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file aes_min_1200mv_0c_vhd_fast.sdo in folder "C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file aes_vhd.sdo in folder "C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/" for EDA simulation tool
+    Info: Processing started: Fri Oct 11 02:52:02 2019
+Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog aes -c aes
+Info (204019): Generated file aes.vo in folder "C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4529 megabytes
-    Info: Processing ended: Tue Oct 08 15:32:15 2019
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4514 megabytes
+    Info: Processing ended: Fri Oct 11 02:52:02 2019
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 

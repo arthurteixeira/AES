@@ -1,5 +1,21 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="aes">
+		<CBX_INST_ENTRY INSTANCE_NAME="|aes|subBytes:SB|sbox:sub1|altsyncram:Mux103_rtl_0" CBX_FILE_NAME="altsyncram_6su.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|aes|subBytes:SB|sbox:sub1|altsyncram:Mux31_rtl_0" CBX_FILE_NAME="altsyncram_mtu.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|aes|subBytes:SB|sbox:sub1|altsyncram:Mux39_rtl_0" CBX_FILE_NAME="altsyncram_ltu.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|aes|subBytes:SB|sbox:sub1|altsyncram:Mux71_rtl_0" CBX_FILE_NAME="altsyncram_asu.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|aes|subBytes:SB|sbox:sub1|altsyncram:Mux79_rtl_0" CBX_FILE_NAME="altsyncram_9su.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|aes|subBytes:SB|sbox:sub1|altsyncram:Mux23_rtl_0" CBX_FILE_NAME="altsyncram_ntu.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|aes|subBytes:SB|sbox:sub1|altsyncram:Mux63_rtl_0" CBX_FILE_NAME="altsyncram_bsu.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|aes|subBytes:SB|sbox:sub1|altsyncram:Mux127_rtl_0" CBX_FILE_NAME="altsyncram_3su.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|aes|subBytes:SB|sbox:sub1|altsyncram:Mux15_rtl_0" CBX_FILE_NAME="altsyncram_otu.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|aes|subBytes:SB|sbox:sub1|altsyncram:Mux55_rtl_0" CBX_FILE_NAME="altsyncram_csu.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|aes|subBytes:SB|sbox:sub1|altsyncram:Mux95_rtl_0" CBX_FILE_NAME="altsyncram_7su.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|aes|subBytes:SB|sbox:sub1|altsyncram:Mux111_rtl_0" CBX_FILE_NAME="altsyncram_5su.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|aes|subBytes:SB|sbox:sub1|altsyncram:Mux119_rtl_0" CBX_FILE_NAME="altsyncram_4su.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|aes|subBytes:SB|sbox:sub1|altsyncram:Mux47_rtl_0" CBX_FILE_NAME="altsyncram_ktu.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|aes|subBytes:SB|sbox:sub1|altsyncram:Mux7_rtl_0" CBX_FILE_NAME="altsyncram_ptu.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|aes|subBytes:SB|sbox:sub1|altsyncram:Mux87_rtl_0" CBX_FILE_NAME="altsyncram_8su.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
