@@ -24,7 +24,7 @@ end entity;
 
 architecture rtl of aes is
 
-signal plaintText_sg, keyIni_sg, outAddRoundKey_sg, outSubBytes_sg : std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
+signal plaintText_sg, outAddRoundKey_sg, outSubBytes_sg : std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
 
 component addRoundKey is
 	generic(
@@ -50,6 +50,15 @@ component subbytes is
 		clk          : std_logic;
 		theText	    : in std_logic_vector((DATA_WIDTH-1) downto 0);
 		outSubBytes  : out std_logic_vector((DATA_WIDTH-1) downto 0)
+	);
+end component;
+
+component shiftrows is
+	port 
+	(
+		clk      : std_logic;
+		ptext	   : in std_logic_vector(127 downto 0);
+		outShiftRows : out std_logic_vector(127 downto 0)
 	);
 end component;
 
@@ -80,6 +89,14 @@ SB: subbytes
 		port map (
 			clk => clock,
 			theText => outAddRoundKey_sg,
-			outSubBytes => outAes
+			outSubBytes => outSubBytes_sg
 		);
+
+SR: shiftrows
+	  port map(
+			clk => clock,
+			ptext => outSubBytes_sg,
+			outShiftRows => outAes
+	  );
+	  
 end rtl;
