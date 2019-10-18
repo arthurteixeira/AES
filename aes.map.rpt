@@ -1,5 +1,5 @@
 Analysis & Synthesis report for aes
-Fri Oct 18 14:44:59 2019
+Fri Oct 18 15:23:37 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -16,22 +16,22 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
   8. Analysis & Synthesis RAM Summary
   9. General Register Statistics
  10. Registers Packed Into Inferred Megafunctions
- 11. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux127_rtl_0|altsyncram_3su:auto_generated
- 12. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux119_rtl_0|altsyncram_4su:auto_generated
- 13. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux111_rtl_0|altsyncram_5su:auto_generated
- 14. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux103_rtl_0|altsyncram_6su:auto_generated
- 15. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux95_rtl_0|altsyncram_7su:auto_generated
- 16. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux87_rtl_0|altsyncram_8su:auto_generated
- 17. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux79_rtl_0|altsyncram_9su:auto_generated
- 18. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux71_rtl_0|altsyncram_asu:auto_generated
- 19. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux63_rtl_0|altsyncram_bsu:auto_generated
- 20. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux55_rtl_0|altsyncram_csu:auto_generated
- 21. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux47_rtl_0|altsyncram_ktu:auto_generated
- 22. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux39_rtl_0|altsyncram_ltu:auto_generated
- 23. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux31_rtl_0|altsyncram_mtu:auto_generated
- 24. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux23_rtl_0|altsyncram_ntu:auto_generated
- 25. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux15_rtl_0|altsyncram_otu:auto_generated
- 26. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux7_rtl_0|altsyncram_ptu:auto_generated
+ 11. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux127_rtl_0|altsyncram_ilv:auto_generated
+ 12. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux119_rtl_0|altsyncram_jlv:auto_generated
+ 13. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux111_rtl_0|altsyncram_klv:auto_generated
+ 14. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux103_rtl_0|altsyncram_llv:auto_generated
+ 15. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux95_rtl_0|altsyncram_mlv:auto_generated
+ 16. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux87_rtl_0|altsyncram_nlv:auto_generated
+ 17. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux79_rtl_0|altsyncram_olv:auto_generated
+ 18. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux71_rtl_0|altsyncram_plv:auto_generated
+ 19. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux63_rtl_0|altsyncram_qlv:auto_generated
+ 20. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux55_rtl_0|altsyncram_rlv:auto_generated
+ 21. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux47_rtl_0|altsyncram_3nv:auto_generated
+ 22. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux39_rtl_0|altsyncram_4nv:auto_generated
+ 23. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux31_rtl_0|altsyncram_5nv:auto_generated
+ 24. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux23_rtl_0|altsyncram_6nv:auto_generated
+ 25. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux15_rtl_0|altsyncram_7nv:auto_generated
+ 26. Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux7_rtl_0|altsyncram_8nv:auto_generated
  27. Parameter Settings for User Entity Instance: Top-level Entity: |aes
  28. Parameter Settings for User Entity Instance: addRoundKey:ARK
  29. Parameter Settings for User Entity Instance: subbytes:SB
@@ -80,7 +80,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Oct 18 14:44:59 2019      ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 18 15:23:37 2019      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; aes                                        ;
 ; Top-level Entity Name              ; aes                                        ;
@@ -89,7 +89,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 608                                        ;
 ;     Dedicated logic registers      ; 768                                        ;
 ; Total registers                    ; 768                                        ;
-; Total pins                         ; 514                                        ;
+; Total pins                         ; 520                                        ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 32,768                                     ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -218,22 +218,22 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; altrom.inc                       ; yes             ; Megafunction                 ; c:/altera/13.0/quartus/libraries/megafunctions/altrom.inc            ;         ;
 ; altram.inc                       ; yes             ; Megafunction                 ; c:/altera/13.0/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                 ; c:/altera/13.0/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_3su.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_3su.tdf          ;         ;
-; db/altsyncram_4su.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_4su.tdf          ;         ;
-; db/altsyncram_5su.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_5su.tdf          ;         ;
-; db/altsyncram_6su.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_6su.tdf          ;         ;
-; db/altsyncram_7su.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_7su.tdf          ;         ;
-; db/altsyncram_8su.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_8su.tdf          ;         ;
-; db/altsyncram_9su.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_9su.tdf          ;         ;
-; db/altsyncram_asu.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_asu.tdf          ;         ;
-; db/altsyncram_bsu.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_bsu.tdf          ;         ;
-; db/altsyncram_csu.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_csu.tdf          ;         ;
-; db/altsyncram_ktu.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_ktu.tdf          ;         ;
-; db/altsyncram_ltu.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_ltu.tdf          ;         ;
-; db/altsyncram_mtu.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_mtu.tdf          ;         ;
-; db/altsyncram_ntu.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_ntu.tdf          ;         ;
-; db/altsyncram_otu.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_otu.tdf          ;         ;
-; db/altsyncram_ptu.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_ptu.tdf          ;         ;
+; db/altsyncram_ilv.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_ilv.tdf          ;         ;
+; db/altsyncram_jlv.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_jlv.tdf          ;         ;
+; db/altsyncram_klv.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_klv.tdf          ;         ;
+; db/altsyncram_llv.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_llv.tdf          ;         ;
+; db/altsyncram_mlv.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_mlv.tdf          ;         ;
+; db/altsyncram_nlv.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_nlv.tdf          ;         ;
+; db/altsyncram_olv.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_olv.tdf          ;         ;
+; db/altsyncram_plv.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_plv.tdf          ;         ;
+; db/altsyncram_qlv.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_qlv.tdf          ;         ;
+; db/altsyncram_rlv.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_rlv.tdf          ;         ;
+; db/altsyncram_3nv.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_3nv.tdf          ;         ;
+; db/altsyncram_4nv.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_4nv.tdf          ;         ;
+; db/altsyncram_5nv.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_5nv.tdf          ;         ;
+; db/altsyncram_6nv.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_6nv.tdf          ;         ;
+; db/altsyncram_7nv.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_7nv.tdf          ;         ;
+; db/altsyncram_8nv.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Arthur/Documents/designs/AES/db/altsyncram_8nv.tdf          ;         ;
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+---------+
 
 
@@ -242,13 +242,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 514              ;
+; I/O pins                 ; 520              ;
 ; Total memory bits        ; 32768            ;
 ; DSP block 9-bit elements ; 0                ;
 ; Maximum fan-out node     ; clock~input      ;
 ; Maximum fan-out          ; 896              ;
-; Total fan-out            ; 4994             ;
-; Average fan-out          ; 1.97             ;
+; Total fan-out            ; 5896             ;
+; Average fan-out          ; 2.32             ;
 +--------------------------+------------------+
 
 
@@ -257,7 +257,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                              ; Library Name ;
 +---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------+
-; |aes                                        ; 608 (128)         ; 768 (256)    ; 32768       ; 0            ; 0       ; 0         ; 0         ; 514  ; 0            ; |aes                                                                             ;              ;
+; |aes                                        ; 608 (128)         ; 768 (256)    ; 32768       ; 0            ; 0       ; 0         ; 0         ; 520  ; 0            ; |aes                                                                             ;              ;
 ;    |addRoundKey:ARK2|                       ; 128 (128)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|addRoundKey:ARK2                                                            ;              ;
 ;    |addRoundKey:ARK|                        ; 128 (128)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|addRoundKey:ARK                                                             ;              ;
 ;    |mixcolumns:MC|                          ; 224 (224)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|mixcolumns:MC                                                               ;              ;
@@ -265,37 +265,37 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |subBytes:SB|                            ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB                                                                 ;              ;
 ;       |sbox:sub1|                           ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1                                                       ;              ;
 ;          |altsyncram:Mux103_rtl_0|          ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux103_rtl_0                               ;              ;
-;             |altsyncram_6su:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux103_rtl_0|altsyncram_6su:auto_generated ;              ;
+;             |altsyncram_llv:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux103_rtl_0|altsyncram_llv:auto_generated ;              ;
 ;          |altsyncram:Mux111_rtl_0|          ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux111_rtl_0                               ;              ;
-;             |altsyncram_5su:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux111_rtl_0|altsyncram_5su:auto_generated ;              ;
+;             |altsyncram_klv:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux111_rtl_0|altsyncram_klv:auto_generated ;              ;
 ;          |altsyncram:Mux119_rtl_0|          ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux119_rtl_0                               ;              ;
-;             |altsyncram_4su:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux119_rtl_0|altsyncram_4su:auto_generated ;              ;
+;             |altsyncram_jlv:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux119_rtl_0|altsyncram_jlv:auto_generated ;              ;
 ;          |altsyncram:Mux127_rtl_0|          ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux127_rtl_0                               ;              ;
-;             |altsyncram_3su:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux127_rtl_0|altsyncram_3su:auto_generated ;              ;
+;             |altsyncram_ilv:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux127_rtl_0|altsyncram_ilv:auto_generated ;              ;
 ;          |altsyncram:Mux15_rtl_0|           ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux15_rtl_0                                ;              ;
-;             |altsyncram_otu:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux15_rtl_0|altsyncram_otu:auto_generated  ;              ;
+;             |altsyncram_7nv:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux15_rtl_0|altsyncram_7nv:auto_generated  ;              ;
 ;          |altsyncram:Mux23_rtl_0|           ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux23_rtl_0                                ;              ;
-;             |altsyncram_ntu:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux23_rtl_0|altsyncram_ntu:auto_generated  ;              ;
+;             |altsyncram_6nv:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux23_rtl_0|altsyncram_6nv:auto_generated  ;              ;
 ;          |altsyncram:Mux31_rtl_0|           ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux31_rtl_0                                ;              ;
-;             |altsyncram_mtu:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux31_rtl_0|altsyncram_mtu:auto_generated  ;              ;
+;             |altsyncram_5nv:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux31_rtl_0|altsyncram_5nv:auto_generated  ;              ;
 ;          |altsyncram:Mux39_rtl_0|           ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux39_rtl_0                                ;              ;
-;             |altsyncram_ltu:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux39_rtl_0|altsyncram_ltu:auto_generated  ;              ;
+;             |altsyncram_4nv:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux39_rtl_0|altsyncram_4nv:auto_generated  ;              ;
 ;          |altsyncram:Mux47_rtl_0|           ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux47_rtl_0                                ;              ;
-;             |altsyncram_ktu:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux47_rtl_0|altsyncram_ktu:auto_generated  ;              ;
+;             |altsyncram_3nv:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux47_rtl_0|altsyncram_3nv:auto_generated  ;              ;
 ;          |altsyncram:Mux55_rtl_0|           ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux55_rtl_0                                ;              ;
-;             |altsyncram_csu:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux55_rtl_0|altsyncram_csu:auto_generated  ;              ;
+;             |altsyncram_rlv:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux55_rtl_0|altsyncram_rlv:auto_generated  ;              ;
 ;          |altsyncram:Mux63_rtl_0|           ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux63_rtl_0                                ;              ;
-;             |altsyncram_bsu:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux63_rtl_0|altsyncram_bsu:auto_generated  ;              ;
+;             |altsyncram_qlv:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux63_rtl_0|altsyncram_qlv:auto_generated  ;              ;
 ;          |altsyncram:Mux71_rtl_0|           ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux71_rtl_0                                ;              ;
-;             |altsyncram_asu:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux71_rtl_0|altsyncram_asu:auto_generated  ;              ;
+;             |altsyncram_plv:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux71_rtl_0|altsyncram_plv:auto_generated  ;              ;
 ;          |altsyncram:Mux79_rtl_0|           ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux79_rtl_0                                ;              ;
-;             |altsyncram_9su:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux79_rtl_0|altsyncram_9su:auto_generated  ;              ;
+;             |altsyncram_olv:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux79_rtl_0|altsyncram_olv:auto_generated  ;              ;
 ;          |altsyncram:Mux7_rtl_0|            ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux7_rtl_0                                 ;              ;
-;             |altsyncram_ptu:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux7_rtl_0|altsyncram_ptu:auto_generated   ;              ;
+;             |altsyncram_8nv:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux7_rtl_0|altsyncram_8nv:auto_generated   ;              ;
 ;          |altsyncram:Mux87_rtl_0|           ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux87_rtl_0                                ;              ;
-;             |altsyncram_8su:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux87_rtl_0|altsyncram_8su:auto_generated  ;              ;
+;             |altsyncram_nlv:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux87_rtl_0|altsyncram_nlv:auto_generated  ;              ;
 ;          |altsyncram:Mux95_rtl_0|           ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux95_rtl_0                                ;              ;
-;             |altsyncram_7su:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux95_rtl_0|altsyncram_7su:auto_generated  ;              ;
+;             |altsyncram_mlv:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1|altsyncram:Mux95_rtl_0|altsyncram_mlv:auto_generated  ;              ;
 +---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -305,22 +305,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-------------------+
 ; Name                                                                                   ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF               ;
 +----------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-------------------+
-; subBytes:SB|sbox:sub1|altsyncram:Mux103_rtl_0|altsyncram_6su:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes3.rtl.mif  ;
-; subBytes:SB|sbox:sub1|altsyncram:Mux111_rtl_0|altsyncram_5su:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes2.rtl.mif  ;
-; subBytes:SB|sbox:sub1|altsyncram:Mux119_rtl_0|altsyncram_4su:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes1.rtl.mif  ;
-; subBytes:SB|sbox:sub1|altsyncram:Mux127_rtl_0|altsyncram_3su:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes0.rtl.mif  ;
-; subBytes:SB|sbox:sub1|altsyncram:Mux15_rtl_0|altsyncram_otu:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes14.rtl.mif ;
-; subBytes:SB|sbox:sub1|altsyncram:Mux23_rtl_0|altsyncram_ntu:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes13.rtl.mif ;
-; subBytes:SB|sbox:sub1|altsyncram:Mux31_rtl_0|altsyncram_mtu:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes12.rtl.mif ;
-; subBytes:SB|sbox:sub1|altsyncram:Mux39_rtl_0|altsyncram_ltu:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes11.rtl.mif ;
-; subBytes:SB|sbox:sub1|altsyncram:Mux47_rtl_0|altsyncram_ktu:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes10.rtl.mif ;
-; subBytes:SB|sbox:sub1|altsyncram:Mux55_rtl_0|altsyncram_csu:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes9.rtl.mif  ;
-; subBytes:SB|sbox:sub1|altsyncram:Mux63_rtl_0|altsyncram_bsu:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes8.rtl.mif  ;
-; subBytes:SB|sbox:sub1|altsyncram:Mux71_rtl_0|altsyncram_asu:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes7.rtl.mif  ;
-; subBytes:SB|sbox:sub1|altsyncram:Mux79_rtl_0|altsyncram_9su:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes6.rtl.mif  ;
-; subBytes:SB|sbox:sub1|altsyncram:Mux7_rtl_0|altsyncram_ptu:auto_generated|ALTSYNCRAM   ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes15.rtl.mif ;
-; subBytes:SB|sbox:sub1|altsyncram:Mux87_rtl_0|altsyncram_8su:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes5.rtl.mif  ;
-; subBytes:SB|sbox:sub1|altsyncram:Mux95_rtl_0|altsyncram_7su:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes4.rtl.mif  ;
+; subBytes:SB|sbox:sub1|altsyncram:Mux103_rtl_0|altsyncram_llv:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes3.rtl.mif  ;
+; subBytes:SB|sbox:sub1|altsyncram:Mux111_rtl_0|altsyncram_klv:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes2.rtl.mif  ;
+; subBytes:SB|sbox:sub1|altsyncram:Mux119_rtl_0|altsyncram_jlv:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes1.rtl.mif  ;
+; subBytes:SB|sbox:sub1|altsyncram:Mux127_rtl_0|altsyncram_ilv:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes0.rtl.mif  ;
+; subBytes:SB|sbox:sub1|altsyncram:Mux15_rtl_0|altsyncram_7nv:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes14.rtl.mif ;
+; subBytes:SB|sbox:sub1|altsyncram:Mux23_rtl_0|altsyncram_6nv:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes13.rtl.mif ;
+; subBytes:SB|sbox:sub1|altsyncram:Mux31_rtl_0|altsyncram_5nv:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes12.rtl.mif ;
+; subBytes:SB|sbox:sub1|altsyncram:Mux39_rtl_0|altsyncram_4nv:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes11.rtl.mif ;
+; subBytes:SB|sbox:sub1|altsyncram:Mux47_rtl_0|altsyncram_3nv:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes10.rtl.mif ;
+; subBytes:SB|sbox:sub1|altsyncram:Mux55_rtl_0|altsyncram_rlv:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes9.rtl.mif  ;
+; subBytes:SB|sbox:sub1|altsyncram:Mux63_rtl_0|altsyncram_qlv:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes8.rtl.mif  ;
+; subBytes:SB|sbox:sub1|altsyncram:Mux71_rtl_0|altsyncram_plv:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes7.rtl.mif  ;
+; subBytes:SB|sbox:sub1|altsyncram:Mux79_rtl_0|altsyncram_olv:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes6.rtl.mif  ;
+; subBytes:SB|sbox:sub1|altsyncram:Mux7_rtl_0|altsyncram_8nv:auto_generated|ALTSYNCRAM   ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes15.rtl.mif ;
+; subBytes:SB|sbox:sub1|altsyncram:Mux87_rtl_0|altsyncram_nlv:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes5.rtl.mif  ;
+; subBytes:SB|sbox:sub1|altsyncram:Mux95_rtl_0|altsyncram_mlv:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 256          ; 8            ; --           ; --           ; 2048 ; aes.aes4.rtl.mif  ;
 +----------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-------------------+
 
 
@@ -334,7 +334,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 768   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -364,7 +364,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------+
-; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux127_rtl_0|altsyncram_3su:auto_generated ;
+; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux127_rtl_0|altsyncram_ilv:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                   ;
 +---------------------------------+--------------------+------+--------------------------------------+
@@ -373,7 +373,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------+
-; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux119_rtl_0|altsyncram_4su:auto_generated ;
+; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux119_rtl_0|altsyncram_jlv:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                   ;
 +---------------------------------+--------------------+------+--------------------------------------+
@@ -382,7 +382,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------+
-; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux111_rtl_0|altsyncram_5su:auto_generated ;
+; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux111_rtl_0|altsyncram_klv:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                   ;
 +---------------------------------+--------------------+------+--------------------------------------+
@@ -391,7 +391,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------+
-; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux103_rtl_0|altsyncram_6su:auto_generated ;
+; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux103_rtl_0|altsyncram_llv:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                   ;
 +---------------------------------+--------------------+------+--------------------------------------+
@@ -400,7 +400,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +---------------------------------------------------------------------------------------------------+
-; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux95_rtl_0|altsyncram_7su:auto_generated ;
+; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux95_rtl_0|altsyncram_mlv:auto_generated ;
 +---------------------------------+--------------------+------+-------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                  ;
 +---------------------------------+--------------------+------+-------------------------------------+
@@ -409,7 +409,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +---------------------------------------------------------------------------------------------------+
-; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux87_rtl_0|altsyncram_8su:auto_generated ;
+; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux87_rtl_0|altsyncram_nlv:auto_generated ;
 +---------------------------------+--------------------+------+-------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                  ;
 +---------------------------------+--------------------+------+-------------------------------------+
@@ -418,7 +418,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +---------------------------------------------------------------------------------------------------+
-; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux79_rtl_0|altsyncram_9su:auto_generated ;
+; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux79_rtl_0|altsyncram_olv:auto_generated ;
 +---------------------------------+--------------------+------+-------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                  ;
 +---------------------------------+--------------------+------+-------------------------------------+
@@ -427,7 +427,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +---------------------------------------------------------------------------------------------------+
-; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux71_rtl_0|altsyncram_asu:auto_generated ;
+; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux71_rtl_0|altsyncram_plv:auto_generated ;
 +---------------------------------+--------------------+------+-------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                  ;
 +---------------------------------+--------------------+------+-------------------------------------+
@@ -436,7 +436,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +---------------------------------------------------------------------------------------------------+
-; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux63_rtl_0|altsyncram_bsu:auto_generated ;
+; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux63_rtl_0|altsyncram_qlv:auto_generated ;
 +---------------------------------+--------------------+------+-------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                  ;
 +---------------------------------+--------------------+------+-------------------------------------+
@@ -445,7 +445,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +---------------------------------------------------------------------------------------------------+
-; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux55_rtl_0|altsyncram_csu:auto_generated ;
+; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux55_rtl_0|altsyncram_rlv:auto_generated ;
 +---------------------------------+--------------------+------+-------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                  ;
 +---------------------------------+--------------------+------+-------------------------------------+
@@ -454,7 +454,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +---------------------------------------------------------------------------------------------------+
-; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux47_rtl_0|altsyncram_ktu:auto_generated ;
+; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux47_rtl_0|altsyncram_3nv:auto_generated ;
 +---------------------------------+--------------------+------+-------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                  ;
 +---------------------------------+--------------------+------+-------------------------------------+
@@ -463,7 +463,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +---------------------------------------------------------------------------------------------------+
-; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux39_rtl_0|altsyncram_ltu:auto_generated ;
+; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux39_rtl_0|altsyncram_4nv:auto_generated ;
 +---------------------------------+--------------------+------+-------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                  ;
 +---------------------------------+--------------------+------+-------------------------------------+
@@ -472,7 +472,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +---------------------------------------------------------------------------------------------------+
-; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux31_rtl_0|altsyncram_mtu:auto_generated ;
+; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux31_rtl_0|altsyncram_5nv:auto_generated ;
 +---------------------------------+--------------------+------+-------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                  ;
 +---------------------------------+--------------------+------+-------------------------------------+
@@ -481,7 +481,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +---------------------------------------------------------------------------------------------------+
-; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux23_rtl_0|altsyncram_ntu:auto_generated ;
+; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux23_rtl_0|altsyncram_6nv:auto_generated ;
 +---------------------------------+--------------------+------+-------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                  ;
 +---------------------------------+--------------------+------+-------------------------------------+
@@ -490,7 +490,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +---------------------------------------------------------------------------------------------------+
-; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux15_rtl_0|altsyncram_otu:auto_generated ;
+; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux15_rtl_0|altsyncram_7nv:auto_generated ;
 +---------------------------------+--------------------+------+-------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                  ;
 +---------------------------------+--------------------+------+-------------------------------------+
@@ -499,7 +499,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +--------------------------------------------------------------------------------------------------+
-; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux7_rtl_0|altsyncram_ptu:auto_generated ;
+; Source assignments for subBytes:SB|sbox:sub1|altsyncram:Mux7_rtl_0|altsyncram_8nv:auto_generated ;
 +---------------------------------+--------------------+------+------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                 ;
 +---------------------------------+--------------------+------+------------------------------------+
@@ -603,7 +603,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                            ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                            ;
 ; DEVICE_FAMILY                      ; Cyclone IV GX        ; Untyped                            ;
-; CBXI_PARAMETER                     ; altsyncram_3su       ; Untyped                            ;
+; CBXI_PARAMETER                     ; altsyncram_ilv       ; Untyped                            ;
 +------------------------------------+----------------------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -664,7 +664,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                            ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                            ;
 ; DEVICE_FAMILY                      ; Cyclone IV GX        ; Untyped                            ;
-; CBXI_PARAMETER                     ; altsyncram_4su       ; Untyped                            ;
+; CBXI_PARAMETER                     ; altsyncram_jlv       ; Untyped                            ;
 +------------------------------------+----------------------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -725,7 +725,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                            ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                            ;
 ; DEVICE_FAMILY                      ; Cyclone IV GX        ; Untyped                            ;
-; CBXI_PARAMETER                     ; altsyncram_5su       ; Untyped                            ;
+; CBXI_PARAMETER                     ; altsyncram_klv       ; Untyped                            ;
 +------------------------------------+----------------------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -786,7 +786,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                            ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                            ;
 ; DEVICE_FAMILY                      ; Cyclone IV GX        ; Untyped                            ;
-; CBXI_PARAMETER                     ; altsyncram_6su       ; Untyped                            ;
+; CBXI_PARAMETER                     ; altsyncram_llv       ; Untyped                            ;
 +------------------------------------+----------------------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -847,7 +847,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                           ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                           ;
 ; DEVICE_FAMILY                      ; Cyclone IV GX        ; Untyped                           ;
-; CBXI_PARAMETER                     ; altsyncram_7su       ; Untyped                           ;
+; CBXI_PARAMETER                     ; altsyncram_mlv       ; Untyped                           ;
 +------------------------------------+----------------------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -908,7 +908,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                           ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                           ;
 ; DEVICE_FAMILY                      ; Cyclone IV GX        ; Untyped                           ;
-; CBXI_PARAMETER                     ; altsyncram_8su       ; Untyped                           ;
+; CBXI_PARAMETER                     ; altsyncram_nlv       ; Untyped                           ;
 +------------------------------------+----------------------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -969,7 +969,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                           ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                           ;
 ; DEVICE_FAMILY                      ; Cyclone IV GX        ; Untyped                           ;
-; CBXI_PARAMETER                     ; altsyncram_9su       ; Untyped                           ;
+; CBXI_PARAMETER                     ; altsyncram_olv       ; Untyped                           ;
 +------------------------------------+----------------------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1030,7 +1030,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                           ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                           ;
 ; DEVICE_FAMILY                      ; Cyclone IV GX        ; Untyped                           ;
-; CBXI_PARAMETER                     ; altsyncram_asu       ; Untyped                           ;
+; CBXI_PARAMETER                     ; altsyncram_plv       ; Untyped                           ;
 +------------------------------------+----------------------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1091,7 +1091,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                           ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                           ;
 ; DEVICE_FAMILY                      ; Cyclone IV GX        ; Untyped                           ;
-; CBXI_PARAMETER                     ; altsyncram_bsu       ; Untyped                           ;
+; CBXI_PARAMETER                     ; altsyncram_qlv       ; Untyped                           ;
 +------------------------------------+----------------------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1152,7 +1152,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                           ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                           ;
 ; DEVICE_FAMILY                      ; Cyclone IV GX        ; Untyped                           ;
-; CBXI_PARAMETER                     ; altsyncram_csu       ; Untyped                           ;
+; CBXI_PARAMETER                     ; altsyncram_rlv       ; Untyped                           ;
 +------------------------------------+----------------------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1213,7 +1213,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                           ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                           ;
 ; DEVICE_FAMILY                      ; Cyclone IV GX        ; Untyped                           ;
-; CBXI_PARAMETER                     ; altsyncram_ktu       ; Untyped                           ;
+; CBXI_PARAMETER                     ; altsyncram_3nv       ; Untyped                           ;
 +------------------------------------+----------------------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1274,7 +1274,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                           ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                           ;
 ; DEVICE_FAMILY                      ; Cyclone IV GX        ; Untyped                           ;
-; CBXI_PARAMETER                     ; altsyncram_ltu       ; Untyped                           ;
+; CBXI_PARAMETER                     ; altsyncram_4nv       ; Untyped                           ;
 +------------------------------------+----------------------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1335,7 +1335,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                           ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                           ;
 ; DEVICE_FAMILY                      ; Cyclone IV GX        ; Untyped                           ;
-; CBXI_PARAMETER                     ; altsyncram_mtu       ; Untyped                           ;
+; CBXI_PARAMETER                     ; altsyncram_5nv       ; Untyped                           ;
 +------------------------------------+----------------------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1396,7 +1396,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                           ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                           ;
 ; DEVICE_FAMILY                      ; Cyclone IV GX        ; Untyped                           ;
-; CBXI_PARAMETER                     ; altsyncram_ntu       ; Untyped                           ;
+; CBXI_PARAMETER                     ; altsyncram_6nv       ; Untyped                           ;
 +------------------------------------+----------------------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1457,7 +1457,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                           ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                           ;
 ; DEVICE_FAMILY                      ; Cyclone IV GX        ; Untyped                           ;
-; CBXI_PARAMETER                     ; altsyncram_otu       ; Untyped                           ;
+; CBXI_PARAMETER                     ; altsyncram_7nv       ; Untyped                           ;
 +------------------------------------+----------------------+-----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1518,7 +1518,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                          ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                          ;
 ; DEVICE_FAMILY                      ; Cyclone IV GX        ; Untyped                          ;
-; CBXI_PARAMETER                     ; altsyncram_ptu       ; Untyped                          ;
+; CBXI_PARAMETER                     ; altsyncram_8nv       ; Untyped                          ;
 +------------------------------------+----------------------+----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1723,7 +1723,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Fri Oct 18 14:44:55 2019
+    Info: Processing started: Fri Oct 18 15:23:32 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aes -c aes
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file shiftrows.vhd
@@ -1888,8 +1888,8 @@ Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux127
     Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
     Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
     Info (12134): Parameter "INIT_FILE" = "aes.aes0.rtl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_3su.tdf
-    Info (12023): Found entity 1: altsyncram_3su
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ilv.tdf
+    Info (12023): Found entity 1: altsyncram_ilv
 Info (12130): Elaborated megafunction instantiation "subBytes:SB|sbox:sub1|altsyncram:Mux119_rtl_0"
 Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux119_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -1899,8 +1899,8 @@ Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux119
     Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
     Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
     Info (12134): Parameter "INIT_FILE" = "aes.aes1.rtl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_4su.tdf
-    Info (12023): Found entity 1: altsyncram_4su
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_jlv.tdf
+    Info (12023): Found entity 1: altsyncram_jlv
 Info (12130): Elaborated megafunction instantiation "subBytes:SB|sbox:sub1|altsyncram:Mux111_rtl_0"
 Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux111_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -1910,8 +1910,8 @@ Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux111
     Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
     Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
     Info (12134): Parameter "INIT_FILE" = "aes.aes2.rtl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_5su.tdf
-    Info (12023): Found entity 1: altsyncram_5su
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_klv.tdf
+    Info (12023): Found entity 1: altsyncram_klv
 Info (12130): Elaborated megafunction instantiation "subBytes:SB|sbox:sub1|altsyncram:Mux103_rtl_0"
 Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux103_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -1921,8 +1921,8 @@ Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux103
     Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
     Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
     Info (12134): Parameter "INIT_FILE" = "aes.aes3.rtl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_6su.tdf
-    Info (12023): Found entity 1: altsyncram_6su
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_llv.tdf
+    Info (12023): Found entity 1: altsyncram_llv
 Info (12130): Elaborated megafunction instantiation "subBytes:SB|sbox:sub1|altsyncram:Mux95_rtl_0"
 Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux95_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -1932,8 +1932,8 @@ Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux95_
     Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
     Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
     Info (12134): Parameter "INIT_FILE" = "aes.aes4.rtl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_7su.tdf
-    Info (12023): Found entity 1: altsyncram_7su
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_mlv.tdf
+    Info (12023): Found entity 1: altsyncram_mlv
 Info (12130): Elaborated megafunction instantiation "subBytes:SB|sbox:sub1|altsyncram:Mux87_rtl_0"
 Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux87_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -1943,8 +1943,8 @@ Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux87_
     Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
     Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
     Info (12134): Parameter "INIT_FILE" = "aes.aes5.rtl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8su.tdf
-    Info (12023): Found entity 1: altsyncram_8su
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_nlv.tdf
+    Info (12023): Found entity 1: altsyncram_nlv
 Info (12130): Elaborated megafunction instantiation "subBytes:SB|sbox:sub1|altsyncram:Mux79_rtl_0"
 Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux79_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -1954,8 +1954,8 @@ Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux79_
     Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
     Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
     Info (12134): Parameter "INIT_FILE" = "aes.aes6.rtl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_9su.tdf
-    Info (12023): Found entity 1: altsyncram_9su
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_olv.tdf
+    Info (12023): Found entity 1: altsyncram_olv
 Info (12130): Elaborated megafunction instantiation "subBytes:SB|sbox:sub1|altsyncram:Mux71_rtl_0"
 Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux71_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -1965,8 +1965,8 @@ Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux71_
     Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
     Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
     Info (12134): Parameter "INIT_FILE" = "aes.aes7.rtl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_asu.tdf
-    Info (12023): Found entity 1: altsyncram_asu
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_plv.tdf
+    Info (12023): Found entity 1: altsyncram_plv
 Info (12130): Elaborated megafunction instantiation "subBytes:SB|sbox:sub1|altsyncram:Mux63_rtl_0"
 Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux63_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -1976,8 +1976,8 @@ Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux63_
     Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
     Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
     Info (12134): Parameter "INIT_FILE" = "aes.aes8.rtl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_bsu.tdf
-    Info (12023): Found entity 1: altsyncram_bsu
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_qlv.tdf
+    Info (12023): Found entity 1: altsyncram_qlv
 Info (12130): Elaborated megafunction instantiation "subBytes:SB|sbox:sub1|altsyncram:Mux55_rtl_0"
 Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux55_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -1987,8 +1987,8 @@ Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux55_
     Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
     Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
     Info (12134): Parameter "INIT_FILE" = "aes.aes9.rtl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_csu.tdf
-    Info (12023): Found entity 1: altsyncram_csu
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_rlv.tdf
+    Info (12023): Found entity 1: altsyncram_rlv
 Info (12130): Elaborated megafunction instantiation "subBytes:SB|sbox:sub1|altsyncram:Mux47_rtl_0"
 Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux47_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -1998,8 +1998,8 @@ Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux47_
     Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
     Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
     Info (12134): Parameter "INIT_FILE" = "aes.aes10.rtl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ktu.tdf
-    Info (12023): Found entity 1: altsyncram_ktu
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_3nv.tdf
+    Info (12023): Found entity 1: altsyncram_3nv
 Info (12130): Elaborated megafunction instantiation "subBytes:SB|sbox:sub1|altsyncram:Mux39_rtl_0"
 Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux39_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -2009,8 +2009,8 @@ Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux39_
     Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
     Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
     Info (12134): Parameter "INIT_FILE" = "aes.aes11.rtl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ltu.tdf
-    Info (12023): Found entity 1: altsyncram_ltu
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_4nv.tdf
+    Info (12023): Found entity 1: altsyncram_4nv
 Info (12130): Elaborated megafunction instantiation "subBytes:SB|sbox:sub1|altsyncram:Mux31_rtl_0"
 Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux31_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -2020,8 +2020,8 @@ Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux31_
     Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
     Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
     Info (12134): Parameter "INIT_FILE" = "aes.aes12.rtl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_mtu.tdf
-    Info (12023): Found entity 1: altsyncram_mtu
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_5nv.tdf
+    Info (12023): Found entity 1: altsyncram_5nv
 Info (12130): Elaborated megafunction instantiation "subBytes:SB|sbox:sub1|altsyncram:Mux23_rtl_0"
 Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux23_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -2031,8 +2031,8 @@ Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux23_
     Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
     Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
     Info (12134): Parameter "INIT_FILE" = "aes.aes13.rtl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ntu.tdf
-    Info (12023): Found entity 1: altsyncram_ntu
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_6nv.tdf
+    Info (12023): Found entity 1: altsyncram_6nv
 Info (12130): Elaborated megafunction instantiation "subBytes:SB|sbox:sub1|altsyncram:Mux15_rtl_0"
 Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux15_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -2042,8 +2042,8 @@ Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux15_
     Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
     Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
     Info (12134): Parameter "INIT_FILE" = "aes.aes14.rtl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_otu.tdf
-    Info (12023): Found entity 1: altsyncram_otu
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_7nv.tdf
+    Info (12023): Found entity 1: altsyncram_7nv
 Info (12130): Elaborated megafunction instantiation "subBytes:SB|sbox:sub1|altsyncram:Mux7_rtl_0"
 Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux7_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -2053,20 +2053,20 @@ Info (12133): Instantiated megafunction "subBytes:SB|sbox:sub1|altsyncram:Mux7_r
     Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
     Info (12134): Parameter "RAM_BLOCK_TYPE" = "AUTO"
     Info (12134): Parameter "INIT_FILE" = "aes.aes15.rtl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ptu.tdf
-    Info (12023): Found entity 1: altsyncram_ptu
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8nv.tdf
+    Info (12023): Found entity 1: altsyncram_8nv
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1634 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 386 input pins
+Info (21057): Implemented 1640 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 392 input pins
     Info (21059): Implemented 128 output pins
     Info (21061): Implemented 992 logic cells
     Info (21064): Implemented 128 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4713 megabytes
-    Info: Processing ended: Fri Oct 18 14:44:59 2019
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Processing ended: Fri Oct 18 15:23:37 2019
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
 
 

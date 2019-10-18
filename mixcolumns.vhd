@@ -3,11 +3,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity mixcolumns is
 
-    Port 
-	 ( 
-			clk : std_logic;
-			plainText : in std_logic_vector(127 downto 0);
-			outMixColumns : out std_logic_vector(127 downto 0)	
+	port 
+	( 
+		 clk           : std_logic;
+		 enable        : std_logic;
+		 plainText     : in std_logic_vector(127 downto 0);
+		 outMixColumns : out std_logic_vector(127 downto 0)	
 	 );
 	 
 end entity;
@@ -119,7 +120,9 @@ outMixColumns_reg(7 downto 0) <= c_out(0);
 process(clk)
 begin
 	if(rising_edge(clk)) then
-		outMixColumns <= outMixColumns_reg;
+		if(enable = '1') then
+			outMixColumns <= outMixColumns_reg;
+		end if;
 	end if;
 end process;
 

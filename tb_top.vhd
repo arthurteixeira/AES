@@ -10,19 +10,31 @@ architecture behavior of tb_top is
 
 signal clock_sg     : std_logic := '0';
 signal selInicio_sg : std_logic := '0';
-signal plainText_sg : std_logic_vector(127 downto 0) := x"328831E0435A3137F6309807A88DA234";--(0 => '0', others=>'0');
-signal keyIni_sg : std_logic_vector(127 downto 0) :=   x"2B28AB097EAEF7CF15D2154F16A6883C";--(0 => '0', others=>'0');
-signal keyIni2_sg : std_logic_vector(127 downto 0) :=  x"a088232afa54a36cfe2c397617b13905";--(0 => '0', others=>'0');
-signal outAes_sg : std_logic_vector(127 downto 0);
+signal enRegInicio_sg  : std_logic := '0';
+signal enRegADR_sg     : std_logic := '0';
+signal enRegSub_sg     : std_logic := '0';
+signal enRegSR_sg      : std_logic := '0';
+signal enRegMix_sg     : std_logic := '0';
+signal enRegADR2_sg    : std_logic := '0';
+signal plainText_sg : std_logic_vector(127 downto 0) := x"328831E0435A3137F6309807A88DA234";   -- (0 => '0', others=>'0');
+signal keyIni_sg    : std_logic_vector(127 downto 0) :=   x"2B28AB097EAEF7CF15D2154F16A6883C"; -- (0 => '0', others=>'0');
+signal keyIni2_sg   : std_logic_vector(127 downto 0) :=  x"a088232afa54a36cfe2c397617b13905";  -- (0 => '0', others=>'0');
+signal outAes_sg    : std_logic_vector(127 downto 0);
 
 component aes is
 	port(
 		clock                  : std_logic;
-		selInicio				  : std_logic;
+		selInicio 		 		  : std_logic;
+		enRegInicio            : std_logic;
+		enRegADR               : std_logic;
+		enRegSub               : std_logic;
+		enRegSR                : std_logic;
+		enRegMix               : std_logic;
+		enRegADR2              : std_logic;
 		plainText	           : in std_logic_vector(127 downto 0);
 		keyIni     	           : in std_logic_vector(127 downto 0);
-		keyIni2  : in std_logic_vector(127 downto 0);
-		outAes  			  : out std_logic_vector(127 downto 0)
+		keyIni2     	        : in std_logic_vector(127 downto 0);
+		outAes  : out std_logic_vector(127 downto 0)
 	);
 end component aes;
 
@@ -32,6 +44,12 @@ inst_aes : aes
 	port map(
 		clock => clock_sg,
 		selInicio => selInicio_sg,
+		enRegInicio => enRegInicio_sg,
+		enRegADR    => enRegADR_sg,
+		enRegSub    => enRegSub_sg,        
+		enRegSR     => enRegSR_sg,           
+		enRegMix    => enRegMix_sg,           
+		enRegADR2   => enRegADR2_sg,
 		plainText => plainText_sg,
 		keyIni => keyIni_sg,
 		keyIni2 => keyIni2_sg,
@@ -42,9 +60,66 @@ clock_sg <= not clock_sg after 20 ns;
 
 process is
 	begin			
-		wait for 100 ns;
+		wait for 5 ns;
+			enRegInicio_sg <= '1';
+			enRegADR_sg    <= '0';
+			enRegSub_sg    <= '0';           
+			enRegSR_sg     <= '0';           
+			enRegMix_sg    <= '0';           
+			enRegADR2_sg   <= '0';
+		wait for 40 ns;
+			enRegInicio_sg <= '0';
+			enRegADR_sg    <= '1';
+			enRegSub_sg    <= '0';           
+			enRegSR_sg     <= '0';           
+			enRegMix_sg    <= '0';           
+			enRegADR2_sg   <= '0';
+		wait for 40 ns;
+			enRegInicio_sg <= '0';
+			enRegADR_sg    <= '0';
+			enRegSub_sg    <= '1';           
+			enRegSR_sg     <= '0';           
+			enRegMix_sg    <= '0';           
+			enRegADR2_sg   <= '0';
+		wait for 40 ns;
+			enRegInicio_sg <= '0';
+			enRegADR_sg    <= '0';
+			enRegSub_sg    <= '0';           
+			enRegSR_sg     <= '1';           
+			enRegMix_sg    <= '0';           
+			enRegADR2_sg   <= '0';
+		wait for 40 ns;
+			enRegInicio_sg <= '0';
+			enRegADR_sg    <= '0';
+			enRegSub_sg    <= '0';           
+			enRegSR_sg     <= '0';           
+			enRegMix_sg    <= '1';           
+			enRegADR2_sg   <= '0';
 			selInicio_sg <= '1';
-		 wait;
+		wait for 40 ns;
+			enRegInicio_sg <= '0';
+			enRegADR_sg    <= '0';
+			enRegSub_sg    <= '0';           
+			enRegSR_sg     <= '0';           
+			enRegMix_sg    <= '0';           
+			enRegADR2_sg   <= '1';
+		wait for 40 ns;
+			enRegInicio_sg <= '0';
+			enRegADR_sg    <= '0';
+			enRegSub_sg    <= '1';           
+			enRegSR_sg     <= '0';           
+			enRegMix_sg    <= '0';           
+			enRegADR2_sg   <= '0';
+			selInicio_sg   <= '1';
+		wait for 40 ns;
+			enRegInicio_sg <= '0';
+			enRegADR_sg    <= '0';
+			enRegSub_sg    <= '0';           
+			enRegSR_sg     <= '0';           
+			enRegMix_sg    <= '0';           
+			enRegADR2_sg   <= '0';
+			selInicio_sg   <= '0';
+		wait;	
 end process;
 	
 end behavior;
