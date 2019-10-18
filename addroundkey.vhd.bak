@@ -24,14 +24,16 @@ end entity;
 
 architecture rtl of addRoundKey is
 
-signal reg_f : std_logic_vector((DATA_WIDTH-1) downto 0);
+signal reg_f, reg_plainText, reg_keyIni : std_logic_vector((DATA_WIDTH-1) downto 0);
 
 begin
 	process(clk)
 	begin
 		if(rising_edge(clk)) then
+			reg_plainText <= plainText;
+			reg_keyIni <= keyIni;
 			outAddRoundKey <= reg_f;
 		end if;
 	end process;
-	reg_f <= plainText xor keyIni;
+	reg_f <= reg_plainText xor reg_keyIni;
 end rtl;

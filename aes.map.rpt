@@ -1,5 +1,5 @@
 Analysis & Synthesis report for aes
-Fri Oct 18 01:25:48 2019
+Fri Oct 18 14:44:59 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -35,25 +35,26 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
  27. Parameter Settings for User Entity Instance: Top-level Entity: |aes
  28. Parameter Settings for User Entity Instance: addRoundKey:ARK
  29. Parameter Settings for User Entity Instance: subbytes:SB
- 30. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux127_rtl_0
- 31. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux119_rtl_0
- 32. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux111_rtl_0
- 33. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux103_rtl_0
- 34. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux95_rtl_0
- 35. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux87_rtl_0
- 36. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux79_rtl_0
- 37. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux71_rtl_0
- 38. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux63_rtl_0
- 39. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux55_rtl_0
- 40. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux47_rtl_0
- 41. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux39_rtl_0
- 42. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux31_rtl_0
- 43. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux23_rtl_0
- 44. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux15_rtl_0
- 45. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux7_rtl_0
- 46. altsyncram Parameter Settings by Entity Instance
- 47. Elapsed Time Per Partition
- 48. Analysis & Synthesis Messages
+ 30. Parameter Settings for User Entity Instance: addRoundKey:ARK2
+ 31. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux127_rtl_0
+ 32. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux119_rtl_0
+ 33. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux111_rtl_0
+ 34. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux103_rtl_0
+ 35. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux95_rtl_0
+ 36. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux87_rtl_0
+ 37. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux79_rtl_0
+ 38. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux71_rtl_0
+ 39. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux63_rtl_0
+ 40. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux55_rtl_0
+ 41. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux47_rtl_0
+ 42. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux39_rtl_0
+ 43. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux31_rtl_0
+ 44. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux23_rtl_0
+ 45. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux15_rtl_0
+ 46. Parameter Settings for Inferred Entity Instance: subBytes:SB|sbox:sub1|altsyncram:Mux7_rtl_0
+ 47. altsyncram Parameter Settings by Entity Instance
+ 48. Elapsed Time Per Partition
+ 49. Analysis & Synthesis Messages
 
 
 
@@ -79,16 +80,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Oct 18 01:25:48 2019      ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 18 14:44:59 2019      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; aes                                        ;
 ; Top-level Entity Name              ; aes                                        ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 742                                        ;
-;     Total combinational functions  ; 358                                        ;
-;     Dedicated logic registers      ; 640                                        ;
-; Total registers                    ; 640                                        ;
-; Total pins                         ; 385                                        ;
+; Total logic elements               ; 992                                        ;
+;     Total combinational functions  ; 608                                        ;
+;     Dedicated logic registers      ; 768                                        ;
+; Total registers                    ; 768                                        ;
+; Total pins                         ; 514                                        ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 32,768                                     ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -241,13 +242,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 385              ;
+; I/O pins                 ; 514              ;
 ; Total memory bits        ; 32768            ;
 ; DSP block 9-bit elements ; 0                ;
 ; Maximum fan-out node     ; clock~input      ;
-; Maximum fan-out          ; 768              ;
-; Total fan-out            ; 3987             ;
-; Average fan-out          ; 2.10             ;
+; Maximum fan-out          ; 896              ;
+; Total fan-out            ; 4994             ;
+; Average fan-out          ; 1.97             ;
 +--------------------------+------------------+
 
 
@@ -256,9 +257,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                              ; Library Name ;
 +---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------+
-; |aes                                        ; 358 (0)           ; 640 (0)      ; 32768       ; 0            ; 0       ; 0         ; 0         ; 385  ; 0            ; |aes                                                                             ;              ;
-;    |addRoundKey:ARK|                        ; 128 (128)         ; 384 (384)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|addRoundKey:ARK                                                             ;              ;
-;    |mixcolumns:MC|                          ; 230 (230)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|mixcolumns:MC                                                               ;              ;
+; |aes                                        ; 608 (128)         ; 768 (256)    ; 32768       ; 0            ; 0       ; 0         ; 0         ; 514  ; 0            ; |aes                                                                             ;              ;
+;    |addRoundKey:ARK2|                       ; 128 (128)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|addRoundKey:ARK2                                                            ;              ;
+;    |addRoundKey:ARK|                        ; 128 (128)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|addRoundKey:ARK                                                             ;              ;
+;    |mixcolumns:MC|                          ; 224 (224)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|mixcolumns:MC                                                               ;              ;
 ;    |shiftrows:SR|                           ; 0 (0)             ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|shiftrows:SR                                                                ;              ;
 ;    |subBytes:SB|                            ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB                                                                 ;              ;
 ;       |sbox:sub1|                           ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1                                                       ;              ;
@@ -327,7 +329,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 640   ;
+; Total registers                              ; 768   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
@@ -532,6 +534,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------+
 ; data_width     ; 128   ; Signed Integer                  ;
 +----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: addRoundKey:ARK2 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; data_width     ; 128   ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1711,7 +1723,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Fri Oct 18 01:25:43 2019
+    Info: Processing started: Fri Oct 18 14:44:55 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aes -c aes
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file shiftrows.vhd
@@ -2046,15 +2058,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1255 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 257 input pins
+Info (21057): Implemented 1634 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 386 input pins
     Info (21059): Implemented 128 output pins
-    Info (21061): Implemented 742 logic cells
+    Info (21061): Implemented 992 logic cells
     Info (21064): Implemented 128 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4704 megabytes
-    Info: Processing ended: Fri Oct 18 01:25:48 2019
-    Info: Elapsed time: 00:00:05
+    Info: Peak virtual memory: 4713 megabytes
+    Info: Processing ended: Fri Oct 18 14:44:59 2019
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 
 

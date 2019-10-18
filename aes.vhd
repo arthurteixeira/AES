@@ -14,17 +14,21 @@ entity aes is
 
 	port(
 		clock                  : std_logic;
+		selInicio 		 		  : std_logic;
 		--RAM_ADDR               : in std_logic_vector(3 downto 0);
 		--RAM_DATA_OUT           : out std_logic_vector(7 downto 0);
 		plainText	           : in std_logic_vector(127 downto 0);
 		keyIni     	           : in std_logic_vector(127 downto 0);
+		keyIni2     	           : in std_logic_vector(127 downto 0);
 		outAes  : out std_logic_vector(127 downto 0)
 	);
 end entity;
 
 architecture rtl of aes is
 
-signal plaintText_sg, outAddRoundKey_sg, outSubBytes_sg, outShiftRows_sg : std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
+signal outAddRoundKey_sg, outAddRoundKey_sg2, outSubBytes_sg, outShiftRows_sg : std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
+signal outMuxInicio, outMixColumns_sg : std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
+signal reg_plainText, reg_keyIni : std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
 
 component addRoundKey is
 	generic(
@@ -82,14 +86,29 @@ begin
    --); 
 --RAM_DATA_OUT <= RAM(to_integer(unsigned(RAM_ADDR)));
 
-plaintText_sg <= plainText;
+-- conecta porta final
+outAes <= outAddRoundKey_sg2;
 
+-- Mux Inicio
+outMuxInicio <= outAddRoundKey_sg when selInicio = '0' else
+			       outAddRoundKey_sg2;
+
+-- Regs iniciais
+
+process(clock)
+	begin
+		if(rising_edge(clock)) then
+			reg_plainText <= plainText;
+			reg_keyIni <= keyIni;
+		end if;
+end process;			
+					 
 ARK: addRoundKey
 		generic map (DATA_WIDTH => DATA_WIDTH_TOP)
 		port map (
 			clk => clock,
-			plainText => plaintText_sg,
-			keyIni => keyIni,
+			plainText => reg_plainText,
+			keyIni => reg_keyIni,
 			outAddRoundKey => outAddRoundKey_sg
 		);
 
@@ -97,7 +116,7 @@ SB: subbytes
 		generic map (DATA_WIDTH => DATA_WIDTH_TOP)
 		port map (
 			clk => clock,
-			theText => outAddRoundKey_sg,
+			theText => outMuxInicio,
 			outSubBytes => outSubBytes_sg
 		);
 
@@ -112,7 +131,16 @@ MC: mixcolumns
 	  port map(
 			clk => clock,
 			plainText => outShiftRows_sg,
-			outMixColumns => outAes
+			outMixColumns => outMixColumns_sg
 	  );	  
 	  
+ARK2: addRoundKey
+		generic map (DATA_WIDTH => DATA_WIDTH_TOP)
+		port map (
+			clk => clock,
+			plainText => outMixColumns_sg,
+			keyIni => keyIni2,
+			outAddRoundKey => outAddRoundKey_sg2
+);
+
 end rtl;
