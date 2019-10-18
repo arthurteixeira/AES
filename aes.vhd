@@ -24,7 +24,7 @@ end entity;
 
 architecture rtl of aes is
 
-signal plaintText_sg, outAddRoundKey_sg, outSubBytes_sg : std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
+signal plaintText_sg, outAddRoundKey_sg, outSubBytes_sg, outShiftRows_sg : std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
 
 component addRoundKey is
 	generic(
@@ -62,6 +62,15 @@ component shiftrows is
 	);
 end component;
 
+component mixcolumns is
+	port 
+	(
+		clk             : std_logic;
+		plainText	    : in std_logic_vector(127 downto 0);
+		outMixColumns   : out std_logic_vector(127 downto 0)
+	);
+end component;
+
 begin
 
 --type ramPlainText is array (0 to 15) of std_logic_vector (7 downto 0);
@@ -96,7 +105,14 @@ SR: shiftrows
 	  port map(
 			clk => clock,
 			ptext => outSubBytes_sg,
-			outShiftRows => outAes
+			outShiftRows => outShiftRows_sg
 	  );
+	  
+MC: mixcolumns
+	  port map(
+			clk => clock,
+			plainText => outShiftRows_sg,
+			outMixColumns => outAes
+	  );	  
 	  
 end rtl;
