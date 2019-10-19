@@ -78,31 +78,31 @@ Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage 
 NC                           : A2        :        :                   :         :           :                
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : A3        : input  : 2.5 V             :         : 9         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A4        :        :                   :         : 8         :                
-outAes[105]                  : A5        : output : 2.5 V             :         : 8         : N              
-keyIni[76]                   : A6        : input  : 2.5 V             :         : 8         : N              
-keyIni[74]                   : A7        : input  : 2.5 V             :         : 8         : N              
-keyIni[72]                   : A8        : input  : 2.5 V             :         : 8         : N              
-keyIni[113]                  : A9        : input  : 2.5 V             :         : 8         : N              
-keyIni[20]                   : A10       : input  : 2.5 V             :         : 8         : N              
-keyIni[116]                  : A11       : input  : 2.5 V             :         : 8         : N              
-plainText[104]               : A12       : input  : 2.5 V             :         : 8         : N              
-plainText[17]                : A13       : input  : 2.5 V             :         : 8         : N              
-keyIni[19]                   : A14       : input  : 2.5 V             :         : 8         : N              
+keyIni[122]                  : A5        : input  : 2.5 V             :         : 8         : N              
+keyIni[7]                    : A6        : input  : 2.5 V             :         : 8         : N              
+outAes[92]                   : A7        : output : 2.5 V             :         : 8         : N              
+keyIni[53]                   : A8        : input  : 2.5 V             :         : 8         : N              
+plainText[52]                : A9        : input  : 2.5 V             :         : 8         : N              
+keyIni[6]                    : A10       : input  : 2.5 V             :         : 8         : N              
+keyIni[72]                   : A11       : input  : 2.5 V             :         : 8         : N              
+keyIni[119]                  : A12       : input  : 2.5 V             :         : 8         : N              
+plainText[62]                : A13       : input  : 2.5 V             :         : 8         : N              
+keyIni[63]                   : A14       : input  : 2.5 V             :         : 8         : N              
 GND+                         : A15       :        :                   :         : 7         :                
-outAes[119]                  : A16       : output : 2.5 V             :         : 7         : N              
-keyIni[18]                   : A17       : input  : 2.5 V             :         : 7         : N              
-outAes[114]                  : A18       : output : 2.5 V             :         : 7         : N              
-plainText[50]                : A19       : input  : 2.5 V             :         : 7         : N              
-keyIni[46]                   : A20       : input  : 2.5 V             :         : 7         : N              
-keyIni[49]                   : A21       : input  : 2.5 V             :         : 7         : N              
-keyIni[84]                   : A22       : input  : 2.5 V             :         : 7         : N              
-keyIni[64]                   : A23       : input  : 2.5 V             :         : 7         : N              
-keyIni[87]                   : A24       : input  : 2.5 V             :         : 7         : N              
-plainText[25]                : A25       : input  : 2.5 V             :         : 7         : N              
-plainText[31]                : A26       : input  : 2.5 V             :         : 7         : N              
-plainText[28]                : A27       : input  : 2.5 V             :         : 7         : N              
-outAes[30]                   : A28       : output : 2.5 V             :         : 7         : N              
-outAes[29]                   : A29       : output : 2.5 V             :         : 7         : N              
+keyIni[92]                   : A16       : input  : 2.5 V             :         : 7         : N              
+plainText[60]                : A17       : input  : 2.5 V             :         : 7         : N              
+keyIni[48]                   : A18       : input  : 2.5 V             :         : 7         : N              
+plainText[78]                : A19       : input  : 2.5 V             :         : 7         : N              
+keyIni[68]                   : A20       : input  : 2.5 V             :         : 7         : N              
+outAes[42]                   : A21       : output : 2.5 V             :         : 7         : N              
+outAes[120]                  : A22       : output : 2.5 V             :         : 7         : N              
+outAes[55]                   : A23       : output : 2.5 V             :         : 7         : N              
+outAes[0]                    : A24       : output : 2.5 V             :         : 7         : N              
+plainText[61]                : A25       : input  : 2.5 V             :         : 7         : N              
+outAes[62]                   : A26       : output : 2.5 V             :         : 7         : N              
+plainText[3]                 : A27       : input  : 2.5 V             :         : 7         : N              
+outAes[119]                  : A28       : output : 2.5 V             :         : 7         : N              
+outAes[116]                  : A29       : output : 2.5 V             :         : 7         : N              
 GXB_GND*                     : AA1       :        :                   :         : QL0       :                
 GXB_GND*                     : AA2       :        :                   :         : QL0       :                
 GND                          : AA3       : gnd    :                   :         :           :                
@@ -114,25 +114,25 @@ GND                          : AA8       : gnd    :                   :         
 VCCA                         : AA9       : power  :                   : 2.5V    :           :                
 VCCINT                       : AA10      : power  :                   : 1.2V    :           :                
 GND                          : AA11      : gnd    :                   :         :           :                
-plainText[117]               : AA12      : input  : 2.5 V             :         : 3         : N              
-outAes[15]                   : AA13      : output : 2.5 V             :         : 3         : N              
+outAes[122]                  : AA12      : output : 2.5 V             :         : 3         : N              
+plainText[83]                : AA13      : input  : 2.5 V             :         : 3         : N              
 VCCINT                       : AA14      : power  :                   : 1.2V    :           :                
-keyIni[119]                  : AA15      : input  : 2.5 V             :         : 3         : N              
-plainText[13]                : AA16      : input  : 2.5 V             :         : 3         : N              
-plainText[119]               : AA17      : input  : 2.5 V             :         : 4         : N              
-keyIni[43]                   : AA18      : input  : 2.5 V             :         : 4         : N              
+keyIni[14]                   : AA15      : input  : 2.5 V             :         : 3         : N              
+plainText[96]                : AA16      : input  : 2.5 V             :         : 3         : N              
+plainText[63]                : AA17      : input  : 2.5 V             :         : 4         : N              
+keyIni[26]                   : AA18      : input  : 2.5 V             :         : 4         : N              
 GND                          : AA19      : gnd    :                   :         :           :                
-plainText[67]                : AA20      : input  : 2.5 V             :         : 4         : N              
-keyIni[70]                   : AA21      : input  : 2.5 V             :         : 4         : N              
-keyIni[66]                   : AA22      : input  : 2.5 V             :         : 5         : N              
+outAes[125]                  : AA20      : output : 2.5 V             :         : 4         : N              
+plainText[118]               : AA21      : input  : 2.5 V             :         : 4         : N              
+plainText[114]               : AA22      : input  : 2.5 V             :         : 5         : N              
 VCCIO5                       : AA23      : power  :                   : 2.5V    : 5         :                
 VCCIO5                       : AA24      : power  :                   : 2.5V    : 5         :                
-keyIni[91]                   : AA25      : input  : 2.5 V             :         : 5         : N              
-keyIni[100]                  : AA26      : input  : 2.5 V             :         : 5         : N              
-keyIni[103]                  : AA27      : input  : 2.5 V             :         : 5         : N              
-outAes[103]                  : AA28      : output : 2.5 V             :         : 5         : N              
-plainText[35]                : AA29      : input  : 2.5 V             :         : 5         : N              
-selInicio                    : AA30      : input  : 2.5 V             :         : 5         : N              
+outAes[50]                   : AA25      : output : 2.5 V             :         : 5         : N              
+outAes[37]                   : AA26      : output : 2.5 V             :         : 5         : N              
+outAes[103]                  : AA27      : output : 2.5 V             :         : 5         : N              
+outAes[111]                  : AA28      : output : 2.5 V             :         : 5         : N              
+keyIni[82]                   : AA29      : input  : 2.5 V             :         : 5         : N              
+outAes[39]                   : AA30      : output : 2.5 V             :         : 5         : N              
 GND                          : AB1       : gnd    :                   :         :           :                
 GND                          : AB2       : gnd    :                   :         :           :                
 GXB_NC                       : AB3       :        :                   :         : QL0       :                
@@ -143,26 +143,26 @@ GND                          : AB7       : gnd    :                   :         
 VCCINT                       : AB8       : power  :                   : 1.2V    :           :                
 CONF_DONE                    : AB9       :        :                   :         : 3         :                
 GND                          : AB10      : gnd    :                   :         :           :                
-keyIni[107]                  : AB11      : input  : 2.5 V             :         : 3         : N              
+keyIni[84]                   : AB11      : input  : 2.5 V             :         : 3         : N              
 VCCIO3                       : AB12      : power  :                   : 2.5V    : 3         :                
-plainText[18]                : AB13      : input  : 2.5 V             :         : 3         : N              
-keyIni[42]                   : AB14      : input  : 2.5 V             :         : 3         : N              
+plainText[56]                : AB13      : input  : 2.5 V             :         : 3         : N              
+plainText[92]                : AB14      : input  : 2.5 V             :         : 3         : N              
 VCCIO3                       : AB15      : power  :                   : 2.5V    : 3         :                
-outAes[111]                  : AB16      : output : 2.5 V             :         : 3         : N              
-plainText[9]                 : AB17      : input  : 2.5 V             :         : 4         : N              
+plainText[34]                : AB16      : input  : 2.5 V             :         : 3         : N              
+plainText[121]               : AB17      : input  : 2.5 V             :         : 4         : N              
 VCCIO4                       : AB18      : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : AB19      : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : AB20      : power  :                   : 2.5V    : 4         :                
-keyIni[71]                   : AB21      : input  : 2.5 V             :         : 4         : N              
-keyIni[2]                    : AB22      : input  : 2.5 V             :         : 4         : N              
+plainText[72]                : AB21      : input  : 2.5 V             :         : 4         : N              
+plainText[32]                : AB22      : input  : 2.5 V             :         : 4         : N              
 VCCD_PLL                     : AB23      : power  :                   : 1.2V    :           :                
 VCCA                         : AB24      : power  :                   : 2.5V    :           :                
-keyIni[96]                   : AB25      : input  : 2.5 V             :         : 5         : N              
-outAes[101]                  : AB26      : output : 2.5 V             :         : 5         : N              
-outAes[4]                    : AB27      : output : 2.5 V             :         : 5         : N              
-keyIni[39]                   : AB28      : input  : 2.5 V             :         : 5         : N              
-plainText[56]                : AB29      : input  : 2.5 V             :         : 5         : N              
-plainText[95]                : AB30      : input  : 2.5 V             :         : 5         : N              
+plainText[28]                : AB25      : input  : 2.5 V             :         : 5         : N              
+plainText[27]                : AB26      : input  : 2.5 V             :         : 5         : N              
+outAes[36]                   : AB27      : output : 2.5 V             :         : 5         : N              
+outAes[8]                    : AB28      : output : 2.5 V             :         : 5         : N              
+keyIni[105]                  : AB29      : input  : 2.5 V             :         : 5         : N              
+plainText[67]                : AB30      : input  : 2.5 V             :         : 5         : N              
 GXB_GND*                     : AC1       :        :                   :         : QL0       :                
 GXB_GND*                     : AC2       :        :                   :         : QL0       :                
 GND                          : AC3       : gnd    :                   :         :           :                
@@ -178,7 +178,7 @@ VCCIO3                       : AC12      : power  :                   : 2.5V    
 VCCIO3                       : AC13      : power  :                   : 2.5V    : 3         :                
 GND                          : AC14      : gnd    :                   :         :           :                
 VCCIO3                       : AC15      : power  :                   : 2.5V    : 3         :                
-outAes[108]                  : AC16      : output : 2.5 V             :         : 3         : N              
+outAes[25]                   : AC16      : output : 2.5 V             :         : 3         : N              
 GND                          : AC17      : gnd    :                   :         :           :                
 VCCIO4                       : AC18      : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : AC19      : power  :                   : 2.5V    : 4         :                
@@ -187,12 +187,12 @@ VCCIO4                       : AC21      : power  :                   : 2.5V    
 VCCIO4                       : AC22      : power  :                   : 2.5V    : 4         :                
 GND                          : AC23      : gnd    :                   :         :           :                
 GND                          : AC24      : gnd    :                   :         :           :                
-outAes[35]                   : AC25      : output : 2.5 V             :         : 5         : N              
+plainText[79]                : AC25      : input  : 2.5 V             :         : 5         : N              
 GND                          : AC26      : gnd    :                   :         :           :                
-keyIni[12]                   : AC27      : input  : 2.5 V             :         : 5         : N              
-keyIni[59]                   : AC28      : input  : 2.5 V             :         : 5         : N              
+keyIni[16]                   : AC27      : input  : 2.5 V             :         : 5         : N              
+outAes[15]                   : AC28      : output : 2.5 V             :         : 5         : N              
 GND                          : AC29      : gnd    :                   :         :           :                
-plainText[62]                : AC30      : input  : 2.5 V             :         : 5         : N              
+keyIni[108]                  : AC30      : input  : 2.5 V             :         : 5         : N              
 GND                          : AD1       : gnd    :                   :         :           :                
 GND                          : AD2       : gnd    :                   :         :           :                
 VCCA_GXB                     : AD3       : power  :                   : 2.5V    :           :                
@@ -208,21 +208,21 @@ VCCIO3                       : AD12      : power  :                   : 2.5V    
 VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
 VCCIO3                       : AD14      : power  :                   : 2.5V    : 3         :                
 VCCIO3                       : AD15      : power  :                   : 2.5V    : 3         :                
-keyIni[55]                   : AD16      : input  : 2.5 V             :         : 4         : N              
+plainText[1]                 : AD16      : input  : 2.5 V             :         : 4         : N              
 VCCIO4                       : AD17      : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : AD18      : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : AD19      : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
 VCCIO4                       : AD21      : power  :                   : 2.5V    : 4         :                
-keyIni[60]                   : AD22      : input  : 2.5 V             :         : 4         : N              
-plainText[102]               : AD23      : input  : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AD24      :        :                   :         : 4         :                
-plainText[59]                : AD25      : input  : 2.5 V             :         : 5         : N              
-plainText[6]                 : AD26      : input  : 2.5 V             :         : 5         : N              
-outAes[8]                    : AD27      : output : 2.5 V             :         : 5         : N              
-keyIni[6]                    : AD28      : input  : 2.5 V             :         : 5         : N              
-outAes[96]                   : AD29      : output : 2.5 V             :         : 5         : N              
-keyIni[101]                  : AD30      : input  : 2.5 V             :         : 5         : N              
+outAes[95]                   : AD22      : output : 2.5 V             :         : 4         : N              
+keyIni[110]                  : AD23      : input  : 2.5 V             :         : 4         : N              
+plainText[21]                : AD24      : input  : 2.5 V             :         : 4         : N              
+keyIni[21]                   : AD25      : input  : 2.5 V             :         : 5         : N              
+plainText[95]                : AD26      : input  : 2.5 V             :         : 5         : N              
+plainText[22]                : AD27      : input  : 2.5 V             :         : 5         : N              
+outAes[118]                  : AD28      : output : 2.5 V             :         : 5         : N              
+plainText[25]                : AD29      : input  : 2.5 V             :         : 5         : N              
+outAes[17]                   : AD30      : output : 2.5 V             :         : 5         : N              
 RREF                         : AE1       :        :                   :         :           :                
 GND                          : AE2       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE3       :        :                   :         : 3         :                
@@ -234,25 +234,25 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AE8       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE9       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE10      :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE11      :        :                   :         : 3         :                
-plainText[77]                : AE12      : input  : 2.5 V             :         : 3         : N              
-keyIni[106]                  : AE13      : input  : 2.5 V             :         : 3         : N              
-outAes[11]                   : AE14      : output : 2.5 V             :         : 3         : N              
-keyIni[68]                   : AE15      : input  : 2.5 V             :         : 3         : N              
-outAes[75]                   : AE16      : output : 2.5 V             :         : 4         : N              
-plainText[42]                : AE17      : input  : 2.5 V             :         : 4         : N              
-keyIni[44]                   : AE18      : input  : 2.5 V             :         : 4         : N              
-plainText[45]                : AE19      : input  : 2.5 V             :         : 4         : N              
-keyIni[67]                   : AE20      : input  : 2.5 V             :         : 4         : N              
-plainText[64]                : AE21      : input  : 2.5 V             :         : 4         : N              
-plainText[57]                : AE22      : input  : 2.5 V             :         : 4         : N              
-keyIni[7]                    : AE23      : input  : 2.5 V             :         : 4         : N              
-keyIni[97]                   : AE24      : input  : 2.5 V             :         : 4         : N              
-outAes[100]                  : AE25      : output : 2.5 V             :         : 5         : N              
-outAes[125]                  : AE26      : output : 2.5 V             :         : 5         : N              
-outAes[66]                   : AE27      : output : 2.5 V             :         : 5         : N              
-plainText[66]                : AE28      : input  : 2.5 V             :         : 5         : N              
-keyIni[93]                   : AE29      : input  : 2.5 V             :         : 5         : N              
-keyIni[58]                   : AE30      : input  : 2.5 V             :         : 5         : N              
+plainText[100]               : AE12      : input  : 2.5 V             :         : 3         : N              
+plainText[37]                : AE13      : input  : 2.5 V             :         : 3         : N              
+plainText[87]                : AE14      : input  : 2.5 V             :         : 3         : N              
+outAes[7]                    : AE15      : output : 2.5 V             :         : 3         : N              
+keyIni[102]                  : AE16      : input  : 2.5 V             :         : 4         : N              
+plainText[2]                 : AE17      : input  : 2.5 V             :         : 4         : N              
+plainText[64]                : AE18      : input  : 2.5 V             :         : 4         : N              
+outAes[83]                   : AE19      : output : 2.5 V             :         : 4         : N              
+outAes[94]                   : AE20      : output : 2.5 V             :         : 4         : N              
+outAes[100]                  : AE21      : output : 2.5 V             :         : 4         : N              
+outAes[71]                   : AE22      : output : 2.5 V             :         : 4         : N              
+keyIni[28]                   : AE23      : input  : 2.5 V             :         : 4         : N              
+plainText[108]               : AE24      : input  : 2.5 V             :         : 4         : N              
+keyIni[11]                   : AE25      : input  : 2.5 V             :         : 5         : N              
+plainText[23]                : AE26      : input  : 2.5 V             :         : 5         : N              
+outAes[23]                   : AE27      : output : 2.5 V             :         : 5         : N              
+keyIni[9]                    : AE28      : input  : 2.5 V             :         : 5         : N              
+keyIni[79]                   : AE29      : input  : 2.5 V             :         : 5         : N              
+keyIni[39]                   : AE30      : input  : 2.5 V             :         : 5         : N              
 GND                          : AF1       : gnd    :                   :         :           :                
 GND                          : AF2       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF3       :        :                   :         : 3         :                
@@ -264,263 +264,263 @@ GND                          : AF8       : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF9       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF10      :        :                   :         : 3         :                
 GND                          : AF11      : gnd    :                   :         :           :                
-keyIni[104]                  : AF12      : input  : 2.5 V             :         : 3         : N              
-plainText[106]               : AF13      : input  : 2.5 V             :         : 3         : N              
+plainText[49]                : AF12      : input  : 2.5 V             :         : 3         : N              
+keyIni[33]                   : AF13      : input  : 2.5 V             :         : 3         : N              
 GND                          : AF14      : gnd    :                   :         :           :                
-plainText[20]                : AF15      : input  : 2.5 V             :         : 3         : N              
-outAes[107]                  : AF16      : output : 2.5 V             :         : 4         : N              
+keyIni[30]                   : AF15      : input  : 2.5 V             :         : 3         : N              
+keyIni[123]                  : AF16      : input  : 2.5 V             :         : 4         : N              
 GND                          : AF17      : gnd    :                   :         :           :                
-outAes[9]                    : AF18      : output : 2.5 V             :         : 4         : N              
-outAes[47]                   : AF19      : output : 2.5 V             :         : 4         : N              
+keyIni[80]                   : AF18      : input  : 2.5 V             :         : 4         : N              
+plainText[80]                : AF19      : input  : 2.5 V             :         : 4         : N              
 GND                          : AF20      : gnd    :                   :         :           :                
-keyIni[57]                   : AF21      : input  : 2.5 V             :         : 4         : N              
-outAes[60]                   : AF22      : output : 2.5 V             :         : 4         : N              
+outAes[124]                  : AF21      : output : 2.5 V             :         : 4         : N              
+outAes[6]                    : AF22      : output : 2.5 V             :         : 4         : N              
 GND                          : AF23      : gnd    :                   :         :           :                
-outAes[98]                   : AF24      : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF25      :        :                   :         : 4         :                
+keyIni[25]                   : AF24      : input  : 2.5 V             :         : 4         : N              
+keyIni[114]                  : AF25      : input  : 2.5 V             :         : 4         : N              
 GND                          : AF26      : gnd    :                   :         :           :                
-keyIni[61]                   : AF27      : input  : 2.5 V             :         : 5         : N              
-plainText[61]                : AF28      : input  : 2.5 V             :         : 5         : N              
+keyIni[75]                   : AF27      : input  : 2.5 V             :         : 5         : N              
+plainText[115]               : AF28      : input  : 2.5 V             :         : 5         : N              
 GND                          : AF29      : gnd    :                   :         :           :                
-plainText[101]               : AF30      : input  : 2.5 V             :         : 5         : N              
+outAes[22]                   : AF30      : output : 2.5 V             :         : 5         : N              
 NC                           : AG1       :        :                   :         :           :                
 GND                          : AG2       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG3       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG4       :        :                   :         : 3         :                
-keyIni[21]                   : AG5       : input  : 2.5 V             :         : 3         : N              
+keyIni[43]                   : AG5       : input  : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG6       :        :                   :         : 3         :                
-plainText[15]                : AG7       : input  : 2.5 V             :         : 3         : N              
-plainText[75]                : AG8       : input  : 2.5 V             :         : 3         : N              
-outAes[54]                   : AG9       : output : 2.5 V             :         : 3         : N              
-keyIni[78]                   : AG10      : input  : 2.5 V             :         : 3         : N              
-plainText[112]               : AG11      : input  : 2.5 V             :         : 3         : N              
-plainText[14]                : AG12      : input  : 2.5 V             :         : 3         : N              
-plainText[113]               : AG13      : input  : 2.5 V             :         : 3         : N              
-keyIni[54]                   : AG14      : input  : 2.5 V             :         : 3         : N              
-plainText[107]               : AG15      : input  : 2.5 V             :         : 3         : N              
-outAes[117]                  : AG16      : output : 2.5 V             :         : 4         : N              
-outAes[50]                   : AG17      : output : 2.5 V             :         : 4         : N              
-plainText[43]                : AG18      : input  : 2.5 V             :         : 4         : N              
-plainText[40]                : AG19      : input  : 2.5 V             :         : 4         : N              
-outAes[84]                   : AG20      : output : 2.5 V             :         : 4         : N              
-outAes[67]                   : AG21      : output : 2.5 V             :         : 4         : N              
-plainText[65]                : AG22      : input  : 2.5 V             :         : 4         : N              
-outAes[1]                    : AG23      : output : 2.5 V             :         : 4         : N              
-outAes[102]                  : AG24      : output : 2.5 V             :         : 4         : N              
-keyIni[98]                   : AG25      : input  : 2.5 V             :         : 4         : N              
-plainText[98]                : AG26      : input  : 2.5 V             :         : 4         : N              
-outAes[3]                    : AG27      : output : 2.5 V             :         : 4         : N              
-keyIni[90]                   : AG28      : input  : 2.5 V             :         : 4         : N              
-plainText[58]                : AG29      : input  : 2.5 V             :         : 5         : N              
-outAes[61]                   : AG30      : output : 2.5 V             :         : 5         : N              
+keyIni[125]                  : AG7       : input  : 2.5 V             :         : 3         : N              
+plainText[91]                : AG8       : input  : 2.5 V             :         : 3         : N              
+outAes[49]                   : AG9       : output : 2.5 V             :         : 3         : N              
+outAes[88]                   : AG10      : output : 2.5 V             :         : 3         : N              
+plainText[93]                : AG11      : input  : 2.5 V             :         : 3         : N              
+keyIni[95]                   : AG12      : input  : 2.5 V             :         : 3         : N              
+plainText[94]                : AG13      : input  : 2.5 V             :         : 3         : N              
+keyIni[29]                   : AG14      : input  : 2.5 V             :         : 3         : N              
+keyIni[45]                   : AG15      : input  : 2.5 V             :         : 3         : N              
+keyIni[124]                  : AG16      : input  : 2.5 V             :         : 4         : N              
+outAes[59]                   : AG17      : output : 2.5 V             :         : 4         : N              
+keyIni[111]                  : AG18      : input  : 2.5 V             :         : 4         : N              
+outAes[81]                   : AG19      : output : 2.5 V             :         : 4         : N              
+keyIni[42]                   : AG20      : input  : 2.5 V             :         : 4         : N              
+outAes[53]                   : AG21      : output : 2.5 V             :         : 4         : N              
+plainText[89]                : AG22      : input  : 2.5 V             :         : 4         : N              
+plainText[50]                : AG23      : input  : 2.5 V             :         : 4         : N              
+plainText[9]                 : AG24      : input  : 2.5 V             :         : 4         : N              
+keyIni[76]                   : AG25      : input  : 2.5 V             :         : 4         : N              
+keyIni[85]                   : AG26      : input  : 2.5 V             :         : 4         : N              
+keyIni[112]                  : AG27      : input  : 2.5 V             :         : 4         : N              
+keyIni[32]                   : AG28      : input  : 2.5 V             :         : 4         : N              
+plainText[10]                : AG29      : input  : 2.5 V             :         : 5         : N              
+plainText[75]                : AG30      : input  : 2.5 V             :         : 5         : N              
 NC                           : AH1       :        :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AH2       :        :                   :         : 3         :                
-keyIni[73]                   : AH3       : input  : 2.5 V             :         : 3         : N              
-outAes[109]                  : AH4       : output : 2.5 V             :         : 3         : N              
-outAes[16]                   : AH5       : output : 2.5 V             :         : 3         : N              
-plainText[111]               : AH6       : input  : 2.5 V             :         : 3         : N              
-keyIni[13]                   : AH7       : input  : 2.5 V             :         : 3         : N              
-plainText[68]                : AH8       : input  : 2.5 V             :         : 3         : N              
-keyIni[77]                   : AH9       : input  : 2.5 V             :         : 3         : N              
-outAes[79]                   : AH10      : output : 2.5 V             :         : 3         : N              
-outAes[104]                  : AH11      : output : 2.5 V             :         : 3         : N              
-keyIni[108]                  : AH12      : input  : 2.5 V             :         : 3         : N              
-plainText[109]               : AH13      : input  : 2.5 V             :         : 3         : N              
-plainText[51]                : AH14      : input  : 2.5 V             :         : 3         : N              
-keyIni[79]                   : AH15      : input  : 2.5 V             :         : 3         : N              
-plainText[110]               : AH16      : input  : 2.5 V             :         : 3         : N              
-outAes[44]                   : AH17      : output : 2.5 V             :         : 4         : N              
-plainText[49]                : AH18      : input  : 2.5 V             :         : 4         : N              
-outAes[45]                   : AH19      : output : 2.5 V             :         : 4         : N              
-outAes[5]                    : AH20      : output : 2.5 V             :         : 4         : N              
-keyIni[5]                    : AH21      : input  : 2.5 V             :         : 4         : N              
-keyIni[62]                   : AH22      : input  : 2.5 V             :         : 4         : N              
-outAes[71]                   : AH23      : output : 2.5 V             :         : 4         : N              
-outAes[2]                    : AH24      : output : 2.5 V             :         : 4         : N              
-outAes[99]                   : AH25      : output : 2.5 V             :         : 4         : N              
-plainText[97]                : AH26      : input  : 2.5 V             :         : 4         : N              
-plainText[2]                 : AH27      : input  : 2.5 V             :         : 4         : N              
-plainText[70]                : AH28      : input  : 2.5 V             :         : 4         : N              
-plainText[100]               : AH29      : input  : 2.5 V             :         : 5         : N              
-plainText[103]               : AH30      : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH3       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH4       :        :                   :         : 3         :                
+outAes[31]                   : AH5       : output : 2.5 V             :         : 3         : N              
+keyIni[58]                   : AH6       : input  : 2.5 V             :         : 3         : N              
+plainText[6]                 : AH7       : input  : 2.5 V             :         : 3         : N              
+keyIni[56]                   : AH8       : input  : 2.5 V             :         : 3         : N              
+plainText[48]                : AH9       : input  : 2.5 V             :         : 3         : N              
+keyIni[24]                   : AH10      : input  : 2.5 V             :         : 3         : N              
+keyIni[91]                   : AH11      : input  : 2.5 V             :         : 3         : N              
+outAes[127]                  : AH12      : output : 2.5 V             :         : 3         : N              
+outAes[97]                   : AH13      : output : 2.5 V             :         : 3         : N              
+keyIni[90]                   : AH14      : input  : 2.5 V             :         : 3         : N              
+keyIni[51]                   : AH15      : input  : 2.5 V             :         : 3         : N              
+plainText[85]                : AH16      : input  : 2.5 V             :         : 3         : N              
+keyIni[49]                   : AH17      : input  : 2.5 V             :         : 4         : N              
+outAes[123]                  : AH18      : output : 2.5 V             :         : 4         : N              
+outAes[64]                   : AH19      : output : 2.5 V             :         : 4         : N              
+keyIni[70]                   : AH20      : input  : 2.5 V             :         : 4         : N              
+keyIni[121]                  : AH21      : input  : 2.5 V             :         : 4         : N              
+keyIni[55]                   : AH22      : input  : 2.5 V             :         : 4         : N              
+outAes[24]                   : AH23      : output : 2.5 V             :         : 4         : N              
+plainText[38]                : AH24      : input  : 2.5 V             :         : 4         : N              
+plainText[82]                : AH25      : input  : 2.5 V             :         : 4         : N              
+plainText[58]                : AH26      : input  : 2.5 V             :         : 4         : N              
+plainText[112]               : AH27      : input  : 2.5 V             :         : 4         : N              
+keyIni[27]                   : AH28      : input  : 2.5 V             :         : 4         : N              
+outAes[41]                   : AH29      : output : 2.5 V             :         : 5         : N              
+outAes[28]                   : AH30      : output : 2.5 V             :         : 5         : N              
 nSTATUS                      : AJ1       :        :                   :         : 3         :                
 GND                          : AJ2       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AJ3       :        :                   :         : 3         :                
-keyIni[17]                   : AJ4       : input  : 2.5 V             :         : 3         : N              
+plainText[126]               : AJ4       : input  : 2.5 V             :         : 3         : N              
 GND                          : AJ5       : gnd    :                   :         :           :                
-plainText[74]                : AJ6       : input  : 2.5 V             :         : 3         : N              
-outAes[23]                   : AJ7       : output : 2.5 V             :         : 3         : N              
+keyIni[83]                   : AJ6       : input  : 2.5 V             :         : 3         : N              
+outAes[38]                   : AJ7       : output : 2.5 V             :         : 3         : N              
 GND                          : AJ8       : gnd    :                   :         :           :                
-plainText[11]                : AJ9       : input  : 2.5 V             :         : 3         : N              
-keyIni[105]                  : AJ10      : input  : 2.5 V             :         : 3         : N              
+keyIni[52]                   : AJ9       : input  : 2.5 V             :         : 3         : N              
+plainText[66]                : AJ10      : input  : 2.5 V             :         : 3         : N              
 GND                          : AJ11      : gnd    :                   :         :           :                
-outAes[77]                   : AJ12      : output : 2.5 V             :         : 3         : N              
-keyIni[11]                   : AJ13      : input  : 2.5 V             :         : 3         : N              
+plainText[70]                : AJ12      : input  : 2.5 V             :         : 3         : N              
+outAes[89]                   : AJ13      : output : 2.5 V             :         : 3         : N              
 GND                          : AJ14      : gnd    :                   :         :           :                
-keyIni[109]                  : AJ15      : input  : 2.5 V             :         : 4         : N              
-keyIni[0]                    : AJ16      : input  : 2.5 V             :         : 4         : N              
+plainText[97]                : AJ15      : input  : 2.5 V             :         : 4         : N              
+selRound                     : AJ16      : input  : 2.5 V             :         : 4         : N              
 GND                          : AJ17      : gnd    :                   :         :           :                
-keyIni[15]                   : AJ18      : input  : 2.5 V             :         : 4         : N              
-keyIni[45]                   : AJ19      : input  : 2.5 V             :         : 4         : N              
+keyIni[50]                   : AJ18      : input  : 2.5 V             :         : 4         : N              
+plainText[30]                : AJ19      : input  : 2.5 V             :         : 4         : N              
 GND                          : AJ20      : gnd    :                   :         :           :                
-outAes[64]                   : AJ21      : output : 2.5 V             :         : 4         : N              
-outAes[40]                   : AJ22      : output : 2.5 V             :         : 4         : N              
+keyIni[46]                   : AJ21      : input  : 2.5 V             :         : 4         : N              
+outAes[58]                   : AJ22      : output : 2.5 V             :         : 4         : N              
 GND                          : AJ23      : gnd    :                   :         :           :                
-plainText[60]                : AJ24      : input  : 2.5 V             :         : 4         : N              
-outAes[91]                   : AJ25      : output : 2.5 V             :         : 4         : N              
+outAes[84]                   : AJ24      : output : 2.5 V             :         : 4         : N              
+keyIni[66]                   : AJ25      : input  : 2.5 V             :         : 4         : N              
 GND                          : AJ26      : gnd    :                   :         :           :                
-plainText[1]                 : AJ27      : input  : 2.5 V             :         : 4         : N              
-plainText[8]                 : AJ28      : input  : 2.5 V             :         : 4         : N              
+plainText[14]                : AJ27      : input  : 2.5 V             :         : 4         : N              
+outAes[85]                   : AJ28      : output : 2.5 V             :         : 4         : N              
 GND                          : AJ29      : gnd    :                   :         :           :                
-outAes[58]                   : AJ30      : output : 2.5 V             :         : 5         : N              
+plainText[13]                : AJ30      : input  : 2.5 V             :         : 5         : N              
 NC                           : AK2       :        :                   :         :           :                
-outAes[21]                   : AK3       : output : 2.5 V             :         : 3         : N              
-plainText[54]                : AK4       : input  : 2.5 V             :         : 3         : N              
-plainText[108]               : AK5       : input  : 2.5 V             :         : 3         : N              
-outAes[72]                   : AK6       : output : 2.5 V             :         : 3         : N              
-keyIni[10]                   : AK7       : input  : 2.5 V             :         : 3         : N              
-plainText[69]                : AK8       : input  : 2.5 V             :         : 3         : N              
-outAes[76]                   : AK9       : output : 2.5 V             :         : 3         : N              
-outAes[69]                   : AK10      : output : 2.5 V             :         : 3         : N              
-outAes[110]                  : AK11      : output : 2.5 V             :         : 3         : N              
-keyIni[14]                   : AK12      : input  : 2.5 V             :         : 3         : N              
-outAes[78]                   : AK13      : output : 2.5 V             :         : 3         : N              
-outAes[14]                   : AK14      : output : 2.5 V             :         : 3         : N              
-keyIni[51]                   : AK15      : input  : 2.5 V             :         : 4         : N              
-keyIni[1]                    : AK16      : input  : 2.5 V             :         : 4         : N              
-keyIni[69]                   : AK17      : input  : 2.5 V             :         : 4         : N              
-plainText[44]                : AK18      : input  : 2.5 V             :         : 4         : N              
-outAes[46]                   : AK19      : output : 2.5 V             :         : 4         : N              
-plainText[47]                : AK20      : input  : 2.5 V             :         : 4         : N              
-plainText[52]                : AK21      : input  : 2.5 V             :         : 4         : N              
-plainText[41]                : AK22      : input  : 2.5 V             :         : 4         : N              
-outAes[62]                   : AK23      : output : 2.5 V             :         : 4         : N              
-plainText[39]                : AK24      : input  : 2.5 V             :         : 4         : N              
-outAes[0]                    : AK25      : output : 2.5 V             :         : 4         : N              
-keyIni[95]                   : AK26      : input  : 2.5 V             :         : 4         : N              
-plainText[0]                 : AK27      : input  : 2.5 V             :         : 4         : N              
-keyIni[102]                  : AK28      : input  : 2.5 V             :         : 4         : N              
-outAes[70]                   : AK29      : output : 2.5 V             :         : 4         : N              
+keyIni[87]                   : AK3       : input  : 2.5 V             :         : 3         : N              
+outAes[51]                   : AK4       : output : 2.5 V             :         : 3         : N              
+keyIni[47]                   : AK5       : input  : 2.5 V             :         : 3         : N              
+keyIni[0]                    : AK6       : input  : 2.5 V             :         : 3         : N              
+keyIni[60]                   : AK7       : input  : 2.5 V             :         : 3         : N              
+keyIni[99]                   : AK8       : input  : 2.5 V             :         : 3         : N              
+keyIni[54]                   : AK9       : input  : 2.5 V             :         : 3         : N              
+outAes[52]                   : AK10      : output : 2.5 V             :         : 3         : N              
+plainText[43]                : AK11      : input  : 2.5 V             :         : 3         : N              
+plainText[122]               : AK12      : input  : 2.5 V             :         : 3         : N              
+outAes[102]                  : AK13      : output : 2.5 V             :         : 3         : N              
+outAes[99]                   : AK14      : output : 2.5 V             :         : 3         : N              
+plainText[45]                : AK15      : input  : 2.5 V             :         : 4         : N              
+selKey[0]                    : AK16      : input  : 2.5 V             :         : 4         : N              
+plainText[54]                : AK17      : input  : 2.5 V             :         : 4         : N              
+outAes[70]                   : AK18      : output : 2.5 V             :         : 4         : N              
+outAes[80]                   : AK19      : output : 2.5 V             :         : 4         : N              
+keyIni[88]                   : AK20      : input  : 2.5 V             :         : 4         : N              
+plainText[36]                : AK21      : input  : 2.5 V             :         : 4         : N              
+plainText[125]               : AK22      : input  : 2.5 V             :         : 4         : N              
+plainText[84]                : AK23      : input  : 2.5 V             :         : 4         : N              
+plainText[0]                 : AK24      : input  : 2.5 V             :         : 4         : N              
+keyIni[59]                   : AK25      : input  : 2.5 V             :         : 4         : N              
+plainText[68]                : AK26      : input  : 2.5 V             :         : 4         : N              
+plainText[35]                : AK27      : input  : 2.5 V             :         : 4         : N              
+plainText[33]                : AK28      : input  : 2.5 V             :         : 4         : N              
+outAes[9]                    : AK29      : output : 2.5 V             :         : 4         : N              
 nCONFIG                      : B1        :        :                   :         : 9         :                
 GND                          : B2        : gnd    :                   :         :           :                
 ~ALTERA_DCLK~                : B3        : output : 2.5 V             :         : 9         : N              
 ~ALTERA_NCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : B4        : input  : 2.5 V             :         : 9         : N              
 GND                          : B5        : gnd    :                   :         :           :                
-plainText[115]               : B6        : input  : 2.5 V             :         : 8         : N              
-outAes[17]                   : B7        : output : 2.5 V             :         : 8         : N              
+outAes[57]                   : B6        : output : 2.5 V             :         : 8         : N              
+keyIni[36]                   : B7        : input  : 2.5 V             :         : 8         : N              
 GND                          : B8        : gnd    :                   :         :           :                
-keyIni[16]                   : B9        : input  : 2.5 V             :         : 8         : N              
-keyIni[114]                  : B10       : input  : 2.5 V             :         : 8         : N              
+plainText[98]                : B9        : input  : 2.5 V             :         : 8         : N              
+plainText[53]                : B10       : input  : 2.5 V             :         : 8         : N              
 GND                          : B11       : gnd    :                   :         :           :                
-keyIni[22]                   : B12       : input  : 2.5 V             :         : 8         : N              
-plainText[78]                : B13       : input  : 2.5 V             :         : 8         : N              
+keyIni[96]                   : B12       : input  : 2.5 V             :         : 8         : N              
+plainText[102]               : B13       : input  : 2.5 V             :         : 8         : N              
 GND                          : B14       : gnd    :                   :         :           :                
 GND+                         : B15       :        :                   :         : 7         :                
-outAes[55]                   : B16       : output : 2.5 V             :         : 7         : N              
+plainText[124]               : B16       : input  : 2.5 V             :         : 7         : N              
 GND                          : B17       : gnd    :                   :         :           :                
-keyIni[118]                  : B18       : input  : 2.5 V             :         : 7         : N              
-keyIni[50]                   : B19       : input  : 2.5 V             :         : 7         : N              
+keyIni[3]                    : B18       : input  : 2.5 V             :         : 7         : N              
+keyIni[81]                   : B19       : input  : 2.5 V             :         : 7         : N              
 GND                          : B20       : gnd    :                   :         :           :                
-plainText[48]                : B21       : input  : 2.5 V             :         : 7         : N              
-keyIni[48]                   : B22       : input  : 2.5 V             :         : 7         : N              
+outAes[67]                   : B21       : output : 2.5 V             :         : 7         : N              
+outAes[47]                   : B22       : output : 2.5 V             :         : 7         : N              
 GND                          : B23       : gnd    :                   :         :           :                
-plainText[83]                : B24       : input  : 2.5 V             :         : 7         : N              
-outAes[82]                   : B25       : output : 2.5 V             :         : 7         : N              
+outAes[91]                   : B24       : output : 2.5 V             :         : 7         : N              
+outAes[96]                   : B25       : output : 2.5 V             :         : 7         : N              
 GND                          : B26       : gnd    :                   :         :           :                
-outAes[121]                  : B27       : output : 2.5 V             :         : 7         : N              
-outAes[28]                   : B28       : output : 2.5 V             :         : 7         : N              
+plainText[65]                : B27       : input  : 2.5 V             :         : 7         : N              
+keyIni[107]                  : B28       : input  : 2.5 V             :         : 7         : N              
 GND                          : B29       : gnd    :                   :         :           :                
-keyIni[3]                    : B30       : input  : 2.5 V             :         : 7         : N              
+outAes[104]                  : B30       : output : 2.5 V             :         : 7         : N              
 nCE                          : C1        :        :                   :         : 9         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C4        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C5        :        :                   :         : 8         :                
+keyIni[34]                   : C4        : input  : 2.5 V             :         : 8         : N              
+plainText[24]                : C5        : input  : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C6        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C7        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C8        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C9        :        :                   :         : 8         :                
-plainText[21]                : C10       : input  : 2.5 V             :         : 8         : N              
-plainText[79]                : C11       : input  : 2.5 V             :         : 8         : N              
-plainText[72]                : C12       : input  : 2.5 V             :         : 8         : N              
-plainText[22]                : C13       : input  : 2.5 V             :         : 8         : N              
-outAes[73]                   : C14       : output : 2.5 V             :         : 8         : N              
-outAes[74]                   : C15       : output : 2.5 V             :         : 8         : N              
-keyIni[115]                  : C16       : input  : 2.5 V             :         : 8         : N              
-keyIni[75]                   : C17       : input  : 2.5 V             :         : 7         : N              
-plainText[114]               : C18       : input  : 2.5 V             :         : 7         : N              
-plainText[46]                : C19       : input  : 2.5 V             :         : 7         : N              
-keyIni[47]                   : C20       : input  : 2.5 V             :         : 7         : N              
-plainText[84]                : C21       : input  : 2.5 V             :         : 7         : N              
-plainText[53]                : C22       : input  : 2.5 V             :         : 7         : N              
-keyIni[52]                   : C23       : input  : 2.5 V             :         : 7         : N              
-outAes[87]                   : C24       : output : 2.5 V             :         : 7         : N              
-outAes[56]                   : C25       : output : 2.5 V             :         : 7         : N              
-outAes[36]                   : C26       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : C27       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C28       :        :                   :         : 7         :                
-plainText[37]                : C29       : input  : 2.5 V             :         : 6         : N              
-keyIni[30]                   : C30       : input  : 2.5 V             :         : 6         : N              
+keyIni[126]                  : C10       : input  : 2.5 V             :         : 8         : N              
+keyIni[4]                    : C11       : input  : 2.5 V             :         : 8         : N              
+plainText[59]                : C12       : input  : 2.5 V             :         : 8         : N              
+plainText[5]                 : C13       : input  : 2.5 V             :         : 8         : N              
+plainText[120]               : C14       : input  : 2.5 V             :         : 8         : N              
+keyIni[1]                    : C15       : input  : 2.5 V             :         : 8         : N              
+keyIni[61]                   : C16       : input  : 2.5 V             :         : 8         : N              
+plainText[90]                : C17       : input  : 2.5 V             :         : 7         : N              
+outAes[126]                  : C18       : output : 2.5 V             :         : 7         : N              
+outAes[68]                   : C19       : output : 2.5 V             :         : 7         : N              
+outAes[45]                   : C20       : output : 2.5 V             :         : 7         : N              
+plainText[57]                : C21       : input  : 2.5 V             :         : 7         : N              
+keyIni[97]                   : C22       : input  : 2.5 V             :         : 7         : N              
+outAes[98]                   : C23       : output : 2.5 V             :         : 7         : N              
+plainText[55]                : C24       : input  : 2.5 V             :         : 7         : N              
+outAes[27]                   : C25       : output : 2.5 V             :         : 7         : N              
+keyIni[65]                   : C26       : input  : 2.5 V             :         : 7         : N              
+outAes[106]                  : C27       : output : 2.5 V             :         : 7         : N              
+plainText[16]                : C28       : input  : 2.5 V             :         : 7         : N              
+plainText[106]               : C29       : input  : 2.5 V             :         : 6         : N              
+outAes[107]                  : C30       : output : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D1        :        :                   :         : 8         :                
 GND                          : D2        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D3        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D4        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D5        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :         : 8         :                
-keyIni[117]                  : D7        : input  : 2.5 V             :         : 8         : N              
+keyIni[57]                   : D7        : input  : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D8        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D9        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D10       :        :                   :         : 8         :                
-keyIni[110]                  : D11       : input  : 2.5 V             :         : 8         : N              
-plainText[76]                : D12       : input  : 2.5 V             :         : 8         : N              
-plainText[105]               : D13       : input  : 2.5 V             :         : 8         : N              
-outAes[19]                   : D14       : output : 2.5 V             :         : 8         : N              
-outAes[112]                  : D15       : output : 2.5 V             :         : 8         : N              
-plainText[73]                : D16       : input  : 2.5 V             :         : 8         : N              
-outAes[68]                   : D17       : output : 2.5 V             :         : 7         : N              
-outAes[118]                  : D18       : output : 2.5 V             :         : 7         : N              
-plainText[118]               : D19       : input  : 2.5 V             :         : 7         : N              
-outAes[41]                   : D20       : output : 2.5 V             :         : 7         : N              
-keyIni[27]                   : D21       : input  : 2.5 V             :         : 7         : N              
-keyIni[124]                  : D22       : input  : 2.5 V             :         : 7         : N              
-plainText[87]                : D23       : input  : 2.5 V             :         : 7         : N              
-outAes[25]                   : D24       : output : 2.5 V             :         : 7         : N              
-plainText[93]                : D25       : input  : 2.5 V             :         : 7         : N              
-plainText[26]                : D26       : input  : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : D27       :        :                   :         : 7         :                
-keyIni[26]                   : D28       : input  : 2.5 V             :         : 7         : N              
-plainText[80]                : D29       : input  : 2.5 V             :         : 6         : N              
-outAes[81]                   : D30       : output : 2.5 V             :         : 6         : N              
+keyIni[100]                  : D11       : input  : 2.5 V             :         : 8         : N              
+keyIni[2]                    : D12       : input  : 2.5 V             :         : 8         : N              
+plainText[29]                : D13       : input  : 2.5 V             :         : 8         : N              
+outAes[5]                    : D14       : output : 2.5 V             :         : 8         : N              
+keyIni[73]                   : D15       : input  : 2.5 V             :         : 8         : N              
+plainText[42]                : D16       : input  : 2.5 V             :         : 8         : N              
+keyIni[93]                   : D17       : input  : 2.5 V             :         : 7         : N              
+plainText[127]               : D18       : input  : 2.5 V             :         : 7         : N              
+outAes[63]                   : D19       : output : 2.5 V             :         : 7         : N              
+keyIni[62]                   : D20       : input  : 2.5 V             :         : 7         : N              
+outAes[66]                   : D21       : output : 2.5 V             :         : 7         : N              
+keyIni[71]                   : D22       : input  : 2.5 V             :         : 7         : N              
+outAes[93]                   : D23       : output : 2.5 V             :         : 7         : N              
+keyIni[35]                   : D24       : input  : 2.5 V             :         : 7         : N              
+outAes[30]                   : D25       : output : 2.5 V             :         : 7         : N              
+plainText[119]               : D26       : input  : 2.5 V             :         : 7         : N              
+plainText[109]               : D27       : input  : 2.5 V             :         : 7         : N              
+plainText[40]                : D28       : input  : 2.5 V             :         : 7         : N              
+outAes[13]                   : D29       : output : 2.5 V             :         : 6         : N              
+keyIni[12]                   : D30       : input  : 2.5 V             :         : 6         : N              
 TMS                          : E1        : input  :                   :         : 9         :                
 TDI                          : E2        : input  :                   :         : 9         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E3        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E4        :        :                   :         : 8         :                
 GND                          : E5        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E6        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E7        :        :                   :         : 8         :                
+outAes[61]                   : E7        : output : 2.5 V             :         : 8         : N              
 GND                          : E8        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E9        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E10       :        :                   :         : 8         :                
 GND                          : E11       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E12       :        :                   :         : 8         :                
-plainText[55]                : E13       : input  : 2.5 V             :         : 8         : N              
+keyIni[86]                   : E12       : input  : 2.5 V             :         : 8         : N              
+outAes[29]                   : E13       : output : 2.5 V             :         : 8         : N              
 GND                          : E14       : gnd    :                   :         :           :                
-outAes[51]                   : E15       : output : 2.5 V             :         : 8         : N              
-outAes[115]                  : E16       : output : 2.5 V             :         : 8         : N              
+plainText[46]                : E15       : input  : 2.5 V             :         : 8         : N              
+plainText[31]                : E16       : input  : 2.5 V             :         : 8         : N              
 GND                          : E17       : gnd    :                   :         :           :                
-outAes[49]                   : E18       : output : 2.5 V             :         : 7         : N              
-outAes[48]                   : E19       : output : 2.5 V             :         : 7         : N              
+outAes[46]                   : E18       : output : 2.5 V             :         : 7         : N              
+plainText[111]               : E19       : input  : 2.5 V             :         : 7         : N              
 GND                          : E20       : gnd    :                   :         :           :                
-outAes[83]                   : E21       : output : 2.5 V             :         : 7         : N              
-outAes[122]                  : E22       : output : 2.5 V             :         : 7         : N              
+outAes[48]                   : E21       : output : 2.5 V             :         : 7         : N              
+plainText[51]                : E22       : input  : 2.5 V             :         : 7         : N              
 GND                          : E23       : gnd    :                   :         :           :                
-keyIni[122]                  : E24       : input  : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : E25       :        :                   :         : 7         :                
+keyIni[37]                   : E24       : input  : 2.5 V             :         : 7         : N              
+keyIni[69]                   : E25       : input  : 2.5 V             :         : 7         : N              
 GND                          : E26       : gnd    :                   :         :           :                
-keyIni[32]                   : E27       : input  : 2.5 V             :         : 6         : N              
-outAes[34]                   : E28       : output : 2.5 V             :         : 6         : N              
+plainText[19]                : E27       : input  : 2.5 V             :         : 6         : N              
+plainText[105]               : E28       : input  : 2.5 V             :         : 6         : N              
 GND                          : E29       : gnd    :                   :         :           :                
-keyIni[65]                   : E30       : input  : 2.5 V             :         : 6         : N              
+keyIni[115]                  : E30       : input  : 2.5 V             :         : 6         : N              
 TDO                          : F1        : output :                   :         : 9         :                
 TCK                          : F2        : input  :                   :         : 9         :                
 GND                          : F3        : gnd    :                   :         :           :                
@@ -531,26 +531,26 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : F7        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : F8        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F9        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F10       :        :                   :         : 8         :                
-plainText[19]                : F11       : input  : 2.5 V             :         : 8         : N              
-outAes[42]                   : F12       : output : 2.5 V             :         : 8         : N              
-keyIni[23]                   : F13       : input  : 2.5 V             :         : 8         : N              
-outAes[20]                   : F14       : output : 2.5 V             :         : 8         : N              
-outAes[22]                   : F15       : output : 2.5 V             :         : 8         : N              
-keyIni[112]                  : F16       : input  : 2.5 V             :         : 8         : N              
-keyIni[40]                   : F17       : input  : 2.5 V             :         : 7         : N              
-plainText[10]                : F18       : input  : 2.5 V             :         : 7         : N              
-plainText[24]                : F19       : input  : 2.5 V             :         : 7         : N              
-outAes[53]                   : F20       : output : 2.5 V             :         : 7         : N              
-outAes[52]                   : F21       : output : 2.5 V             :         : 7         : N              
-plainText[127]               : F22       : input  : 2.5 V             :         : 7         : N              
-plainText[32]                : F23       : input  : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : F24       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F25       :        :                   :         : 7         :                
-outAes[31]                   : F26       : output : 2.5 V             :         : 6         : N              
-outAes[27]                   : F27       : output : 2.5 V             :         : 6         : N              
-outAes[126]                  : F28       : output : 2.5 V             :         : 6         : N              
-outAes[38]                   : F29       : output : 2.5 V             :         : 6         : N              
-keyIni[63]                   : F30       : input  : 2.5 V             :         : 6         : N              
+keyIni[31]                   : F11       : input  : 2.5 V             :         : 8         : N              
+keyIni[5]                    : F12       : input  : 2.5 V             :         : 8         : N              
+keyIni[94]                   : F13       : input  : 2.5 V             :         : 8         : N              
+keyIni[64]                   : F14       : input  : 2.5 V             :         : 8         : N              
+keyIni[127]                  : F15       : input  : 2.5 V             :         : 8         : N              
+outAes[60]                   : F16       : output : 2.5 V             :         : 8         : N              
+keyIni[89]                   : F17       : input  : 2.5 V             :         : 7         : N              
+outAes[90]                   : F18       : output : 2.5 V             :         : 7         : N              
+plainText[86]                : F19       : input  : 2.5 V             :         : 7         : N              
+outAes[2]                    : F20       : output : 2.5 V             :         : 7         : N              
+plainText[4]                 : F21       : input  : 2.5 V             :         : 7         : N              
+plainText[103]               : F22       : input  : 2.5 V             :         : 7         : N              
+keyIni[109]                  : F23       : input  : 2.5 V             :         : 7         : N              
+keyIni[17]                   : F24       : input  : 2.5 V             :         : 7         : N              
+plainText[69]                : F25       : input  : 2.5 V             :         : 7         : N              
+keyIni[13]                   : F26       : input  : 2.5 V             :         : 6         : N              
+outAes[40]                   : F27       : output : 2.5 V             :         : 6         : N              
+keyIni[8]                    : F28       : input  : 2.5 V             :         : 6         : N              
+plainText[88]                : F29       : input  : 2.5 V             :         : 6         : N              
+keyIni[103]                  : F30       : input  : 2.5 V             :         : 6         : N              
 GND                          : G1        : gnd    :                   :         :           :                
 GND                          : G2        : gnd    :                   :         :           :                
 GND                          : G3        : gnd    :                   :         :           :                
@@ -561,26 +561,26 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : G7        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : G8        :        :                   :         : 8         :                
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : G9        : input  : 2.5 V             :         : 9         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : G10       :        :                   :         : 8         :                
-outAes[113]                  : G11       : output : 2.5 V             :         : 8         : N              
-outAes[18]                   : G12       : output : 2.5 V             :         : 8         : N              
-outAes[106]                  : G13       : output : 2.5 V             :         : 8         : N              
-outAes[116]                  : G14       : output : 2.5 V             :         : 8         : N              
-plainText[116]               : G15       : input  : 2.5 V             :         : 8         : N              
-keyIni[9]                    : G16       : input  : 2.5 V             :         : 7         : N              
-outAes[43]                   : G17       : output : 2.5 V             :         : 7         : N              
-outAes[13]                   : G18       : output : 2.5 V             :         : 7         : N              
+outAes[121]                  : G11       : output : 2.5 V             :         : 8         : N              
+outAes[56]                   : G12       : output : 2.5 V             :         : 8         : N              
+plainText[73]                : G13       : input  : 2.5 V             :         : 8         : N              
+outAes[3]                    : G14       : output : 2.5 V             :         : 8         : N              
+outAes[4]                    : G15       : output : 2.5 V             :         : 8         : N              
+plainText[7]                 : G16       : input  : 2.5 V             :         : 7         : N              
+plainText[107]               : G17       : input  : 2.5 V             :         : 7         : N              
+outAes[101]                  : G18       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : G19       : power  :                   : 2.5V    : 7         :                
-keyIni[81]                   : G20       : input  : 2.5 V             :         : 7         : N              
-plainText[88]                : G21       : input  : 2.5 V             :         : 7         : N              
-plainText[125]               : G22       : input  : 2.5 V             :         : 7         : N              
-plainText[38]                : G23       : input  : 2.5 V             :         : 7         : N              
-plainText[92]                : G24       : input  : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : G25       :        :                   :         : 7         :                
-outAes[32]                   : G26       : output : 2.5 V             :         : 6         : N              
-plainText[121]               : G27       : input  : 2.5 V             :         : 6         : N              
-outAes[94]                   : G28       : output : 2.5 V             :         : 6         : N              
-plainText[7]                 : G29       : input  : 2.5 V             :         : 6         : N              
-outAes[85]                   : G30       : output : 2.5 V             :         : 6         : N              
+keyIni[120]                  : G20       : input  : 2.5 V             :         : 7         : N              
+plainText[41]                : G21       : input  : 2.5 V             :         : 7         : N              
+keyIni[41]                   : G22       : input  : 2.5 V             :         : 7         : N              
+keyIni[78]                   : G23       : input  : 2.5 V             :         : 7         : N              
+plainText[110]               : G24       : input  : 2.5 V             :         : 7         : N              
+keyIni[22]                   : G25       : input  : 2.5 V             :         : 7         : N              
+plainText[15]                : G26       : input  : 2.5 V             :         : 6         : N              
+plainText[113]               : G27       : input  : 2.5 V             :         : 6         : N              
+plainText[26]                : G28       : input  : 2.5 V             :         : 6         : N              
+keyIni[116]                  : G29       : input  : 2.5 V             :         : 6         : N              
+outAes[86]                   : G30       : output : 2.5 V             :         : 6         : N              
 GND                          : H1        : gnd    :                   :         :           :                
 GND                          : H2        : gnd    :                   :         :           :                
 GXB_NC                       : H3        :        :                   :         : QL1       :                
@@ -604,13 +604,13 @@ GND                          : H20       : gnd    :                   :         
 VCCIO7                       : H21       : power  :                   : 2.5V    : 7         :                
 VCCIO7                       : H22       : power  :                   : 2.5V    : 7         :                
 GND                          : H23       : gnd    :                   :         :           :                
-keyIni[53]                   : H24       : input  : 2.5 V             :         : 7         : N              
-keyIni[125]                  : H25       : input  : 2.5 V             :         : 6         : N              
+keyIni[117]                  : H24       : input  : 2.5 V             :         : 7         : N              
+keyIni[10]                   : H25       : input  : 2.5 V             :         : 6         : N              
 GND                          : H26       : gnd    :                   :         :           :                
-outAes[33]                   : H27       : output : 2.5 V             :         : 6         : N              
-keyIni[80]                   : H28       : input  : 2.5 V             :         : 6         : N              
+outAes[113]                  : H27       : output : 2.5 V             :         : 6         : N              
+plainText[104]               : H28       : input  : 2.5 V             :         : 6         : N              
 GND                          : H29       : gnd    :                   :         :           :                
-keyIni[85]                   : H30       : input  : 2.5 V             :         : 6         : N              
+keyIni[101]                  : H30       : input  : 2.5 V             :         : 6         : N              
 GXB_GND*                     : J1        :        :                   :         : QL1       :                
 GXB_GND*                     : J2        :        :                   :         : QL1       :                
 GND                          : J3        : gnd    :                   :         :           :                
@@ -635,12 +635,12 @@ VCCIO7                       : J21       : power  :                   : 2.5V    
 VCCIO7                       : J22       : power  :                   : 2.5V    : 7         :                
 VCCD_PLL                     : J23       : power  :                   : 1.2V    :           :                
 GND                          : J24       : gnd    :                   :         :           :                
-keyIni[37]                   : J25       : input  : 2.5 V             :         : 6         : N              
-keyIni[92]                   : J26       : input  : 2.5 V             :         : 6         : N              
-outAes[124]                  : J27       : output : 2.5 V             :         : 6         : N              
-plainText[34]                : J28       : input  : 2.5 V             :         : 6         : N              
-outAes[86]                   : J29       : output : 2.5 V             :         : 6         : N              
-keyIni[82]                   : J30       : input  : 2.5 V             :         : 6         : N              
+plainText[20]                : J25       : input  : 2.5 V             :         : 6         : N              
+keyIni[19]                   : J26       : input  : 2.5 V             :         : 6         : N              
+keyIni[113]                  : J27       : input  : 2.5 V             :         : 6         : N              
+plainText[17]                : J28       : input  : 2.5 V             :         : 6         : N              
+outAes[54]                   : J29       : output : 2.5 V             :         : 6         : N              
+outAes[11]                   : J30       : output : 2.5 V             :         : 6         : N              
 GND                          : K1        : gnd    :                   :         :           :                
 GND                          : K2        : gnd    :                   :         :           :                
 GXB_NC                       : K3        :        :                   :         : QL1       :                
@@ -657,20 +657,20 @@ VCCINT                       : K13       : power  :                   : 1.2V    
 GND                          : K14       : gnd    :                   :         :           :                
 GXB_GND*                     : K15       :        :                   :         : 8A        :                
 VCC_CLKIN8A                  : K16       : power  :                   : 2.5V    : 8A        :                
-keyIni[111]                  : K17       : input  : 2.5 V             :         : 7         : N              
-plainText[23]                : K18       : input  : 2.5 V             :         : 7         : N              
-outAes[10]                   : K19       : output : 2.5 V             :         : 7         : N              
+plainText[123]               : K17       : input  : 2.5 V             :         : 7         : N              
+plainText[101]               : K18       : input  : 2.5 V             :         : 7         : N              
+plainText[47]                : K19       : input  : 2.5 V             :         : 7         : N              
 GND                          : K20       : gnd    :                   :         :           :                
-plainText[3]                 : K21       : input  : 2.5 V             :         : 7         : N              
-keyIni[4]                    : K22       : input  : 2.5 V             :         : 7         : N              
+outAes[108]                  : K21       : output : 2.5 V             :         : 7         : N              
+plainText[117]               : K22       : input  : 2.5 V             :         : 7         : N              
 VCCA                         : K23       : power  :                   : 2.5V    :           :                
-plainText[86]                : K24       : input  : 2.5 V             :         : 6         : N              
-outAes[57]                   : K25       : output : 2.5 V             :         : 6         : N              
-plainText[29]                : K26       : input  : 2.5 V             :         : 6         : N              
-plainText[27]                : K27       : input  : 2.5 V             :         : 6         : N              
-keyIni[29]                   : K28       : input  : 2.5 V             :         : 6         : N              
-plainText[99]                : K29       : input  : 2.5 V             :         : 6         : N              
-outAes[120]                  : K30       : output : 2.5 V             :         : 6         : N              
+keyIni[23]                   : K24       : input  : 2.5 V             :         : 6         : N              
+plainText[11]                : K25       : input  : 2.5 V             :         : 6         : N              
+keyIni[118]                  : K26       : input  : 2.5 V             :         : 6         : N              
+keyIni[77]                   : K27       : input  : 2.5 V             :         : 6         : N              
+outAes[20]                   : K28       : output : 2.5 V             :         : 6         : N              
+outAes[44]                   : K29       : output : 2.5 V             :         : 6         : N              
+outAes[74]                   : K30       : output : 2.5 V             :         : 6         : N              
 GXB_GND*                     : L1        :        :                   :         : QL1       :                
 GXB_GND*                     : L2        :        :                   :         : QL1       :                
 GND                          : L3        : gnd    :                   :         :           :                
@@ -695,12 +695,12 @@ GND                          : L21       : gnd    :                   :         
 VCCIO6                       : L22       : power  :                   : 2.5V    : 6         :                
 GND                          : L23       : gnd    :                   :         :           :                
 VCCIO6                       : L24       : power  :                   : 2.5V    : 6         :                
-plainText[91]                : L25       : input  : 2.5 V             :         : 6         : N              
+plainText[12]                : L25       : input  : 2.5 V             :         : 6         : N              
 GND                          : L26       : gnd    :                   :         :           :                
-outAes[6]                    : L27       : output : 2.5 V             :         : 6         : N              
-outAes[39]                   : L28       : output : 2.5 V             :         : 6         : N              
+outAes[69]                   : L27       : output : 2.5 V             :         : 6         : N              
+plainText[8]                 : L28       : input  : 2.5 V             :         : 6         : N              
 GND                          : L29       : gnd    :                   :         :           :                
-plainText[30]                : L30       : input  : 2.5 V             :         : 6         : N              
+keyIni[15]                   : L30       : input  : 2.5 V             :         : 6         : N              
 GND                          : M1        : gnd    :                   :         :           :                
 GND                          : M2        : gnd    :                   :         :           :                
 GXB_NC                       : M3        :        :                   :         : QL1       :                
@@ -721,16 +721,16 @@ VCCINT                       : M17       : power  :                   : 1.2V    
 GND                          : M18       : gnd    :                   :         :           :                
 VCCINT                       : M19       : power  :                   : 1.2V    :           :                
 GND                          : M20       : gnd    :                   :         :           :                
-outAes[93]                   : M21       : output : 2.5 V             :         : 6         : N              
-plainText[89]                : M22       : input  : 2.5 V             :         : 6         : N              
+outAes[19]                   : M21       : output : 2.5 V             :         : 6         : N              
+plainText[76]                : M22       : input  : 2.5 V             :         : 6         : N              
 VCCIO6                       : M23       : power  :                   : 2.5V    : 6         :                
 VCCIO6                       : M24       : power  :                   : 2.5V    : 6         :                
-keyIni[86]                   : M25       : input  : 2.5 V             :         : 6         : N              
-keyIni[121]                  : M26       : input  : 2.5 V             :         : 6         : N              
-plainText[120]               : M27       : input  : 2.5 V             :         : 6         : N              
-keyIni[123]                  : M28       : input  : 2.5 V             :         : 6         : N              
-keyIni[25]                   : M29       : input  : 2.5 V             :         : 6         : N              
-outAes[63]                   : M30       : output : 2.5 V             :         : 6         : N              
+keyIni[18]                   : M25       : input  : 2.5 V             :         : 6         : N              
+outAes[35]                   : M26       : output : 2.5 V             :         : 6         : N              
+outAes[12]                   : M27       : output : 2.5 V             :         : 6         : N              
+plainText[44]                : M28       : input  : 2.5 V             :         : 6         : N              
+keyIni[40]                   : M29       : input  : 2.5 V             :         : 6         : N              
+outAes[110]                  : M30       : output : 2.5 V             :         : 6         : N              
 GXB_GND*                     : N1        :        :                   :         : QL1       :                
 GXB_GND*                     : N2        :        :                   :         : QL1       :                
 GND                          : N3        : gnd    :                   :         :           :                
@@ -751,16 +751,16 @@ GND                          : N17       : gnd    :                   :         
 VCCINT                       : N18       : power  :                   : 1.2V    :           :                
 GND                          : N19       : gnd    :                   :         :           :                
 VCCINT                       : N20       : power  :                   : 1.2V    :           :                
-keyIni[83]                   : N21       : input  : 2.5 V             :         : 6         : N              
+outAes[1]                    : N21       : output : 2.5 V             :         : 6         : N              
 VCCIO6                       : N22       : power  :                   : 2.5V    : 6         :                
 VCCIO6                       : N23       : power  :                   : 2.5V    : 6         :                
-plainText[123]               : N24       : input  : 2.5 V             :         : 6         : N              
-keyIni[127]                  : N25       : input  : 2.5 V             :         : 6         : N              
-outAes[90]                   : N26       : output : 2.5 V             :         : 6         : N              
-keyIni[120]                  : N27       : input  : 2.5 V             :         : 6         : N              
-outAes[123]                  : N28       : output : 2.5 V             :         : 6         : N              
-outAes[37]                   : N29       : output : 2.5 V             :         : 6         : N              
-plainText[63]                : N30       : input  : 2.5 V             :         : 6         : N              
+plainText[39]                : N24       : input  : 2.5 V             :         : 6         : N              
+outAes[77]                   : N25       : output : 2.5 V             :         : 6         : N              
+outAes[109]                  : N26       : output : 2.5 V             :         : 6         : N              
+outAes[18]                   : N27       : output : 2.5 V             :         : 6         : N              
+keyIni[67]                   : N28       : input  : 2.5 V             :         : 6         : N              
+outAes[76]                   : N29       : output : 2.5 V             :         : 6         : N              
+keyIni[20]                   : N30       : input  : 2.5 V             :         : 6         : N              
 GND                          : P1        : gnd    :                   :         :           :                
 GND                          : P2        : gnd    :                   :         :           :                
 GXB_NC                       : P3        :        :                   :         : QL1       :                
@@ -781,16 +781,16 @@ VCCINT                       : P17       : power  :                   : 1.2V    
 GND                          : P18       : gnd    :                   :         :           :                
 VCCINT                       : P19       : power  :                   : 1.2V    :           :                
 GND                          : P20       : gnd    :                   :         :           :                
-keyIni[34]                   : P21       : input  : 2.5 V             :         : 6         : N              
+plainText[18]                : P21       : input  : 2.5 V             :         : 6         : N              
 VCCIO6                       : P22       : power  :                   : 2.5V    : 6         :                
 GND                          : P23       : gnd    :                   :         :           :                
 VCCIO6                       : P24       : power  :                   : 2.5V    : 6         :                
-plainText[126]               : P25       : input  : 2.5 V             :         : 6         : N              
+plainText[116]               : P25       : input  : 2.5 V             :         : 6         : N              
 GND                          : P26       : gnd    :                   :         :           :                
-keyIni[35]                   : P27       : input  : 2.5 V             :         : 6         : N              
-keyIni[94]                   : P28       : input  : 2.5 V             :         : 6         : N              
+outAes[34]                   : P27       : output : 2.5 V             :         : 6         : N              
+outAes[75]                   : P28       : output : 2.5 V             :         : 6         : N              
 GND                          : P29       : gnd    :                   :         :           :                
-outAes[24]                   : P30       : output : 2.5 V             :         : 6         : N              
+outAes[105]                  : P30       : output : 2.5 V             :         : 6         : N              
 GXB_GND*                     : R1        :        :                   :         : QL1       :                
 GXB_GND*                     : R2        :        :                   :         : QL1       :                
 GND                          : R3        : gnd    :                   :         :           :                
@@ -814,13 +814,13 @@ VCCINT                       : R20       : power  :                   : 1.2V    
 GND                          : R21       : gnd    :                   :         :           :                
 VCCIO6                       : R22       : power  :                   : 2.5V    : 6         :                
 VCCIO6                       : R23       : power  :                   : 2.5V    : 6         :                
-plainText[12]                : R24       : input  : 2.5 V             :         : 6         : N              
-outAes[80]                   : R25       : output : 2.5 V             :         : 6         : N              
-plainText[85]                : R26       : input  : 2.5 V             :         : 6         : N              
-plainText[82]                : R27       : input  : 2.5 V             :         : 6         : N              
-plainText[81]                : R28       : input  : 2.5 V             :         : 6         : N              
-plainText[124]               : R29       : input  : 2.5 V             :         : 6         : N              
-keyIni[33]                   : R30       : input  : 2.5 V             :         : 6         : N              
+outAes[114]                  : R24       : output : 2.5 V             :         : 6         : N              
+outAes[43]                   : R25       : output : 2.5 V             :         : 6         : N              
+plainText[71]                : R26       : input  : 2.5 V             :         : 6         : N              
+keyIni[44]                   : R27       : input  : 2.5 V             :         : 6         : N              
+outAes[65]                   : R28       : output : 2.5 V             :         : 6         : N              
+keyIni[106]                  : R29       : input  : 2.5 V             :         : 6         : N              
+outAes[14]                   : R30       : output : 2.5 V             :         : 6         : N              
 GND                          : T1        : gnd    :                   :         :           :                
 GND                          : T2        : gnd    :                   :         :           :                
 GXB_NC                       : T3        :        :                   :         : QL0       :                
@@ -841,14 +841,14 @@ VCCINT                       : T17       : power  :                   : 1.2V    
 GND                          : T18       : gnd    :                   :         :           :                
 VCCINT                       : T19       : power  :                   : 1.2V    :           :                
 GND                          : T20       : gnd    :                   :         :           :                
-plainText[71]                : T21       : input  : 2.5 V             :         : 5         : N              
+outAes[73]                   : T21       : output : 2.5 V             :         : 5         : N              
 GND                          : T22       : gnd    :                   :         :           :                
-plainText[33]                : T23       : input  : 2.5 V             :         : 5         : N              
-keyIni[38]                   : T24       : input  : 2.5 V             :         : 5         : N              
-outAes[89]                   : T25       : output : 2.5 V             :         : 5         : N              
-outAes[26]                   : T26       : output : 2.5 V             :         : 5         : N              
-keyIni[24]                   : T27       : input  : 2.5 V             :         : 5         : N              
-keyIni[28]                   : T28       : input  : 2.5 V             :         : 6         : N              
+outAes[78]                   : T23       : output : 2.5 V             :         : 5         : N              
+enRegSub                     : T24       : input  : 2.5 V             :         : 5         : N              
+outAes[117]                  : T25       : output : 2.5 V             :         : 5         : N              
+enRegADR                     : T26       : input  : 2.5 V             :         : 5         : N              
+selKey[3]                    : T27       : input  : 2.5 V             :         : 5         : N              
+outAes[33]                   : T28       : output : 2.5 V             :         : 6         : N              
 GND+                         : T29       :        :                   :         : 6         :                
 GND+                         : T30       :        :                   :         : 6         :                
 GXB_GND*                     : U1        :        :                   :         : QL0       :                
@@ -871,16 +871,16 @@ GND                          : U17       : gnd    :                   :         
 VCCINT                       : U18       : power  :                   : 1.2V    :           :                
 GND                          : U19       : gnd    :                   :         :           :                
 VCCINT                       : U20       : power  :                   : 1.2V    :           :                
-keyIni[8]                    : U21       : input  : 2.5 V             :         : 5         : N              
+outAes[87]                   : U21       : output : 2.5 V             :         : 5         : N              
 VCCIO5                       : U22       : power  :                   : 2.5V    : 5         :                
 GND                          : U23       : gnd    :                   :         :           :                
 VCCIO5                       : U24       : power  :                   : 2.5V    : 5         :                
-outAes[95]                   : U25       : output : 2.5 V             :         : 5         : N              
+outAes[21]                   : U25       : output : 2.5 V             :         : 5         : N              
 GND                          : U26       : gnd    :                   :         :           :                
-plainText[36]                : U27       : input  : 2.5 V             :         : 5         : N              
-plainText[122]               : U28       : input  : 2.5 V             :         : 5         : N              
+enRegInicio                  : U27       : input  : 2.5 V             :         : 5         : N              
+enRegADR2                    : U28       : input  : 2.5 V             :         : 5         : N              
 GND                          : U29       : gnd    :                   :         :           :                
-keyIni[36]                   : U30       : input  : 2.5 V             :         : 5         : N              
+selKey[2]                    : U30       : input  : 2.5 V             :         : 5         : N              
 GND                          : V1        : gnd    :                   :         :           :                
 GND                          : V2        : gnd    :                   :         :           :                
 GXB_NC                       : V3        :        :                   :         : QL0       :                
@@ -901,14 +901,14 @@ VCCINT                       : V17       : power  :                   : 1.2V    
 GND                          : V18       : gnd    :                   :         :           :                
 VCCINT                       : V19       : power  :                   : 1.2V    :           :                
 GND                          : V20       : gnd    :                   :         :           :                
-plainText[4]                 : V21       : input  : 2.5 V             :         : 5         : N              
+outAes[72]                   : V21       : output : 2.5 V             :         : 5         : N              
 VCCIO5                       : V22       : power  :                   : 2.5V    : 5         :                
 VCCIO5                       : V23       : power  :                   : 2.5V    : 5         :                
 GND                          : V24       : gnd    :                   :         :           :                
-outAes[88]                   : V25       : output : 2.5 V             :         : 5         : N              
-outAes[97]                   : V26       : output : 2.5 V             :         : 5         : N              
-keyIni[31]                   : V27       : input  : 2.5 V             :         : 5         : N              
-outAes[92]                   : V28       : output : 2.5 V             :         : 5         : N              
+outAes[79]                   : V25       : output : 2.5 V             :         : 5         : N              
+outAes[115]                  : V26       : output : 2.5 V             :         : 5         : N              
+outAes[82]                   : V27       : output : 2.5 V             :         : 5         : N              
+outAes[32]                   : V28       : output : 2.5 V             :         : 5         : N              
 GND+                         : V29       :        :                   :         : 5         :                
 GND+                         : V30       :        :                   :         : 5         :                
 GXB_GND*                     : W1        :        :                   :         : QL0       :                
@@ -935,12 +935,12 @@ GND                          : W21       : gnd    :                   :         
 VCCIO5                       : W22       : power  :                   : 2.5V    : 5         :                
 VCCIO5                       : W23       : power  :                   : 2.5V    : 5         :                
 VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
-outAes[7]                    : W25       : output : 2.5 V             :         : 5         : N              
-outAes[59]                   : W26       : output : 2.5 V             :         : 5         : N              
-plainText[94]                : W27       : input  : 2.5 V             :         : 5         : N              
-keyIni[89]                   : W28       : input  : 2.5 V             :         : 5         : N              
-outAes[127]                  : W29       : output : 2.5 V             :         : 5         : N              
-keyIni[126]                  : W30       : input  : 2.5 V             :         : 5         : N              
+enRegSR                      : W25       : input  : 2.5 V             :         : 5         : N              
+keyIni[38]                   : W26       : input  : 2.5 V             :         : 5         : N              
+selInicio                    : W27       : input  : 2.5 V             :         : 5         : N              
+outAes[26]                   : W28       : output : 2.5 V             :         : 5         : N              
+enRegMix                     : W29       : input  : 2.5 V             :         : 5         : N              
+selKey[1]                    : W30       : input  : 2.5 V             :         : 5         : N              
 GND                          : Y1        : gnd    :                   :         :           :                
 GND                          : Y2        : gnd    :                   :         :           :                
 GXB_NC                       : Y3        :        :                   :         : QL0       :                
@@ -957,17 +957,17 @@ VCCINT                       : Y13       : power  :                   : 1.2V    
 GND                          : Y14       : gnd    :                   :         :           :                
 VCCINT                       : Y15       : power  :                   : 1.2V    :           :                
 GND                          : Y16       : gnd    :                   :         :           :                
-plainText[16]                : Y17       : input  : 2.5 V             :         : 4         : N              
-keyIni[41]                   : Y18       : input  : 2.5 V             :         : 4         : N              
-plainText[5]                 : Y19       : input  : 2.5 V             :         : 4         : N              
-keyIni[99]                   : Y20       : input  : 2.5 V             :         : 4         : N              
-keyIni[88]                   : Y21       : input  : 2.5 V             :         : 4         : N              
-plainText[96]                : Y22       : input  : 2.5 V             :         : 5         : N              
+plainText[99]                : Y17       : input  : 2.5 V             :         : 4         : N              
+plainText[81]                : Y18       : input  : 2.5 V             :         : 4         : N              
+keyIni[98]                   : Y19       : input  : 2.5 V             :         : 4         : N              
+plainText[77]                : Y20       : input  : 2.5 V             :         : 4         : N              
+keyIni[104]                  : Y21       : input  : 2.5 V             :         : 4         : N              
+keyIni[74]                   : Y22       : input  : 2.5 V             :         : 5         : N              
 GND                          : Y23       : gnd    :                   :         :           :                
 VCCIO5                       : Y24       : power  :                   : 2.5V    : 5         :                
-keyIni[56]                   : Y25       : input  : 2.5 V             :         : 5         : N              
+plainText[74]                : Y25       : input  : 2.5 V             :         : 5         : N              
 GND                          : Y26       : gnd    :                   :         :           :                
-outAes[65]                   : Y27       : output : 2.5 V             :         : 5         : N              
-plainText[90]                : Y28       : input  : 2.5 V             :         : 5         : N              
+outAes[10]                   : Y27       : output : 2.5 V             :         : 5         : N              
+outAes[16]                   : Y28       : output : 2.5 V             :         : 5         : N              
 GND                          : Y29       : gnd    :                   :         :           :                
-outAes[12]                   : Y30       : output : 2.5 V             :         : 5         : N              
+outAes[112]                  : Y30       : output : 2.5 V             :         : 5         : N              

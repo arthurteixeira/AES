@@ -1,5 +1,5 @@
 Analysis & Synthesis report for aes
-Fri Oct 18 15:23:37 2019
+Sat Oct 19 02:38:48 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -80,16 +80,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Oct 18 15:23:37 2019      ;
+; Analysis & Synthesis Status        ; Successful - Sat Oct 19 02:38:48 2019      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; aes                                        ;
 ; Top-level Entity Name              ; aes                                        ;
 ; Family                             ; Cyclone IV GX                              ;
-; Total logic elements               ; 992                                        ;
-;     Total combinational functions  ; 608                                        ;
+; Total logic elements               ; 1,118                                      ;
+;     Total combinational functions  ; 734                                        ;
 ;     Dedicated logic registers      ; 768                                        ;
 ; Total registers                    ; 768                                        ;
-; Total pins                         ; 520                                        ;
+; Total pins                         ; 397                                        ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 32,768                                     ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -205,6 +205,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------+---------+
 ; shiftrows.vhd                    ; yes             ; User VHDL File               ; C:/Users/Arthur/Documents/designs/AES/shiftrows.vhd                  ;         ;
 ; mixcolumns.vhd                   ; yes             ; User VHDL File               ; C:/Users/Arthur/Documents/designs/AES/mixcolumns.vhd                 ;         ;
+; key.vhd                          ; yes             ; User VHDL File               ; C:/Users/Arthur/Documents/designs/AES/key.vhd                        ;         ;
 ; aes.vhd                          ; yes             ; Auto-Found VHDL File         ; C:/Users/Arthur/Documents/designs/AES/aes.vhd                        ;         ;
 ; addroundkey.vhd                  ; yes             ; Auto-Found VHDL File         ; C:/Users/Arthur/Documents/designs/AES/addroundkey.vhd                ;         ;
 ; subbytes.vhd                     ; yes             ; Auto-Found VHDL File         ; C:/Users/Arthur/Documents/designs/AES/subbytes.vhd                   ;         ;
@@ -242,13 +243,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 520              ;
+; I/O pins                 ; 397              ;
 ; Total memory bits        ; 32768            ;
 ; DSP block 9-bit elements ; 0                ;
 ; Maximum fan-out node     ; clock~input      ;
 ; Maximum fan-out          ; 896              ;
-; Total fan-out            ; 5896             ;
-; Average fan-out          ; 2.32             ;
+; Total fan-out            ; 6504             ;
+; Average fan-out          ; 2.68             ;
 +--------------------------+------------------+
 
 
@@ -257,9 +258,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                              ; Library Name ;
 +---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------------------------------------------------------------------+--------------+
-; |aes                                        ; 608 (128)         ; 768 (256)    ; 32768       ; 0            ; 0       ; 0         ; 0         ; 520  ; 0            ; |aes                                                                             ;              ;
-;    |addRoundKey:ARK2|                       ; 128 (128)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|addRoundKey:ARK2                                                            ;              ;
+; |aes                                        ; 734 (139)         ; 768 (256)    ; 32768       ; 0            ; 0       ; 0         ; 0         ; 397  ; 0            ; |aes                                                                             ;              ;
+;    |addRoundKey:ARK2|                       ; 133 (133)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|addRoundKey:ARK2                                                            ;              ;
 ;    |addRoundKey:ARK|                        ; 128 (128)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|addRoundKey:ARK                                                             ;              ;
+;    |key:KEYS|                               ; 110 (110)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|key:KEYS                                                                    ;              ;
 ;    |mixcolumns:MC|                          ; 224 (224)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|mixcolumns:MC                                                               ;              ;
 ;    |shiftrows:SR|                           ; 0 (0)             ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|shiftrows:SR                                                                ;              ;
 ;    |subBytes:SB|                            ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |aes|subBytes:SB                                                                 ;              ;
@@ -1713,7 +1715,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -1723,7 +1725,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Fri Oct 18 15:23:32 2019
+    Info: Processing started: Sat Oct 19 02:38:43 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aes -c aes
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file shiftrows.vhd
@@ -1732,6 +1734,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file shiftro
 Info (12021): Found 2 design units, including 1 entities, in source file mixcolumns.vhd
     Info (12022): Found design unit 1: mixcolumns-rtl
     Info (12023): Found entity 1: mixcolumns
+Info (12021): Found 2 design units, including 1 entities, in source file key.vhd
+    Info (12022): Found design unit 1: key-behaviour
+    Info (12023): Found entity 1: key
 Warning (12125): Using design file aes.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: aes-rtl
     Info (12023): Found entity 1: aes
@@ -1750,6 +1755,8 @@ Warning (12125): Using design file sbox.vhd, which is not specified as a design 
 Info (12128): Elaborating entity "sbox" for hierarchy "subbytes:SB|sbox:sub1"
 Info (12128): Elaborating entity "shiftrows" for hierarchy "shiftrows:SR"
 Info (12128): Elaborating entity "mixcolumns" for hierarchy "mixcolumns:MC"
+Info (12128): Elaborating entity "key" for hierarchy "key:KEYS"
+Warning (10873): Using initial value X (don't care) for net "lut_rlps_0[0]" at key.vhd(23)
 Info (19000): Inferred 16 megafunctions from design logic
     Info (276031): Inferred altsyncram megafunction from the following design logic: "subBytes:SB|sbox:sub1|Mux127_rtl_0"
         Info (286033): Parameter OPERATION_MODE set to ROM
@@ -2058,14 +2065,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1640 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 392 input pins
+Info (21057): Implemented 1643 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 269 input pins
     Info (21059): Implemented 128 output pins
-    Info (21061): Implemented 992 logic cells
+    Info (21061): Implemented 1118 logic cells
     Info (21064): Implemented 128 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4713 megabytes
-    Info: Processing ended: Fri Oct 18 15:23:37 2019
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4704 megabytes
+    Info: Processing ended: Sat Oct 19 02:38:48 2019
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 
