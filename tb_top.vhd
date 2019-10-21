@@ -19,8 +19,6 @@ signal enRegSub_sg     : std_logic := '0';
 signal enRegSR_sg      : std_logic := '0';
 signal enRegMix_sg     : std_logic := '0';
 signal enRegADR2_sg    : std_logic := '0';
-signal plainText_sg : std_logic_vector(127 downto 0) := x"328831E0435A3137F6309807A88DA234";   -- (0 => '0', others=>'0');
-signal keyIni_sg    : std_logic_vector(127 downto 0) :=   x"2B28AB097EAEF7CF15D2154F16A6883C"; -- (0 => '0', others=>'0');
 signal outAes_sg    : std_logic_vector(127 downto 0);
 
 component aes is
@@ -36,8 +34,6 @@ component aes is
 		enRegSR                : std_logic;
 		enRegMix               : std_logic;
 		enRegADR2              : std_logic;
-		plainText	           : in std_logic_vector(127 downto 0);
-		keyIni     	           : in std_logic_vector(127 downto 0);
 		outAes  : out std_logic_vector(127 downto 0)
 	);
 end component aes;
@@ -57,8 +53,6 @@ inst_aes : aes
 		enRegSR     => enRegSR_sg,           
 		enRegMix    => enRegMix_sg,           
 		enRegADR2   => enRegADR2_sg,
-		plainText => plainText_sg,
-		keyIni => keyIni_sg,
 		outAes => outAes_sg
 	);
 --lll

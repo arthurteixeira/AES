@@ -1,20 +1,16 @@
-Fitter Status : Successful - Sun Oct 20 22:42:20 2019
+Fitter Status : Successful - Mon Oct 21 02:27:35 2019
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
 Revision Name : aes
 Top-level Entity Name : aes
-Family : Cyclone IV GX
-Device : EP4CGX110DF31C7
+Family : Cyclone III
+Device : EP3C25F324C6
 Timing Models : Final
-Total logic elements : 4,471 / 109,424 ( 4 % )
-    Total combinational functions : 4,456 / 109,424 ( 4 % )
-    Dedicated logic registers : 896 / 109,424 ( < 1 % )
-Total registers : 896
-Total pins : 398 / 508 ( 78 % )
+Total logic elements : 4,077 / 24,624 ( 17 % )
+    Total combinational functions : 4,077 / 24,624 ( 17 % )
+    Dedicated logic registers : 514 / 24,624 ( 2 % )
+Total registers : 514
+Total pins : 142 / 216 ( 66 % )
 Total virtual pins : 0
-Total memory bits : 0 / 5,621,760 ( 0 % )
-Embedded Multiplier 9-bit elements : 0 / 560 ( 0 % )
-Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
-Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
-Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
-Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
-Total PLLs : 0 / 8 ( 0 % )
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

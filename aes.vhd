@@ -24,10 +24,6 @@ entity aes is
 		enRegSR                : std_logic;
 		enRegMix               : std_logic;
 		enRegADR2              : std_logic;
-		--RAM_ADDR               : in std_logic_vector(3 downto 0);
-		--RAM_DATA_OUT           : out std_logic_vector(7 downto 0);
-		plainText	           : in std_logic_vector(127 downto 0);
-		keyIni     	           : in std_logic_vector(127 downto 0);
 		outAes  : out std_logic_vector(127 downto 0)
 	);
 end entity;
@@ -37,7 +33,7 @@ architecture rtl of aes is
 signal outAddRoundKey_sg, outAddRoundKey_sg2, outSubBytes_sg, outShiftRows_sg : std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
 signal outMuxInicio, outMuxRound, outKey_sg, outMixColumns_sg : std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
 signal reg_plainText, reg_keyIni : std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
-
+		
 component addRoundKey is
 	generic(
 		DATA_WIDTH : natural := 128
@@ -99,16 +95,15 @@ component key is
 	);
 end component;
 
-begin
+component textKey is
+	port 
+	(
+		outText				: out 	std_logic_vector(127 downto 0);
+		outKey1				: out 	std_logic_vector(127 downto 0)			
+	);
+end component;
 
---type ramPlainText is array (0 to 15) of std_logic_vector (7 downto 0);
---signal ram_pt: ramPlainText :=(
-  -- x"32",x"88",x"31",x"e0",
-	--x"43",x"5a",x"31",x"37",
-	--x"f6",x"30",x"98",x"07",
-	--x"a8",x"8d",x"a2",x"34"
-   --); 
---RAM_DATA_OUT <= RAM(to_integer(unsigned(RAM_ADDR)));
+begin
 
 -- conecta porta final
 outAes <= outAddRoundKey_sg2;
@@ -130,8 +125,8 @@ process(clock)
 				reg_keyIni <= (others=>'0');
 			else 
 				if(enRegInicio = '1') then
-					reg_plainText <= plainText;
-					reg_keyIni <= keyIni;
+					reg_plainText <= x"328831E0435A3137F6309807A88DA234";
+					reg_keyIni <= x"2B28AB097EAEF7CF15D2154F16A6883C";
 				end if;
 			end if;
 		end if;
