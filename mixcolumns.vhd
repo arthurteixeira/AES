@@ -6,6 +6,7 @@ entity mixcolumns is
 	port 
 	( 
 		 clk           : std_logic;
+		 rst           : std_logic;
 		 enable        : std_logic;
 		 plainText     : in std_logic_vector(127 downto 0);
 		 outMixColumns : out std_logic_vector(127 downto 0)	
@@ -120,8 +121,12 @@ outMixColumns_reg(7 downto 0) <= c_out(0);
 process(clk)
 begin
 	if(rising_edge(clk)) then
-		if(enable = '1') then
-			outMixColumns <= outMixColumns_reg;
+		if(rst = '0') then
+			outMixColumns <= (others=>'0');
+		else
+			if(enable = '1') then
+				outMixColumns <= outMixColumns_reg;
+			end if;
 		end if;
 	end if;
 end process;

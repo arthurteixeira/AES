@@ -9,6 +9,7 @@ architecture behavior of tb_top is
 
 
 signal clock_sg     : std_logic := '0';
+signal reset_sg     : std_logic := '0';
 signal selInicio_sg : std_logic := '0';
 signal selRound_sg  : std_logic := '0';
 signal selKey_sg    : std_logic_vector(3 downto 0) := "0000";
@@ -25,6 +26,7 @@ signal outAes_sg    : std_logic_vector(127 downto 0);
 component aes is
 	port(
 		clock                  : std_logic;
+		reset                  : std_logic;
 		selInicio 		 		  : std_logic;
 		selRound               : std_logic;
 		selKey                 : std_logic_vector(3 downto 0);
@@ -45,6 +47,7 @@ begin
 inst_aes : aes
 	port map(
 		clock => clock_sg,
+		reset => reset_sg,
 		selInicio => selInicio_sg,
 		selRound => selRound_sg,
 		selKey => selKey_sg,
@@ -62,8 +65,10 @@ inst_aes : aes
 clock_sg <= not clock_sg after 20 ns;
 
 process is
-	begin			
+	begin
 		wait for 5 ns;
+			reset_sg       <= '1';
+		wait for 40 ns;
 			enRegInicio_sg <= '1';
 			enRegADR_sg    <= '0';
 			enRegSub_sg    <= '0';           
@@ -405,6 +410,8 @@ process is
 			enRegADR2_sg   <= '1';
 			selInicio_sg   <= '0';
 			selKey_sg         <= "1010";
+		wait for 40 ns;
+			reset_sg <= '0';
 		wait;	
 end process;
 	

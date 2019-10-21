@@ -15,6 +15,7 @@ entity addRoundKey is
 	port 
 	(
 		clk                    : std_logic;
+		rst                    : std_logic;
 		enable                 : std_logic;
 		plainText	           : in std_logic_vector((DATA_WIDTH-1) downto 0);
 		keyIni            	  : in std_logic_vector((DATA_WIDTH-1) downto 0);
@@ -31,8 +32,12 @@ begin
 	process(clk)
 	begin
 		if(rising_edge(clk)) then
-			if(enable = '1') then
-				outAddRoundKey <= reg_f;
+			if(rst = '0') then
+				outAddRoundKey <= (others=>'0');
+			else
+				if(enable = '1') then
+					outAddRoundKey <= reg_f;
+				end if;
 			end if;
 		end if;
 	end process;

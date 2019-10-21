@@ -15,6 +15,7 @@ entity subBytes is
 	port 
 	(
 		clk          : std_logic;
+		rst          : std_logic;
 		enable		 : std_logic;
 		theText	    : in std_logic_vector((DATA_WIDTH-1) downto 0);
 		outSubBytes  : out std_logic_vector((DATA_WIDTH-1) downto 0)
@@ -106,8 +107,12 @@ begin
 process(clk)
 begin
 	if(rising_edge(clk)) then
-		if(enable = '1') then
-			outSubBytes <= outSubBytes_reg;
+		if(rst = '0') then
+			outSubBytes <= (others=>'0');
+		else 
+			if(enable = '1') then
+				outSubBytes <= outSubBytes_reg;
+			end if;
 		end if;
 	end if;
 end process;

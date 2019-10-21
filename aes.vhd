@@ -14,6 +14,7 @@ entity aes is
 
 	port(
 		clock                  : std_logic;
+		reset                  : std_logic;
 		selInicio 		 		  : std_logic;
 		selRound               : std_logic;
 		selKey                 : std_logic_vector(3 downto 0);
@@ -27,7 +28,6 @@ entity aes is
 		--RAM_DATA_OUT           : out std_logic_vector(7 downto 0);
 		plainText	           : in std_logic_vector(127 downto 0);
 		keyIni     	           : in std_logic_vector(127 downto 0);
-		--keyIni2     	        : in std_logic_vector(127 downto 0);
 		outAes  : out std_logic_vector(127 downto 0)
 	);
 end entity;
@@ -45,6 +45,7 @@ component addRoundKey is
 	
 	port(
 		clk                    : std_logic;
+		rst                    : std_logic;
 		enable                 : std_logic;
 		plainText	           : in std_logic_vector((DATA_WIDTH-1) downto 0);
 		keyIni     	           : in std_logic_vector((DATA_WIDTH-1) downto 0);
@@ -61,6 +62,7 @@ component subbytes is
 	port 
 	(
 		clk          : std_logic;
+		rst          : std_logic;
 		enable       : std_logic;
 		theText	    : in std_logic_vector((DATA_WIDTH-1) downto 0);
 		outSubBytes  : out std_logic_vector((DATA_WIDTH-1) downto 0)
@@ -71,6 +73,7 @@ component shiftrows is
 	port 
 	(
 		clk      : std_logic;
+		rst      : std_logic;
 		enable   : std_logic;
 		ptext	   : in std_logic_vector(127 downto 0);
 		outShiftRows : out std_logic_vector(127 downto 0)
@@ -81,6 +84,7 @@ component mixcolumns is
 	port 
 	(
 		clk             : std_logic;
+		rst             : std_logic;
 		enable          : std_logic;
 		plainText	    : in std_logic_vector(127 downto 0);
 		outMixColumns   : out std_logic_vector(127 downto 0)
@@ -121,9 +125,14 @@ outMuxRound <= outMixColumns_sg when selRound = '0' else
 process(clock)
 	begin
 		if(rising_edge(clock)) then
-			if(enRegInicio = '1') then
-			reg_plainText <= plainText;
-			reg_keyIni <= keyIni;
+			if(reset = '0') then
+				reg_plainText <= (others=>'0');
+				reg_keyIni <= (others=>'0');
+			else 
+				if(enRegInicio = '1') then
+					reg_plainText <= plainText;
+					reg_keyIni <= keyIni;
+				end if;
 			end if;
 		end if;
 end process;			
@@ -132,6 +141,7 @@ ARK: addRoundKey
 		generic map (DATA_WIDTH => DATA_WIDTH_TOP)
 		port map (
 			clk => clock,
+			rst => reset,
 			enable => enRegADR,
 			plainText => reg_plainText,
 			keyIni => reg_keyIni,
@@ -142,6 +152,7 @@ SB: subbytes
 		generic map (DATA_WIDTH => DATA_WIDTH_TOP)
 		port map (
 			clk => clock,
+			rst => reset,
 			enable => enRegSub,
 			theText => outMuxInicio,
 			outSubBytes => outSubBytes_sg
@@ -150,6 +161,7 @@ SB: subbytes
 SR: shiftrows
 	  port map(
 			clk => clock,
+			rst => reset,
 			enable => enRegSR,
 			ptext => outSubBytes_sg,
 			outShiftRows => outShiftRows_sg
@@ -158,6 +170,7 @@ SR: shiftrows
 MC: mixcolumns
 	  port map(
 			clk => clock,
+			rst => reset,
 			enable => enRegMix,
 			plainText => outShiftRows_sg,
 			outMixColumns => outMixColumns_sg
@@ -173,6 +186,7 @@ ARK2: addRoundKey
 		generic map (DATA_WIDTH => DATA_WIDTH_TOP)
 		port map (
 			clk => clock,
+			rst => reset,
 			enable => enRegADR2,
 			plainText => outMuxRound,
 			keyIni => outKey_sg,

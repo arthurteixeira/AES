@@ -7,6 +7,7 @@ entity shiftrows is
 	port 
 	(
 		clk      : std_logic;
+		rst      : std_logic;
 		enable   : std_logic;
 		ptext	   : in std_logic_vector(127 downto 0);
 		outShiftRows : out std_logic_vector(127 downto 0)
@@ -39,8 +40,12 @@ outShiftRows_reg(7 downto 0) <= ptext(15 downto 8);
 process(clk)
 begin
 	if(rising_edge(clk)) then
-		if(enable = '1') then
-			outShiftRows <= outShiftRows_reg;
+		if(rst = '0') then 
+			outShiftRows <= (others=>'0');
+		else 
+			if(enable = '1') then
+				outShiftRows <= outShiftRows_reg;
+			end if;
 		end if;
 	end if;
 end process;
