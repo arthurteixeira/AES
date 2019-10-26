@@ -1,0 +1,159 @@
+library ieee;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+
+entity fsm is
+
+	port(
+		clk		   : in	std_logic;
+		reset	      : in	std_logic;
+		selInicio   : out std_logic;
+		selRound    : out std_logic;
+		selKey      : out std_logic_vector(3 downto 0);
+		enRegInicio : out std_logic;
+		enRegADR    : out std_logic;
+		enRegSub    : out std_logic;
+		enRegSR     : out std_logic;
+		enRegMix    : out std_logic;
+		enRegADR2   : out std_logic
+		);
+
+end entity;
+
+architecture rtl of fsm is
+
+	-- Build an enumerated type for the state machine
+	type state_type is (s0, s1, s2, s3, s4, s5, s6);
+
+	-- Register to hold the current state
+	signal state   : state_type;
+	signal output  : std_logic_vector(2 downto 0);
+	signal counter : std_logic_vector(3 downto 0);
+
+begin
+
+	-- Logic to advance to the next state
+	process (clk, reset)
+	begin
+		if reset = '0' then
+			state <= s0;
+		elsif (rising_edge(clk)) then
+			case state is
+				when s0=>
+					if reset = '1' then
+						state <= s1;
+						counter <= "0000";	
+					else
+						state <= s0;
+					end if;
+				when s1=>
+					if reset = '1' then
+						state <= s2;
+					else
+						state <= s0;
+					end if;
+				when s2=>
+					if reset = '1' then
+						state <= s3;
+					else
+						state <= s0;
+					end if;
+				when s3 =>
+					if reset = '1' then
+						state <= s4;
+					
+					else
+						state <= s0;
+					end if;
+				when s4 =>
+					if reset = '1' then
+						counter <= counter + '1';
+						state <= s5;
+					else
+						state <= s0;
+					end if;
+				when s5 =>
+					if counter < "1001" then
+						state <= s3;
+					elsif counter = "1001" then
+						state <= s6;
+					elsif counter = "1010" then
+						state <= s0;
+					else
+						state <= s0;
+					end if;
+				when s6 =>
+					if reset = '1' then
+						state <= s5;
+						counter <= counter + '1';
+					else
+						state <= s0;
+					end if;
+			end case;
+		end if;
+	end process;
+
+	-- Output depends solely on the current state
+	process (state)
+	begin
+		case state is
+			when s0 =>
+				enRegInicio <= '1';
+				enRegADR    <= '0';
+				enRegSub    <= '0';           
+				enRegSR     <= '0';           
+				enRegMix    <= '0';           
+				enRegADR2   <= '0';
+			when s1 =>
+				enRegInicio <= '0';
+				enRegADR    <= '1';
+				enRegSub    <= '0';           
+				enRegSR     <= '0';           
+				enRegMix    <= '0';           
+				enRegADR2   <= '0';
+				selInicio   <= '0';
+			when s2 =>
+				enRegInicio <= '0';
+				enRegADR    <= '0';
+				enRegSub    <= '1';           
+				enRegSR     <= '0';           
+				enRegMix    <= '0';           
+				enRegADR2   <= '0';
+			when s3 =>
+				enRegInicio <= '0';
+				enRegADR    <= '0';
+				enRegSub    <= '0';           
+				enRegSR     <= '1';           
+				enRegMix    <= '0';           
+				enRegADR2   <= '0';
+				selRound    <= '0';
+			when s4 =>
+				enRegInicio <= '0';
+				enRegADR    <= '0';
+				enRegSub    <= '0';           
+				enRegSR     <= '0';           
+				enRegMix    <= '1';           
+				enRegADR2   <= '0';
+				selInicio   <= '1';
+			when s5 =>
+				enRegInicio <= '0';
+				enRegADR    <= '0';
+				enRegSub    <= '0';           
+				enRegSR     <= '0';           
+				enRegMix    <= '0';           
+				enRegADR2   <= '1';
+				selKey      <= counter;
+			when s6 =>
+				enRegInicio <= '0';
+				enRegADR    <= '0';
+				enRegSub    <= '0';           
+				enRegSR     <= '1';           
+				enRegMix    <= '0';           
+				enRegADR2   <= '0';
+				selRound    <= '1';
+		end case;
+	end process;
+
+end rtl;

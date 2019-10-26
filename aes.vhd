@@ -15,15 +15,6 @@ entity aes is
 	port(
 		clock                  : std_logic;
 		reset                  : std_logic;
-		selInicio 		 		  : std_logic;
-		selRound               : std_logic;
-		selKey                 : std_logic_vector(3 downto 0);
-		enRegInicio            : std_logic;
-		enRegADR               : std_logic;
-		enRegSub               : std_logic;
-		enRegSR                : std_logic;
-		enRegMix               : std_logic;
-		enRegADR2              : std_logic;
 		outAes  : out std_logic_vector(127 downto 0)
 	);
 end entity;
@@ -33,6 +24,15 @@ architecture rtl of aes is
 signal outAddRoundKey_sg, outAddRoundKey_sg2, outSubBytes_sg, outShiftRows_sg : std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
 signal outMuxInicio, outMuxRound, outKey_sg, outMixColumns_sg : std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
 signal reg_plainText, reg_keyIni : std_logic_vector((DATA_WIDTH_TOP-1) downto 0);
+signal selInicio 		 		   : std_logic;
+signal selRound               : std_logic;
+signal selKey                 : std_logic_vector(3 downto 0);
+signal enRegInicio            : std_logic;
+signal enRegADR               : std_logic;
+signal enRegSub               : std_logic;
+signal enRegSR                : std_logic;
+signal enRegMix               : std_logic;
+signal enRegADR2              : std_logic;
 		
 component addRoundKey is
 	generic(
@@ -100,6 +100,23 @@ component textKey is
 	(
 		outText				: out 	std_logic_vector(127 downto 0);
 		outKey1				: out 	std_logic_vector(127 downto 0)			
+	);
+end component;
+
+component fsm is
+	port 
+	(
+		clk		   : in	std_logic;
+		reset	      : in	std_logic;
+		selInicio   : out std_logic;
+		selRound    : out std_logic;
+		selKey      : out std_logic_vector(3 downto 0);
+		enRegInicio : out std_logic;
+		enRegADR    : out std_logic;
+		enRegSub    : out std_logic;
+		enRegSR     : out std_logic;
+		enRegMix    : out std_logic;
+		enRegADR2   : out std_logic
 	);
 end component;
 
@@ -187,5 +204,20 @@ ARK2: addRoundKey
 			keyIni => outKey_sg,
 			outAddRoundKey => outAddRoundKey_sg2
 );
+
+SM: fsm
+	port map (
+			clk => clock,
+			reset => reset,
+			selInicio => selInicio,
+			selRound => selRound,
+			selKey => selKey,
+			enRegInicio => enRegInicio,
+			enRegADR => enRegADR,
+			enRegSub => enRegSub,
+			enRegSR  => enRegSR,
+			enRegMix => enRegMix,
+			enRegADR2 => enRegADR2
+		);
 
 end rtl;

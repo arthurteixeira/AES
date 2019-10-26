@@ -13,22 +13,16 @@
 # 
 # Top level modules:
 # 	aes_vlg_vec_tst
-# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.aes_vlg_vec_tst 
+# vsim -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.aes_vlg_vec_tst 
 # Loading work.aes_vlg_vec_tst
 # Loading work.aes
 # Loading altera_ver.dffeas
-# Loading cycloneiv_ver.cycloneiv_io_ibuf
-# Loading cycloneiv_ver.cycloneiv_lcell_comb
-# Loading cycloneiv_ver.cycloneiv_io_obuf
-# Loading cycloneiv_ver.cycloneiv_clkctrl
-# Loading cycloneiv_ver.cycloneiv_mux41
-# Loading cycloneiv_ver.cycloneiv_ena_reg
-# Loading cycloneiv_ver.cycloneiv_ram_block
-# Loading cycloneiv_ver.cycloneiv_ram_register
-# Loading cycloneiv_ver.cycloneiv_ram_pulse_generator
 # Loading work.aes_vlg_sample_tst
 # Loading work.aes_vlg_check_tst
 # Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: Design size of 4 instances exceeds ModelSim ALTERA recommended capacity.
+# This may because you are loading cell libraries which are not recommended with
+# the ModelSim Altera version. Expect performance to be adversely affected.
 # Simulation passed !
-# ** Note: $finish    : aes.vt(2437)
+# ** Note: $finish    : aes.vt(2435)
 #    Time: 1 us  Iteration: 0  Instance: /aes_vlg_vec_tst/tb_out

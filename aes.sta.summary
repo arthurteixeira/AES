@@ -2,40 +2,148 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'clock'
-Slack : -3.840
-TNS   : -776.722
+Type  : Slow 1100mV 85C Model Setup 'fsm:SM|state.s0'
+Slack : -4.698
+TNS   : -40.135
 
-Type  : Slow 1200mV 85C Model Hold 'clock'
-Slack : 0.358
+Type  : Slow 1100mV 85C Model Setup 'clock'
+Slack : -3.614
+TNS   : -864.180
+
+Type  : Slow 1100mV 85C Model Setup 'fsm:SM|state.s2'
+Slack : -3.238
+TNS   : -11.405
+
+Type  : Slow 1100mV 85C Model Hold 'clock'
+Slack : -0.978
+TNS   : -136.809
+
+Type  : Slow 1100mV 85C Model Hold 'fsm:SM|state.s0'
+Slack : -0.552
+TNS   : -2.007
+
+Type  : Slow 1100mV 85C Model Hold 'fsm:SM|state.s2'
+Slack : -0.324
+TNS   : -0.962
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.394
+TNS   : -271.448
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'fsm:SM|state.s0'
+Slack : 0.157
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
-Slack : -3.000
-TNS   : -517.000
-
-Type  : Slow 1200mV 0C Model Setup 'clock'
-Slack : -3.315
-TNS   : -641.651
-
-Type  : Slow 1200mV 0C Model Hold 'clock'
-Slack : 0.312
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'fsm:SM|state.s2'
+Slack : 0.436
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
-Slack : -3.000
-TNS   : -517.000
+Type  : Slow 1100mV 0C Model Setup 'fsm:SM|state.s0'
+Slack : -4.650
+TNS   : -40.489
 
-Type  : Fast 1200mV 0C Model Setup 'clock'
-Slack : -1.833
-TNS   : -262.782
+Type  : Slow 1100mV 0C Model Setup 'clock'
+Slack : -3.522
+TNS   : -833.287
 
-Type  : Fast 1200mV 0C Model Hold 'clock'
-Slack : 0.186
+Type  : Slow 1100mV 0C Model Setup 'fsm:SM|state.s2'
+Slack : -3.295
+TNS   : -11.850
+
+Type  : Slow 1100mV 0C Model Hold 'clock'
+Slack : -1.116
+TNS   : -212.528
+
+Type  : Slow 1100mV 0C Model Hold 'fsm:SM|state.s0'
+Slack : -0.540
+TNS   : -1.903
+
+Type  : Slow 1100mV 0C Model Hold 'fsm:SM|state.s2'
+Slack : -0.305
+TNS   : -0.831
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.394
+TNS   : -274.192
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'fsm:SM|state.s0'
+Slack : 0.129
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
-Slack : -3.000
-TNS   : -547.367
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'fsm:SM|state.s2'
+Slack : 0.380
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'fsm:SM|state.s0'
+Slack : -2.900
+TNS   : -21.963
+
+Type  : Fast 1100mV 85C Model Setup 'clock'
+Slack : -2.060
+TNS   : -380.394
+
+Type  : Fast 1100mV 85C Model Setup 'fsm:SM|state.s2'
+Slack : -1.849
+TNS   : -4.878
+
+Type  : Fast 1100mV 85C Model Hold 'clock'
+Slack : -1.073
+TNS   : -320.205
+
+Type  : Fast 1100mV 85C Model Hold 'fsm:SM|state.s0'
+Slack : -0.299
+TNS   : -1.104
+
+Type  : Fast 1100mV 85C Model Hold 'fsm:SM|state.s2'
+Slack : -0.160
+TNS   : -0.551
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.106
+TNS   : -51.933
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'fsm:SM|state.s0'
+Slack : 0.217
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'fsm:SM|state.s2'
+Slack : 0.430
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'fsm:SM|state.s0'
+Slack : -2.692
+TNS   : -20.761
+
+Type  : Fast 1100mV 0C Model Setup 'fsm:SM|state.s2'
+Slack : -1.794
+TNS   : -4.583
+
+Type  : Fast 1100mV 0C Model Setup 'clock'
+Slack : -1.725
+TNS   : -304.787
+
+Type  : Fast 1100mV 0C Model Hold 'clock'
+Slack : -1.117
+TNS   : -386.804
+
+Type  : Fast 1100mV 0C Model Hold 'fsm:SM|state.s0'
+Slack : -0.282
+TNS   : -1.003
+
+Type  : Fast 1100mV 0C Model Hold 'fsm:SM|state.s2'
+Slack : -0.143
+TNS   : -0.478
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.107
+TNS   : -52.824
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'fsm:SM|state.s0'
+Slack : 0.251
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'fsm:SM|state.s2'
+Slack : 0.440
+TNS   : 0.000
 
 ------------------------------------------------------------
