@@ -1,2 +1,2 @@
-simulation/* linguist-vendored
-.tcl linguist-vendored=false
+simulation/modelsim/* linguist-vendored
+aes_dump_all_vcd_nodes.tcl linguist-vendored=false
