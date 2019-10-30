@@ -31,7 +31,7 @@ end entity;
 architecture rtl of fsm is
 
 	-- Build an enumerated type for the state machine
-	type state_type is (s0, s1, s2, s3, s4, s5);
+	type state_type is (s0, s1, s2, s3, s4, s5, s6);
 
 	-- Register to hold the current state
 	signal state   : state_type;
@@ -64,8 +64,10 @@ begin
 					if c < "1010" then
 						state <= s2;
 					elsif c = "1010" then 
-						state <= s0;
+						state <= s6;
 					end if;
+				when s6=>
+					state <= s0;
 			end case;
 		end if;
 	end process;
@@ -103,6 +105,8 @@ begin
 				enRegMix <= '1';
 				selInicio <= '1';
 			when s5 =>
+				enRegADR2 <= '1';
+			when s6 =>
 				enRegADR2 <= '1';
 		end case;
 	end process;

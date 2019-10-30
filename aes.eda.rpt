@@ -1,5 +1,5 @@
 EDA Netlist Writer report for aes
-Sat Oct 26 13:21:15 2019
+Wed Oct 30 15:39:47 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -36,10 +36,10 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sat Oct 26 13:21:15 2019 ;
+; EDA Netlist Writer Status ; Successful - Wed Oct 30 15:39:47 2019 ;
 ; Revision Name             ; aes                                   ;
 ; Top-level Entity Name     ; aes                                   ;
-; Family                    ; Cyclone V                             ;
+; Family                    ; Cyclone III                           ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
 
@@ -52,11 +52,13 @@ applicable agreement for further details.
 ; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
 ; Generate netlist for functional simulation only                                                   ; On                        ;
 ; Truncate long hierarchy paths                                                                     ; Off                       ;
-; Map illegal HDL characters                                                                        ; Off                       ;
+; Map illegal HDL characters                                                                        ; On                        ;
 ; Flatten buses into individual nodes                                                               ; Off                       ;
 ; Maintain hierarchy                                                                                ; Off                       ;
 ; Bring out device-wide set/reset signals as ports                                                  ; Off                       ;
-; Enable glitch filtering                                                                           ; Off                       ;
+; Enable glitch filtering                                                                           ; On                        ;
+; Generate Power Estimate Scripts                                                                   ; All output signals        ;
+; Test Bench design instance name                                                                   ; inst_aes                  ;
 ; Do not write top level VHDL entity                                                                ; Off                       ;
 ; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                       ;
 ; Architecture name in VHDL output netlist                                                          ; structure                 ;
@@ -65,13 +67,14 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+------------------------------------------------------------------+
-; Simulation Generated Files                                       ;
-+------------------------------------------------------------------+
-; Generated Files                                                  ;
-+------------------------------------------------------------------+
-; C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/aes.vo ;
-+------------------------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                           ;
++--------------------------------------------------------------------------------------+
+; Generated Files                                                                      ;
++--------------------------------------------------------------------------------------+
+; C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/aes.vo                     ;
+; C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/aes_dump_all_vcd_nodes.tcl ;
++--------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -80,12 +83,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Sat Oct 26 13:21:13 2019
+    Info: Processing started: Wed Oct 30 15:39:46 2019
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off aes -c aes
 Info (204019): Generated file aes.vo in folder "C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/" for EDA simulation tool
+Info (204020): Writing VCD Dump Commands for all nodes to C:/Users/Arthur/Documents/designs/AES/simulation/modelsim/aes_dump_all_vcd_nodes.tcl
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4625 megabytes
-    Info: Processing ended: Sat Oct 26 13:21:15 2019
+    Info: Peak virtual memory: 4548 megabytes
+    Info: Processing ended: Wed Oct 30 15:39:48 2019
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

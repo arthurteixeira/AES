@@ -6595,8 +6595,8 @@ outAddRoundKey[127] <= outAddRoundKey[127]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |aes|fsm:SM
-clk => state~7.DATAIN
-reset => state~9.DATAIN
+clk => state~8.DATAIN
+reset => state~10.DATAIN
 selInicio <= selInicio$latch.DB_MAX_OUTPUT_PORT_TYPE
 selRound <= selRound$latch.DB_MAX_OUTPUT_PORT_TYPE
 selKey[0] <= selKey[0]$latch.DB_MAX_OUTPUT_PORT_TYPE

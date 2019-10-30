@@ -35,8 +35,6 @@ process is
 	begin
 		wait for 25 ns;
 			reset_sg       <= '1';
-		wait for 1720? ns;
-		  reset_sg       <= '0';
 		wait;	
 end process;
 	
