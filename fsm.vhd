@@ -88,21 +88,27 @@ begin
 			when s1 =>
 				enRegADR <= '1';
 				selInicio <= '0';
+				enRegInicio <= '0';
 			when s2 =>
+				enRegADR <= '0';
 				enRegSub <= '1';
 				c <= c + '1';
+				enRegADR2 <= '0';
 			when s3 =>
 				if c < "1010" then
 					selRound <= '0';
 				elsif c = "1010" then 
 					selRound <= '1';
 				end if;
+				enRegSub <= '0';
 				enRegSR <= '1';
 				selKey <= c;
 			when s4 =>
+				enRegSR <= '0';
 				enRegMix <= '1';
 				selInicio <= '1';
 			when s5 =>
+				enRegMix <= '0';
 				enRegADR2 <= '1';
 		end case;
 	end process;
