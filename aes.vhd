@@ -33,6 +33,8 @@ signal enRegSub               : std_logic;
 signal enRegSR                : std_logic;
 signal enRegMix               : std_logic;
 signal enRegADR2              : std_logic;
+signal enKeys                 : std_logic;
+signal selMuxKeys             : std_logic;
 		
 component addRoundKey is
 	generic(
@@ -87,20 +89,19 @@ component mixcolumns is
 	);
 end component;
 
-component key is
-	port 
-	(
-		inKey 		      : in 	std_logic_vector(3 downto 0);
-		outKey				: out 	std_logic_vector(127 downto 0)	
-	);
-end component;
+component keys is
 
-component textKey is
 	port 
 	(
-		outText				: out 	std_logic_vector(127 downto 0);
-		outKey1				: out 	std_logic_vector(127 downto 0)			
+		clk      : in std_logic;
+		rst      : in std_logic;
+		enable   : in std_logic;
+		selMuxKey : in std_logic;
+		key	   : in std_logic_vector(127 downto 0);
+		selRcon  : in std_logic_vector(3 downto 0);
+		outKey   : out std_logic_vector(127 downto 0)
 	);
+
 end component;
 
 component fsm is
@@ -116,7 +117,9 @@ component fsm is
 		enRegSub    : out std_logic;
 		enRegSR     : out std_logic;
 		enRegMix    : out std_logic;
-		enRegADR2   : out std_logic
+		enRegADR2   : out std_logic;
+		enKeys      : out std_logic;
+		selMuxKeys  : out std_logic
 	);
 end component;
 
@@ -142,8 +145,8 @@ process(clock)
 				reg_keyIni <= (others=>'0');
 			else 
 				if(enRegInicio = '1') then
-					reg_plainText <= x"6BC1BEE22E409F96E93D7E117393172A"; -- x"328831E0435A3137F6309807A88DA234";
-					reg_keyIni <= x"2B7E151628AED2A6ABF7158809CF4F3C"; -- x"2B28AB097EAEF7CF15D2154F16A6883C";
+					reg_plainText <= x"6BC1BEE22E409F96E93D7E117393172A"; 
+					reg_keyIni <= x"2B7E151628AED2A6ABF7158809CF4F3C"; 
 				end if;
 			end if;
 		end if;
@@ -188,10 +191,15 @@ MC: mixcolumns
 			outMixColumns => outMixColumns_sg
 	  );	  
 
-KEYS: key
+KEY: keys
 	port map(
-		inKey => selKey,
-		outKey => outKey_sg		
+		clk => clock,
+		rst => reset,
+		enable => enKeys,
+		selMuxKey => selMuxKeys,
+		key => reg_keyIni,
+		selRcon => selKey,
+		outKey => outKey_sg
 		);
 		
 ARK2: addRoundKey
@@ -217,7 +225,9 @@ SM: fsm
 			enRegSub => enRegSub,
 			enRegSR  => enRegSR,
 			enRegMix => enRegMix,
-			enRegADR2 => enRegADR2
+			enRegADR2 => enRegADR2,
+			enKeys => enKeys,
+			selMuxKeys => selMuxKeys
 		);
 
 end rtl;

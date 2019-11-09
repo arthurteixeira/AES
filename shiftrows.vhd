@@ -21,29 +21,24 @@ signal outShiftRows_reg : std_logic_vector(127 downto 0);
 
 begin
 
--- 6BC1BEE2 2E409F96 E93D7E11 7393172A
-
--- 09 08 62 BF - 6F 28 E3 04 - 2C 74 7F EE - DA 4A 6A 47 
--- 09 28 7F 47 - 6F 74 6A BF - 2C 4A 62 04 - DA 08 E3 EE 
-
--- 
+-- 6BC1BEE2 2E409F96 E93D7E11 7393172A 
 
 outShiftRows_reg(127 downto 120) <= ptext(127 downto 120);
-outShiftRows_reg(119 downto 112) <= ptext(87 downto 80); --ptext(119 downto 112);
-outShiftRows_reg(111 downto 104) <= ptext(47 downto 40); --ptext(111 downto 104);
-outShiftRows_reg(103 downto 96) <= ptext(7 downto 0); --ptext(103 downto 96);
-outShiftRows_reg(95 downto 88) <= ptext(95 downto 88); --ptext(87 downto 80);
-outShiftRows_reg(87 downto 80) <= ptext(55 downto 48); --ptext(79 downto 72);
-outShiftRows_reg(79 downto 72) <= ptext(15 downto 8); --ptext(71 downto 64);
-outShiftRows_reg(71 downto 64) <= ptext(103 downto 96); --ptext(95 downto 88);
-outShiftRows_reg(63 downto 56) <= ptext(63 downto 56); --ptext(47 downto 40);
-outShiftRows_reg(55 downto 48) <= ptext(23 downto 16); --ptext(39 downto 32);
-outShiftRows_reg(47 downto 40) <= ptext(111 downto 104); --ptext(63 downto 56);
-outShiftRows_reg(39 downto 32) <= ptext(71 downto 64); --ptext(55 downto 48);
-outShiftRows_reg(31 downto 24) <= ptext(31 downto 24); --ptext(7 downto 0);	
-outShiftRows_reg(23 downto 16) <= ptext(119 downto 112); --ptext(31 downto 24);
-outShiftRows_reg(15 downto 8) <= ptext(79 downto 72); --ptext(23 downto 16);
-outShiftRows_reg(7 downto 0) <= ptext(39 downto 32); --ptext(15 downto 8);	
+outShiftRows_reg(119 downto 112) <= ptext(87 downto 80); 
+outShiftRows_reg(111 downto 104) <= ptext(47 downto 40); 
+outShiftRows_reg(103 downto 96) <= ptext(7 downto 0); 
+outShiftRows_reg(95 downto 88) <= ptext(95 downto 88); 
+outShiftRows_reg(87 downto 80) <= ptext(55 downto 48);
+outShiftRows_reg(79 downto 72) <= ptext(15 downto 8); 
+outShiftRows_reg(71 downto 64) <= ptext(103 downto 96); 
+outShiftRows_reg(63 downto 56) <= ptext(63 downto 56); 
+outShiftRows_reg(55 downto 48) <= ptext(23 downto 16); 
+outShiftRows_reg(47 downto 40) <= ptext(111 downto 104); 
+outShiftRows_reg(39 downto 32) <= ptext(71 downto 64); 
+outShiftRows_reg(31 downto 24) <= ptext(31 downto 24); 	
+outShiftRows_reg(23 downto 16) <= ptext(119 downto 112); 
+outShiftRows_reg(15 downto 8) <= ptext(79 downto 72); 
+outShiftRows_reg(7 downto 0) <= ptext(39 downto 32);
 
 process(clk)
 begin

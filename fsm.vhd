@@ -23,7 +23,9 @@ entity fsm is
 		enRegSub    : out std_logic;
 		enRegSR     : out std_logic;
 		enRegMix    : out std_logic;
-		enRegADR2   : out std_logic
+		enRegADR2   : out std_logic;
+		enKeys      : out std_logic;
+		selMuxKeys  : out std_logic
 	);
 
 end entity;
@@ -84,6 +86,8 @@ begin
 				enRegSR     <= '0';
 				enRegMix    <= '0';
 				enRegADR2   <= '0';
+				enKeys      <= '0';
+				selMuxKeys  <= '0';
 				c           <= "0000";
 			when s1 =>
 				enRegADR <= '1';
@@ -100,14 +104,23 @@ begin
 				elsif c = "1010" then 
 					selRound <= '1';
 				end if;
+				if c = "0001" then					
+					selMuxKeys <= '0';
+				elsif c > "0001" then 					
+					selMuxKeys <= '1';
+				end if;
 				enRegSub <= '0';
 				enRegSR <= '1';
+				enKeys <= '1';
 				selKey <= c;
 			when s4 =>
+				selMuxKeys <= '0';
+				enKeys <= '0';
 				enRegSR <= '0';
 				enRegMix <= '1';
 				selInicio <= '1';
 			when s5 =>
+				enKeys <= '0';
 				enRegMix <= '0';
 				enRegADR2 <= '1';
 		end case;

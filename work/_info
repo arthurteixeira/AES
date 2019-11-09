@@ -16,7 +16,7 @@ L8
 V<TA>LIF3a[6M:OJM`>hi60
 Z8 OV;C;10.1d;51
 32
-Z9 !s108 1573272290.387000
+Z9 !s108 1573276858.968000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/addRoundKey.vhd|
 Z11 !s107 C:/Users/Arthur/Documents/designs/AES/addRoundKey.vhd|
 Z12 o-work work -2002 -explicit -O0
@@ -41,7 +41,7 @@ R13
 !s100 B?HN]bL>Xi=j]o8@C6VDj3
 !i10b 1
 Eaes
-Z14 w1573266809
+Z14 w1573276696
 R2
 R3
 R4
@@ -53,7 +53,7 @@ L8
 VfENUzZ5<OTgCS5m;zQoZH3
 R8
 32
-Z17 !s108 1573272290.482000
+Z17 !s108 1573276859.111000
 Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/aes.vhd|
 Z19 !s107 C:/Users/Arthur/Documents/designs/AES/aes.vhd|
 R12
@@ -65,9 +65,9 @@ R2
 R3
 R4
 DEx4 work 3 aes 0 22 fENUzZ5<OTgCS5m;zQoZH3
-l123
+l126
 L22
-VA[4?[1`zLHiL>7M87z:Xj2
+V5[DR?8mD@51PD_FVGU[^T2
 R8
 32
 R17
@@ -75,10 +75,10 @@ R18
 R19
 R12
 R13
-!s100 2in?4nzOB<S1hYAfLHj5I3
+!s100 d^QD`5A?TW]nX[9TFa[8l1
 !i10b 1
 Efsm
-Z20 w1573272230
+Z20 w1573275735
 Z21 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
 Z22 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
 R3
@@ -88,25 +88,25 @@ Z23 8C:/Users/Arthur/Documents/designs/AES/fsm.vhd
 Z24 FC:/Users/Arthur/Documents/designs/AES/fsm.vhd
 l0
 L13
-V<9@LjihONV:8^W3OUN8Ve1
+Vc;VQEg22m6gTA5MY=f@GL1
 R8
 32
-Z25 !s108 1573272290.578000
+Z25 !s108 1573276859.245000
 Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/fsm.vhd|
 Z27 !s107 C:/Users/Arthur/Documents/designs/AES/fsm.vhd|
 R12
 R13
-!s100 [MjV73oUlSk:4SBd?284B3
+!s100 :fg^6g9gSMXG]:g]hnNbb1
 !i10b 1
 Artl
 R21
 R22
 R3
 R4
-DEx4 work 3 fsm 0 22 <9@LjihONV:8^W3OUN8Ve1
-l40
-L31
-V]f<ZAfbF]DiGXIoCk`mzc1
+DEx4 work 3 fsm 0 22 c;VQEg22m6gTA5MY=f@GL1
+l42
+L33
+VLoZK4;b2FEe`j4XPY4KSF2
 R8
 32
 R25
@@ -114,7 +114,7 @@ R26
 R27
 R12
 R13
-!s100 YgCR<mLd2KEz[1_VZ=>^]0
+!s100 [WG>OD;HH1e6:i5RQXH3M3
 !i10b 1
 Ekey
 Z28 w1573269541
@@ -130,7 +130,7 @@ L11
 VdFD9IOc7loFSeXW>X[AQJ0
 R8
 32
-Z31 !s108 1573272290.678000
+Z31 !s108 1573275747.065000
 Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/key.vhd|
 Z33 !s107 C:/Users/Arthur/Documents/designs/AES/key.vhd|
 R12
@@ -155,21 +155,58 @@ R12
 R13
 !s100 n:FV@HWDUjk1Nd^3>Y6lQ2
 !i10b 1
-Emixcolumns
-Z34 w1573268582
+Ekeys
+Z34 w1573274960
+R2
 R3
 R4
 R5
-Z35 8C:/Users/Arthur/Documents/designs/AES/mixcolumns.vhd
-Z36 FC:/Users/Arthur/Documents/designs/AES/mixcolumns.vhd
+Z35 8C:/Users/Arthur/Documents/designs/AES/keys.vhd
+Z36 FC:/Users/Arthur/Documents/designs/AES/keys.vhd
+l0
+L8
+V`:m;>M@RAHm0]O1KX0gi@1
+R8
+32
+Z37 !s108 1573276859.838000
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/keys.vhd|
+Z39 !s107 C:/Users/Arthur/Documents/designs/AES/keys.vhd|
+R12
+R13
+!s100 UazE4zDD6Nk0_gPF58WVG0
+!i10b 1
+Artl
+R2
+R3
+R4
+DEx4 work 4 keys 0 22 `:m;>M@RAHm0]O1KX0gi@1
+l49
+L23
+V0f[ZZYdkaE>?>14g73Z590
+!s100 XlEkBOW>adV8:f>B361UP0
+R8
+32
+R37
+R38
+R39
+R12
+R13
+!i10b 1
+Emixcolumns
+Z40 w1573276707
+R3
+R4
+R5
+Z41 8C:/Users/Arthur/Documents/designs/AES/mixcolumns.vhd
+Z42 FC:/Users/Arthur/Documents/designs/AES/mixcolumns.vhd
 l0
 L4
 VTBb@PFR5z>R02f?8]5h@O1
 R8
 32
-Z37 !s108 1573272290.776000
-Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/mixcolumns.vhd|
-Z39 !s107 C:/Users/Arthur/Documents/designs/AES/mixcolumns.vhd|
+Z43 !s108 1573276859.342000
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/mixcolumns.vhd|
+Z45 !s107 C:/Users/Arthur/Documents/designs/AES/mixcolumns.vhd|
 R12
 R13
 !s100 JaGI=hFc0L7njag1a1JYP0
@@ -183,30 +220,30 @@ L17
 V>]@7K_8NHl<;T5]Uj39GD0
 R8
 32
-R37
-R38
-R39
+R43
+R44
+R45
 R12
 R13
-!s100 _6B>ffbI0HYIj8Kk6VaIX2
+!s100 g14fj=h;5U@G2WnFS8_Be3
 !i10b 1
 Esbox
-Z40 w1573258098
+Z46 w1573258098
 R22
 R21
 R3
 R4
 R5
-Z41 8C:/Users/Arthur/Documents/designs/AES/sbox.vhd
-Z42 FC:/Users/Arthur/Documents/designs/AES/sbox.vhd
+Z47 8C:/Users/Arthur/Documents/designs/AES/sbox.vhd
+Z48 FC:/Users/Arthur/Documents/designs/AES/sbox.vhd
 l0
 L11
 VeLDdgWhl]MfMAoD`Y;n0@0
 R8
 32
-Z43 !s108 1573272290.869000
-Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/sbox.vhd|
-Z45 !s107 C:/Users/Arthur/Documents/designs/AES/sbox.vhd|
+Z49 !s108 1573276859.439000
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/sbox.vhd|
+Z51 !s107 C:/Users/Arthur/Documents/designs/AES/sbox.vhd|
 R12
 R13
 !s100 G:5CJ1eKF;YDb8FaJJJin3
@@ -222,29 +259,68 @@ L50
 V4]<DFA:Rk>i4Z@YDM9F;=0
 R8
 32
-R43
-R44
-R45
+R49
+R50
+R51
 R12
 R13
 !s100 82CY>4`kP1AaL?Le2`4B21
 !i10b 1
+Esboxkey
+Z52 w1573274307
+R22
+R21
+R3
+R4
+R5
+Z53 8C:/Users/Arthur/Documents/designs/AES/sboxKey.vhd
+Z54 FC:/Users/Arthur/Documents/designs/AES/sboxKey.vhd
+l0
+L11
+VFLCR343=?VY:MnQ6AHElV0
+!s100 ?^XdjAnD[LF>aMMAJ6dKI0
+R8
+32
+!i10b 1
+Z55 !s108 1573276859.933000
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/sboxKey.vhd|
+Z57 !s107 C:/Users/Arthur/Documents/designs/AES/sboxKey.vhd|
+R12
+R13
+Abehaviour
+R22
+R21
+R3
+R4
+Z58 DEx4 work 7 sboxkey 0 22 FLCR343=?VY:MnQ6AHElV0
+l28
+L24
+Z59 V9G2=>9GABIb@fdZXm>0o61
+Z60 !s100 z^0MNz_mL1Mb7zD46cdOQ3
+R8
+32
+!i10b 1
+R55
+R56
+R57
+R12
+R13
 Eshiftrows
-R14
+Z61 w1573276697
 R2
 R3
 R4
 R5
-Z46 8C:/Users/Arthur/Documents/designs/AES/shiftrows.vhd
-Z47 FC:/Users/Arthur/Documents/designs/AES/shiftrows.vhd
+Z62 8C:/Users/Arthur/Documents/designs/AES/shiftrows.vhd
+Z63 FC:/Users/Arthur/Documents/designs/AES/shiftrows.vhd
 l0
 L5
 Vhjol8k`Y4d=g?2A:P1gTg1
 R8
 32
-Z48 !s108 1573272290.975000
-Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/shiftrows.vhd|
-Z50 !s107 C:/Users/Arthur/Documents/designs/AES/shiftrows.vhd|
+Z64 !s108 1573276859.553000
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/shiftrows.vhd|
+Z66 !s107 C:/Users/Arthur/Documents/designs/AES/shiftrows.vhd|
 R12
 R13
 !s100 6>>gDBOLi?a02Zh<nCPQZ1
@@ -259,29 +335,29 @@ L18
 VTV63dU]ENHcMXZf:LX=CS0
 R8
 32
-R48
-R49
-R50
+R64
+R65
+R66
 R12
 R13
-!s100 ]hb<9[DnB[:IN4g4T[dc23
+!s100 688]M<nW9?d]9b=n_hoGi1
 !i10b 1
 Esubbytes
-R40
+R46
 R2
 R3
 R4
 R5
-Z51 8C:/Users/Arthur/Documents/designs/AES/subbytes.vhd
-Z52 FC:/Users/Arthur/Documents/designs/AES/subbytes.vhd
+Z67 8C:/Users/Arthur/Documents/designs/AES/subbytes.vhd
+Z68 FC:/Users/Arthur/Documents/designs/AES/subbytes.vhd
 l0
 L8
 VX0hPUOYjA=Ed=5=SkK?je2
 R8
 32
-Z53 !s108 1573272291.069000
-Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/subbytes.vhd|
-Z55 !s107 C:/Users/Arthur/Documents/designs/AES/subbytes.vhd|
+Z69 !s108 1573276859.650000
+Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/subbytes.vhd|
+Z71 !s107 C:/Users/Arthur/Documents/designs/AES/subbytes.vhd|
 R12
 R13
 !s100 kjlYQonSFcBQ^YDcON8nD3
@@ -294,49 +370,49 @@ DEx4 work 8 subbytes 0 22 X0hPUOYjA=Ed=5=SkK?je2
 l71
 L26
 VKj[b63_dC@Zlljg>6UiQJ2
-!s100 ]OQ4LLFlI3zH7^EV_oJ^R0
 R8
 32
-R53
-R54
-R55
+R69
+R70
+R71
 R12
 R13
+!s100 ]OQ4LLFlI3zH7^EV_oJ^R0
 !i10b 1
 Etb_top
-R40
+R46
 R2
 R3
 R4
 R5
-Z56 8C:/Users/Arthur/Documents/designs/AES/tb_top.vhd
-Z57 FC:/Users/Arthur/Documents/designs/AES/tb_top.vhd
+Z72 8C:/Users/Arthur/Documents/designs/AES/tb_top.vhd
+Z73 FC:/Users/Arthur/Documents/designs/AES/tb_top.vhd
 l0
 L5
 VF_eVOk;BU1W9BiLFId1zM3
-!s100 N@7aejmB;dAlJCM7hl3Pi1
 R8
 32
-!i10b 1
-Z58 !s108 1573272291.169000
-Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/tb_top.vhd|
-Z60 !s107 C:/Users/Arthur/Documents/designs/AES/tb_top.vhd|
+Z74 !s108 1573276859.747000
+Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/tb_top.vhd|
+Z76 !s107 C:/Users/Arthur/Documents/designs/AES/tb_top.vhd|
 R12
 R13
+!s100 N@7aejmB;dAlJCM7hl3Pi1
+!i10b 1
 Abehavior
 R2
 R3
 R4
-Z61 DEx4 work 6 tb_top 0 22 F_eVOk;BU1W9BiLFId1zM3
+DEx4 work 6 tb_top 0 22 F_eVOk;BU1W9BiLFId1zM3
 l23
 L8
-Z62 VczOCNk9hLQX739o45kldG2
-Z63 !s100 [4U:6TMDhC>0^7iaBI:5T1
+VczOCNk9hLQX739o45kldG2
 R8
 32
-!i10b 1
-R58
-R59
-R60
+R74
+R75
+R76
 R12
 R13
+!s100 [4U:6TMDhC>0^7iaBI:5T1
+!i10b 1
