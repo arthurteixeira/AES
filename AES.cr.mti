@@ -1,4 +1,59 @@
-C:/Users/User/Desktop/AES/tb_top.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Desktop/AES/tb_top.vhd
+C:/Users/Arthur/Documents/designs/AES/key.vhd {1 {vcom -work work -2002 -explicit C:/Users/Arthur/Documents/designs/AES/key.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity key
+-- Compiling architecture behaviour of key
+
+} {} {}} C:/Users/Arthur/Documents/designs/AES/shiftrows.vhd {1 {vcom -work work -2002 -explicit C:/Users/Arthur/Documents/designs/AES/shiftrows.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity shiftrows
+-- Compiling architecture rtl of shiftrows
+
+} {} {}} C:/Users/Arthur/Documents/designs/AES/aes.vhd {1 {vcom -work work -2002 -explicit C:/Users/Arthur/Documents/designs/AES/aes.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity aes
+-- Compiling architecture rtl of aes
+
+} {} {}} C:/Users/Arthur/Documents/designs/AES/subbytes.vhd {1 {vcom -work work -2002 -explicit C:/Users/Arthur/Documents/designs/AES/subbytes.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity subBytes
+-- Compiling architecture rtl of subBytes
+
+} {} {}} C:/Users/Arthur/Documents/designs/AES/sbox.vhd {1 {vcom -work work -2002 -explicit C:/Users/Arthur/Documents/designs/AES/sbox.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity sbox
+-- Compiling architecture behaviour of sbox
+
+} {} {}} C:/Users/User/Desktop/AES/mixcolumns.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Desktop/AES/mixcolumns.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mixcolumns
+-- Compiling architecture rtl of mixcolumns
+
+} {} {}} C:/Users/User/Desktop/AES/tb_top.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Desktop/AES/tb_top.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -6,6 +61,24 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package NUMERIC_STD
 -- Compiling entity tb_top
 -- Compiling architecture behavior of tb_top
+
+} {} {}} C:/Users/User/Desktop/AES/subbytes.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Desktop/AES/subbytes.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity subBytes
+-- Compiling architecture rtl of subBytes
+
+} {} {}} C:/Users/User/Desktop/AES/addRoundKey.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Desktop/AES/addRoundKey.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity addRoundKey
+-- Compiling architecture rtl of addRoundKey
 
 } {} {}} C:/Users/User/Desktop/AES/sbox.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Desktop/AES/sbox.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -17,23 +90,14 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity sbox
 -- Compiling architecture behaviour of sbox
 
-} {} {}} C:/Users/User/Desktop/AES/subbytes.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Desktop/AES/subbytes.vhd
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+} {} {}} C:/Users/Arthur/Documents/designs/AES/addRoundKey.vhd {1 {vcom -work work -2002 -explicit C:/Users/Arthur/Documents/designs/AES/addRoundKey.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity subBytes
--- Compiling architecture rtl of subBytes
-
-} {} {}} C:/Users/User/Desktop/AES/shiftrows.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Desktop/AES/shiftrows.vhd
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity shiftrows
--- Compiling architecture rtl of shiftrows
+-- Compiling entity addRoundKey
+-- Compiling architecture rtl of addRoundKey
 
 } {} {}} C:/Users/User/Desktop/AES/key.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Desktop/AES/key.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -54,21 +118,40 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity aes
 -- Compiling architecture rtl of aes
 
-} {} {}} C:/Users/User/Desktop/AES/addRoundKey.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Desktop/AES/addRoundKey.vhd
+} {} {}} C:/Users/User/Desktop/AES/shiftrows.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Desktop/AES/shiftrows.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity addRoundKey
--- Compiling architecture rtl of addRoundKey
+-- Compiling entity shiftrows
+-- Compiling architecture rtl of shiftrows
 
-} {} {}} C:/Users/User/Desktop/AES/mixcolumns.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/User/Desktop/AES/mixcolumns.vhd
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+} {} {}} C:/Users/Arthur/Documents/designs/AES/fsm.vhd {1 {vcom -work work -2002 -explicit C:/Users/Arthur/Documents/designs/AES/fsm.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity fsm
+-- Compiling architecture rtl of fsm
+
+} {} {}} C:/Users/Arthur/Documents/designs/AES/mixcolumns.vhd {1 {vcom -work work -2002 -explicit C:/Users/Arthur/Documents/designs/AES/mixcolumns.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity mixcolumns
 -- Compiling architecture rtl of mixcolumns
+
+} {} {}} C:/Users/Arthur/Documents/designs/AES/tb_top.vhd {1 {vcom -work work -2002 -explicit C:/Users/Arthur/Documents/designs/AES/tb_top.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_top
+-- Compiling architecture behavior of tb_top
 
 } {} {}}

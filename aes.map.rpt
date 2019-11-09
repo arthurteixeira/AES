@@ -1,5 +1,5 @@
 Analysis & Synthesis report for aes
-Wed Nov 06 21:24:52 2019
+Sat Nov 09 00:19:55 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -50,13 +50,13 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 06 21:24:52 2019      ;
+; Analysis & Synthesis Status        ; Successful - Sat Nov 09 00:19:55 2019      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; aes                                        ;
 ; Top-level Entity Name              ; aes                                        ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 4,116                                      ;
-;     Total combinational functions  ; 4,115                                      ;
+; Total logic elements               ; 4,118                                      ;
+;     Total combinational functions  ; 4,117                                      ;
 ;     Dedicated logic registers      ; 520                                        ;
 ; Total registers                    ; 520                                        ;
 ; Total pins                         ; 130                                        ;
@@ -160,25 +160,25 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 12     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                           ;
-+----------------------------------+-----------------+-----------------------+-------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path              ; Library ;
-+----------------------------------+-----------------+-----------------------+-------------------------------------------+---------+
-; shiftrows.vhd                    ; yes             ; User VHDL File        ; C:/Users/User/Desktop/AES/shiftrows.vhd   ;         ;
-; mixcolumns.vhd                   ; yes             ; User VHDL File        ; C:/Users/User/Desktop/AES/mixcolumns.vhd  ;         ;
-; key.vhd                          ; yes             ; User VHDL File        ; C:/Users/User/Desktop/AES/key.vhd         ;         ;
-; fsm.vhd                          ; yes             ; User VHDL File        ; C:/Users/User/Desktop/AES/fsm.vhd         ;         ;
-; aes.vhd                          ; yes             ; Auto-Found VHDL File  ; C:/Users/User/Desktop/AES/aes.vhd         ;         ;
-; addroundkey.vhd                  ; yes             ; Auto-Found VHDL File  ; C:/Users/User/Desktop/AES/addroundkey.vhd ;         ;
-; subbytes.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/User/Desktop/AES/subbytes.vhd    ;         ;
-; sbox.vhd                         ; yes             ; Auto-Found VHDL File  ; C:/Users/User/Desktop/AES/sbox.vhd        ;         ;
-+----------------------------------+-----------------+-----------------------+-------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                       ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                          ; Library ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------+---------+
+; shiftrows.vhd                    ; yes             ; User VHDL File        ; C:/Users/Arthur/Documents/designs/AES/shiftrows.vhd   ;         ;
+; mixcolumns.vhd                   ; yes             ; User VHDL File        ; C:/Users/Arthur/Documents/designs/AES/mixcolumns.vhd  ;         ;
+; key.vhd                          ; yes             ; User VHDL File        ; C:/Users/Arthur/Documents/designs/AES/key.vhd         ;         ;
+; fsm.vhd                          ; yes             ; User VHDL File        ; C:/Users/Arthur/Documents/designs/AES/fsm.vhd         ;         ;
+; aes.vhd                          ; yes             ; Auto-Found VHDL File  ; C:/Users/Arthur/Documents/designs/AES/aes.vhd         ;         ;
+; addroundkey.vhd                  ; yes             ; Auto-Found VHDL File  ; C:/Users/Arthur/Documents/designs/AES/addroundkey.vhd ;         ;
+; subbytes.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/Arthur/Documents/designs/AES/subbytes.vhd    ;         ;
+; sbox.vhd                         ; yes             ; Auto-Found VHDL File  ; C:/Users/Arthur/Documents/designs/AES/sbox.vhd        ;         ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -186,16 +186,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 4,116       ;
+; Estimated Total logic elements              ; 4,118       ;
 ;                                             ;             ;
-; Total combinational functions               ; 4115        ;
+; Total combinational functions               ; 4117        ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 3692        ;
-;     -- 3 input functions                    ; 178         ;
-;     -- <=2 input functions                  ; 245         ;
+;     -- 4 input functions                    ; 3693        ;
+;     -- 3 input functions                    ; 177         ;
+;     -- <=2 input functions                  ; 247         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 4115        ;
+;     -- normal mode                          ; 4117        ;
 ;     -- arithmetic mode                      ; 0           ;
 ;                                             ;             ;
 ; Total registers                             ; 520         ;
@@ -206,7 +206,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ; Maximum fan-out node                        ; reset~input ;
 ; Maximum fan-out                             ; 524         ;
-; Total fan-out                               ; 17992       ;
+; Total fan-out                               ; 17997       ;
 ; Average fan-out                             ; 3.68        ;
 +---------------------------------------------+-------------+
 
@@ -216,15 +216,15 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+
-; |aes                       ; 4115 (141)        ; 520 (1)      ; 0           ; 0            ; 0       ; 0         ; 130  ; 0            ; |aes                       ;              ;
+; |aes                       ; 4117 (141)        ; 520 (1)      ; 0           ; 0            ; 0       ; 0         ; 130  ; 0            ; |aes                       ;              ;
 ;    |addRoundKey:ARK2|      ; 132 (132)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|addRoundKey:ARK2      ;              ;
 ;    |addRoundKey:ARK|       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|addRoundKey:ARK       ;              ;
 ;    |fsm:SM|                ; 42 (42)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|fsm:SM                ;              ;
 ;    |key:KEYS|              ; 110 (110)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|key:KEYS              ;              ;
 ;    |mixcolumns:MC|         ; 229 (229)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|mixcolumns:MC         ;              ;
 ;    |shiftrows:SR|          ; 129 (129)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|shiftrows:SR          ;              ;
-;    |subBytes:SB|           ; 3331 (1)          ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|subBytes:SB           ;              ;
-;       |sbox:sub1|          ; 3330 (3330)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1 ;              ;
+;    |subBytes:SB|           ; 3333 (1)          ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|subBytes:SB           ;              ;
+;       |sbox:sub1|          ; 3332 (3332)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1 ;              ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -269,38 +269,36 @@ Encoding Type:  One-Hot
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                                                                         ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
-; Register name                                                                                                                                                                             ; Reason for Removal                             ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
-; reg_keyIni[0,1,6..10,12..14,16,19,20,22,24,27,29..31,36,37,39,41,43,45..48,50,51,53,57,59,61..63,68,69,75,80,84,86,88,95,97,98,100..103,106,108,110,112..114,116,118,119,122,124,126,127] ; Stuck at GND due to stuck port data_in         ;
-; reg_plainText[0,1,3,6..8,10..12,14,17,20..22,24..26,28,30,35..42,45,46,48..51,54..56,59,67,70,71,73..75,78..80,82,85,87,90..93,95..100,105..107,110..114,116..118,120,122,123,126,127]    ; Stuck at GND due to stuck port data_in         ;
-; reg_plainText[2,4,5,9,13,15,16,18,19,23,27,29,31..34,43,44,47,52,53,57,58,60..66,68,69,72,76,77,81,83,84,86,88,89,94,101..104,108,109,115,119,121,124,125]                                ; Merged with reg_keyIni[2]                      ;
-; reg_keyIni[3..5,11,15,17,18,21,23,25,26,28,32..35,38,40,42,44,49,52,54..56,58,60,64..67,70..74,76..79,81..83,85,87,89..94,96,99,104,105,107,109,111,115,117,120,121,123,125]              ; Merged with reg_keyIni[2]                      ;
-; addRoundKey:ARK|outAddRoundKey[8,12,20,24,36,48,80,100,112,116,127]                                                                                                                       ; Merged with addRoundKey:ARK|outAddRoundKey[0]  ;
-; addRoundKey:ARK|outAddRoundKey[7,37,39,41,45,51,59,75,95,97]                                                                                                                              ; Merged with addRoundKey:ARK|outAddRoundKey[1]  ;
-; addRoundKey:ARK|outAddRoundKey[14,22,30,46,110,118,126]                                                                                                                                   ; Merged with addRoundKey:ARK|outAddRoundKey[6]  ;
-; addRoundKey:ARK|outAddRoundKey[50,98,106,114,122]                                                                                                                                         ; Merged with addRoundKey:ARK|outAddRoundKey[10] ;
-; addRoundKey:ARK|outAddRoundKey[10]                                                                                                                                                        ; Merged with addRoundKey:ARK|outAddRoundKey[0]  ;
-; addRoundKey:ARK|outAddRoundKey[34,60,77,94]                                                                                                                                               ; Merged with addRoundKey:ARK|outAddRoundKey[2]  ;
-; addRoundKey:ARK|outAddRoundKey[9,11,17,19,26,28,31,35,40,43,47,54,56,61,63,67,69,71,73,78,85,87,91,93,96,101,103,105,108,111,119,124]                                                     ; Merged with addRoundKey:ARK|outAddRoundKey[3]  ;
-; addRoundKey:ARK|outAddRoundKey[32,44,66,104,109]                                                                                                                                          ; Merged with addRoundKey:ARK|outAddRoundKey[4]  ;
-; addRoundKey:ARK|outAddRoundKey[15,23,33,52,58,65,76,81,83,89,115,121]                                                                                                                     ; Merged with addRoundKey:ARK|outAddRoundKey[5]  ;
-; addRoundKey:ARK|outAddRoundKey[113]                                                                                                                                                       ; Merged with addRoundKey:ARK|outAddRoundKey[6]  ;
-; addRoundKey:ARK|outAddRoundKey[25,49,68,86,107,120]                                                                                                                                       ; Merged with addRoundKey:ARK|outAddRoundKey[13] ;
-; addRoundKey:ARK|outAddRoundKey[21,27,38,53,57,62,70,74,79,84,88,92,99,117,123]                                                                                                            ; Merged with addRoundKey:ARK|outAddRoundKey[16] ;
-; addRoundKey:ARK|outAddRoundKey[64,72,125]                                                                                                                                                 ; Merged with addRoundKey:ARK|outAddRoundKey[18] ;
-; addRoundKey:ARK|outAddRoundKey[42,55,82,90,102]                                                                                                                                           ; Merged with addRoundKey:ARK|outAddRoundKey[29] ;
-; addRoundKey:ARK|outAddRoundKey[4]                                                                                                                                                         ; Merged with addRoundKey:ARK|outAddRoundKey[0]  ;
-; addRoundKey:ARK|outAddRoundKey[5,18]                                                                                                                                                      ; Merged with addRoundKey:ARK|outAddRoundKey[1]  ;
-; addRoundKey:ARK|outAddRoundKey[6]                                                                                                                                                         ; Merged with addRoundKey:ARK|outAddRoundKey[2]  ;
-; addRoundKey:ARK|outAddRoundKey[13]                                                                                                                                                        ; Merged with addRoundKey:ARK|outAddRoundKey[3]  ;
-; addRoundKey:ARK|outAddRoundKey[1,2]                                                                                                                                                       ; Merged with addRoundKey:ARK|outAddRoundKey[0]  ;
-; addRoundKey:ARK|outAddRoundKey[3,29]                                                                                                                                                      ; Merged with addRoundKey:ARK|outAddRoundKey[16] ;
-; addRoundKey:ARK|outAddRoundKey[0]                                                                                                                                                         ; Stuck at GND due to stuck port data_in         ;
-; Total Number of Removed Registers = 382                                                                                                                                                   ;                                                ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                                                                  ;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
+; Register name                                                                                                                                                                      ; Reason for Removal                             ;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
+; reg_keyIni[0,1,6,7,12,13,15,20,21,25,26,28..34,36..38,41,43,45..47,51,58,60,62,64,67,68,70,72,74,75,77,80,84,86,88..90,92,94..96,99,101..103,105,107,109..112,119,122,124,126,127] ; Stuck at GND due to stuck port data_in         ;
+; reg_plainText[0,2,4,6,7,11,13..15,18,19,21,22,26,27,31,33..35,37..40,47,49,54,55,57,58,60,64,67,69,70,77,78,80..85,87,88,92,94..96,98..100,104,110,113..117,122,124,127]           ; Stuck at GND due to stuck port data_in         ;
+; reg_plainText[1,3,5,8..10,12,16,17,20,23..25,28..30,32,36,41..46,48,50..53,56,59,61..63,65,66,68,71..76,79,86,89..91,93,97,101..103,105..109,111,112,118..121,123,125,126]         ; Merged with reg_keyIni[2]                      ;
+; reg_keyIni[3..5,8..11,14,16..19,22..24,27,35,39,40,42,44,48..50,52..57,59,61,63,65,66,69,71,73,76,78,79,81..83,85,87,91,93,97,98,100,104,106,108,113..118,120,121,123,125]         ; Merged with reg_keyIni[2]                      ;
+; addRoundKey:ARK|outAddRoundKey[60,64,80,84,88,92,96,124,127]                                                                                                                       ; Merged with addRoundKey:ARK|outAddRoundKey[0]  ;
+; addRoundKey:ARK|outAddRoundKey[38,70,94,110]                                                                                                                                       ; Merged with addRoundKey:ARK|outAddRoundKey[6]  ;
+; addRoundKey:ARK|outAddRoundKey[13,15,21,31,33,37,47,67,77,95,99]                                                                                                                   ; Merged with addRoundKey:ARK|outAddRoundKey[7]  ;
+; addRoundKey:ARK|outAddRoundKey[34,58,122]                                                                                                                                          ; Merged with addRoundKey:ARK|outAddRoundKey[26] ;
+; addRoundKey:ARK|outAddRoundKey[11,14,19,22,28,30,35,39,41,43,45,54,62,68,75,78,81,83,86,89,100,102,104,111,113,115,117,119]                                                        ; Merged with addRoundKey:ARK|outAddRoundKey[1]  ;
+; addRoundKey:ARK|outAddRoundKey[20,29,51,72,82,105,114]                                                                                                                             ; Merged with addRoundKey:ARK|outAddRoundKey[2]  ;
+; addRoundKey:ARK|outAddRoundKey[5,9,17,24,48,50,52,56,59,65,71,73,91,97,106,108,121,125]                                                                                            ; Merged with addRoundKey:ARK|outAddRoundKey[3]  ;
+; addRoundKey:ARK|outAddRoundKey[12,18,27,32,40,49,57,69,74,85,90,98,103,107,112,116,126]                                                                                            ; Merged with addRoundKey:ARK|outAddRoundKey[4]  ;
+; addRoundKey:ARK|outAddRoundKey[26]                                                                                                                                                 ; Merged with addRoundKey:ARK|outAddRoundKey[7]  ;
+; addRoundKey:ARK|outAddRoundKey[23,44,53,63,79,120]                                                                                                                                 ; Merged with addRoundKey:ARK|outAddRoundKey[8]  ;
+; addRoundKey:ARK|outAddRoundKey[42,61,93,123]                                                                                                                                       ; Merged with addRoundKey:ARK|outAddRoundKey[10] ;
+; addRoundKey:ARK|outAddRoundKey[66,76,118]                                                                                                                                          ; Merged with addRoundKey:ARK|outAddRoundKey[16] ;
+; addRoundKey:ARK|outAddRoundKey[36,46,55,87,101,109]                                                                                                                                ; Merged with addRoundKey:ARK|outAddRoundKey[25] ;
+; addRoundKey:ARK|outAddRoundKey[10]                                                                                                                                                 ; Merged with addRoundKey:ARK|outAddRoundKey[0]  ;
+; addRoundKey:ARK|outAddRoundKey[25]                                                                                                                                                 ; Merged with addRoundKey:ARK|outAddRoundKey[2]  ;
+; addRoundKey:ARK|outAddRoundKey[6,8,16]                                                                                                                                             ; Merged with addRoundKey:ARK|outAddRoundKey[3]  ;
+; addRoundKey:ARK|outAddRoundKey[3,7]                                                                                                                                                ; Merged with addRoundKey:ARK|outAddRoundKey[0]  ;
+; addRoundKey:ARK|outAddRoundKey[2,4]                                                                                                                                                ; Merged with addRoundKey:ARK|outAddRoundKey[1]  ;
+; addRoundKey:ARK|outAddRoundKey[0]                                                                                                                                                  ; Stuck at GND due to stuck port data_in         ;
+; Total Number of Removed Registers = 382                                                                                                                                            ;                                                ;
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------+
@@ -334,9 +332,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
 ; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |aes|addRoundKey:ARK2|outAddRoundKey[76] ;
-; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |aes|shiftrows:SR|outShiftRows[22]       ;
-; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |aes|mixcolumns:MC|outMixColumns[49]     ;
-; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |aes|subBytes:SB|outSubBytes[43]         ;
+; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |aes|shiftrows:SR|outShiftRows[66]       ;
+; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |aes|mixcolumns:MC|outMixColumns[91]     ;
+; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |aes|subBytes:SB|outSubBytes[59]         ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |aes|fsm:SM|state                        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
 
@@ -386,7 +384,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:02:11     ;
+; Top            ; 00:00:46     ;
 +----------------+--------------+
 
 
@@ -396,7 +394,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Wed Nov 06 21:22:35 2019
+    Info: Processing started: Sat Nov 09 00:19:06 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aes -c aes
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file shiftrows.vhd
@@ -494,14 +492,14 @@ Warning (13012): Latch fsm:SM|enRegADR has unsafe behavior
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 4246 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4248 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 128 output pins
-    Info (21061): Implemented 4116 logic cells
+    Info (21061): Implemented 4118 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 49 warnings
-    Info: Peak virtual memory: 4617 megabytes
-    Info: Processing ended: Wed Nov 06 21:24:52 2019
-    Info: Elapsed time: 00:02:17
-    Info: Total CPU time (on all processors): 00:02:17
+    Info: Peak virtual memory: 4636 megabytes
+    Info: Processing ended: Sat Nov 09 00:19:55 2019
+    Info: Elapsed time: 00:00:49
+    Info: Total CPU time (on all processors): 00:00:48
 
 

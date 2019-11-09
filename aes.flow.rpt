@@ -1,5 +1,5 @@
 Flow report for aes
-Wed Nov 06 21:26:36 2019
+Sat Nov 09 00:20:37 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Wed Nov 06 21:26:36 2019      ;
+; Flow Status                        ; Successful - Sat Nov 09 00:20:37 2019      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; aes                                        ;
 ; Top-level Entity Name              ; aes                                        ;
 ; Family                             ; Cyclone III                                ;
 ; Device                             ; EP3C25F324C6                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 4,117 / 24,624 ( 17 % )                    ;
-;     Total combinational functions  ; 4,115 / 24,624 ( 17 % )                    ;
+; Total logic elements               ; 4,125 / 24,624 ( 17 % )                    ;
+;     Total combinational functions  ; 4,117 / 24,624 ( 17 % )                    ;
 ;     Dedicated logic registers      ; 520 / 24,624 ( 2 % )                       ;
 ; Total registers                    ; 648                                        ;
 ; Total pins                         ; 130 / 216 ( 60 % )                         ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/06/2019 21:22:36 ;
+; Start date & time ; 11/09/2019 00:19:07 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; aes                 ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 154880094153224.157308615606072       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 53447171764644.157326954706592        ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; tb_top         ;
 ; EDA_ENABLE_GLITCH_FILTERING          ; On                                    ; --            ; --          ; eda_simulation ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; On                                    ; --            ; --          ; eda_simulation ;
@@ -112,12 +112,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:02:16     ; 1.0                     ; 4617 MB             ; 00:02:15                           ;
-; Fitter                    ; 00:01:24     ; 1.0                     ; 4884 MB             ; 00:01:23                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4555 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:08     ; 1.0                     ; 4627 MB             ; 00:00:07                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4531 MB             ; 00:00:02                           ;
-; Total                     ; 00:03:53     ; --                      ; --                  ; 00:03:50                           ;
+; Analysis & Synthesis      ; 00:00:48     ; 1.0                     ; 4636 MB             ; 00:00:48                           ;
+; Fitter                    ; 00:00:30     ; 1.0                     ; 4978 MB             ; 00:00:30                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4568 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 4659 MB             ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4544 MB             ; 00:00:01                           ;
+; Total                     ; 00:01:25     ; --                      ; --                  ; 00:01:25                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -126,11 +126,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; DESKTOP-SV10LQ2  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; DESKTOP-SV10LQ2  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; DESKTOP-SV10LQ2  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; DESKTOP-SV10LQ2  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-SV10LQ2  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-2K85BVG  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-2K85BVG  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-2K85BVG  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-2K85BVG  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-2K85BVG  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

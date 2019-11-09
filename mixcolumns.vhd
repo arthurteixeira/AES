@@ -33,22 +33,41 @@ signal  c_in, c_out, mult_2, mult_3 : MATRIX; --resultados de processos
 signal outMixColumns_reg : std_logic_vector(127 downto 0);
 	
 begin
+ 
+--1  c_in(15) <= plainText(127 downto 120);
+--2  c_in(14) <= plainText(119 downto 112);
+--3  c_in(13) <= plainText(111 downto 104);
+--4  c_in(12) <= plainText(103 downto 96);
+--5  c_in(11) <= plainText(95 downto 88);
+--6  c_in(10) <= plainText(87 downto 80);
+--7  c_in(9)  <= plainText(79 downto 72);
+--8  c_in(8)  <= plainText(71 downto 64);
+--9  c_in(7)  <= plainText(63 downto 56);
+--10 c_in(6)  <= plainText(55 downto 48);
+--11 c_in(5)  <= plainText(47 downto 40);
+--12 c_in(4)  <= plainText(39 downto 32);
+--13 c_in(3)  <= plainText(31 downto 24);
+--14 c_in(2)  <= plainText(23 downto 16);
+--15 c_in(1)  <= plainText(15 downto 8);
+--16 c_in(0)  <= plainText(7 downto 0);
+
+-- [c1] 09 08 62 BF - [c2] 6F 28 E3 04 - [c3] 2C 74 7F EE - [c4] DA 4A 6A 47 
 
 c_in(15) <= plainText(127 downto 120);
-c_in(14) <= plainText(119 downto 112);
-c_in(13) <= plainText(111 downto 104);
-c_in(12) <= plainText(103 downto 96);
-c_in(11) <= plainText(95 downto 88);
+c_in(14) <= plainText(95 downto 88); 
+c_in(13) <= plainText(63 downto 56);
+c_in(12) <= plainText(31 downto 24);
+c_in(11) <= plainText(119 downto 112);
 c_in(10) <= plainText(87 downto 80);
-c_in(9)  <= plainText(79 downto 72);
-c_in(8)  <= plainText(71 downto 64);
-c_in(7)  <= plainText(63 downto 56);
-c_in(6)  <= plainText(55 downto 48);
+c_in(9)  <= plainText(55 downto 48);
+c_in(8)  <= plainText(23 downto 16);
+c_in(7)  <= plainText(111 downto 104); --plainText(63 downto 56);
+c_in(6)  <= plainText(79 downto 72);
 c_in(5)  <= plainText(47 downto 40);
-c_in(4)  <= plainText(39 downto 32);
-c_in(3)  <= plainText(31 downto 24);
-c_in(2)  <= plainText(23 downto 16);
-c_in(1)  <= plainText(15 downto 8);
+c_in(4)  <= plainText(15 downto 8);
+c_in(3)  <= plainText(103 downto 96); --plainText(31 downto 24);
+c_in(2)  <= plainText(71 downto 64);
+c_in(1)  <= plainText(39 downto 32);
 c_in(0)  <= plainText(7 downto 0);
 	
 	--multiplicação por 2 (shift_left(X))
@@ -101,23 +120,40 @@ c_out(8)  <= c_in(12) XOR mult_2(8) XOR mult_3(4) XOR c_in(0);
 c_out(4)  <= c_in(12) XOR c_in(8) XOR mult_2(4) XOR mult_3(0);
 c_out(0) <= mult_3(12) XOR c_in(8) XOR c_in(4) XOR mult_2(0);
 	
-outMixColumns_reg(127 downto 120) <= c_out(15);
-outMixColumns_reg(119 downto 112) <= c_out(14);
-outMixColumns_reg(111 downto 104) <= c_out(13);
-outMixColumns_reg(103 downto 96) <= c_out(12);
-outMixColumns_reg(95 downto 88) <= c_out(11);
-outMixColumns_reg(87 downto 80) <= c_out(10);
-outMixColumns_reg(79 downto 72) <= c_out(9);
-outMixColumns_reg(71 downto 64) <= c_out(8);
-outMixColumns_reg(63 downto 56) <= c_out(7);
-outMixColumns_reg(55 downto 48) <= c_out(6);
-outMixColumns_reg(47 downto 40) <= c_out(5);
-outMixColumns_reg(39 downto 32) <= c_out(4);
-outMixColumns_reg(31 downto 24) <= c_out(3);
-outMixColumns_reg(23 downto 16) <= c_out(2);
-outMixColumns_reg(15 downto 8) <= c_out(1);
-outMixColumns_reg(7 downto 0) <= c_out(0);
+--outMixColumns_reg(127 downto 120) <= c_out(15);
+--outMixColumns_reg(119 downto 112) <= c_out(14);
+--outMixColumns_reg(111 downto 104) <= c_out(13);
+--outMixColumns_reg(103 downto 96) <= c_out(12);
+--outMixColumns_reg(95 downto 88) <= c_out(11);
+--outMixColumns_reg(87 downto 80) <= c_out(10);
+--outMixColumns_reg(79 downto 72) <= c_out(9);
+--outMixColumns_reg(71 downto 64) <= c_out(8);
+--outMixColumns_reg(63 downto 56) <= c_out(7);
+--outMixColumns_reg(55 downto 48) <= c_out(6);
+--outMixColumns_reg(47 downto 40) <= c_out(5);
+--outMixColumns_reg(39 downto 32) <= c_out(4);
+--outMixColumns_reg(31 downto 24) <= c_out(3);
+--outMixColumns_reg(23 downto 16) <= c_out(2);
+--outMixColumns_reg(15 downto 8) <= c_out(1);
+--outMixColumns_reg(7 downto 0) <= c_out(0);
 
+
+outMixColumns_reg(127 downto 120) <= c_out(15);
+outMixColumns_reg(95 downto 88) <= c_out(14); 
+outMixColumns_reg(63 downto 56) <= c_out(13);
+outMixColumns_reg(31 downto 24) <= c_out(12);
+outMixColumns_reg(119 downto 112) <= c_out(11);
+outMixColumns_reg(87 downto 80) <= c_out(10);
+outMixColumns_reg(55 downto 48) <= c_out(9);
+outMixColumns_reg(23 downto 16) <= c_out(8);
+outMixColumns_reg(111 downto 104) <= c_out(7); 
+outMixColumns_reg(79 downto 72) <= c_out(6);
+outMixColumns_reg(47 downto 40) <= c_out(5);
+outMixColumns_reg(15 downto 8) <= c_out(4);
+outMixColumns_reg(103 downto 96) <= c_out(3); 
+outMixColumns_reg(71 downto 64) <= c_out(2);
+outMixColumns_reg(39 downto 32) <= c_out(1);
+outMixColumns_reg(7 downto 0) <= c_out(0);
 process(clk)
 begin
 	if(rising_edge(clk)) then

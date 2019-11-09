@@ -142,8 +142,8 @@ process(clock)
 				reg_keyIni <= (others=>'0');
 			else 
 				if(enRegInicio = '1') then
-					reg_plainText <= x"328831E0435A3137F6309807A88DA234";
-					reg_keyIni <= x"2B28AB097EAEF7CF15D2154F16A6883C";
+					reg_plainText <= x"6BC1BEE22E409F96E93D7E117393172A"; -- x"328831E0435A3137F6309807A88DA234";
+					reg_keyIni <= x"2B7E151628AED2A6ABF7158809CF4F3C"; -- x"2B28AB097EAEF7CF15D2154F16A6883C";
 				end if;
 			end if;
 		end if;
