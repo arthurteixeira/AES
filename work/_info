@@ -16,7 +16,7 @@ L8
 V<TA>LIF3a[6M:OJM`>hi60
 Z8 OV;C;10.1d;51
 32
-Z9 !s108 1573276858.968000
+Z9 !s108 1573703658.147000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/addRoundKey.vhd|
 Z11 !s107 C:/Users/Arthur/Documents/designs/AES/addRoundKey.vhd|
 Z12 o-work work -2002 -explicit -O0
@@ -41,7 +41,7 @@ R13
 !s100 B?HN]bL>Xi=j]o8@C6VDj3
 !i10b 1
 Eaes
-Z14 w1573276696
+Z14 w1573703065
 R2
 R3
 R4
@@ -53,7 +53,7 @@ L8
 VfENUzZ5<OTgCS5m;zQoZH3
 R8
 32
-Z17 !s108 1573276859.111000
+Z17 !s108 1573703658.242000
 Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/aes.vhd|
 Z19 !s107 C:/Users/Arthur/Documents/designs/AES/aes.vhd|
 R12
@@ -91,7 +91,7 @@ L13
 Vc;VQEg22m6gTA5MY=f@GL1
 R8
 32
-Z25 !s108 1573276859.245000
+Z25 !s108 1573703658.347000
 Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/fsm.vhd|
 Z27 !s107 C:/Users/Arthur/Documents/designs/AES/fsm.vhd|
 R12
@@ -168,7 +168,7 @@ L8
 V`:m;>M@RAHm0]O1KX0gi@1
 R8
 32
-Z37 !s108 1573276859.838000
+Z37 !s108 1573703658.964000
 Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/keys.vhd|
 Z39 !s107 C:/Users/Arthur/Documents/designs/AES/keys.vhd|
 R12
@@ -204,7 +204,7 @@ L4
 VTBb@PFR5z>R02f?8]5h@O1
 R8
 32
-Z43 !s108 1573276859.342000
+Z43 !s108 1573703658.445000
 Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/mixcolumns.vhd|
 Z45 !s107 C:/Users/Arthur/Documents/designs/AES/mixcolumns.vhd|
 R12
@@ -241,7 +241,7 @@ L11
 VeLDdgWhl]MfMAoD`Y;n0@0
 R8
 32
-Z49 !s108 1573276859.439000
+Z49 !s108 1573703658.549000
 Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/sbox.vhd|
 Z51 !s107 C:/Users/Arthur/Documents/designs/AES/sbox.vhd|
 R12
@@ -282,7 +282,7 @@ VFLCR343=?VY:MnQ6AHElV0
 R8
 32
 !i10b 1
-Z55 !s108 1573276859.933000
+Z55 !s108 1573703659.067000
 Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/sboxKey.vhd|
 Z57 !s107 C:/Users/Arthur/Documents/designs/AES/sboxKey.vhd|
 R12
@@ -318,7 +318,7 @@ L5
 Vhjol8k`Y4d=g?2A:P1gTg1
 R8
 32
-Z64 !s108 1573276859.553000
+Z64 !s108 1573703658.658000
 Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/shiftrows.vhd|
 Z66 !s107 C:/Users/Arthur/Documents/designs/AES/shiftrows.vhd|
 R12
@@ -355,7 +355,7 @@ L8
 VX0hPUOYjA=Ed=5=SkK?je2
 R8
 32
-Z69 !s108 1573276859.650000
+Z69 !s108 1573703658.762000
 Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/subbytes.vhd|
 Z71 !s107 C:/Users/Arthur/Documents/designs/AES/subbytes.vhd|
 R12
@@ -380,21 +380,21 @@ R13
 !s100 ]OQ4LLFlI3zH7^EV_oJ^R0
 !i10b 1
 Etb_top
-R46
+Z72 w1573702352
 R2
 R3
 R4
 R5
-Z72 8C:/Users/Arthur/Documents/designs/AES/tb_top.vhd
-Z73 FC:/Users/Arthur/Documents/designs/AES/tb_top.vhd
+Z73 8C:/Users/Arthur/Documents/designs/AES/tb_top.vhd
+Z74 FC:/Users/Arthur/Documents/designs/AES/tb_top.vhd
 l0
 L5
 VF_eVOk;BU1W9BiLFId1zM3
 R8
 32
-Z74 !s108 1573276859.747000
-Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/tb_top.vhd|
-Z76 !s107 C:/Users/Arthur/Documents/designs/AES/tb_top.vhd|
+Z75 !s108 1573703658.862000
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Arthur/Documents/designs/AES/tb_top.vhd|
+Z77 !s107 C:/Users/Arthur/Documents/designs/AES/tb_top.vhd|
 R12
 R13
 !s100 N@7aejmB;dAlJCM7hl3Pi1
@@ -409,9 +409,9 @@ L8
 VczOCNk9hLQX739o45kldG2
 R8
 32
-R74
 R75
 R76
+R77
 R12
 R13
 !s100 [4U:6TMDhC>0^7iaBI:5T1

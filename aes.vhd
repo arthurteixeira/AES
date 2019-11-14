@@ -145,7 +145,7 @@ process(clock)
 				reg_keyIni <= (others=>'0');
 			else 
 				if(enRegInicio = '1') then
-					reg_plainText <= x"6BC1BEE22E409F96E93D7E117393172A"; 
+					reg_plainText <= x"6BC1BEE22E409F96E93D7E117393172A"; --x"AE2D8A571E03AC9C9EB76FAC45AF8E51";
 					reg_keyIni <= x"2B7E151628AED2A6ABF7158809CF4F3C"; 
 				end if;
 			end if;

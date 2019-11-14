@@ -29,12 +29,14 @@ inst_aes : aes
 		outAes => outAes_sg
 	);
 --lll
-clock_sg <= not clock_sg after 20 ns;
+clock_sg <= not clock_sg after 5 ns;
 
 process is
 	begin
 		wait for 25 ns;
 			reset_sg       <= '1';
+		wait for 1720 ns;
+		  reset_sg       <= '0';
 		wait;	
 end process;
 	

@@ -1,13 +1,4 @@
-C:/Users/Arthur/Documents/designs/AES/shiftrows.vhd {1 {vcom -work work -2002 -explicit C:/Users/Arthur/Documents/designs/AES/shiftrows.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity shiftrows
--- Compiling architecture rtl of shiftrows
-
-} {} {}} C:/Users/Arthur/Documents/designs/AES/aes.vhd {1 {vcom -work work -2002 -explicit C:/Users/Arthur/Documents/designs/AES/aes.vhd
+C:/Users/Arthur/Documents/designs/AES/aes.vhd {1 {vcom -work work -2002 -explicit C:/Users/Arthur/Documents/designs/AES/aes.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -15,6 +6,15 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package NUMERIC_STD
 -- Compiling entity aes
 -- Compiling architecture rtl of aes
+
+} {} {}} C:/Users/Arthur/Documents/designs/AES/shiftrows.vhd {1 {vcom -work work -2002 -explicit C:/Users/Arthur/Documents/designs/AES/shiftrows.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity shiftrows
+-- Compiling architecture rtl of shiftrows
 
 } {} {}} C:/Users/Arthur/Documents/designs/AES/subbytes.vhd {1 {vcom -work work -2002 -explicit C:/Users/Arthur/Documents/designs/AES/subbytes.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
