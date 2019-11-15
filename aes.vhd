@@ -15,8 +15,10 @@ entity aes is
 	);
 
 	port(
-		clock                  : std_logic;
-		reset                  : std_logic;
+		plainText              : in std_logic_vector(127 downto 0);
+		keyIni                 : in std_logic_vector(127 downto 0);
+		clock                  : in std_logic;
+		reset                  : in std_logic;
 		outAes  : out std_logic_vector(127 downto 0)
 	);
 end entity;
@@ -156,8 +158,8 @@ process(clock)
 				reg_count <= (others=>'0');
 			else 
 				if(enRegInicio = '1') then
-					reg_plainText <= x"6BC1BEE22E409F96E93D7E117393172A"; 
-					reg_keyIni <= x"2B7E151628AED2A6ABF7158809CF4F3C"; 
+					reg_plainText <= plainText; --x"6BC1BEE22E409F96E93D7E117393172A"; 
+					reg_keyIni <= keyIni; --x"2B7E151628AED2A6ABF7158809CF4F3C"; 
 				end if;
 				if(enRegCount = '1') then
 					reg_count <= outAdderCount;

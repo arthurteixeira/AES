@@ -1,0 +1,12 @@
+FPGA Utilizado: Ep3c80f780c6, Cyclone III, 430 pinos de I/O
+
+Frequência máxima: 161.76 MHz
+Consumo Energia: 
+Caminho crítico: KeyScheduler (Motivo: alto índice de elementos em cascata)
+
+Área ocupada
+
+Total logic elements: 5662 / 81264 (7%)
+I/O: 386 / 430 (90%)
+Registradores: 1166
+Bits de memória: 0 / 2810880 (0%) 

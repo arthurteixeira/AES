@@ -37,7 +37,7 @@
 
 
 set_global_assignment -name FAMILY "Cyclone III"
-set_global_assignment -name DEVICE EP3C25F324C6
+set_global_assignment -name DEVICE EP3C80F780C6
 set_global_assignment -name TOP_LEVEL_ENTITY aes
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:59:17  OCTOBER 11, 2019"
