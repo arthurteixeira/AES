@@ -33,7 +33,7 @@ clock_sg <= not clock_sg after 20 ns;
 
 process is
 	begin
-		wait for 25 ns;
+		wait for 6 ns;
 			reset_sg       <= '1';
 		wait for 1720 ns;
 		  reset_sg       <= '0';

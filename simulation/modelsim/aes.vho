@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.0.0 Build 156 04/24/2013 SJ Web Edition"
 
--- DATE "11/15/2019 01:50:34"
+-- DATE "11/15/2019 02:27:32"
 
 -- 
 -- Device: Altera EP3C25F324C6 Package FBGA324

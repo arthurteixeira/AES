@@ -67,62 +67,6 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 7000 ns
-# ** Error: (vsim-3601) Iteration limit reached at time 100 ns.
-# 
-run -all
-# ** Error: (vsim-3601) Iteration limit reached at time 100 ns.
-# 
-run -all
-# ** Error: (vsim-3601) Iteration limit reached at time 100 ns.
-# 
-run -all
-# ** Error: (vsim-3601) Iteration limit reached at time 100 ns.
-# 
-run
-# ** Error: (vsim-3601) Iteration limit reached at time 100 ns.
-# 
-run -all
-# ** Error: (vsim-3601) Iteration limit reached at time 100 ns.
-# 
-run
-# ** Error: (vsim-3601) Iteration limit reached at time 100 ns.
-# 
-run
-# ** Error: (vsim-3601) Iteration limit reached at time 100 ns.
-# 
-run
-# ** Error: (vsim-3601) Iteration limit reached at time 100 ns.
-# 
-run -all
-# ** Error: (vsim-3601) Iteration limit reached at time 100 ns.
-# 
-run -all
-# ** Error: (vsim-3601) Iteration limit reached at time 100 ns.
-# 
-run -all
-# ** Error: (vsim-3601) Iteration limit reached at time 100 ns.
-# 
-run -all
-# ** Error: (vsim-3601) Iteration limit reached at time 100 ns.
-# 
-run -all
-# ** Error: (vsim-3601) Iteration limit reached at time 100 ns.
-# 
-run -all
-# ** Error: (vsim-3601) Iteration limit reached at time 100 ns.
-# 
-run -all
-# ** Error: (vsim-3601) Iteration limit reached at time 100 ns.
-# 
-run -continue
-# ** Error: (vsim-3601) Iteration limit reached at time 100 ns.
-# 
-run -all
-# ** Error: (vsim-3601) Iteration limit reached at time 100 ns.
-# 
-run -all
-# ** Error: (vsim-3601) Iteration limit reached at time 100 ns.
-# 
-run -all
-# ** Error: (vsim-3601) Iteration limit reached at time 100 ns.
-# 
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint sim:/tb_top/*

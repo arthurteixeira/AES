@@ -1,5 +1,5 @@
 Flow report for aes
-Fri Nov 15 01:50:36 2019
+Fri Nov 15 02:27:33 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Fri Nov 15 01:50:36 2019      ;
+; Flow Status                        ; Successful - Fri Nov 15 02:27:33 2019      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; aes                                        ;
 ; Top-level Entity Name              ; aes                                        ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/15/2019 01:48:49 ;
+; Start date & time ; 11/15/2019 02:25:45 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; aes                 ;
 +-------------------+---------------------+
@@ -75,14 +75,14 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 53447171764644.157379332902764        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 53447171764644.157379554512500        ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; inst_aes                              ; --            ; --          ; tb_top         ;
 ; EDA_ENABLE_GLITCH_FILTERING          ; On                                    ; --            ; --          ; eda_simulation ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; On                                    ; --            ; --          ; eda_simulation ;
 ; EDA_MAP_ILLEGAL_CHARACTERS           ; On                                    ; --            ; --          ; eda_simulation ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_top                                ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                  ; --            ; --          ; eda_simulation ;
-; EDA_RUN_TOOL_AUTOMATICALLY           ; Off                                   ; --            ; --          ; eda_simulation ;
+; EDA_RUN_TOOL_AUTOMATICALLY           ; On                                    ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
 ; EDA_TEST_BENCH_DESIGN_INSTANCE_NAME  ; inst_aes                              ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --          ; eda_simulation ;
@@ -113,12 +113,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:52     ; 1.0                     ; 4649 MB             ; 00:00:52                           ;
-; Fitter                    ; 00:00:41     ; 1.0                     ; 4991 MB             ; 00:00:41                           ;
+; Analysis & Synthesis      ; 00:00:52     ; 1.0                     ; 4648 MB             ; 00:00:52                           ;
+; Fitter                    ; 00:00:42     ; 1.0                     ; 4994 MB             ; 00:00:42                           ;
 ; Assembler                 ; 00:00:02     ; 1.0                     ; 4566 MB             ; 00:00:02                           ;
 ; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 4663 MB             ; 00:00:05                           ;
 ; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4565 MB             ; 00:00:02                           ;
-; Total                     ; 00:01:42     ; --                      ; --                  ; 00:01:42                           ;
+; Total                     ; 00:01:43     ; --                      ; --                  ; 00:01:43                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

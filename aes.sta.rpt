@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for aes
-Fri Nov 15 01:50:33 2019
+Fri Nov 15 02:27:31 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -127,7 +127,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; aes.sdc       ; OK     ; Fri Nov 15 01:50:29 2019 ;
+; aes.sdc       ; OK     ; Fri Nov 15 02:27:27 2019 ;
 +---------------+--------+--------------------------+
 
 
@@ -3078,7 +3078,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Fri Nov 15 01:50:28 2019
+    Info: Processing started: Fri Nov 15 02:27:25 2019
 Info: Command: quartus_sta aes -c aes
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -3164,8 +3164,8 @@ Info (332101): Design is fully constrained for setup requirements
 Info (332101): Design is fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4663 megabytes
-    Info: Processing ended: Fri Nov 15 01:50:33 2019
-    Info: Elapsed time: 00:00:05
+    Info: Processing ended: Fri Nov 15 02:27:31 2019
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:05
 
 
