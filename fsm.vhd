@@ -35,7 +35,7 @@ end entity;
 architecture rtl of fsm is
 
 	-- Build an enumerated type for the state machine
-	type state_type is (s0, s1, s2, s3, s4, s5);
+	type state_type is (s0, s1, s2, s3, s4, s5, s6, s7, s8, s9);
 
 	-- Register to hold the current state
 	signal state   : state_type;
@@ -51,25 +51,29 @@ begin
 		elsif (rising_edge(clk)) then
 			case state is
 				when s0=>
-						state <= s1;
+					state <= s1;
 				when s1=>
-						state <= s2;
+					state <= s2;
 				when s2=>
-						state <= s3;
+					state <= s3;
 				when s3=>
-					if count < "1010" then
-						state <= s4;
-					elsif count = "1010" then 
-						state <= s5;
-					end if;
+					state <= s4;
 				when s4=>
 					state <= s5;
 				when s5=>
+					state <= s6;
+				when s6=>
+					state <= s7;
+				when s7=>
 					if count < "1010" then
-						state <= s2;
-					elsif count = "1010" then 
-						state <= s0;
+						state <= s4;
+					elsif count = "1010" then
+						state <= s8;
 					end if;
+				when s8=>
+					state <= s9;
+				when s9=>
+					state <= s0;
 			end case;
 		end if;
 	end process;
@@ -105,6 +109,8 @@ begin
 				selMuxKeys  <= '0';
 				enRegCount  <= '0';
 			when s2 =>
+				selInicio   <= '0'; 
+				selRound    <= '0';
 				selKey      <= count;
 				enRegInicio <= '0';
 				enRegADR    <= '0';
@@ -113,19 +119,11 @@ begin
 				enRegMix    <= '0';
 				enRegADR2   <= '0';
 				enKeys      <= '0';
+				selMuxKeys  <= '0';
 				enRegCount  <= '1';
 			when s3 =>
-				if count < "1010" then
-					selRound <= '0';
-				elsif count = "1010" then 
-					selRound <= '1';
-				end if;
-				if count = "0001" then					
-					selMuxKeys <= '0';
-				elsif count > "0001" then 					
-					selMuxKeys <= '1';
-				end if;
-				selInicio   <= '1';
+				selInicio   <= '0'; 
+				selRound    <= '0';
 				selKey      <= count;
 				enRegInicio <= '0';
 				enRegADR    <= '0';
@@ -134,9 +132,11 @@ begin
 				enRegMix    <= '0';
 				enRegADR2   <= '0';
 				enKeys      <= '1';
+				selMuxKeys  <= '0';
 				enRegCount  <= '0';
 			when s4 =>
-				selInicio   <= '1';
+				selInicio   <= '1'; 
+				selRound    <= '0';
 				selKey      <= count;
 				enRegInicio <= '0';
 				enRegADR    <= '0';
@@ -145,9 +145,11 @@ begin
 				enRegMix    <= '1';
 				enRegADR2   <= '0';
 				enKeys      <= '0';
+				selMuxKeys  <= '0';
 				enRegCount  <= '0';
 			when s5 =>
 				selInicio   <= '1'; 
+				selRound    <= '0';
 				selKey      <= count;
 				enRegInicio <= '0';
 				enRegADR    <= '0';
@@ -156,6 +158,59 @@ begin
 				enRegMix    <= '0';
 				enRegADR2   <= '1';
 				enKeys      <= '0';
+				selMuxKeys  <= '0';
+				enRegCount  <= '0';
+			when s6 =>
+				selInicio   <= '1'; 
+				selRound    <= '0';
+				selKey      <= count;
+				enRegInicio <= '0';
+				enRegADR    <= '0';
+				enRegSub    <= '1';
+				enRegSR     <= '0';
+				enRegMix    <= '0';
+				enRegADR2   <= '0';
+				enKeys      <= '0';
+				selMuxKeys  <= '0';
+				enRegCount  <= '1';
+			when s7 =>
+				selInicio   <= '1'; 
+				selRound    <= '0';
+				selKey      <= count;
+				enRegInicio <= '0';
+				enRegADR    <= '0';
+				enRegSub    <= '0';
+				enRegSR     <= '1';
+				enRegMix    <= '0';
+				enRegADR2   <= '0';
+				enKeys      <= '1';
+				selMuxKeys  <= '1';
+				enRegCount  <= '0';
+			when s8 =>
+				selInicio   <= '1'; 
+				selRound    <= '1';
+				selKey      <= count;
+				enRegInicio <= '0';
+				enRegADR    <= '0';
+				enRegSub    <= '0';
+				enRegSR     <= '0';
+				enRegMix    <= '0';
+				enRegADR2   <= '0';
+				enKeys      <= '0';
+				selMuxKeys  <= '1';
+				enRegCount  <= '0';
+			when s9 =>
+				selInicio   <= '1'; 
+				selRound    <= '1';
+				selKey      <= count;
+				enRegInicio <= '0';
+				enRegADR    <= '0';
+				enRegSub    <= '0';
+				enRegSR     <= '0';
+				enRegMix    <= '0';
+				enRegADR2   <= '1';
+				enKeys      <= '0';
+				selMuxKeys  <= '1';
 				enRegCount  <= '0';
 		end case;
 	end process;

@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Fri Nov 15 01:19:06 2019
+Analysis & Synthesis Status : Successful - Fri Nov 15 01:49:41 2019
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
 Revision Name : aes
 Top-level Entity Name : aes
 Family : Cyclone III
-Total logic elements : 5,135
-    Total combinational functions : 5,135
-    Dedicated logic registers : 652
-Total registers : 652
+Total logic elements : 5,137
+    Total combinational functions : 5,132
+    Dedicated logic registers : 656
+Total registers : 656
 Total pins : 130
 Total virtual pins : 0
 Total memory bits : 0

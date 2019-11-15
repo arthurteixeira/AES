@@ -1,5 +1,5 @@
 Analysis & Synthesis report for aes
-Fri Nov 15 01:19:07 2019
+Fri Nov 15 01:49:41 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -49,15 +49,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 15 01:19:06 2019      ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 15 01:49:41 2019      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; aes                                        ;
 ; Top-level Entity Name              ; aes                                        ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 5,135                                      ;
-;     Total combinational functions  ; 5,135                                      ;
-;     Dedicated logic registers      ; 652                                        ;
-; Total registers                    ; 652                                        ;
+; Total logic elements               ; 5,137                                      ;
+;     Total combinational functions  ; 5,132                                      ;
+;     Dedicated logic registers      ; 656                                        ;
+; Total registers                    ; 656                                        ;
 ; Total pins                         ; 130                                        ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -186,27 +186,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 5,135       ;
+; Estimated Total logic elements              ; 5,137       ;
 ;                                             ;             ;
-; Total combinational functions               ; 5135        ;
+; Total combinational functions               ; 5132        ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 4575        ;
-;     -- 3 input functions                    ; 263         ;
-;     -- <=2 input functions                  ; 297         ;
+;     -- 4 input functions                    ; 4602        ;
+;     -- 3 input functions                    ; 218         ;
+;     -- <=2 input functions                  ; 312         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 5135        ;
+;     -- normal mode                          ; 5132        ;
 ;     -- arithmetic mode                      ; 0           ;
 ;                                             ;             ;
-; Total registers                             ; 652         ;
-;     -- Dedicated logic registers            ; 652         ;
+; Total registers                             ; 656         ;
+;     -- Dedicated logic registers            ; 656         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 130         ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ; Maximum fan-out node                        ; reset~input ;
-; Maximum fan-out                             ; 656         ;
-; Total fan-out                               ; 22315       ;
+; Maximum fan-out                             ; 660         ;
+; Total fan-out                               ; 22329       ;
 ; Average fan-out                             ; 3.69        ;
 +---------------------------------------------+-------------+
 
@@ -216,53 +216,54 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+
-; |aes                       ; 5135 (133)        ; 652 (5)      ; 0           ; 0            ; 0       ; 0         ; 130  ; 0            ; |aes                       ;              ;
+; |aes                       ; 5132 (134)        ; 656 (5)      ; 0           ; 0            ; 0       ; 0         ; 130  ; 0            ; |aes                       ;              ;
 ;    |addRoundKey:ARK2|      ; 129 (129)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|addRoundKey:ARK2      ;              ;
 ;    |addRoundKey:ARK|       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|addRoundKey:ARK       ;              ;
-;    |fsm:SM|                ; 24 (24)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|fsm:SM                ;              ;
-;    |keys:KEY|              ; 1161 (329)        ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|keys:KEY              ;              ;
-;       |sboxKey:SBK|        ; 832 (832)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|keys:KEY|sboxKey:SBK  ;              ;
+;    |fsm:SM|                ; 15 (15)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|fsm:SM                ;              ;
+;    |keys:KEY|              ; 1168 (317)        ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|keys:KEY              ;              ;
+;       |sboxKey:SBK|        ; 851 (851)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|keys:KEY|sboxKey:SBK  ;              ;
 ;    |mixcolumns:MC|         ; 229 (229)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|mixcolumns:MC         ;              ;
-;    |shiftrows:SR|          ; 129 (129)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|shiftrows:SR          ;              ;
-;    |subBytes:SB|           ; 3329 (1)          ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|subBytes:SB           ;              ;
+;    |shiftrows:SR|          ; 128 (128)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|shiftrows:SR          ;              ;
+;    |subBytes:SB|           ; 3328 (0)          ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|subBytes:SB           ;              ;
 ;       |sbox:sub1|          ; 3328 (3328)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1 ;              ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+----------------------------------------------------------------------------+
-; State Machine - |aes|fsm:SM|state                                          ;
-+----------+----------+----------+----------+----------+----------+----------+
-; Name     ; state.s5 ; state.s4 ; state.s3 ; state.s2 ; state.s1 ; state.s0 ;
-+----------+----------+----------+----------+----------+----------+----------+
-; state.s0 ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ;
-; state.s1 ; 0        ; 0        ; 0        ; 0        ; 1        ; 1        ;
-; state.s2 ; 0        ; 0        ; 0        ; 1        ; 0        ; 1        ;
-; state.s3 ; 0        ; 0        ; 1        ; 0        ; 0        ; 1        ;
-; state.s4 ; 0        ; 1        ; 0        ; 0        ; 0        ; 1        ;
-; state.s5 ; 1        ; 0        ; 0        ; 0        ; 0        ; 1        ;
-+----------+----------+----------+----------+----------+----------+----------+
++------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |aes|fsm:SM|state                                                                                      ;
++----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+
+; Name     ; state.s9 ; state.s8 ; state.s7 ; state.s6 ; state.s5 ; state.s4 ; state.s3 ; state.s2 ; state.s1 ; state.s0 ;
++----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+
+; state.s0 ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ;
+; state.s1 ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 1        ;
+; state.s2 ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 1        ;
+; state.s3 ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 1        ;
+; state.s4 ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 1        ;
+; state.s5 ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s6 ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s7 ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s8 ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.s9 ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
++----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+
 
 
-+----------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                ;
-+-----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
-+-----------------------------------------------------+---------------------+------------------------+
-; fsm:SM|selRound                                     ; fsm:SM|Selector8    ; yes                    ;
-; fsm:SM|selMuxKeys                                   ; fsm:SM|Selector10   ; yes                    ;
-; keys:KEY|rcon[0]                                    ; GND                 ; yes                    ;
-; keys:KEY|rcon[1]                                    ; GND                 ; yes                    ;
-; keys:KEY|rcon[2]                                    ; GND                 ; yes                    ;
-; keys:KEY|rcon[3]                                    ; GND                 ; yes                    ;
-; keys:KEY|rcon[4]                                    ; GND                 ; yes                    ;
-; keys:KEY|rcon[5]                                    ; GND                 ; yes                    ;
-; keys:KEY|rcon[6]                                    ; GND                 ; yes                    ;
-; keys:KEY|rcon[7]                                    ; GND                 ; yes                    ;
-; fsm:SM|selInicio                                    ; fsm:SM|state.s2     ; yes                    ;
-; Number of user-specified and inferred latches = 11  ;                     ;                        ;
-+-----------------------------------------------------+---------------------+------------------------+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; keys:KEY|rcon[0]                                   ; GND                 ; yes                    ;
+; keys:KEY|rcon[1]                                   ; GND                 ; yes                    ;
+; keys:KEY|rcon[2]                                   ; GND                 ; yes                    ;
+; keys:KEY|rcon[3]                                   ; GND                 ; yes                    ;
+; keys:KEY|rcon[4]                                   ; GND                 ; yes                    ;
+; keys:KEY|rcon[5]                                   ; GND                 ; yes                    ;
+; keys:KEY|rcon[6]                                   ; GND                 ; yes                    ;
+; keys:KEY|rcon[7]                                   ; GND                 ; yes                    ;
+; Number of user-specified and inferred latches = 8  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -529,10 +530,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 652   ;
+; Total registers                              ; 656   ;
 ; Number of registers using Synchronous Clear  ; 421   ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 6     ;
+; Number of registers using Asynchronous Clear ; 10    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 644   ;
 ; Number of registers using Preset             ; 0     ;
@@ -544,13 +545,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
-; 3:1                ; 132 bits  ; 264 LEs       ; 132 LEs              ; 132 LEs                ; Yes        ; |aes|subBytes:SB|outSubBytes[96]         ;
-; 3:1                ; 256 bits  ; 512 LEs       ; 256 LEs              ; 256 LEs                ; Yes        ; |aes|shiftrows:SR|outShiftRows[63]       ;
-; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |aes|mixcolumns:MC|outMixColumns[107]    ;
-; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |aes|addRoundKey:ARK2|outAddRoundKey[14] ;
+; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |aes|mixcolumns:MC|outMixColumns[8]      ;
+; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |aes|addRoundKey:ARK2|outAddRoundKey[29] ;
+; 3:1                ; 132 bits  ; 264 LEs       ; 132 LEs              ; 132 LEs                ; Yes        ; |aes|reg_count[3]                        ;
+; 3:1                ; 256 bits  ; 512 LEs       ; 256 LEs              ; 256 LEs                ; Yes        ; |aes|keys:KEY|outReg[15]                 ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |aes|keys:KEY|rcon[2]                    ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |aes|fsm:SM|state                        ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |aes|keys:KEY|rcon[3]                    ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |aes|fsm:SM|state                        ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |aes|keys:KEY|rcon[0]                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
 
 
@@ -599,7 +600,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:48     ;
+; Top            ; 00:00:50     ;
 +----------------+--------------+
 
 
@@ -609,7 +610,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Fri Nov 15 01:18:16 2019
+    Info: Processing started: Fri Nov 15 01:48:48 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aes -c aes
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file shiftrows.vhd
@@ -659,27 +660,17 @@ Warning (12125): Using design file sboxkey.vhd, which is not specified as a desi
     Info (12023): Found entity 1: sboxKey
 Info (12128): Elaborating entity "sboxKey" for hierarchy "keys:KEY|sboxKey:SBK"
 Info (12128): Elaborating entity "fsm" for hierarchy "fsm:SM"
-Warning (10631): VHDL Process Statement warning at fsm.vhd(78): inferring latch(es) for signal or variable "selInicio", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at fsm.vhd(78): inferring latch(es) for signal or variable "selRound", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at fsm.vhd(78): inferring latch(es) for signal or variable "selMuxKeys", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "selMuxKeys" at fsm.vhd(78)
-Info (10041): Inferred latch for "selRound" at fsm.vhd(78)
-Info (10041): Inferred latch for "selInicio" at fsm.vhd(78)
-Warning (13012): Latch fsm:SM|selRound has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal fsm:SM|state.s3
-Warning (13012): Latch fsm:SM|selMuxKeys has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal fsm:SM|state.s3
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 5265 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 5267 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 128 output pins
-    Info (21061): Implemented 5135 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 4648 megabytes
-    Info: Processing ended: Fri Nov 15 01:19:07 2019
-    Info: Elapsed time: 00:00:51
-    Info: Total CPU time (on all processors): 00:00:51
+    Info (21061): Implemented 5137 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 4656 megabytes
+    Info: Processing ended: Fri Nov 15 01:49:41 2019
+    Info: Elapsed time: 00:00:53
+    Info: Total CPU time (on all processors): 00:00:53
 
 
