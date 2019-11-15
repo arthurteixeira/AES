@@ -15,6 +15,7 @@ entity fsm is
 	port(
 		clk		   : in	std_logic;
 		reset	      : in	std_logic;
+		count       : in 	std_logic_vector(3 downto 0);
 		selInicio   : out std_logic;
 		selRound    : out std_logic;
 		selKey      : out std_logic_vector(3 downto 0);
@@ -25,6 +26,7 @@ entity fsm is
 		enRegMix    : out std_logic;
 		enRegADR2   : out std_logic;
 		enKeys      : out std_logic;
+		enRegCount  : out std_logic;
 		selMuxKeys  : out std_logic
 	);
 
@@ -37,7 +39,7 @@ architecture rtl of fsm is
 
 	-- Register to hold the current state
 	signal state   : state_type;
-	signal c : std_logic_vector(3 downto 0);
+	--signal c : std_logic_vector(3 downto 0);
 
 begin
 
@@ -55,17 +57,17 @@ begin
 				when s2=>
 						state <= s3;
 				when s3=>
-					if c < "1010" then
+					if count < "1010" then
 						state <= s4;
-					elsif c = "1010" then 
+					elsif count = "1010" then 
 						state <= s5;
 					end if;
 				when s4=>
 					state <= s5;
 				when s5=>
-					if c < "1010" then
+					if count < "1010" then
 						state <= s2;
-					elsif c = "1010" then 
+					elsif count = "1010" then 
 						state <= s0;
 					end if;
 			end case;
@@ -73,7 +75,7 @@ begin
 	end process;
 
 	-- Output depends solely on the current state
-	process (state)
+	process (state, count)
 	begin
 		case state is
 			when s0 =>
@@ -88,41 +90,73 @@ begin
 				enRegADR2   <= '0';
 				enKeys      <= '0';
 				selMuxKeys  <= '0';
-				c           <= "0000";
+				enRegCount  <= '0';
 			when s1 =>
-				enRegADR <= '1';
-				selInicio <= '0';
+				selInicio   <= '0'; 
+				selRound    <= '0';
+				selKey      <= "0000";
 				enRegInicio <= '0';
+				enRegADR    <= '1';
+				enRegSub    <= '0';
+				enRegSR     <= '0';
+				enRegMix    <= '0';
+				enRegADR2   <= '0';
+				enKeys      <= '0';
+				selMuxKeys  <= '0';
+				enRegCount  <= '0';
 			when s2 =>
-				enRegADR <= '0';
-				enRegSub <= '1';
-				c <= c + '1';
-				enRegADR2 <= '0';
+				selKey      <= count;
+				enRegInicio <= '0';
+				enRegADR    <= '0';
+				enRegSub    <= '1';
+				enRegSR     <= '0';
+				enRegMix    <= '0';
+				enRegADR2   <= '0';
+				enKeys      <= '0';
+				enRegCount  <= '1';
 			when s3 =>
-				if c < "1010" then
+				if count < "1010" then
 					selRound <= '0';
-				elsif c = "1010" then 
+				elsif count = "1010" then 
 					selRound <= '1';
 				end if;
-				if c = "0001" then					
+				if count = "0001" then					
 					selMuxKeys <= '0';
-				elsif c > "0001" then 					
+				elsif count > "0001" then 					
 					selMuxKeys <= '1';
 				end if;
-				enRegSub <= '0';
-				enRegSR <= '1';
-				enKeys <= '1';
-				selKey <= c;
+				selInicio   <= '1';
+				selKey      <= count;
+				enRegInicio <= '0';
+				enRegADR    <= '0';
+				enRegSub    <= '0';
+				enRegSR     <= '1';
+				enRegMix    <= '0';
+				enRegADR2   <= '0';
+				enKeys      <= '1';
+				enRegCount  <= '0';
 			when s4 =>
-				selMuxKeys <= '0';
-				enKeys <= '0';
-				enRegSR <= '0';
-				enRegMix <= '1';
-				selInicio <= '1';
+				selInicio   <= '1';
+				selKey      <= count;
+				enRegInicio <= '0';
+				enRegADR    <= '0';
+				enRegSub    <= '0';
+				enRegSR     <= '0';
+				enRegMix    <= '1';
+				enRegADR2   <= '0';
+				enKeys      <= '0';
+				enRegCount  <= '0';
 			when s5 =>
-				enKeys <= '0';
-				enRegMix <= '0';
-				enRegADR2 <= '1';
+				selInicio   <= '1'; 
+				selKey      <= count;
+				enRegInicio <= '0';
+				enRegADR    <= '0';
+				enRegSub    <= '0';
+				enRegSR     <= '0';
+				enRegMix    <= '0';
+				enRegADR2   <= '1';
+				enKeys      <= '0';
+				enRegCount  <= '0';
 		end case;
 	end process;
 

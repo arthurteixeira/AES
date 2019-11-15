@@ -3,7 +3,9 @@
 
 library ieee;
 use ieee.std_logic_1164.all;
+use IEEE.STD_LOGIC_ARITH.ALL;
 use ieee.numeric_std.all;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity aes is
 
@@ -33,8 +35,11 @@ signal enRegSub               : std_logic;
 signal enRegSR                : std_logic;
 signal enRegMix               : std_logic;
 signal enRegADR2              : std_logic;
+signal enRegCount             : std_logic;
 signal enKeys                 : std_logic;
 signal selMuxKeys             : std_logic;
+signal reg_count              : std_logic_vector(3 downto 0);
+signal outAdderCount          : std_logic_vector(3 downto 0);
 		
 component addRoundKey is
 	generic(
@@ -109,6 +114,7 @@ component fsm is
 	(
 		clk		   : in	std_logic;
 		reset	      : in	std_logic;
+		count       : in 	std_logic_vector(3 downto 0);
 		selInicio   : out std_logic;
 		selRound    : out std_logic;
 		selKey      : out std_logic_vector(3 downto 0);
@@ -119,11 +125,15 @@ component fsm is
 		enRegMix    : out std_logic;
 		enRegADR2   : out std_logic;
 		enKeys      : out std_logic;
+		enRegCount  : out std_logic;
 		selMuxKeys  : out std_logic
 	);
 end component;
 
 begin
+
+-- contador
+outAdderCount <= reg_count + '1';
 
 -- conecta porta final
 outAes <= outAddRoundKey_sg2;
@@ -143,10 +153,14 @@ process(clock)
 			if(reset = '0') then
 				reg_plainText <= (others=>'0');
 				reg_keyIni <= (others=>'0');
+				reg_count <= (others=>'0');
 			else 
 				if(enRegInicio = '1') then
 					reg_plainText <= x"6BC1BEE22E409F96E93D7E117393172A"; 
 					reg_keyIni <= x"2B7E151628AED2A6ABF7158809CF4F3C"; 
+				end if;
+				if(enRegCount = '1') then
+					reg_count <= outAdderCount;
 				end if;
 			end if;
 		end if;
@@ -217,6 +231,7 @@ SM: fsm
 	port map (
 			clk => clock,
 			reset => reset,
+			count => reg_count,
 			selInicio => selInicio,
 			selRound => selRound,
 			selKey => selKey,
@@ -227,6 +242,7 @@ SM: fsm
 			enRegMix => enRegMix,
 			enRegADR2 => enRegADR2,
 			enKeys => enKeys,
+			enRegCount => enRegCount,
 			selMuxKeys => selMuxKeys
 		);
 

@@ -1,6 +1,6 @@
 Analysis & Synthesis report for aes
-Thu Nov 14 16:28:10 2019
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Fri Nov 15 01:19:07 2019
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
 ---------------------
@@ -46,24 +46,24 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 14 16:28:10 2019           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; aes                                             ;
-; Top-level Entity Name              ; aes                                             ;
-; Family                             ; Cyclone III                                     ;
-; Total logic elements               ; 5,146                                           ;
-;     Total combinational functions  ; 5,146                                           ;
-;     Dedicated logic registers      ; 648                                             ;
-; Total registers                    ; 648                                             ;
-; Total pins                         ; 130                                             ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
-+------------------------------------+-------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Nov 15 01:19:06 2019      ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; aes                                        ;
+; Top-level Entity Name              ; aes                                        ;
+; Family                             ; Cyclone III                                ;
+; Total logic elements               ; 5,135                                      ;
+;     Total combinational functions  ; 5,135                                      ;
+;     Dedicated logic registers      ; 652                                        ;
+; Total registers                    ; 652                                        ;
+; Total pins                         ; 130                                        ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -159,26 +159,26 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 12     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                              ;
-+----------------------------------+-----------------+-----------------------+----------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                 ; Library ;
-+----------------------------------+-----------------+-----------------------+----------------------------------------------+---------+
-; shiftrows.vhd                    ; yes             ; User VHDL File        ; C:/Users/marco/Documents/AES/shiftrows.vhd   ;         ;
-; mixcolumns.vhd                   ; yes             ; User VHDL File        ; C:/Users/marco/Documents/AES/mixcolumns.vhd  ;         ;
-; fsm.vhd                          ; yes             ; User VHDL File        ; C:/Users/marco/Documents/AES/fsm.vhd         ;         ;
-; aes.vhd                          ; yes             ; Auto-Found VHDL File  ; C:/Users/marco/Documents/AES/aes.vhd         ;         ;
-; addroundkey.vhd                  ; yes             ; Auto-Found VHDL File  ; C:/Users/marco/Documents/AES/addroundkey.vhd ;         ;
-; subbytes.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/marco/Documents/AES/subbytes.vhd    ;         ;
-; sbox.vhd                         ; yes             ; Auto-Found VHDL File  ; C:/Users/marco/Documents/AES/sbox.vhd        ;         ;
-; keys.vhd                         ; yes             ; Auto-Found VHDL File  ; C:/Users/marco/Documents/AES/keys.vhd        ;         ;
-; sboxkey.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/Users/marco/Documents/AES/sboxkey.vhd     ;         ;
-+----------------------------------+-----------------+-----------------------+----------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                       ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                          ; Library ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------+---------+
+; shiftrows.vhd                    ; yes             ; User VHDL File        ; C:/Users/Arthur/Documents/designs/AES/shiftrows.vhd   ;         ;
+; mixcolumns.vhd                   ; yes             ; User VHDL File        ; C:/Users/Arthur/Documents/designs/AES/mixcolumns.vhd  ;         ;
+; fsm.vhd                          ; yes             ; User VHDL File        ; C:/Users/Arthur/Documents/designs/AES/fsm.vhd         ;         ;
+; aes.vhd                          ; yes             ; Auto-Found VHDL File  ; C:/Users/Arthur/Documents/designs/AES/aes.vhd         ;         ;
+; addroundkey.vhd                  ; yes             ; Auto-Found VHDL File  ; C:/Users/Arthur/Documents/designs/AES/addroundkey.vhd ;         ;
+; subbytes.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/Arthur/Documents/designs/AES/subbytes.vhd    ;         ;
+; sbox.vhd                         ; yes             ; Auto-Found VHDL File  ; C:/Users/Arthur/Documents/designs/AES/sbox.vhd        ;         ;
+; keys.vhd                         ; yes             ; Auto-Found VHDL File  ; C:/Users/Arthur/Documents/designs/AES/keys.vhd        ;         ;
+; sboxkey.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/Users/Arthur/Documents/designs/AES/sboxkey.vhd     ;         ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -186,27 +186,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 5,146       ;
+; Estimated Total logic elements              ; 5,135       ;
 ;                                             ;             ;
-; Total combinational functions               ; 5146        ;
+; Total combinational functions               ; 5135        ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 4589        ;
-;     -- 3 input functions                    ; 270         ;
-;     -- <=2 input functions                  ; 287         ;
+;     -- 4 input functions                    ; 4575        ;
+;     -- 3 input functions                    ; 263         ;
+;     -- <=2 input functions                  ; 297         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 5146        ;
+;     -- normal mode                          ; 5135        ;
 ;     -- arithmetic mode                      ; 0           ;
 ;                                             ;             ;
-; Total registers                             ; 648         ;
-;     -- Dedicated logic registers            ; 648         ;
+; Total registers                             ; 652         ;
+;     -- Dedicated logic registers            ; 652         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 130         ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ; Maximum fan-out node                        ; reset~input ;
-; Maximum fan-out                             ; 653         ;
-; Total fan-out                               ; 22357       ;
+; Maximum fan-out                             ; 656         ;
+; Total fan-out                               ; 22315       ;
 ; Average fan-out                             ; 3.69        ;
 +---------------------------------------------+-------------+
 
@@ -216,16 +216,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+
-; |aes                       ; 5146 (129)        ; 648 (1)      ; 0           ; 0            ; 0       ; 0         ; 130  ; 0            ; |aes                       ;              ;
-;    |addRoundKey:ARK2|      ; 129 (129)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|addRoundKey:ARK2      ; work         ;
-;    |addRoundKey:ARK|       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|addRoundKey:ARK       ; work         ;
-;    |fsm:SM|                ; 52 (52)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|fsm:SM                ; work         ;
-;    |keys:KEY|              ; 1148 (316)        ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|keys:KEY              ; work         ;
-;       |sboxKey:SBK|        ; 832 (832)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|keys:KEY|sboxKey:SBK  ; work         ;
-;    |mixcolumns:MC|         ; 229 (229)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|mixcolumns:MC         ; work         ;
-;    |shiftrows:SR|          ; 129 (129)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|shiftrows:SR          ; work         ;
-;    |subBytes:SB|           ; 3329 (1)          ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|subBytes:SB           ; work         ;
-;       |sbox:sub1|          ; 3328 (3328)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1 ; work         ;
+; |aes                       ; 5135 (133)        ; 652 (5)      ; 0           ; 0            ; 0       ; 0         ; 130  ; 0            ; |aes                       ;              ;
+;    |addRoundKey:ARK2|      ; 129 (129)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|addRoundKey:ARK2      ;              ;
+;    |addRoundKey:ARK|       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|addRoundKey:ARK       ;              ;
+;    |fsm:SM|                ; 24 (24)           ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|fsm:SM                ;              ;
+;    |keys:KEY|              ; 1161 (329)        ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|keys:KEY              ;              ;
+;       |sboxKey:SBK|        ; 832 (832)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|keys:KEY|sboxKey:SBK  ;              ;
+;    |mixcolumns:MC|         ; 229 (229)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|mixcolumns:MC         ;              ;
+;    |shiftrows:SR|          ; 129 (129)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|shiftrows:SR          ;              ;
+;    |subBytes:SB|           ; 3329 (1)          ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|subBytes:SB           ;              ;
+;       |sbox:sub1|          ; 3328 (3328)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |aes|subBytes:SB|sbox:sub1 ;              ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -250,16 +250,8 @@ Encoding Type:  One-Hot
 +-----------------------------------------------------+---------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
 +-----------------------------------------------------+---------------------+------------------------+
-; fsm:SM|selRound                                     ; fsm:SM|Selector33   ; yes                    ;
-; fsm:SM|enRegADR2                                    ; fsm:SM|WideOr12     ; yes                    ;
-; fsm:SM|selMuxKeys                                   ; fsm:SM|Selector12   ; yes                    ;
-; fsm:SM|enKeys                                       ; fsm:SM|enKeys       ; yes                    ;
-; fsm:SM|enRegMix                                     ; fsm:SM|WideOr11     ; yes                    ;
-; fsm:SM|enRegSR                                      ; fsm:SM|WideOr10     ; yes                    ;
-; fsm:SM|c[3]                                         ; fsm:SM|WideOr14     ; yes                    ;
-; fsm:SM|c[1]                                         ; fsm:SM|WideOr14     ; yes                    ;
-; fsm:SM|c[2]                                         ; fsm:SM|WideOr14     ; yes                    ;
-; fsm:SM|c[0]                                         ; fsm:SM|WideOr14     ; yes                    ;
+; fsm:SM|selRound                                     ; fsm:SM|Selector8    ; yes                    ;
+; fsm:SM|selMuxKeys                                   ; fsm:SM|Selector10   ; yes                    ;
 ; keys:KEY|rcon[0]                                    ; GND                 ; yes                    ;
 ; keys:KEY|rcon[1]                                    ; GND                 ; yes                    ;
 ; keys:KEY|rcon[2]                                    ; GND                 ; yes                    ;
@@ -268,275 +260,268 @@ Encoding Type:  One-Hot
 ; keys:KEY|rcon[5]                                    ; GND                 ; yes                    ;
 ; keys:KEY|rcon[6]                                    ; GND                 ; yes                    ;
 ; keys:KEY|rcon[7]                                    ; GND                 ; yes                    ;
-; fsm:SM|enRegInicio                                  ; fsm:SM|WideOr7      ; yes                    ;
-; fsm:SM|selInicio                                    ; fsm:SM|WideOr5      ; yes                    ;
-; fsm:SM|enRegSub                                     ; fsm:SM|WideOr9      ; yes                    ;
-; fsm:SM|selKey[3]                                    ; fsm:SM|WideOr6      ; yes                    ;
-; fsm:SM|selKey[2]                                    ; fsm:SM|WideOr6      ; yes                    ;
-; fsm:SM|selKey[1]                                    ; fsm:SM|WideOr6      ; yes                    ;
-; fsm:SM|selKey[0]                                    ; fsm:SM|WideOr6      ; yes                    ;
-; fsm:SM|enRegADR                                     ; fsm:SM|WideOr8      ; yes                    ;
-; Number of user-specified and inferred latches = 26  ;                     ;                        ;
+; fsm:SM|selInicio                                    ; fsm:SM|state.s2     ; yes                    ;
+; Number of user-specified and inferred latches = 11  ;                     ;                        ;
 +-----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                   ;
-+----------------------------------------------------+-------------------------------------------------+
-; Register name                                      ; Reason for Removal                              ;
-+----------------------------------------------------+-------------------------------------------------+
-; reg_plainText[115,117]                             ; Merged with reg_keyIni[0]                       ;
-; reg_keyIni[6,29,30,62,126]                         ; Merged with reg_keyIni[0]                       ;
-; reg_keyIni[47,95]                                  ; Merged with reg_keyIni[1]                       ;
-; reg_plainText[67,69]                               ; Merged with reg_keyIni[1]                       ;
-; reg_keyIni[99,101]                                 ; Merged with reg_keyIni[1]                       ;
-; reg_plainText[77]                                  ; Merged with reg_keyIni[1]                       ;
-; reg_keyIni[103]                                    ; Merged with reg_keyIni[1]                       ;
-; reg_plainText[81]                                  ; Merged with reg_keyIni[1]                       ;
-; reg_keyIni[51]                                     ; Merged with reg_keyIni[1]                       ;
-; reg_plainText[83]                                  ; Merged with reg_keyIni[1]                       ;
-; reg_keyIni[105]                                    ; Merged with reg_keyIni[1]                       ;
-; reg_plainText[85]                                  ; Merged with reg_keyIni[1]                       ;
-; reg_keyIni[25]                                     ; Merged with reg_keyIni[1]                       ;
-; reg_plainText[87]                                  ; Merged with reg_keyIni[1]                       ;
-; reg_keyIni[121]                                    ; Merged with reg_keyIni[2]                       ;
-; reg_plainText[119]                                 ; Merged with reg_keyIni[2]                       ;
-; reg_keyIni[123]                                    ; Merged with reg_keyIni[2]                       ;
-; reg_plainText[121]                                 ; Merged with reg_keyIni[2]                       ;
-; reg_keyIni[61]                                     ; Merged with reg_keyIni[2]                       ;
-; reg_plainText[123]                                 ; Merged with reg_keyIni[2]                       ;
-; reg_keyIni[125]                                    ; Merged with reg_keyIni[2]                       ;
-; reg_plainText[125]                                 ; Merged with reg_keyIni[2]                       ;
-; reg_keyIni[14]                                     ; Merged with reg_keyIni[2]                       ;
-; reg_plainText[126]                                 ; Merged with reg_keyIni[2]                       ;
-; reg_keyIni[19,39,79,81,83]                         ; Merged with reg_keyIni[3]                       ;
-; reg_plainText[41,43]                               ; Merged with reg_keyIni[3]                       ;
-; reg_keyIni[85]                                     ; Merged with reg_keyIni[3]                       ;
-; reg_plainText[45]                                  ; Merged with reg_keyIni[3]                       ;
-; reg_keyIni[9,87]                                   ; Merged with reg_keyIni[3]                       ;
-; reg_plainText[51,53]                               ; Merged with reg_keyIni[3]                       ;
-; reg_plainText[32,36]                               ; Merged with reg_keyIni[4]                       ;
-; reg_keyIni[40]                                     ; Merged with reg_keyIni[4]                       ;
-; reg_plainText[44,48,52]                            ; Merged with reg_keyIni[4]                       ;
-; reg_keyIni[44]                                     ; Merged with reg_keyIni[4]                       ;
-; reg_plainText[56,68]                               ; Merged with reg_keyIni[4]                       ;
-; reg_keyIni[48]                                     ; Merged with reg_keyIni[4]                       ;
-; reg_plainText[72]                                  ; Merged with reg_keyIni[4]                       ;
-; reg_keyIni[100]                                    ; Merged with reg_keyIni[4]                       ;
-; reg_plainText[76]                                  ; Merged with reg_keyIni[4]                       ;
-; reg_keyIni[24,104]                                 ; Merged with reg_keyIni[4]                       ;
-; reg_plainText[89]                                  ; Merged with reg_keyIni[5]                       ;
-; reg_keyIni[53]                                     ; Merged with reg_keyIni[5]                       ;
-; reg_plainText[91,93,97]                            ; Merged with reg_keyIni[5]                       ;
-; reg_keyIni[55,113]                                 ; Merged with reg_keyIni[5]                       ;
-; reg_plainText[101]                                 ; Merged with reg_keyIni[5]                       ;
-; reg_keyIni[27]                                     ; Merged with reg_keyIni[5]                       ;
-; reg_plainText[103]                                 ; Merged with reg_keyIni[5]                       ;
-; reg_keyIni[115]                                    ; Merged with reg_keyIni[5]                       ;
-; reg_plainText[105]                                 ; Merged with reg_keyIni[5]                       ;
-; reg_keyIni[57]                                     ; Merged with reg_keyIni[5]                       ;
-; reg_plainText[107]                                 ; Merged with reg_keyIni[5]                       ;
-; reg_keyIni[117]                                    ; Merged with reg_keyIni[5]                       ;
-; reg_plainText[109,111]                             ; Merged with reg_keyIni[5]                       ;
-; reg_keyIni[59]                                     ; Merged with reg_keyIni[5]                       ;
-; reg_keyIni[33,67]                                  ; Merged with reg_keyIni[7]                       ;
-; reg_plainText[11,13,15,19,21]                      ; Merged with reg_keyIni[7]                       ;
-; reg_keyIni[37,75]                                  ; Merged with reg_keyIni[7]                       ;
-; reg_plainText[27]                                  ; Merged with reg_keyIni[7]                       ;
-; reg_keyIni[77]                                     ; Merged with reg_keyIni[7]                       ;
-; reg_plainText[31,33]                               ; Merged with reg_keyIni[7]                       ;
-; reg_plainText[90]                                  ; Merged with reg_keyIni[8]                       ;
-; reg_keyIni[114]                                    ; Merged with reg_keyIni[8]                       ;
-; reg_plainText[8,12,106]                            ; Merged with reg_keyIni[8]                       ;
-; reg_keyIni[16]                                     ; Merged with reg_keyIni[8]                       ;
-; reg_plainText[16,20,24]                            ; Merged with reg_keyIni[8]                       ;
-; reg_keyIni[76]                                     ; Merged with reg_keyIni[8]                       ;
-; reg_plainText[28]                                  ; Merged with reg_keyIni[8]                       ;
-; reg_plainText[102]                                 ; Merged with reg_keyIni[10]                      ;
-; reg_keyIni[118]                                    ; Merged with reg_keyIni[10]                      ;
-; reg_plainText[118]                                 ; Merged with reg_keyIni[10]                      ;
-; reg_keyIni[66]                                     ; Merged with reg_keyIni[10]                      ;
-; reg_plainText[10]                                  ; Merged with reg_keyIni[10]                      ;
-; reg_keyIni[18,82]                                  ; Merged with reg_keyIni[10]                      ;
-; reg_plainText[42]                                  ; Merged with reg_keyIni[10]                      ;
-; reg_keyIni[42]                                     ; Merged with reg_keyIni[10]                      ;
-; reg_plainText[50,66]                               ; Merged with reg_keyIni[10]                      ;
-; reg_keyIni[98]                                     ; Merged with reg_keyIni[10]                      ;
-; reg_plainText[74]                                  ; Merged with reg_keyIni[10]                      ;
-; reg_keyIni[50,106]                                 ; Merged with reg_keyIni[10]                      ;
-; reg_keyIni[91]                                     ; Merged with reg_keyIni[11]                      ;
-; reg_plainText[59]                                  ; Merged with reg_keyIni[11]                      ;
-; reg_keyIni[93]                                     ; Merged with reg_keyIni[11]                      ;
-; reg_plainText[61,63,65]                            ; Merged with reg_keyIni[11]                      ;
-; reg_keyIni[23,97]                                  ; Merged with reg_keyIni[11]                      ;
-; reg_plainText[71,73]                               ; Merged with reg_keyIni[11]                      ;
-; reg_keyIni[49]                                     ; Merged with reg_keyIni[11]                      ;
-; reg_plainText[75,79]                               ; Merged with reg_keyIni[11]                      ;
-; reg_plainText[96]                                  ; Merged with reg_keyIni[12]                      ;
-; reg_keyIni[112]                                    ; Merged with reg_keyIni[12]                      ;
-; reg_plainText[100,104]                             ; Merged with reg_keyIni[12]                      ;
-; reg_keyIni[28]                                     ; Merged with reg_keyIni[12]                      ;
-; reg_plainText[116]                                 ; Merged with reg_keyIni[12]                      ;
-; reg_keyIni[60,124]                                 ; Merged with reg_keyIni[12]                      ;
-; reg_plainText[124,127]                             ; Merged with reg_keyIni[12]                      ;
-; reg_keyIni[15,31,127]                              ; Merged with reg_keyIni[12]                      ;
-; reg_plainText[7]                                   ; Merged with reg_keyIni[12]                      ;
-; reg_keyIni[107,109]                                ; Merged with reg_keyIni[13]                      ;
-; reg_plainText[95]                                  ; Merged with reg_keyIni[13]                      ;
-; reg_keyIni[111]                                    ; Merged with reg_keyIni[13]                      ;
-; reg_plainText[99]                                  ; Merged with reg_keyIni[13]                      ;
-; reg_keyIni[119]                                    ; Merged with reg_keyIni[13]                      ;
-; reg_plainText[113]                                 ; Merged with reg_keyIni[13]                      ;
-; reg_keyIni[65]                                     ; Merged with reg_keyIni[17]                      ;
-; reg_plainText[5,9]                                 ; Merged with reg_keyIni[17]                      ;
-; reg_keyIni[69,71]                                  ; Merged with reg_keyIni[17]                      ;
-; reg_plainText[17]                                  ; Merged with reg_keyIni[17]                      ;
-; reg_keyIni[35,73]                                  ; Merged with reg_keyIni[17]                      ;
-; reg_plainText[23,25,29]                            ; Merged with reg_keyIni[17]                      ;
-; reg_keyIni[84,88,92]                               ; Merged with reg_keyIni[20]                      ;
-; reg_plainText[60,64]                               ; Merged with reg_keyIni[20]                      ;
-; reg_keyIni[96]                                     ; Merged with reg_keyIni[20]                      ;
-; reg_plainText[80,84,88,92]                         ; Merged with reg_keyIni[20]                      ;
-; reg_plainText[35,37,39]                            ; Merged with reg_keyIni[21]                      ;
-; reg_keyIni[41]                                     ; Merged with reg_keyIni[21]                      ;
-; reg_plainText[47,49]                               ; Merged with reg_keyIni[21]                      ;
-; reg_keyIni[43,89]                                  ; Merged with reg_keyIni[21]                      ;
-; reg_plainText[55,57]                               ; Merged with reg_keyIni[21]                      ;
-; reg_keyIni[45]                                     ; Merged with reg_keyIni[21]                      ;
-; reg_plainText[30,62]                               ; Merged with reg_keyIni[22]                      ;
-; reg_keyIni[78]                                     ; Merged with reg_keyIni[22]                      ;
-; reg_plainText[46,86]                               ; Merged with reg_keyIni[22]                      ;
-; reg_keyIni[54]                                     ; Merged with reg_keyIni[22]                      ;
-; reg_plainText[2]                                   ; Merged with reg_keyIni[26]                      ;
-; reg_keyIni[34]                                     ; Merged with reg_keyIni[26]                      ;
-; reg_plainText[18]                                  ; Merged with reg_keyIni[26]                      ;
-; reg_keyIni[74]                                     ; Merged with reg_keyIni[26]                      ;
-; reg_plainText[26,34]                               ; Merged with reg_keyIni[26]                      ;
-; reg_keyIni[90]                                     ; Merged with reg_keyIni[26]                      ;
-; reg_plainText[58,82,98]                            ; Merged with reg_keyIni[26]                      ;
-; reg_keyIni[58]                                     ; Merged with reg_keyIni[32]                      ;
-; reg_plainText[114]                                 ; Merged with reg_keyIni[32]                      ;
-; reg_keyIni[122]                                    ; Merged with reg_keyIni[32]                      ;
-; reg_plainText[0,122]                               ; Merged with reg_keyIni[32]                      ;
-; reg_keyIni[64]                                     ; Merged with reg_keyIni[32]                      ;
-; reg_plainText[4]                                   ; Merged with reg_keyIni[32]                      ;
-; reg_keyIni[36,68,72,80]                            ; Merged with reg_keyIni[32]                      ;
-; reg_plainText[40]                                  ; Merged with reg_keyIni[32]                      ;
-; reg_keyIni[94]                                     ; Merged with reg_keyIni[38]                      ;
-; reg_plainText[14,94]                               ; Merged with reg_keyIni[38]                      ;
-; reg_keyIni[46]                                     ; Merged with reg_keyIni[38]                      ;
-; reg_plainText[78]                                  ; Merged with reg_keyIni[38]                      ;
-; reg_keyIni[110]                                    ; Merged with reg_keyIni[38]                      ;
-; reg_plainText[6,110]                               ; Merged with reg_keyIni[38]                      ;
-; reg_keyIni[70]                                     ; Merged with reg_keyIni[38]                      ;
-; reg_plainText[22,38]                               ; Merged with reg_keyIni[38]                      ;
-; reg_keyIni[86]                                     ; Merged with reg_keyIni[38]                      ;
-; reg_plainText[54,70]                               ; Merged with reg_keyIni[38]                      ;
-; reg_keyIni[102]                                    ; Merged with reg_keyIni[38]                      ;
-; reg_keyIni[56,108,116]                             ; Merged with reg_keyIni[52]                      ;
-; reg_plainText[108,112]                             ; Merged with reg_keyIni[52]                      ;
-; reg_keyIni[120]                                    ; Merged with reg_keyIni[52]                      ;
-; reg_plainText[120]                                 ; Merged with reg_keyIni[52]                      ;
-; reg_keyIni[63]                                     ; Merged with reg_keyIni[52]                      ;
-; reg_plainText[1,3]                                 ; Merged with reg_keyIni[52]                      ;
-; reg_keyIni[1,7,21]                                 ; Merged with reg_keyIni[0]                       ;
-; reg_keyIni[8,22]                                   ; Merged with reg_keyIni[3]                       ;
-; reg_keyIni[5]                                      ; Merged with reg_keyIni[4]                       ;
-; reg_keyIni[17]                                     ; Merged with reg_keyIni[10]                      ;
-; reg_keyIni[52]                                     ; Merged with reg_keyIni[11]                      ;
-; reg_keyIni[38]                                     ; Merged with reg_keyIni[12]                      ;
-; reg_keyIni[20]                                     ; Merged with reg_keyIni[13]                      ;
-; addRoundKey:ARK|outAddRoundKey[40]                 ; Merged with addRoundKey:ARK|outAddRoundKey[4]   ;
-; addRoundKey:ARK|outAddRoundKey[16]                 ; Merged with addRoundKey:ARK|outAddRoundKey[8]   ;
-; addRoundKey:ARK|outAddRoundKey[42,50,66]           ; Merged with addRoundKey:ARK|outAddRoundKey[10]  ;
-; addRoundKey:ARK|outAddRoundKey[28]                 ; Merged with addRoundKey:ARK|outAddRoundKey[12]  ;
-; addRoundKey:ARK|outAddRoundKey[31]                 ; Merged with addRoundKey:ARK|outAddRoundKey[15]  ;
-; addRoundKey:ARK|outAddRoundKey[82,98]              ; Merged with addRoundKey:ARK|outAddRoundKey[18]  ;
-; addRoundKey:ARK|outAddRoundKey[54,78]              ; Merged with addRoundKey:ARK|outAddRoundKey[22]  ;
-; addRoundKey:ARK|outAddRoundKey[34]                 ; Merged with addRoundKey:ARK|outAddRoundKey[26]  ;
-; addRoundKey:ARK|outAddRoundKey[62]                 ; Merged with addRoundKey:ARK|outAddRoundKey[30]  ;
-; addRoundKey:ARK|outAddRoundKey[36,68,72]           ; Merged with addRoundKey:ARK|outAddRoundKey[32]  ;
-; addRoundKey:ARK|outAddRoundKey[70,94,110]          ; Merged with addRoundKey:ARK|outAddRoundKey[38]  ;
-; addRoundKey:ARK|outAddRoundKey[43,45]              ; Merged with addRoundKey:ARK|outAddRoundKey[41]  ;
-; addRoundKey:ARK|outAddRoundKey[48]                 ; Merged with addRoundKey:ARK|outAddRoundKey[44]  ;
-; addRoundKey:ARK|outAddRoundKey[86]                 ; Merged with addRoundKey:ARK|outAddRoundKey[46]  ;
-; addRoundKey:ARK|outAddRoundKey[56]                 ; Merged with addRoundKey:ARK|outAddRoundKey[52]  ;
-; addRoundKey:ARK|outAddRoundKey[57]                 ; Merged with addRoundKey:ARK|outAddRoundKey[55]  ;
-; addRoundKey:ARK|outAddRoundKey[80]                 ; Merged with addRoundKey:ARK|outAddRoundKey[64]  ;
-; addRoundKey:ARK|outAddRoundKey[71,73]              ; Merged with addRoundKey:ARK|outAddRoundKey[65]  ;
-; addRoundKey:ARK|outAddRoundKey[77]                 ; Merged with addRoundKey:ARK|outAddRoundKey[67]  ;
-; addRoundKey:ARK|outAddRoundKey[83,85,87]           ; Merged with addRoundKey:ARK|outAddRoundKey[81]  ;
-; addRoundKey:ARK|outAddRoundKey[88,92]              ; Merged with addRoundKey:ARK|outAddRoundKey[84]  ;
-; addRoundKey:ARK|outAddRoundKey[93,97]              ; Merged with addRoundKey:ARK|outAddRoundKey[91]  ;
-; addRoundKey:ARK|outAddRoundKey[99]                 ; Merged with addRoundKey:ARK|outAddRoundKey[95]  ;
-; addRoundKey:ARK|outAddRoundKey[104]                ; Merged with addRoundKey:ARK|outAddRoundKey[100] ;
-; addRoundKey:ARK|outAddRoundKey[103,105]            ; Merged with addRoundKey:ARK|outAddRoundKey[101] ;
-; addRoundKey:ARK|outAddRoundKey[109,111]            ; Merged with addRoundKey:ARK|outAddRoundKey[107] ;
-; addRoundKey:ARK|outAddRoundKey[120]                ; Merged with addRoundKey:ARK|outAddRoundKey[108] ;
-; addRoundKey:ARK|outAddRoundKey[117]                ; Merged with addRoundKey:ARK|outAddRoundKey[115] ;
-; addRoundKey:ARK|outAddRoundKey[123,125]            ; Merged with addRoundKey:ARK|outAddRoundKey[121] ;
-; addRoundKey:ARK|outAddRoundKey[127]                ; Merged with addRoundKey:ARK|outAddRoundKey[124] ;
-; reg_keyIni[12,32]                                  ; Merged with reg_keyIni[0]                       ;
-; reg_keyIni[11]                                     ; Merged with reg_keyIni[2]                       ;
-; reg_keyIni[4]                                      ; Merged with reg_keyIni[3]                       ;
-; addRoundKey:ARK|outAddRoundKey[11]                 ; Merged with addRoundKey:ARK|outAddRoundKey[1]   ;
-; addRoundKey:ARK|outAddRoundKey[15]                 ; Merged with addRoundKey:ARK|outAddRoundKey[7]   ;
-; addRoundKey:ARK|outAddRoundKey[17]                 ; Merged with addRoundKey:ARK|outAddRoundKey[8]   ;
-; addRoundKey:ARK|outAddRoundKey[106]                ; Merged with addRoundKey:ARK|outAddRoundKey[9]   ;
-; addRoundKey:ARK|outAddRoundKey[33,84,122]          ; Merged with addRoundKey:ARK|outAddRoundKey[10]  ;
-; addRoundKey:ARK|outAddRoundKey[74]                 ; Merged with addRoundKey:ARK|outAddRoundKey[18]  ;
-; addRoundKey:ARK|outAddRoundKey[39]                 ; Merged with addRoundKey:ARK|outAddRoundKey[19]  ;
-; addRoundKey:ARK|outAddRoundKey[46]                 ; Merged with addRoundKey:ARK|outAddRoundKey[22]  ;
-; addRoundKey:ARK|outAddRoundKey[65]                 ; Merged with addRoundKey:ARK|outAddRoundKey[23]  ;
-; addRoundKey:ARK|outAddRoundKey[76]                 ; Merged with addRoundKey:ARK|outAddRoundKey[24]  ;
-; addRoundKey:ARK|outAddRoundKey[38,108,118,121,124] ; Merged with addRoundKey:ARK|outAddRoundKey[26]  ;
-; addRoundKey:ARK|outAddRoundKey[51]                 ; Merged with addRoundKey:ARK|outAddRoundKey[30]  ;
-; addRoundKey:ARK|outAddRoundKey[59,91]              ; Merged with addRoundKey:ARK|outAddRoundKey[52]  ;
-; addRoundKey:ARK|outAddRoundKey[89]                 ; Merged with addRoundKey:ARK|outAddRoundKey[55]  ;
-; addRoundKey:ARK|outAddRoundKey[115]                ; Merged with addRoundKey:ARK|outAddRoundKey[101] ;
-; addRoundKey:ARK|outAddRoundKey[116]                ; Merged with addRoundKey:ARK|outAddRoundKey[112] ;
-; reg_keyIni[10]                                     ; Merged with reg_keyIni[3]                       ;
-; addRoundKey:ARK|outAddRoundKey[75]                 ; Merged with addRoundKey:ARK|outAddRoundKey[1]   ;
-; addRoundKey:ARK|outAddRoundKey[52]                 ; Merged with addRoundKey:ARK|outAddRoundKey[3]   ;
-; addRoundKey:ARK|outAddRoundKey[9]                  ; Merged with addRoundKey:ARK|outAddRoundKey[5]   ;
-; addRoundKey:ARK|outAddRoundKey[26,44]              ; Merged with addRoundKey:ARK|outAddRoundKey[10]  ;
-; addRoundKey:ARK|outAddRoundKey[100,114]            ; Merged with addRoundKey:ARK|outAddRoundKey[12]  ;
-; addRoundKey:ARK|outAddRoundKey[96]                 ; Merged with addRoundKey:ARK|outAddRoundKey[13]  ;
-; addRoundKey:ARK|outAddRoundKey[112]                ; Merged with addRoundKey:ARK|outAddRoundKey[14]  ;
-; addRoundKey:ARK|outAddRoundKey[27,30,41,55,81]     ; Merged with addRoundKey:ARK|outAddRoundKey[19]  ;
-; addRoundKey:ARK|outAddRoundKey[107]                ; Merged with addRoundKey:ARK|outAddRoundKey[20]  ;
-; addRoundKey:ARK|outAddRoundKey[47,63,67]           ; Merged with addRoundKey:ARK|outAddRoundKey[21]  ;
-; addRoundKey:ARK|outAddRoundKey[32]                 ; Merged with addRoundKey:ARK|outAddRoundKey[22]  ;
-; addRoundKey:ARK|outAddRoundKey[35]                 ; Merged with addRoundKey:ARK|outAddRoundKey[25]  ;
-; addRoundKey:ARK|outAddRoundKey[95]                 ; Merged with addRoundKey:ARK|outAddRoundKey[60]  ;
-; reg_keyIni[13]                                     ; Merged with reg_keyIni[0]                       ;
-; addRoundKey:ARK|outAddRoundKey[6,8,21,37,53]       ; Merged with addRoundKey:ARK|outAddRoundKey[0]   ;
-; addRoundKey:ARK|outAddRoundKey[126]                ; Merged with addRoundKey:ARK|outAddRoundKey[1]   ;
-; addRoundKey:ARK|outAddRoundKey[12,19,25,101]       ; Merged with addRoundKey:ARK|outAddRoundKey[4]   ;
-; addRoundKey:ARK|outAddRoundKey[24,61]              ; Merged with addRoundKey:ARK|outAddRoundKey[7]   ;
-; addRoundKey:ARK|outAddRoundKey[29,69,102]          ; Merged with addRoundKey:ARK|outAddRoundKey[22]  ;
-; addRoundKey:ARK|outAddRoundKey[79]                 ; Merged with addRoundKey:ARK|outAddRoundKey[23]  ;
-; addRoundKey:ARK|outAddRoundKey[64]                 ; Merged with addRoundKey:ARK|outAddRoundKey[60]  ;
-; reg_keyIni[26]                                     ; Merged with reg_keyIni[0]                       ;
-; addRoundKey:ARK|outAddRoundKey[14]                 ; Merged with addRoundKey:ARK|outAddRoundKey[1]   ;
-; addRoundKey:ARK|outAddRoundKey[23]                 ; Merged with addRoundKey:ARK|outAddRoundKey[3]   ;
-; addRoundKey:ARK|outAddRoundKey[22]                 ; Merged with addRoundKey:ARK|outAddRoundKey[4]   ;
-; addRoundKey:ARK|outAddRoundKey[10]                 ; Merged with addRoundKey:ARK|outAddRoundKey[5]   ;
-; addRoundKey:ARK|outAddRoundKey[60]                 ; Merged with addRoundKey:ARK|outAddRoundKey[13]  ;
-; addRoundKey:ARK|outAddRoundKey[7]                  ; Merged with addRoundKey:ARK|outAddRoundKey[0]   ;
-; addRoundKey:ARK|outAddRoundKey[90]                 ; Merged with addRoundKey:ARK|outAddRoundKey[18]  ;
-; addRoundKey:ARK|outAddRoundKey[113]                ; Merged with addRoundKey:ARK|outAddRoundKey[20]  ;
-; addRoundKey:ARK|outAddRoundKey[13,58]              ; Merged with addRoundKey:ARK|outAddRoundKey[0]   ;
-; addRoundKey:ARK|outAddRoundKey[49]                 ; Merged with addRoundKey:ARK|outAddRoundKey[1]   ;
-; addRoundKey:ARK|outAddRoundKey[18,20]              ; Merged with addRoundKey:ARK|outAddRoundKey[4]   ;
-; reg_keyIni[3]                                      ; Merged with reg_keyIni[2]                       ;
-; addRoundKey:ARK|outAddRoundKey[5]                  ; Merged with addRoundKey:ARK|outAddRoundKey[0]   ;
-; addRoundKey:ARK|outAddRoundKey[1,2,4]              ; Merged with addRoundKey:ARK|outAddRoundKey[119] ;
-; reg_keyIni[0]                                      ; Stuck at GND due to stuck port data_in          ;
-; addRoundKey:ARK|outAddRoundKey[0,3]                ; Stuck at GND due to stuck port data_in          ;
-; Total Number of Removed Registers = 382            ;                                                 ;
-+----------------------------------------------------+-------------------------------------------------+
++--------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                     ;
++------------------------------------------------------+-------------------------------------------------+
+; Register name                                        ; Reason for Removal                              ;
++------------------------------------------------------+-------------------------------------------------+
+; reg_keyIni[36,80]                                    ; Merged with reg_keyIni[0]                       ;
+; reg_plainText[40]                                    ; Merged with reg_keyIni[0]                       ;
+; reg_keyIni[84,88]                                    ; Merged with reg_keyIni[0]                       ;
+; reg_plainText[60]                                    ; Merged with reg_keyIni[0]                       ;
+; reg_keyIni[92]                                       ; Merged with reg_keyIni[0]                       ;
+; reg_plainText[64]                                    ; Merged with reg_keyIni[0]                       ;
+; reg_keyIni[20,96]                                    ; Merged with reg_keyIni[0]                       ;
+; reg_plainText[80,84]                                 ; Merged with reg_keyIni[0]                       ;
+; reg_keyIni[51,105,107]                               ; Merged with reg_keyIni[1]                       ;
+; reg_plainText[95]                                    ; Merged with reg_keyIni[1]                       ;
+; reg_keyIni[109]                                      ; Merged with reg_keyIni[1]                       ;
+; reg_plainText[99]                                    ; Merged with reg_keyIni[1]                       ;
+; reg_keyIni[111]                                      ; Merged with reg_keyIni[1]                       ;
+; reg_plainText[113]                                   ; Merged with reg_keyIni[1]                       ;
+; reg_keyIni[10]                                       ; Merged with reg_keyIni[2]                       ;
+; reg_keyIni[120]                                      ; Merged with reg_keyIni[3]                       ;
+; reg_plainText[120]                                   ; Merged with reg_keyIni[3]                       ;
+; reg_keyIni[123]                                      ; Merged with reg_keyIni[3]                       ;
+; reg_plainText[125]                                   ; Merged with reg_keyIni[3]                       ;
+; reg_keyIni[27,59,61,125]                             ; Merged with reg_keyIni[3]                       ;
+; reg_plainText[1]                                     ; Merged with reg_keyIni[3]                       ;
+; reg_keyIni[11]                                       ; Merged with reg_keyIni[3]                       ;
+; reg_plainText[3]                                     ; Merged with reg_keyIni[3]                       ;
+; reg_keyIni[63]                                       ; Merged with reg_keyIni[3]                       ;
+; reg_plainText[5]                                     ; Merged with reg_keyIni[3]                       ;
+; reg_keyIni[65]                                       ; Merged with reg_keyIni[3]                       ;
+; reg_plainText[9]                                     ; Merged with reg_keyIni[3]                       ;
+; reg_keyIni[69]                                       ; Merged with reg_keyIni[3]                       ;
+; reg_plainText[17]                                    ; Merged with reg_keyIni[3]                       ;
+; reg_plainText[8,12,16,20,24,28]                      ; Merged with reg_keyIni[4]                       ;
+; reg_keyIni[76]                                       ; Merged with reg_keyIni[4]                       ;
+; reg_plainText[32,36]                                 ; Merged with reg_keyIni[4]                       ;
+; reg_keyIni[16]                                       ; Merged with reg_keyIni[4]                       ;
+; reg_plainText[44,48]                                 ; Merged with reg_keyIni[4]                       ;
+; reg_keyIni[40]                                       ; Merged with reg_keyIni[4]                       ;
+; reg_plainText[52,56]                                 ; Merged with reg_keyIni[4]                       ;
+; reg_keyIni[71]                                       ; Merged with reg_keyIni[5]                       ;
+; reg_plainText[23]                                    ; Merged with reg_keyIni[5]                       ;
+; reg_keyIni[73]                                       ; Merged with reg_keyIni[5]                       ;
+; reg_plainText[25,29]                                 ; Merged with reg_keyIni[5]                       ;
+; reg_keyIni[35,79,81]                                 ; Merged with reg_keyIni[5]                       ;
+; reg_plainText[41,43]                                 ; Merged with reg_keyIni[5]                       ;
+; reg_keyIni[83]                                       ; Merged with reg_keyIni[5]                       ;
+; reg_plainText[45]                                    ; Merged with reg_keyIni[5]                       ;
+; reg_plainText[98,114]                                ; Merged with reg_keyIni[6]                       ;
+; reg_keyIni[62,126]                                   ; Merged with reg_keyIni[6]                       ;
+; reg_plainText[6]                                     ; Merged with reg_keyIni[6]                       ;
+; reg_keyIni[30]                                       ; Merged with reg_keyIni[6]                       ;
+; reg_plainText[14]                                    ; Merged with reg_keyIni[6]                       ;
+; reg_keyIni[70]                                       ; Merged with reg_keyIni[6]                       ;
+; reg_plainText[22,38]                                 ; Merged with reg_keyIni[6]                       ;
+; reg_keyIni[38,86]                                    ; Merged with reg_keyIni[6]                       ;
+; reg_plainText[54]                                    ; Merged with reg_keyIni[6]                       ;
+; reg_keyIni[94]                                       ; Merged with reg_keyIni[6]                       ;
+; reg_plainText[70]                                    ; Merged with reg_keyIni[6]                       ;
+; reg_keyIni[46]                                       ; Merged with reg_keyIni[6]                       ;
+; reg_plainText[78]                                    ; Merged with reg_keyIni[6]                       ;
+; reg_keyIni[102]                                      ; Merged with reg_keyIni[6]                       ;
+; reg_keyIni[43]                                       ; Merged with reg_keyIni[7]                       ;
+; reg_plainText[67]                                    ; Merged with reg_keyIni[7]                       ;
+; reg_keyIni[95]                                       ; Merged with reg_keyIni[7]                       ;
+; reg_plainText[69]                                    ; Merged with reg_keyIni[7]                       ;
+; reg_keyIni[45,99]                                    ; Merged with reg_keyIni[7]                       ;
+; reg_plainText[77]                                    ; Merged with reg_keyIni[7]                       ;
+; reg_keyIni[47,101]                                   ; Merged with reg_keyIni[7]                       ;
+; reg_plainText[81]                                    ; Merged with reg_keyIni[7]                       ;
+; reg_keyIni[21]                                       ; Merged with reg_keyIni[7]                       ;
+; reg_plainText[83]                                    ; Merged with reg_keyIni[7]                       ;
+; reg_keyIni[103]                                      ; Merged with reg_keyIni[7]                       ;
+; reg_plainText[85,87]                                 ; Merged with reg_keyIni[7]                       ;
+; reg_keyIni[44]                                       ; Merged with reg_keyIni[8]                       ;
+; reg_plainText[68,72,76]                              ; Merged with reg_keyIni[8]                       ;
+; reg_keyIni[24,48,52,100,104,108]                     ; Merged with reg_keyIni[8]                       ;
+; reg_plainText[108]                                   ; Merged with reg_keyIni[8]                       ;
+; reg_keyIni[116]                                      ; Merged with reg_keyIni[8]                       ;
+; reg_plainText[112]                                   ; Merged with reg_keyIni[8]                       ;
+; reg_keyIni[56]                                       ; Merged with reg_keyIni[8]                       ;
+; reg_keyIni[23]                                       ; Merged with reg_keyIni[9]                       ;
+; reg_plainText[101]                                   ; Merged with reg_keyIni[9]                       ;
+; reg_keyIni[53]                                       ; Merged with reg_keyIni[9]                       ;
+; reg_plainText[103]                                   ; Merged with reg_keyIni[9]                       ;
+; reg_keyIni[113]                                      ; Merged with reg_keyIni[9]                       ;
+; reg_plainText[105,107]                               ; Merged with reg_keyIni[9]                       ;
+; reg_keyIni[115]                                      ; Merged with reg_keyIni[9]                       ;
+; reg_plainText[109]                                   ; Merged with reg_keyIni[9]                       ;
+; reg_keyIni[55]                                       ; Merged with reg_keyIni[9]                       ;
+; reg_plainText[111]                                   ; Merged with reg_keyIni[9]                       ;
+; reg_keyIni[57,117]                                   ; Merged with reg_keyIni[9]                       ;
+; reg_plainText[119]                                   ; Merged with reg_keyIni[9]                       ;
+; reg_keyIni[121]                                      ; Merged with reg_keyIni[9]                       ;
+; reg_plainText[121,123]                               ; Merged with reg_keyIni[9]                       ;
+; reg_plainText[94]                                    ; Merged with reg_keyIni[12]                      ;
+; reg_keyIni[110]                                      ; Merged with reg_keyIni[12]                      ;
+; reg_plainText[110,124]                               ; Merged with reg_keyIni[12]                      ;
+; reg_keyIni[60,124]                                   ; Merged with reg_keyIni[12]                      ;
+; reg_plainText[0]                                     ; Merged with reg_keyIni[12]                      ;
+; reg_keyIni[28]                                       ; Merged with reg_keyIni[12]                      ;
+; reg_plainText[4]                                     ; Merged with reg_keyIni[12]                      ;
+; reg_keyIni[32,64,68,72]                              ; Merged with reg_keyIni[12]                      ;
+; reg_keyIni[29]                                       ; Merged with reg_keyIni[13]                      ;
+; reg_plainText[7,11]                                  ; Merged with reg_keyIni[13]                      ;
+; reg_keyIni[67]                                       ; Merged with reg_keyIni[13]                      ;
+; reg_plainText[13]                                    ; Merged with reg_keyIni[13]                      ;
+; reg_keyIni[31]                                       ; Merged with reg_keyIni[13]                      ;
+; reg_plainText[15,19,21]                              ; Merged with reg_keyIni[13]                      ;
+; reg_keyIni[33]                                       ; Merged with reg_keyIni[13]                      ;
+; reg_plainText[27]                                    ; Merged with reg_keyIni[13]                      ;
+; reg_keyIni[75]                                       ; Merged with reg_keyIni[13]                      ;
+; reg_plainText[31]                                    ; Merged with reg_keyIni[13]                      ;
+; reg_plainText[30]                                    ; Merged with reg_keyIni[14]                      ;
+; reg_keyIni[78]                                       ; Merged with reg_keyIni[14]                      ;
+; reg_plainText[46,62,86]                              ; Merged with reg_keyIni[14]                      ;
+; reg_keyIni[22]                                       ; Merged with reg_keyIni[14]                      ;
+; reg_plainText[102]                                   ; Merged with reg_keyIni[14]                      ;
+; reg_keyIni[54,118]                                   ; Merged with reg_keyIni[14]                      ;
+; reg_plainText[118]                                   ; Merged with reg_keyIni[14]                      ;
+; reg_keyIni[77]                                       ; Merged with reg_keyIni[15]                      ;
+; reg_plainText[33,35,37]                              ; Merged with reg_keyIni[15]                      ;
+; reg_keyIni[37]                                       ; Merged with reg_keyIni[15]                      ;
+; reg_plainText[39,47,49]                              ; Merged with reg_keyIni[15]                      ;
+; reg_keyIni[41]                                       ; Merged with reg_keyIni[15]                      ;
+; reg_plainText[55]                                    ; Merged with reg_keyIni[15]                      ;
+; reg_keyIni[89]                                       ; Merged with reg_keyIni[15]                      ;
+; reg_plainText[57]                                    ; Merged with reg_keyIni[15]                      ;
+; reg_keyIni[39,85]                                    ; Merged with reg_keyIni[17]                      ;
+; reg_plainText[51]                                    ; Merged with reg_keyIni[17]                      ;
+; reg_keyIni[87]                                       ; Merged with reg_keyIni[17]                      ;
+; reg_plainText[53,59]                                 ; Merged with reg_keyIni[17]                      ;
+; reg_keyIni[91]                                       ; Merged with reg_keyIni[17]                      ;
+; reg_plainText[61,63]                                 ; Merged with reg_keyIni[17]                      ;
+; reg_keyIni[93]                                       ; Merged with reg_keyIni[17]                      ;
+; reg_plainText[65]                                    ; Merged with reg_keyIni[17]                      ;
+; reg_keyIni[19]                                       ; Merged with reg_keyIni[17]                      ;
+; reg_plainText[71]                                    ; Merged with reg_keyIni[17]                      ;
+; reg_plainText[10,42,90]                              ; Merged with reg_keyIni[18]                      ;
+; reg_keyIni[42]                                       ; Merged with reg_keyIni[18]                      ;
+; reg_plainText[74]                                    ; Merged with reg_keyIni[18]                      ;
+; reg_keyIni[106]                                      ; Merged with reg_keyIni[18]                      ;
+; reg_plainText[106]                                   ; Merged with reg_keyIni[18]                      ;
+; reg_keyIni[66,82]                                    ; Merged with reg_keyIni[18]                      ;
+; reg_plainText[50,66]                                 ; Merged with reg_keyIni[18]                      ;
+; reg_keyIni[50,98,114]                                ; Merged with reg_keyIni[18]                      ;
+; reg_plainText[126]                                   ; Merged with reg_keyIni[18]                      ;
+; reg_plainText[115]                                   ; Merged with reg_keyIni[25]                      ;
+; reg_keyIni[119]                                      ; Merged with reg_keyIni[25]                      ;
+; reg_plainText[117]                                   ; Merged with reg_keyIni[25]                      ;
+; reg_keyIni[26,58,122]                                ; Merged with reg_keyIni[25]                      ;
+; reg_plainText[122]                                   ; Merged with reg_keyIni[25]                      ;
+; reg_plainText[26,58]                                 ; Merged with reg_keyIni[34]                      ;
+; reg_keyIni[74,90]                                    ; Merged with reg_keyIni[34]                      ;
+; reg_plainText[2,18,34,82]                            ; Merged with reg_keyIni[34]                      ;
+; reg_keyIni[97]                                       ; Merged with reg_keyIni[49]                      ;
+; reg_plainText[73,75,79,89,91,93,97]                  ; Merged with reg_keyIni[49]                      ;
+; reg_plainText[88,92,96,100,104,116,127]              ; Merged with reg_keyIni[112]                     ;
+; reg_keyIni[127]                                      ; Merged with reg_keyIni[112]                     ;
+; reg_keyIni[1,7,25,112]                               ; Merged with reg_keyIni[0]                       ;
+; reg_keyIni[9]                                        ; Merged with reg_keyIni[3]                       ;
+; reg_keyIni[8,14]                                     ; Merged with reg_keyIni[4]                       ;
+; reg_keyIni[18]                                       ; Merged with reg_keyIni[5]                       ;
+; reg_keyIni[34]                                       ; Merged with reg_keyIni[12]                      ;
+; reg_keyIni[15]                                       ; Merged with reg_keyIni[13]                      ;
+; reg_keyIni[49]                                       ; Merged with reg_keyIni[17]                      ;
+; addRoundKey:ARK|outAddRoundKey[38,70]                ; Merged with addRoundKey:ARK|outAddRoundKey[6]   ;
+; addRoundKey:ARK|outAddRoundKey[21]                   ; Merged with addRoundKey:ARK|outAddRoundKey[7]   ;
+; addRoundKey:ARK|outAddRoundKey[24,44,48,52,56]       ; Merged with addRoundKey:ARK|outAddRoundKey[8]   ;
+; addRoundKey:ARK|outAddRoundKey[27]                   ; Merged with addRoundKey:ARK|outAddRoundKey[11]  ;
+; addRoundKey:ARK|outAddRoundKey[28,32]                ; Merged with addRoundKey:ARK|outAddRoundKey[12]  ;
+; addRoundKey:ARK|outAddRoundKey[31]                   ; Merged with addRoundKey:ARK|outAddRoundKey[13]  ;
+; addRoundKey:ARK|outAddRoundKey[22,54,78]             ; Merged with addRoundKey:ARK|outAddRoundKey[14]  ;
+; addRoundKey:ARK|outAddRoundKey[82]                   ; Merged with addRoundKey:ARK|outAddRoundKey[18]  ;
+; addRoundKey:ARK|outAddRoundKey[36]                   ; Merged with addRoundKey:ARK|outAddRoundKey[20]  ;
+; addRoundKey:ARK|outAddRoundKey[58]                   ; Merged with addRoundKey:ARK|outAddRoundKey[26]  ;
+; addRoundKey:ARK|outAddRoundKey[46,62,86,102]         ; Merged with addRoundKey:ARK|outAddRoundKey[30]  ;
+; addRoundKey:ARK|outAddRoundKey[50,66,106]            ; Merged with addRoundKey:ARK|outAddRoundKey[42]  ;
+; addRoundKey:ARK|outAddRoundKey[45]                   ; Merged with addRoundKey:ARK|outAddRoundKey[43]  ;
+; addRoundKey:ARK|outAddRoundKey[57]                   ; Merged with addRoundKey:ARK|outAddRoundKey[55]  ;
+; addRoundKey:ARK|outAddRoundKey[61,63,65]             ; Merged with addRoundKey:ARK|outAddRoundKey[59]  ;
+; addRoundKey:ARK|outAddRoundKey[64]                   ; Merged with addRoundKey:ARK|outAddRoundKey[60]  ;
+; addRoundKey:ARK|outAddRoundKey[72]                   ; Merged with addRoundKey:ARK|outAddRoundKey[68]  ;
+; addRoundKey:ARK|outAddRoundKey[79]                   ; Merged with addRoundKey:ARK|outAddRoundKey[73]  ;
+; addRoundKey:ARK|outAddRoundKey[90]                   ; Merged with addRoundKey:ARK|outAddRoundKey[74]  ;
+; addRoundKey:ARK|outAddRoundKey[84]                   ; Merged with addRoundKey:ARK|outAddRoundKey[80]  ;
+; addRoundKey:ARK|outAddRoundKey[83]                   ; Merged with addRoundKey:ARK|outAddRoundKey[81]  ;
+; addRoundKey:ARK|outAddRoundKey[87]                   ; Merged with addRoundKey:ARK|outAddRoundKey[85]  ;
+; addRoundKey:ARK|outAddRoundKey[92,96]                ; Merged with addRoundKey:ARK|outAddRoundKey[88]  ;
+; addRoundKey:ARK|outAddRoundKey[93]                   ; Merged with addRoundKey:ARK|outAddRoundKey[91]  ;
+; addRoundKey:ARK|outAddRoundKey[99]                   ; Merged with addRoundKey:ARK|outAddRoundKey[95]  ;
+; addRoundKey:ARK|outAddRoundKey[114]                  ; Merged with addRoundKey:ARK|outAddRoundKey[98]  ;
+; addRoundKey:ARK|outAddRoundKey[104,116]              ; Merged with addRoundKey:ARK|outAddRoundKey[100] ;
+; addRoundKey:ARK|outAddRoundKey[103]                  ; Merged with addRoundKey:ARK|outAddRoundKey[101] ;
+; addRoundKey:ARK|outAddRoundKey[107,109,111]          ; Merged with addRoundKey:ARK|outAddRoundKey[105] ;
+; addRoundKey:ARK|outAddRoundKey[117]                  ; Merged with addRoundKey:ARK|outAddRoundKey[115] ;
+; reg_keyIni[12]                                       ; Merged with reg_keyIni[0]                       ;
+; reg_keyIni[17]                                       ; Merged with reg_keyIni[5]                       ;
+; addRoundKey:ARK|outAddRoundKey[34,80,97,120,124,127] ; Merged with addRoundKey:ARK|outAddRoundKey[3]   ;
+; addRoundKey:ARK|outAddRoundKey[12]                   ; Merged with addRoundKey:ARK|outAddRoundKey[4]   ;
+; addRoundKey:ARK|outAddRoundKey[16,108,121,125]       ; Merged with addRoundKey:ARK|outAddRoundKey[6]   ;
+; addRoundKey:ARK|outAddRoundKey[47]                   ; Merged with addRoundKey:ARK|outAddRoundKey[7]   ;
+; addRoundKey:ARK|outAddRoundKey[55]                   ; Merged with addRoundKey:ARK|outAddRoundKey[11]  ;
+; addRoundKey:ARK|outAddRoundKey[37,118]               ; Merged with addRoundKey:ARK|outAddRoundKey[13]  ;
+; addRoundKey:ARK|outAddRoundKey[89]                   ; Merged with addRoundKey:ARK|outAddRoundKey[19]  ;
+; addRoundKey:ARK|outAddRoundKey[43,81]                ; Merged with addRoundKey:ARK|outAddRoundKey[25]  ;
+; addRoundKey:ARK|outAddRoundKey[35,41]                ; Merged with addRoundKey:ARK|outAddRoundKey[29]  ;
+; addRoundKey:ARK|outAddRoundKey[49,75]                ; Merged with addRoundKey:ARK|outAddRoundKey[39]  ;
+; addRoundKey:ARK|outAddRoundKey[110,122]              ; Merged with addRoundKey:ARK|outAddRoundKey[42]  ;
+; addRoundKey:ARK|outAddRoundKey[85]                   ; Merged with addRoundKey:ARK|outAddRoundKey[51]  ;
+; addRoundKey:ARK|outAddRoundKey[59]                   ; Merged with addRoundKey:ARK|outAddRoundKey[53]  ;
+; addRoundKey:ARK|outAddRoundKey[77]                   ; Merged with addRoundKey:ARK|outAddRoundKey[67]  ;
+; addRoundKey:ARK|outAddRoundKey[115,119]              ; Merged with addRoundKey:ARK|outAddRoundKey[69]  ;
+; addRoundKey:ARK|outAddRoundKey[95]                   ; Merged with addRoundKey:ARK|outAddRoundKey[88]  ;
+; addRoundKey:ARK|outAddRoundKey[113]                  ; Merged with addRoundKey:ARK|outAddRoundKey[105] ;
+; reg_keyIni[13]                                       ; Merged with reg_keyIni[0]                       ;
+; addRoundKey:ARK|outAddRoundKey[60]                   ; Merged with addRoundKey:ARK|outAddRoundKey[0]   ;
+; addRoundKey:ARK|outAddRoundKey[69]                   ; Merged with addRoundKey:ARK|outAddRoundKey[1]   ;
+; addRoundKey:ARK|outAddRoundKey[42]                   ; Merged with addRoundKey:ARK|outAddRoundKey[3]   ;
+; addRoundKey:ARK|outAddRoundKey[68]                   ; Merged with addRoundKey:ARK|outAddRoundKey[4]   ;
+; addRoundKey:ARK|outAddRoundKey[53]                   ; Merged with addRoundKey:ARK|outAddRoundKey[5]   ;
+; addRoundKey:ARK|outAddRoundKey[8,13,15,33,88,123]    ; Merged with addRoundKey:ARK|outAddRoundKey[6]   ;
+; addRoundKey:ARK|outAddRoundKey[67]                   ; Merged with addRoundKey:ARK|outAddRoundKey[7]   ;
+; addRoundKey:ARK|outAddRoundKey[76]                   ; Merged with addRoundKey:ARK|outAddRoundKey[9]   ;
+; addRoundKey:ARK|outAddRoundKey[74]                   ; Merged with addRoundKey:ARK|outAddRoundKey[18]  ;
+; addRoundKey:ARK|outAddRoundKey[39]                   ; Merged with addRoundKey:ARK|outAddRoundKey[19]  ;
+; addRoundKey:ARK|outAddRoundKey[40,100]               ; Merged with addRoundKey:ARK|outAddRoundKey[20]  ;
+; addRoundKey:ARK|outAddRoundKey[51]                   ; Merged with addRoundKey:ARK|outAddRoundKey[25]  ;
+; addRoundKey:ARK|outAddRoundKey[9]                    ; Merged with addRoundKey:ARK|outAddRoundKey[0]   ;
+; addRoundKey:ARK|outAddRoundKey[105]                  ; Merged with addRoundKey:ARK|outAddRoundKey[1]   ;
+; addRoundKey:ARK|outAddRoundKey[71,91]                ; Merged with addRoundKey:ARK|outAddRoundKey[3]   ;
+; addRoundKey:ARK|outAddRoundKey[112]                  ; Merged with addRoundKey:ARK|outAddRoundKey[4]   ;
+; addRoundKey:ARK|outAddRoundKey[26,73]                ; Merged with addRoundKey:ARK|outAddRoundKey[6]   ;
+; addRoundKey:ARK|outAddRoundKey[23]                   ; Merged with addRoundKey:ARK|outAddRoundKey[17]  ;
+; addRoundKey:ARK|outAddRoundKey[25]                   ; Merged with addRoundKey:ARK|outAddRoundKey[18]  ;
+; reg_keyIni[4]                                        ; Merged with reg_keyIni[3]                       ;
+; addRoundKey:ARK|outAddRoundKey[11,101]               ; Merged with addRoundKey:ARK|outAddRoundKey[1]   ;
+; addRoundKey:ARK|outAddRoundKey[7]                    ; Merged with addRoundKey:ARK|outAddRoundKey[3]   ;
+; addRoundKey:ARK|outAddRoundKey[17]                   ; Merged with addRoundKey:ARK|outAddRoundKey[5]   ;
+; addRoundKey:ARK|outAddRoundKey[29]                   ; Merged with addRoundKey:ARK|outAddRoundKey[19]  ;
+; reg_keyIni[5]                                        ; Merged with reg_keyIni[3]                       ;
+; addRoundKey:ARK|outAddRoundKey[6]                    ; Merged with addRoundKey:ARK|outAddRoundKey[0]   ;
+; addRoundKey:ARK|outAddRoundKey[30]                   ; Merged with addRoundKey:ARK|outAddRoundKey[14]  ;
+; addRoundKey:ARK|outAddRoundKey[19]                   ; Merged with addRoundKey:ARK|outAddRoundKey[1]   ;
+; addRoundKey:ARK|outAddRoundKey[18]                   ; Merged with addRoundKey:ARK|outAddRoundKey[4]   ;
+; addRoundKey:ARK|outAddRoundKey[5]                    ; Merged with addRoundKey:ARK|outAddRoundKey[3]   ;
+; addRoundKey:ARK|outAddRoundKey[20]                   ; Merged with addRoundKey:ARK|outAddRoundKey[4]   ;
+; reg_keyIni[6]                                        ; Merged with reg_keyIni[0]                       ;
+; reg_keyIni[3]                                        ; Merged with reg_keyIni[2]                       ;
+; addRoundKey:ARK|outAddRoundKey[3]                    ; Merged with addRoundKey:ARK|outAddRoundKey[0]   ;
+; addRoundKey:ARK|outAddRoundKey[1,2,4,14,98]          ; Merged with addRoundKey:ARK|outAddRoundKey[126] ;
+; reg_keyIni[0]                                        ; Stuck at GND due to stuck port data_in          ;
+; addRoundKey:ARK|outAddRoundKey[0,10,94]              ; Stuck at GND due to stuck port data_in          ;
+; Total Number of Removed Registers = 382              ;                                                 ;
++------------------------------------------------------+-------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -544,12 +529,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 648   ;
-; Number of registers using Synchronous Clear  ; 418   ;
+; Total registers                              ; 652   ;
+; Number of registers using Synchronous Clear  ; 421   ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 6     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 640   ;
+; Number of registers using Clock Enable       ; 644   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -559,13 +544,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
-; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |aes|addRoundKey:ARK2|outAddRoundKey[64] ;
-; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |aes|shiftrows:SR|outShiftRows[67]       ;
-; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |aes|mixcolumns:MC|outMixColumns[66]     ;
-; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |aes|keys:KEY|outReg[15]                 ;
-; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |aes|subBytes:SB|outSubBytes[65]         ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |aes|fsm:SM|state                        ;
+; 3:1                ; 132 bits  ; 264 LEs       ; 132 LEs              ; 132 LEs                ; Yes        ; |aes|subBytes:SB|outSubBytes[96]         ;
+; 3:1                ; 256 bits  ; 512 LEs       ; 256 LEs              ; 256 LEs                ; Yes        ; |aes|shiftrows:SR|outShiftRows[63]       ;
+; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |aes|mixcolumns:MC|outMixColumns[107]    ;
+; 3:1                ; 128 bits  ; 256 LEs       ; 128 LEs              ; 128 LEs                ; Yes        ; |aes|addRoundKey:ARK2|outAddRoundKey[14] ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |aes|keys:KEY|rcon[2]                    ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |aes|fsm:SM|state                        ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |aes|keys:KEY|rcon[3]                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
 
@@ -615,7 +599,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:01:33     ;
+; Top            ; 00:00:48     ;
 +----------------+--------------+
 
 
@@ -624,8 +608,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Nov 14 16:26:32 2019
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Fri Nov 15 01:18:16 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off aes -c aes
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file shiftrows.vhd
@@ -670,208 +654,32 @@ Info (10041): Inferred latch for "rcon[4]" at keys.vhd(54)
 Info (10041): Inferred latch for "rcon[5]" at keys.vhd(54)
 Info (10041): Inferred latch for "rcon[6]" at keys.vhd(54)
 Info (10041): Inferred latch for "rcon[7]" at keys.vhd(54)
-Info (10041): Inferred latch for "outMuxEntrada[0]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[1]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[2]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[3]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[4]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[5]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[6]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[7]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[8]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[9]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[10]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[11]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[12]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[13]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[14]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[15]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[16]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[17]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[18]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[19]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[20]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[21]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[22]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[23]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[24]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[25]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[26]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[27]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[28]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[29]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[30]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[31]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[32]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[33]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[34]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[35]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[36]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[37]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[38]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[39]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[40]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[41]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[42]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[43]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[44]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[45]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[46]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[47]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[48]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[49]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[50]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[51]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[52]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[53]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[54]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[55]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[56]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[57]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[58]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[59]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[60]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[61]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[62]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[63]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[64]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[65]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[66]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[67]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[68]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[69]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[70]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[71]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[72]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[73]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[74]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[75]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[76]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[77]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[78]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[79]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[80]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[81]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[82]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[83]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[84]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[85]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[86]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[87]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[88]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[89]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[90]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[91]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[92]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[93]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[94]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[95]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[96]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[97]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[98]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[99]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[100]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[101]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[102]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[103]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[104]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[105]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[106]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[107]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[108]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[109]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[110]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[111]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[112]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[113]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[114]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[115]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[116]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[117]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[118]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[119]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[120]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[121]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[122]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[123]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[124]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[125]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[126]" at keys.vhd(51)
-Info (10041): Inferred latch for "outMuxEntrada[127]" at keys.vhd(51)
 Warning (12125): Using design file sboxkey.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: sboxKey-behaviour
     Info (12023): Found entity 1: sboxKey
 Info (12128): Elaborating entity "sboxKey" for hierarchy "keys:KEY|sboxKey:SBK"
 Info (12128): Elaborating entity "fsm" for hierarchy "fsm:SM"
-Warning (10492): VHDL Process Statement warning at fsm.vhd(99): signal "c" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at fsm.vhd(102): signal "c" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at fsm.vhd(104): signal "c" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at fsm.vhd(107): signal "c" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at fsm.vhd(109): signal "c" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at fsm.vhd(115): signal "c" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at fsm.vhd(76): inferring latch(es) for signal or variable "selInicio", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at fsm.vhd(76): inferring latch(es) for signal or variable "selRound", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at fsm.vhd(76): inferring latch(es) for signal or variable "selKey", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at fsm.vhd(76): inferring latch(es) for signal or variable "enRegInicio", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at fsm.vhd(76): inferring latch(es) for signal or variable "enRegADR", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at fsm.vhd(76): inferring latch(es) for signal or variable "enRegSub", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at fsm.vhd(76): inferring latch(es) for signal or variable "enRegSR", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at fsm.vhd(76): inferring latch(es) for signal or variable "enRegMix", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at fsm.vhd(76): inferring latch(es) for signal or variable "enRegADR2", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at fsm.vhd(76): inferring latch(es) for signal or variable "enKeys", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at fsm.vhd(76): inferring latch(es) for signal or variable "selMuxKeys", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at fsm.vhd(76): inferring latch(es) for signal or variable "c", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "c[0]" at fsm.vhd(76)
-Info (10041): Inferred latch for "c[1]" at fsm.vhd(76)
-Info (10041): Inferred latch for "c[2]" at fsm.vhd(76)
-Info (10041): Inferred latch for "c[3]" at fsm.vhd(76)
-Info (10041): Inferred latch for "selMuxKeys" at fsm.vhd(76)
-Info (10041): Inferred latch for "enKeys" at fsm.vhd(76)
-Info (10041): Inferred latch for "enRegADR2" at fsm.vhd(76)
-Info (10041): Inferred latch for "enRegMix" at fsm.vhd(76)
-Info (10041): Inferred latch for "enRegSR" at fsm.vhd(76)
-Info (10041): Inferred latch for "enRegSub" at fsm.vhd(76)
-Info (10041): Inferred latch for "enRegADR" at fsm.vhd(76)
-Info (10041): Inferred latch for "enRegInicio" at fsm.vhd(76)
-Info (10041): Inferred latch for "selKey[0]" at fsm.vhd(76)
-Info (10041): Inferred latch for "selKey[1]" at fsm.vhd(76)
-Info (10041): Inferred latch for "selKey[2]" at fsm.vhd(76)
-Info (10041): Inferred latch for "selKey[3]" at fsm.vhd(76)
-Info (10041): Inferred latch for "selRound" at fsm.vhd(76)
-Info (10041): Inferred latch for "selInicio" at fsm.vhd(76)
+Warning (10631): VHDL Process Statement warning at fsm.vhd(78): inferring latch(es) for signal or variable "selInicio", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at fsm.vhd(78): inferring latch(es) for signal or variable "selRound", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at fsm.vhd(78): inferring latch(es) for signal or variable "selMuxKeys", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "selMuxKeys" at fsm.vhd(78)
+Info (10041): Inferred latch for "selRound" at fsm.vhd(78)
+Info (10041): Inferred latch for "selInicio" at fsm.vhd(78)
 Warning (13012): Latch fsm:SM|selRound has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal fsm:SM|state.s3
 Warning (13012): Latch fsm:SM|selMuxKeys has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal fsm:SM|state.s3
-Warning (13012): Latch fsm:SM|c[3] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal fsm:SM|state.s2
-Warning (13012): Latch fsm:SM|c[1] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal fsm:SM|state.s2
-Warning (13012): Latch fsm:SM|c[2] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal fsm:SM|state.s2
-Warning (13012): Latch fsm:SM|c[0] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal fsm:SM|state.s2
-Warning (13012): Latch fsm:SM|enRegInicio has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal fsm:SM|state.s1
-Warning (13012): Latch fsm:SM|selKey[3] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal fsm:SM|state.s3
-Warning (13012): Latch fsm:SM|selKey[2] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal fsm:SM|state.s3
-Warning (13012): Latch fsm:SM|selKey[1] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal fsm:SM|state.s3
-Warning (13012): Latch fsm:SM|selKey[0] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal fsm:SM|state.s3
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 5276 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 5265 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 128 output pins
-    Info (21061): Implemented 5146 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 50 warnings
-    Info: Peak virtual memory: 4651 megabytes
-    Info: Processing ended: Thu Nov 14 16:28:10 2019
-    Info: Elapsed time: 00:01:38
-    Info: Total CPU time (on all processors): 00:01:38
+    Info (21061): Implemented 5135 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 17 warnings
+    Info: Peak virtual memory: 4648 megabytes
+    Info: Processing ended: Fri Nov 15 01:19:07 2019
+    Info: Elapsed time: 00:00:51
+    Info: Total CPU time (on all processors): 00:00:51
 
 

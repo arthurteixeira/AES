@@ -49,7 +49,7 @@ end component;
 begin
 
 	outMuxEntrada <= key when selMuxKey = '0' else
-						  outReg when selMuxKey = '1';
+						  outReg;
 						  
 	rcon <= x"01" when selRcon = "0001" else
 			  x"02" when selRcon = "0010" else
