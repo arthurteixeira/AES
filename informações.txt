@@ -1,8 +1,14 @@
 FPGA Utilizado: Ep3c80f780c6, Cyclone III, 430 pinos de I/O
 
 Frequência máxima: 161.76 MHz
-Consumo Energia: 
 Caminho crítico: KeyScheduler (Motivo: alto índice de elementos em cascata)
+
+Energia
+
+Dissipação total de energia térmica: 176.97 mW
+Dissipação dinâmica de energia térmica: 23.45 mW
+Dissipação estática de energia térmica: 98.89 mW
+Dissipação de energia térmica de I/O: 54.63 mW
 
 Área ocupada
 

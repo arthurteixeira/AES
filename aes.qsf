@@ -76,7 +76,7 @@ set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "7000 ns" -section_id tb_
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_top -section_id tb_top
 set_global_assignment -name POWER_USE_INPUT_FILES ON
 set_global_assignment -name POWER_OUTPUT_SAF_NAME aes.rpt
-set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE "12.5 %"
+set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE 12.5%
 set_global_assignment -name POWER_REPORT_SIGNAL_ACTIVITY ON
 set_global_assignment -name POWER_REPORT_POWER_DISSIPATION ON
 set_global_assignment -name POWER_INPUT_FILE_NAME ../../../../../altera/13.0/aes.vcd -section_id aes.vcd
